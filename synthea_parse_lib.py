@@ -47,13 +47,21 @@ def get_biometrics(filename,condition):
       print e
   
   # General Patient Data:
-  return_vals['multipleBirthBoolean'] = data_general['multipleBirthBoolean']
+  try:
+    return_vals['multipleBirthBoolean'] = data_general['multipleBirthBoolean']
+  except: pass
   try:
     return_vals['maritalStatus'] = data_general['maritalStatus']['coding'][0]['code']
   except: pass
-  return_vals['gender'] = data_general['gender']
-  return_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
-  return_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
+  try:
+    return_vals['gender'] = data_general['gender']
+  except: pass
+  try:
+    return_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
+  except: pass
+  try:
+    return_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
+  except: pass
 
   # Append test results for encounter with first diagnosis of heart disease
   # ASSUMING ONLY FIRST ENCOUNTER HAS A DIAGNOSIS
@@ -74,9 +82,11 @@ def get_biometrics(filename,condition):
           try:
             return_vals[data[i]['resource']['code']['coding'][0]['display']] = str(data[i]['resource']['valueQuantity']['value']) + " " + data[i]['resource']['valueQuantity']['unit']
           except:
-            for k in range(0,len(data[i]['resource']['component'])):
-              return_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value']) + " " + data[i]['resource']['component'][k]['valueQuantity']['unit']
-   
+            try:
+              for k in range(0,len(data[i]['resource']['component'])):
+                return_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value']) + " " + data[i]['resource']['component'][k]['valueQuantity']['unit']
+            except:
+              pass   
   return return_vals
 
 # # # # # # # # # # PATIENT CONDITIONS # # # # # # # # # #
