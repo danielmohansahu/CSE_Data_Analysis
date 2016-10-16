@@ -1,0 +1,4282 @@
+{
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912",
+      "resource": {
+        "id": "012dad0a-7232-4e20-b821-dececf766912",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/us-core-race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v3/Race",
+                  "code": "2111-3",
+                  "display": "French"
+                }
+              ],
+              "text": "race"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/us-core-ethnicity",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v3/Ethnicity",
+                  "code": "2186-5",
+                  "display": "Nonhispanic"
+                }
+              ],
+              "text": "ethnicity"
+            }
+          },
+          {
+            "url": "http://standardhealthrecord.org/fhir/extensions/wkt-geospatialpoint",
+            "valueString": "POINT (-71.96781809050117 42.622039050066824)"
+          },
+          {
+            "url": "http://standardhealthrecord.org/fhir/extensions/placeOfBirth",
+            "valueAddress": {
+              "city": "Sharon",
+              "state": "MA"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Micheal701 Murazik31"
+          },
+          {
+            "url": "http://standardhealthrecord.org/fhir/extensions/fathersName",
+            "valueString": "Nickolas458 O'Conner380"
+          },
+          {
+            "url": "http://standardhealthrecord.org/fhir/extensions/multipleBirth",
+            "valueCode": "Multiple"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "2ba9ff8d-d140-46a4-b578-89ee579b6636"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/identifier-type",
+                  "code": "SB"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "999962880"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "DL"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.840.1.113883.4.3.25",
+            "value": "S99997192"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "O'Conner380"
+            ],
+            "given": [
+              "Queen233"
+            ],
+            "prefix": [
+              "Mr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "extension": [
+              {
+                "url": "http://standardhealthrecord.org/fhir/extensions/okayToLeaveMessage",
+                "valueBoolean": true
+              }
+            ],
+            "system": "phone",
+            "value": "(409) 255-5780",
+            "use": "home"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1994-06-27",
+        "address": [
+          {
+            "line": [
+              "3428 Johan Prairie",
+              "Suite 482"
+            ],
+            "city": "Ashburnham",
+            "state": "MA",
+            "postalCode": "01430"
+          }
+        ],
+        "multipleBirthInteger": 3,
+        "photo": [
+          {
+            "contentType": "image/png",
+            "data": "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",
+            "title": "Biometrics.Fingerprint"
+          }
+        ],
+        "resourceType": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662",
+      "resource": {
+        "id": "6ad0ef7a-fd6a-4888-ab72-4ba7ec117662",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "1997-02-10T16:57:25-05:00",
+          "end": "1997-02-10T17:12:25-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:52872e92-612c-41bd-bc29-5019b592a2b2",
+      "resource": {
+        "id": "52872e92-612c-41bd-bc29-5019b592a2b2",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "context": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "onsetDateTime": "1995-05-27T08:00:07-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:059fbf7d-917d-4368-9cbd-7ddc304e6993",
+      "resource": {
+        "id": "059fbf7d-917d-4368-9cbd-7ddc304e6993",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "284549007",
+              "display": "Laceration of hand"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "context": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "onsetDateTime": "1996-01-27T08:00:07-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d192fe58-78fd-4fb4-9de4-611f304ddc3f",
+      "resource": {
+        "id": "d192fe58-78fd-4fb4-9de4-611f304ddc3f",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "effectiveDateTime": "1997-02-10T16:57:25-05:00",
+        "valueQuantity": {
+          "value": 6.92468901887354,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dabf7da8-ebb5-476d-abe8-bbf21fc6aebf",
+      "resource": {
+        "id": "dabf7da8-ebb5-476d-abe8-bbf21fc6aebf",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "effectiveDateTime": "1997-02-10T16:57:25-05:00",
+        "valueQuantity": {
+          "value": 66.90038047272908,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:212960a5-13e9-4946-9e3e-9c62b817161a",
+      "resource": {
+        "id": "212960a5-13e9-4946-9e3e-9c62b817161a",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "effectiveDateTime": "1997-02-10T16:57:25-05:00",
+        "valueQuantity": {
+          "value": 15.471880381801657,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a54a4e7-baf2-4c84-9621-1febce1ca923",
+      "resource": {
+        "id": "3a54a4e7-baf2-4c84-9621-1febce1ca923",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "effectiveDateTime": "1997-02-10T16:57:25-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 105,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 73,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1997-02-10T16:57:25-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "20",
+              "display": "DTaP"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1997-02-10T16:57:25-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:6ad0ef7a-fd6a-4888-ab72-4ba7ec117662"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:39751ed9-7bad-4e68-b381-d6312b4fc862",
+      "resource": {
+        "id": "39751ed9-7bad-4e68-b381-d6312b4fc862",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "1997-08-30T00:34:47-04:00",
+          "end": "1997-08-30T00:49:47-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:93adc893-22c9-4c27-ac56-e32cd7c9a216",
+      "resource": {
+        "id": "93adc893-22c9-4c27-ac56-e32cd7c9a216",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:39751ed9-7bad-4e68-b381-d6312b4fc862"
+        },
+        "effectiveDateTime": "1997-08-30T00:34:47-04:00",
+        "valueQuantity": {
+          "value": 9.41527123881415,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:80094dd1-0091-483b-8d95-ec1502e90120",
+      "resource": {
+        "id": "80094dd1-0091-483b-8d95-ec1502e90120",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:39751ed9-7bad-4e68-b381-d6312b4fc862"
+        },
+        "effectiveDateTime": "1997-08-30T00:34:47-04:00",
+        "valueQuantity": {
+          "value": 74.72053410012211,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:05688069-bc06-4fb5-abd2-9384cf239dd9",
+      "resource": {
+        "id": "05688069-bc06-4fb5-abd2-9384cf239dd9",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:39751ed9-7bad-4e68-b381-d6312b4fc862"
+        },
+        "effectiveDateTime": "1997-08-30T00:34:47-04:00",
+        "valueQuantity": {
+          "value": 16.863701285559646,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:85e88197-a521-4c47-8d43-4fcb610ba106",
+      "resource": {
+        "id": "85e88197-a521-4c47-8d43-4fcb610ba106",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:39751ed9-7bad-4e68-b381-d6312b4fc862"
+        },
+        "effectiveDateTime": "1997-08-30T00:34:47-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 136,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1997-08-30T00:34:47-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "20",
+              "display": "DTaP"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:39751ed9-7bad-4e68-b381-d6312b4fc862"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3b21d81b-c967-4ba4-abda-870adef2ca68",
+      "resource": {
+        "id": "3b21d81b-c967-4ba4-abda-870adef2ca68",
+        "status": "finished",
+        "class": {
+          "code": "emergency"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "50849002"
+              }
+            ],
+            "text": "Emergency Room Admission"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "1998-05-27T08:00:07-04:00",
+          "end": "1998-05-27T08:15:07-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5a185828-6717-4746-a679-19a42f3d6563",
+      "resource": {
+        "id": "5a185828-6717-4746-a679-19a42f3d6563",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "62106007",
+              "display": "Concussion with no loss of consciousness"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "context": {
+          "reference": "urn:uuid:3b21d81b-c967-4ba4-abda-870adef2ca68"
+        },
+        "onsetDateTime": "1998-05-27T08:00:07-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5",
+      "resource": {
+        "id": "99a2d9d1-4729-4efc-8a7f-734067da45a5",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "1998-09-07T01:35:47-04:00",
+          "end": "1998-09-07T01:50:47-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e49eee24-7a27-4acb-a194-5ddc865e5ea0",
+      "resource": {
+        "id": "e49eee24-7a27-4acb-a194-5ddc865e5ea0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "effectiveDateTime": "1998-09-07T01:35:47-04:00",
+        "valueQuantity": {
+          "value": 11.237052183372892,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1b807175-14e6-4759-9951-a957011adf0a",
+      "resource": {
+        "id": "1b807175-14e6-4759-9951-a957011adf0a",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "effectiveDateTime": "1998-09-07T01:35:47-04:00",
+        "valueQuantity": {
+          "value": 81.16841311766184,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:133d3db0-28fe-4069-a852-2191c1af472a",
+      "resource": {
+        "id": "133d3db0-28fe-4069-a852-2191c1af472a",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "effectiveDateTime": "1998-09-07T01:35:47-04:00",
+        "valueQuantity": {
+          "value": 17.056043183285695,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:716d003e-5966-4af2-9e75-e0800ee9ea58",
+      "resource": {
+        "id": "716d003e-5966-4af2-9e75-e0800ee9ea58",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "effectiveDateTime": "1998-09-07T01:35:47-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 113,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 84,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1998-09-07T01:35:47-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "20",
+              "display": "DTaP"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1998-09-07T01:35:47-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "10",
+              "display": "IPV"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1998-09-07T01:35:47-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1998-09-07T01:35:47-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "03",
+              "display": "MMR"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1998-09-07T01:35:47-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "21",
+              "display": "varicella"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:99a2d9d1-4729-4efc-8a7f-734067da45a5"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b6eca843-8819-48e9-b6d9-436bb4aec57c",
+      "resource": {
+        "id": "b6eca843-8819-48e9-b6d9-436bb4aec57c",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "1999-08-29T11:58:02-04:00",
+          "end": "1999-08-29T12:13:02-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:755bf2eb-d3ab-4af3-8c93-9fdb930df090",
+      "resource": {
+        "id": "755bf2eb-d3ab-4af3-8c93-9fdb930df090",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b6eca843-8819-48e9-b6d9-436bb4aec57c"
+        },
+        "effectiveDateTime": "1999-08-29T11:58:02-04:00",
+        "valueQuantity": {
+          "value": 12.43463434983786,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:45c72782-eeb3-4f04-9fa1-da69658a6626",
+      "resource": {
+        "id": "45c72782-eeb3-4f04-9fa1-da69658a6626",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b6eca843-8819-48e9-b6d9-436bb4aec57c"
+        },
+        "effectiveDateTime": "1999-08-29T11:58:02-04:00",
+        "valueQuantity": {
+          "value": 88.03464544475443,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d7ca70b7-2f78-4fdb-880b-20c92bae88fa",
+      "resource": {
+        "id": "d7ca70b7-2f78-4fdb-880b-20c92bae88fa",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b6eca843-8819-48e9-b6d9-436bb4aec57c"
+        },
+        "effectiveDateTime": "1999-08-29T11:58:02-04:00",
+        "valueQuantity": {
+          "value": 16.04448494528917,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:abba3ebb-b077-4a84-a0b1-ae58442c4a6f",
+      "resource": {
+        "id": "abba3ebb-b077-4a84-a0b1-ae58442c4a6f",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b6eca843-8819-48e9-b6d9-436bb4aec57c"
+        },
+        "effectiveDateTime": "1999-08-29T11:58:02-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 114,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 73,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "1999-08-29T11:58:02-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:b6eca843-8819-48e9-b6d9-436bb4aec57c"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f3493574-456e-47d4-a603-03d070a7490e",
+      "resource": {
+        "id": "f3493574-456e-47d4-a603-03d070a7490e",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2000-09-01T15:42:50-04:00",
+          "end": "2000-09-01T15:57:50-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:62f7947b-1733-4d56-abc3-cd927cd97386",
+      "resource": {
+        "id": "62f7947b-1733-4d56-abc3-cd927cd97386",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:f3493574-456e-47d4-a603-03d070a7490e"
+        },
+        "effectiveDateTime": "2000-09-01T15:42:50-04:00",
+        "valueQuantity": {
+          "value": 14.575869499984488,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d561d4fb-9467-4744-b209-4137c3e3876b",
+      "resource": {
+        "id": "d561d4fb-9467-4744-b209-4137c3e3876b",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:f3493574-456e-47d4-a603-03d070a7490e"
+        },
+        "effectiveDateTime": "2000-09-01T15:42:50-04:00",
+        "valueQuantity": {
+          "value": 95.2186232502675,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fe3b485a-f730-43f4-bd18-eae41314fc97",
+      "resource": {
+        "id": "fe3b485a-f730-43f4-bd18-eae41314fc97",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:f3493574-456e-47d4-a603-03d070a7490e"
+        },
+        "effectiveDateTime": "2000-09-01T15:42:50-04:00",
+        "valueQuantity": {
+          "value": 16.07646930880963,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:75d97f6a-99ca-45a2-a0ff-361005887c07",
+      "resource": {
+        "id": "75d97f6a-99ca-45a2-a0ff-361005887c07",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:f3493574-456e-47d4-a603-03d070a7490e"
+        },
+        "effectiveDateTime": "2000-09-01T15:42:50-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 123,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 80,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2000-09-01T15:42:50-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:f3493574-456e-47d4-a603-03d070a7490e"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9529b995-d691-4435-a888-99b59c5e71ea",
+      "resource": {
+        "id": "9529b995-d691-4435-a888-99b59c5e71ea",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2001-09-27T02:00:30-04:00",
+          "end": "2001-09-27T02:15:30-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:03ff6a79-9340-46cb-b284-e33b41dc98ba",
+      "resource": {
+        "id": "03ff6a79-9340-46cb-b284-e33b41dc98ba",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:9529b995-d691-4435-a888-99b59c5e71ea"
+        },
+        "effectiveDateTime": "2001-09-27T02:00:30-04:00",
+        "valueQuantity": {
+          "value": 19.468336836437956,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7809b05e-5788-4720-9378-af3e6166062e",
+      "resource": {
+        "id": "7809b05e-5788-4720-9378-af3e6166062e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:9529b995-d691-4435-a888-99b59c5e71ea"
+        },
+        "effectiveDateTime": "2001-09-27T02:00:30-04:00",
+        "valueQuantity": {
+          "value": 103.9528458349002,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:34c77803-85b1-4156-a353-1a8f434ef090",
+      "resource": {
+        "id": "34c77803-85b1-4156-a353-1a8f434ef090",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:9529b995-d691-4435-a888-99b59c5e71ea"
+        },
+        "effectiveDateTime": "2001-09-27T02:00:30-04:00",
+        "valueQuantity": {
+          "value": 18.015905094128254,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c1427cf0-1f65-42b3-ac20-5edec30a5cc6",
+      "resource": {
+        "id": "c1427cf0-1f65-42b3-ac20-5edec30a5cc6",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:9529b995-d691-4435-a888-99b59c5e71ea"
+        },
+        "effectiveDateTime": "2001-09-27T02:00:30-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 112,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 82,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2001-09-27T02:00:30-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:9529b995-d691-4435-a888-99b59c5e71ea"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2f2d2203-9fd4-4982-88c0-090ffea2b5da",
+      "resource": {
+        "id": "2f2d2203-9fd4-4982-88c0-090ffea2b5da",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2002-10-18T20:37:35-04:00",
+          "end": "2002-10-18T20:52:35-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fe89a46c-ffd8-4872-8989-5ed0d333f2db",
+      "resource": {
+        "id": "fe89a46c-ffd8-4872-8989-5ed0d333f2db",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2f2d2203-9fd4-4982-88c0-090ffea2b5da"
+        },
+        "effectiveDateTime": "2002-10-18T20:37:35-04:00",
+        "valueQuantity": {
+          "value": 26.06763884564881,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f5bc99ff-1042-4de0-afd6-4970e2d594e5",
+      "resource": {
+        "id": "f5bc99ff-1042-4de0-afd6-4970e2d594e5",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2f2d2203-9fd4-4982-88c0-090ffea2b5da"
+        },
+        "effectiveDateTime": "2002-10-18T20:37:35-04:00",
+        "valueQuantity": {
+          "value": 110.68022727735641,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a80904b6-375c-461a-8e2e-7ead93656acd",
+      "resource": {
+        "id": "a80904b6-375c-461a-8e2e-7ead93656acd",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2f2d2203-9fd4-4982-88c0-090ffea2b5da"
+        },
+        "effectiveDateTime": "2002-10-18T20:37:35-04:00",
+        "valueQuantity": {
+          "value": 21.279509390973487,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dd36225b-ab69-4ca6-8e92-9eb32e4fffbf",
+      "resource": {
+        "id": "dd36225b-ab69-4ca6-8e92-9eb32e4fffbf",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2f2d2203-9fd4-4982-88c0-090ffea2b5da"
+        },
+        "effectiveDateTime": "2002-10-18T20:37:35-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 126,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 72,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2002-10-18T20:37:35-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:2f2d2203-9fd4-4982-88c0-090ffea2b5da"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5fe71708-611d-4e3c-af7c-a9a74f3d5525",
+      "resource": {
+        "id": "5fe71708-611d-4e3c-af7c-a9a74f3d5525",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2003-12-20T01:13:09-05:00",
+          "end": "2003-12-20T01:28:09-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:74f86905-263e-4088-9b0b-df4d565ce5d5",
+      "resource": {
+        "id": "74f86905-263e-4088-9b0b-df4d565ce5d5",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:5fe71708-611d-4e3c-af7c-a9a74f3d5525"
+        },
+        "effectiveDateTime": "2003-12-20T01:13:09-05:00",
+        "valueQuantity": {
+          "value": 28.50961826352705,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:216e412c-ccb7-4bf3-b790-a2caa8382db9",
+      "resource": {
+        "id": "216e412c-ccb7-4bf3-b790-a2caa8382db9",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:5fe71708-611d-4e3c-af7c-a9a74f3d5525"
+        },
+        "effectiveDateTime": "2003-12-20T01:13:09-05:00",
+        "valueQuantity": {
+          "value": 117.84185399533811,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d01ea40f-b064-4c5b-9d56-4cbca8c099e1",
+      "resource": {
+        "id": "d01ea40f-b064-4c5b-9d56-4cbca8c099e1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:5fe71708-611d-4e3c-af7c-a9a74f3d5525"
+        },
+        "effectiveDateTime": "2003-12-20T01:13:09-05:00",
+        "valueQuantity": {
+          "value": 20.530156928613504,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:507d9003-4dcf-44cf-a5e9-ecc3b5fa918c",
+      "resource": {
+        "id": "507d9003-4dcf-44cf-a5e9-ecc3b5fa918c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:5fe71708-611d-4e3c-af7c-a9a74f3d5525"
+        },
+        "effectiveDateTime": "2003-12-20T01:13:09-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 117,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2003-12-20T01:13:09-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:5fe71708-611d-4e3c-af7c-a9a74f3d5525"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:99afc0b6-cde2-42e9-9768-87992a1911ef",
+      "resource": {
+        "id": "99afc0b6-cde2-42e9-9768-87992a1911ef",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2004-12-30T18:43:22-05:00",
+          "end": "2004-12-30T18:58:22-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:afe6c30e-1760-4c94-a747-51f7f488dfff",
+      "resource": {
+        "id": "afe6c30e-1760-4c94-a747-51f7f488dfff",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99afc0b6-cde2-42e9-9768-87992a1911ef"
+        },
+        "effectiveDateTime": "2004-12-30T18:43:22-05:00",
+        "valueQuantity": {
+          "value": 32.556517047890345,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:769b5b6d-d9d4-4b28-b8b5-e99364548477",
+      "resource": {
+        "id": "769b5b6d-d9d4-4b28-b8b5-e99364548477",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99afc0b6-cde2-42e9-9768-87992a1911ef"
+        },
+        "effectiveDateTime": "2004-12-30T18:43:22-05:00",
+        "valueQuantity": {
+          "value": 122.57387493168693,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f271cc2a-50ce-41aa-81e3-ab25423f09de",
+      "resource": {
+        "id": "f271cc2a-50ce-41aa-81e3-ab25423f09de",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99afc0b6-cde2-42e9-9768-87992a1911ef"
+        },
+        "effectiveDateTime": "2004-12-30T18:43:22-05:00",
+        "valueQuantity": {
+          "value": 21.66916146956315,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:87de5a9a-893d-46f3-94a3-3628ba7a452e",
+      "resource": {
+        "id": "87de5a9a-893d-46f3-94a3-3628ba7a452e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:99afc0b6-cde2-42e9-9768-87992a1911ef"
+        },
+        "effectiveDateTime": "2004-12-30T18:43:22-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 134,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 76,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2004-12-30T18:43:22-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:99afc0b6-cde2-42e9-9768-87992a1911ef"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8",
+      "resource": {
+        "id": "29e6f094-bb70-49d0-9632-6588832340e8",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2005-12-21T09:42:41-05:00",
+          "end": "2005-12-21T09:57:41-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6dd45433-983d-401c-a2ca-02d6189ecd8b",
+      "resource": {
+        "id": "6dd45433-983d-401c-a2ca-02d6189ecd8b",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8"
+        },
+        "effectiveDateTime": "2005-12-21T09:42:41-05:00",
+        "valueQuantity": {
+          "value": 31.254818651467893,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:718097fe-dc2e-4cb5-88f8-7eecc0a08697",
+      "resource": {
+        "id": "718097fe-dc2e-4cb5-88f8-7eecc0a08697",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8"
+        },
+        "effectiveDateTime": "2005-12-21T09:42:41-05:00",
+        "valueQuantity": {
+          "value": 130.0625729821793,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:16680e56-b344-45a1-8884-78ac27a3af48",
+      "resource": {
+        "id": "16680e56-b344-45a1-8884-78ac27a3af48",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8"
+        },
+        "effectiveDateTime": "2005-12-21T09:42:41-05:00",
+        "valueQuantity": {
+          "value": 18.476184945306795,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6227d148-d814-456e-a05f-c76ab7a9977e",
+      "resource": {
+        "id": "6227d148-d814-456e-a05f-c76ab7a9977e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8"
+        },
+        "effectiveDateTime": "2005-12-21T09:42:41-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 139,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 89,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2005-12-21T09:42:41-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2005-12-21T09:42:41-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "114",
+              "display": "meningococcal MCV4P"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2005-12-21T09:42:41-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "115",
+              "display": "Tdap"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:29e6f094-bb70-49d0-9632-6588832340e8"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b579e866-8a37-4f8c-823c-b7a637795155",
+      "resource": {
+        "id": "b579e866-8a37-4f8c-823c-b7a637795155",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2007-01-02T12:13:14-05:00",
+          "end": "2007-01-02T12:28:14-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1a3ca976-5f1b-4622-a29b-26cac49a7399",
+      "resource": {
+        "id": "1a3ca976-5f1b-4622-a29b-26cac49a7399",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b579e866-8a37-4f8c-823c-b7a637795155"
+        },
+        "effectiveDateTime": "2007-01-02T12:13:14-05:00",
+        "valueQuantity": {
+          "value": 34.292936051993216,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:844ce830-3ff8-4cf6-a644-1f1fc9b26eff",
+      "resource": {
+        "id": "844ce830-3ff8-4cf6-a644-1f1fc9b26eff",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b579e866-8a37-4f8c-823c-b7a637795155"
+        },
+        "effectiveDateTime": "2007-01-02T12:13:14-05:00",
+        "valueQuantity": {
+          "value": 136.24261606509668,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4a1ee92e-5687-4d5f-92ed-8aa8c83bb8c1",
+      "resource": {
+        "id": "4a1ee92e-5687-4d5f-92ed-8aa8c83bb8c1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b579e866-8a37-4f8c-823c-b7a637795155"
+        },
+        "effectiveDateTime": "2007-01-02T12:13:14-05:00",
+        "valueQuantity": {
+          "value": 18.47475642690377,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0e9b3269-ddd8-4961-976f-f2e253f2be03",
+      "resource": {
+        "id": "0e9b3269-ddd8-4961-976f-f2e253f2be03",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b579e866-8a37-4f8c-823c-b7a637795155"
+        },
+        "effectiveDateTime": "2007-01-02T12:13:14-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 135,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 75,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2007-01-02T12:13:14-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:b579e866-8a37-4f8c-823c-b7a637795155"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2007-01-02T12:13:14-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "62",
+              "display": "HPV, quadrivalent"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:b579e866-8a37-4f8c-823c-b7a637795155"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cd774628-2ab0-4bc5-815d-bbac5207cb66",
+      "resource": {
+        "id": "cd774628-2ab0-4bc5-815d-bbac5207cb66",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2007-12-16T14:41:19-05:00",
+          "end": "2007-12-16T14:56:19-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b97adb2e-5b7a-4d61-b329-df1373e80f79",
+      "resource": {
+        "id": "b97adb2e-5b7a-4d61-b329-df1373e80f79",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:cd774628-2ab0-4bc5-815d-bbac5207cb66"
+        },
+        "effectiveDateTime": "2007-12-16T14:41:19-05:00",
+        "valueQuantity": {
+          "value": 35.71100707962157,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:de3b10de-7d00-4f4c-a12b-df6789c71522",
+      "resource": {
+        "id": "de3b10de-7d00-4f4c-a12b-df6789c71522",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:cd774628-2ab0-4bc5-815d-bbac5207cb66"
+        },
+        "effectiveDateTime": "2007-12-16T14:41:19-05:00",
+        "valueQuantity": {
+          "value": 142.21314963270615,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4f347c06-81fc-43af-9d78-6d3128dcc6a7",
+      "resource": {
+        "id": "4f347c06-81fc-43af-9d78-6d3128dcc6a7",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:cd774628-2ab0-4bc5-815d-bbac5207cb66"
+        },
+        "effectiveDateTime": "2007-12-16T14:41:19-05:00",
+        "valueQuantity": {
+          "value": 17.657230561006042,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dd6bd439-ef8e-4f7b-8568-f96f06e2addf",
+      "resource": {
+        "id": "dd6bd439-ef8e-4f7b-8568-f96f06e2addf",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:cd774628-2ab0-4bc5-815d-bbac5207cb66"
+        },
+        "effectiveDateTime": "2007-12-16T14:41:19-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 117,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 74,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2007-12-16T14:41:19-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:cd774628-2ab0-4bc5-815d-bbac5207cb66"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2007-12-16T14:41:19-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "62",
+              "display": "HPV, quadrivalent"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:cd774628-2ab0-4bc5-815d-bbac5207cb66"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:724012ba-aacc-4cb9-899e-c6717611ccdf",
+      "resource": {
+        "id": "724012ba-aacc-4cb9-899e-c6717611ccdf",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2008-11-01T00:37:44-04:00",
+          "end": "2008-11-01T00:52:44-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3c8b262d-a75b-489c-8607-dd0bc59c385e",
+      "resource": {
+        "id": "3c8b262d-a75b-489c-8607-dd0bc59c385e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:724012ba-aacc-4cb9-899e-c6717611ccdf"
+        },
+        "effectiveDateTime": "2008-11-01T00:37:44-04:00",
+        "valueQuantity": {
+          "value": 36.71660279183657,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a2408ec0-416e-46c9-8110-096d08c1fb12",
+      "resource": {
+        "id": "a2408ec0-416e-46c9-8110-096d08c1fb12",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:724012ba-aacc-4cb9-899e-c6717611ccdf"
+        },
+        "effectiveDateTime": "2008-11-01T00:37:44-04:00",
+        "valueQuantity": {
+          "value": 146.16516092317454,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9964855b-35cc-42eb-9e5b-443d19518853",
+      "resource": {
+        "id": "9964855b-35cc-42eb-9e5b-443d19518853",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:724012ba-aacc-4cb9-899e-c6717611ccdf"
+        },
+        "effectiveDateTime": "2008-11-01T00:37:44-04:00",
+        "valueQuantity": {
+          "value": 17.18599785032124,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f5ef4526-7205-471c-9c0e-089c99bddcf6",
+      "resource": {
+        "id": "f5ef4526-7205-471c-9c0e-089c99bddcf6",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:724012ba-aacc-4cb9-899e-c6717611ccdf"
+        },
+        "effectiveDateTime": "2008-11-01T00:37:44-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 126,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 77,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2008-11-01T00:37:44-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:724012ba-aacc-4cb9-899e-c6717611ccdf"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2008-11-01T00:37:44-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "62",
+              "display": "HPV, quadrivalent"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:724012ba-aacc-4cb9-899e-c6717611ccdf"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2bd4414f-aeae-4289-93c4-7a6704ab0b71",
+      "resource": {
+        "id": "2bd4414f-aeae-4289-93c4-7a6704ab0b71",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2009-10-30T05:28:31-04:00",
+          "end": "2009-10-30T05:43:31-04:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:285cd830-169e-4e99-a793-592001c4415e",
+      "resource": {
+        "id": "285cd830-169e-4e99-a793-592001c4415e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2bd4414f-aeae-4289-93c4-7a6704ab0b71"
+        },
+        "effectiveDateTime": "2009-10-30T05:28:31-04:00",
+        "valueQuantity": {
+          "value": 42.422180298861,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e48662f5-bdf7-4207-b0bd-b73322b5ceb4",
+      "resource": {
+        "id": "e48662f5-bdf7-4207-b0bd-b73322b5ceb4",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2bd4414f-aeae-4289-93c4-7a6704ab0b71"
+        },
+        "effectiveDateTime": "2009-10-30T05:28:31-04:00",
+        "valueQuantity": {
+          "value": 150.82161745775477,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:91e588a1-cb85-461d-a6e1-c77dc9db5b56",
+      "resource": {
+        "id": "91e588a1-cb85-461d-a6e1-c77dc9db5b56",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2bd4414f-aeae-4289-93c4-7a6704ab0b71"
+        },
+        "effectiveDateTime": "2009-10-30T05:28:31-04:00",
+        "valueQuantity": {
+          "value": 18.649440085368084,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2a54b26c-388e-40f7-bf74-ab62dcfe9d77",
+      "resource": {
+        "id": "2a54b26c-388e-40f7-bf74-ab62dcfe9d77",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:2bd4414f-aeae-4289-93c4-7a6704ab0b71"
+        },
+        "effectiveDateTime": "2009-10-30T05:28:31-04:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 131,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 70,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2009-10-30T05:28:31-04:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:2bd4414f-aeae-4289-93c4-7a6704ab0b71"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6bcf861d-01ad-473f-9a36-fe01af34e785",
+      "resource": {
+        "id": "6bcf861d-01ad-473f-9a36-fe01af34e785",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2010-12-05T18:41:45-05:00",
+          "end": "2010-12-05T18:56:45-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:552de739-2224-45fd-b5c9-95da3515b1b1",
+      "resource": {
+        "id": "552de739-2224-45fd-b5c9-95da3515b1b1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6bcf861d-01ad-473f-9a36-fe01af34e785"
+        },
+        "effectiveDateTime": "2010-12-05T18:41:45-05:00",
+        "valueQuantity": {
+          "value": 47.45781955845815,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0aaaab08-5721-4d37-95ea-e65436b6c930",
+      "resource": {
+        "id": "0aaaab08-5721-4d37-95ea-e65436b6c930",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6bcf861d-01ad-473f-9a36-fe01af34e785"
+        },
+        "effectiveDateTime": "2010-12-05T18:41:45-05:00",
+        "valueQuantity": {
+          "value": 156.81351898865114,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2abaa71e-170d-4aa2-a85c-0b9680e152ab",
+      "resource": {
+        "id": "2abaa71e-170d-4aa2-a85c-0b9680e152ab",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6bcf861d-01ad-473f-9a36-fe01af34e785"
+        },
+        "effectiveDateTime": "2010-12-05T18:41:45-05:00",
+        "valueQuantity": {
+          "value": 19.29926543315261,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7e9a4e61-bdeb-46be-992f-1a273c7539bc",
+      "resource": {
+        "id": "7e9a4e61-bdeb-46be-992f-1a273c7539bc",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:6bcf861d-01ad-473f-9a36-fe01af34e785"
+        },
+        "effectiveDateTime": "2010-12-05T18:41:45-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 123,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 85,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2010-12-05T18:41:45-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:6bcf861d-01ad-473f-9a36-fe01af34e785"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2010-12-05T18:41:45-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "114",
+              "display": "meningococcal MCV4P"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:6bcf861d-01ad-473f-9a36-fe01af34e785"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a000f37b-619f-432b-88e7-7ff9753a308f",
+      "resource": {
+        "id": "a000f37b-619f-432b-88e7-7ff9753a308f",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "170258001"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2011-11-28T18:25:48-05:00",
+          "end": "2011-11-28T18:40:48-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:423b5e13-d0cf-4f33-b741-e80af8ec064c",
+      "resource": {
+        "id": "423b5e13-d0cf-4f33-b741-e80af8ec064c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a000f37b-619f-432b-88e7-7ff9753a308f"
+        },
+        "effectiveDateTime": "2011-11-28T18:25:48-05:00",
+        "valueQuantity": {
+          "value": 52.96157626792249,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00c40bad-39a2-43cb-b70d-dff11d1a6537",
+      "resource": {
+        "id": "00c40bad-39a2-43cb-b70d-dff11d1a6537",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a000f37b-619f-432b-88e7-7ff9753a308f"
+        },
+        "effectiveDateTime": "2011-11-28T18:25:48-05:00",
+        "valueQuantity": {
+          "value": 160.6521988768226,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:df26df52-89c3-4d70-82a6-6c4077388429",
+      "resource": {
+        "id": "df26df52-89c3-4d70-82a6-6c4077388429",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a000f37b-619f-432b-88e7-7ff9753a308f"
+        },
+        "effectiveDateTime": "2011-11-28T18:25:48-05:00",
+        "valueQuantity": {
+          "value": 20.52048182633368,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:00921c28-a6b3-4498-b80f-78feb2a3ed8f",
+      "resource": {
+        "id": "00921c28-a6b3-4498-b80f-78feb2a3ed8f",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a000f37b-619f-432b-88e7-7ff9753a308f"
+        },
+        "effectiveDateTime": "2011-11-28T18:25:48-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 126,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 73,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2011-11-28T18:25:48-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:a000f37b-619f-432b-88e7-7ff9753a308f"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a89fb424-764a-40f1-8750-5fe39c88de5a",
+      "resource": {
+        "id": "a89fb424-764a-40f1-8750-5fe39c88de5a",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2012-11-09T01:25:47-05:00",
+          "end": "2012-11-09T01:40:47-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5cc1bd1b-da72-4928-a960-acc349c26f70",
+      "resource": {
+        "id": "5cc1bd1b-da72-4928-a960-acc349c26f70",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a89fb424-764a-40f1-8750-5fe39c88de5a"
+        },
+        "effectiveDateTime": "2012-11-09T01:25:47-05:00",
+        "valueQuantity": {
+          "value": 56.258582743483274,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:03be4260-ed01-4049-b93c-bcaaf2ac25dc",
+      "resource": {
+        "id": "03be4260-ed01-4049-b93c-bcaaf2ac25dc",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a89fb424-764a-40f1-8750-5fe39c88de5a"
+        },
+        "effectiveDateTime": "2012-11-09T01:25:47-05:00",
+        "valueQuantity": {
+          "value": 168.4339466129361,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:617a6534-b69c-41a8-a83e-e0845e58e584",
+      "resource": {
+        "id": "617a6534-b69c-41a8-a83e-e0845e58e584",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a89fb424-764a-40f1-8750-5fe39c88de5a"
+        },
+        "effectiveDateTime": "2012-11-09T01:25:47-05:00",
+        "valueQuantity": {
+          "value": 19.83031156318547,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b18f973c-690e-4eda-a176-37e5db58d794",
+      "resource": {
+        "id": "b18f973c-690e-4eda-a176-37e5db58d794",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a89fb424-764a-40f1-8750-5fe39c88de5a"
+        },
+        "effectiveDateTime": "2012-11-09T01:25:47-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 135,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 73,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2012-11-09T01:25:47-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:a89fb424-764a-40f1-8750-5fe39c88de5a"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b1d87315-7fd9-489f-a293-237aab447394",
+      "resource": {
+        "id": "b1d87315-7fd9-489f-a293-237aab447394",
+        "status": "finished",
+        "class": {
+          "code": "inpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "183452005"
+              }
+            ],
+            "text": "Encounter Inpatient"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2012-11-18T08:00:07-05:00",
+          "end": "2012-11-18T08:15:07-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:68c1f133-257a-4c22-ade8-7342d72d3e4b",
+      "resource": {
+        "id": "68c1f133-257a-4c22-ade8-7342d72d3e4b",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "196416002",
+              "display": "Impacted molars"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "context": {
+          "reference": "urn:uuid:b1d87315-7fd9-489f-a293-237aab447394"
+        },
+        "onsetDateTime": "2012-11-18T08:00:07-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "resource": {
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "65546002",
+              "display": "Extraction of wisdom tooth"
+            }
+          ],
+          "text": "Extraction of wisdom tooth"
+        },
+        "performedDateTime": "2012-11-18T08:00:07-05:00",
+        "encounter": {
+          "reference": "urn:uuid:b1d87315-7fd9-489f-a293-237aab447394"
+        },
+        "resourceType": "Procedure"
+      }
+    },
+    {
+      "resource": {
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1310197",
+              "display": "Acetaminophen 300 MG / HYDROcodone Bitartrate 5 MG [Vicodin]"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b1d87315-7fd9-489f-a293-237aab447394"
+        },
+        "dateWritten": "2012-11-18",
+        "eventHistory": [
+          {
+            "status": "stopped",
+            "dateTime": "2012-12-01"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e4aaafc2-a40e-4254-8407-217dbff65227",
+      "resource": {
+        "id": "e4aaafc2-a40e-4254-8407-217dbff65227",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2013-11-18T02:14:51-05:00",
+          "end": "2013-11-18T02:29:51-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ffe7231-1452-4d75-a92f-a54bb2d72722",
+      "resource": {
+        "id": "5ffe7231-1452-4d75-a92f-a54bb2d72722",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e4aaafc2-a40e-4254-8407-217dbff65227"
+        },
+        "effectiveDateTime": "2013-11-18T02:14:51-05:00",
+        "valueQuantity": {
+          "value": 60.53438474573951,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5e27bbe2-c846-434b-a7be-a93c1aeee9a7",
+      "resource": {
+        "id": "5e27bbe2-c846-434b-a7be-a93c1aeee9a7",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e4aaafc2-a40e-4254-8407-217dbff65227"
+        },
+        "effectiveDateTime": "2013-11-18T02:14:51-05:00",
+        "valueQuantity": {
+          "value": 175.01369580612686,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d643a9c0-311f-469a-9df5-5a4dbc357736",
+      "resource": {
+        "id": "d643a9c0-311f-469a-9df5-5a4dbc357736",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e4aaafc2-a40e-4254-8407-217dbff65227"
+        },
+        "effectiveDateTime": "2013-11-18T02:14:51-05:00",
+        "valueQuantity": {
+          "value": 19.763236180976097,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:101301d1-ab6f-42cb-becb-f7b1647deb50",
+      "resource": {
+        "id": "101301d1-ab6f-42cb-becb-f7b1647deb50",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:e4aaafc2-a40e-4254-8407-217dbff65227"
+        },
+        "effectiveDateTime": "2013-11-18T02:14:51-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 139,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 73,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2013-11-18T02:14:51-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:e4aaafc2-a40e-4254-8407-217dbff65227"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc48635d-2036-4e72-a7a8-fa2137ecb07f",
+      "resource": {
+        "id": "fc48635d-2036-4e72-a7a8-fa2137ecb07f",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "period": {
+          "start": "2014-11-08T19:57:03-05:00",
+          "end": "2014-11-08T20:12:03-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a8559a6-c48c-4d20-bd69-b20aac5fa448",
+      "resource": {
+        "id": "3a8559a6-c48c-4d20-bd69-b20aac5fa448",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:fc48635d-2036-4e72-a7a8-fa2137ecb07f"
+        },
+        "effectiveDateTime": "2014-11-08T19:57:03-05:00",
+        "valueQuantity": {
+          "value": 63.736032480001874,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a823f936-53b9-4984-8661-fc4388158d3a",
+      "resource": {
+        "id": "a823f936-53b9-4984-8661-fc4388158d3a",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:fc48635d-2036-4e72-a7a8-fa2137ecb07f"
+        },
+        "effectiveDateTime": "2014-11-08T19:57:03-05:00",
+        "valueQuantity": {
+          "value": 181.4390070834421,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:69d32252-e828-4a20-aca4-c45d09e3e0fc",
+      "resource": {
+        "id": "69d32252-e828-4a20-aca4-c45d09e3e0fc",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:fc48635d-2036-4e72-a7a8-fa2137ecb07f"
+        },
+        "effectiveDateTime": "2014-11-08T19:57:03-05:00",
+        "valueQuantity": {
+          "value": 19.360818085824473,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8424b61e-a7ad-4218-b1c5-10618fc2c4eb",
+      "resource": {
+        "id": "8424b61e-a7ad-4218-b1c5-10618fc2c4eb",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "encounter": {
+          "reference": "urn:uuid:fc48635d-2036-4e72-a7a8-fa2137ecb07f"
+        },
+        "effectiveDateTime": "2014-11-08T19:57:03-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 111,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 77,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2014-11-08T19:57:03-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:012dad0a-7232-4e20-b821-dececf766912"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:fc48635d-2036-4e72-a7a8-fa2137ecb07f"
+        },
+        "resourceType": "Immunization"
+      }
+    }
+  ],
+  "resourceType": "Bundle"
+}

@@ -1,0 +1,4603 @@
+{
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678",
+      "resource": {
+        "id": "8a039e68-3110-4fde-b57d-8d8b4bb10678",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/us-core-race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v3/Race",
+                  "code": "2113-9",
+                  "display": "Irish"
+                }
+              ],
+              "text": "race"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/us-core-ethnicity",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v3/Ethnicity",
+                  "code": "2186-5",
+                  "display": "Nonhispanic"
+                }
+              ],
+              "text": "ethnicity"
+            }
+          },
+          {
+            "url": "http://standardhealthrecord.org/fhir/extensions/wkt-geospatialpoint",
+            "valueString": "POINT (-70.99021751369777 42.12478852955739)"
+          },
+          {
+            "url": "http://standardhealthrecord.org/fhir/extensions/placeOfBirth",
+            "valueAddress": {
+              "city": "Marlborough",
+              "state": "MA"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "Earnestine111 Herman218"
+          },
+          {
+            "url": "http://standardhealthrecord.org/fhir/extensions/fathersName",
+            "valueString": "Nash83 Weber941"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://github.com/synthetichealth/synthea",
+            "value": "51e01211-a1cc-4fc9-9b83-478a9d591577"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/identifier-type",
+                  "code": "SB"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "999177980"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "DL"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.840.1.113883.4.3.25",
+            "value": "S99956722"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "PPN"
+                }
+              ]
+            },
+            "system": "http://standardhealthrecord.org/fhir/extensions/passportNumber",
+            "value": "X93120656X"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Weber941"
+            ],
+            "given": [
+              "Anna656"
+            ],
+            "prefix": [
+              "Mr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "extension": [
+              {
+                "url": "http://standardhealthrecord.org/fhir/extensions/okayToLeaveMessage",
+                "valueBoolean": true
+              }
+            ],
+            "system": "phone",
+            "value": "543-495-1285 x387",
+            "use": "home"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1929-02-28",
+        "deceasedDateTime": "2015-06-03T20:13:51-04:00",
+        "address": [
+          {
+            "line": [
+              "21908 Marquardt Burg",
+              "Suite 182"
+            ],
+            "city": "Abington",
+            "state": "MA",
+            "postalCode": "02351"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/MaritalStatus",
+              "code": "M"
+            }
+          ]
+        },
+        "multipleBirthBoolean": false,
+        "photo": [
+          {
+            "contentType": "image/png",
+            "data": "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",
+            "title": "Biometrics.Fingerprint"
+          }
+        ],
+        "resourceType": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff",
+      "resource": {
+        "id": "84777f49-b474-4235-bca3-c7a95cb16fff",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "period": {
+          "start": "2011-12-27T06:41:58-05:00",
+          "end": "2011-12-27T06:56:58-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aabd9fc9-2ff9-4151-be73-7cbb9c3088db",
+      "resource": {
+        "id": "aabd9fc9-2ff9-4151-be73-7cbb9c3088db",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "284549007",
+              "display": "Laceration of hand"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1933-11-10T01:51:08-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:440c6b35-5faa-4ff8-97b6-fea1fb83848c",
+      "resource": {
+        "id": "440c6b35-5faa-4ff8-97b6-fea1fb83848c",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15777000",
+              "display": "Prediabetes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1934-10-05T07:54:55-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9540cf42-a308-410d-bf3a-d849c9d9dd4c",
+      "resource": {
+        "id": "9540cf42-a308-410d-bf3a-d849c9d9dd4c",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44054006",
+              "display": "Diabetes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1935-06-20T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:41231319-6a0c-4e6f-ba15-9a91334e23f2",
+      "resource": {
+        "id": "41231319-6a0c-4e6f-ba15-9a91334e23f2",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertension"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1935-06-20T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cdca08d8-96cf-4071-85e1-32daabed0430",
+      "resource": {
+        "id": "cdca08d8-96cf-4071-85e1-32daabed0430",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "127013003",
+              "display": "Diabetic renal disease (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1935-06-20T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f6f94752-150c-43bb-a4d0-30bca3ebdc95",
+      "resource": {
+        "id": "f6f94752-150c-43bb-a4d0-30bca3ebdc95",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "422034002",
+              "display": "Diabetic retinopathy associated with type II diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1935-06-20T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:628e52e5-600d-4e8a-b7e0-c28cb35d916a",
+      "resource": {
+        "id": "628e52e5-600d-4e8a-b7e0-c28cb35d916a",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368581000119106",
+              "display": "Neuropathy due to type 2 diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1935-06-20T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ac525373-d2d3-4e75-92a6-d363cffba1ca",
+      "resource": {
+        "id": "ac525373-d2d3-4e75-92a6-d363cffba1ca",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271396005",
+              "display": "History of limb amputation (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1935-06-20T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:07056870-c7b7-42ee-b191-10e38749dde2",
+      "resource": {
+        "id": "07056870-c7b7-42ee-b191-10e38749dde2",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "429280009",
+              "display": "History of amputation of foot (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1936-08-06T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:75b5e8e7-ca91-46cd-9598-587467023e8a",
+      "resource": {
+        "id": "75b5e8e7-ca91-46cd-9598-587467023e8a",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1551000119108",
+              "display": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1937-10-19T10:16:33-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6b6b4194-5263-4446-bed2-ea2f68561de7",
+      "resource": {
+        "id": "6b6b4194-5263-4446-bed2-ea2f68561de7",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "90781000119102",
+              "display": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1938-10-26T17:00:18-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2fee8fee-b8a7-49b5-81f0-f50a5033aebe",
+      "resource": {
+        "id": "2fee8fee-b8a7-49b5-81f0-f50a5033aebe",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "97331000119101",
+              "display": "Macular edema and retinopathy due to type 2 diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1938-10-26T17:00:18-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:64ae3003-675d-48eb-886c-1600ed96779e",
+      "resource": {
+        "id": "64ae3003-675d-48eb-886c-1600ed96779e",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "62106007",
+              "display": "Concussion with no loss of consciousness"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1939-06-02T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:317b4915-476b-470f-8037-621f67cb9f0b",
+      "resource": {
+        "id": "317b4915-476b-470f-8037-621f67cb9f0b",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1501000119109",
+              "display": "Proliferative diabetic retinopathy due to type II diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1939-10-20T01:39:33-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6d777b4b-232c-4447-8510-4b02d4cfb858",
+      "resource": {
+        "id": "6d777b4b-232c-4447-8510-4b02d4cfb858",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60951000119105",
+              "display": "Blindness due to type 2 diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1940-09-05T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:84f18346-d7f6-4ce9-ab00-4ec5df1a5ffb",
+      "resource": {
+        "id": "84f18346-d7f6-4ce9-ab00-4ec5df1a5ffb",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "157141000119108",
+              "display": "Proteinuria due to type 2 diabetes mellitus (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1941-11-15T05:42:55-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a7a7dec-4fd8-4ee0-878a-cd9a9ead5afd",
+      "resource": {
+        "id": "8a7a7dec-4fd8-4ee0-878a-cd9a9ead5afd",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161622006",
+              "display": "History of lower limb amputation (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1941-11-15T05:42:55-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:228d4369-5c07-4a17-bc28-c23464233df9",
+      "resource": {
+        "id": "228d4369-5c07-4a17-bc28-c23464233df9",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "46177005",
+              "display": "End stage renal disease (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1942-09-25T10:17:47-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:926aa732-94b8-4535-9463-69369340346d",
+      "resource": {
+        "id": "926aa732-94b8-4535-9463-69369340346d",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "698423002",
+              "display": "History of disarticulation at wrist (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1943-09-21T11:19:10-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:923bf4f6-e4df-460e-be46-badad959c45c",
+      "resource": {
+        "id": "923bf4f6-e4df-460e-be46-badad959c45c",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39848009",
+              "display": "Whiplash injury to neck"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1944-06-27T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:18c43958-e8d4-469f-a9ca-b6662dc55a22",
+      "resource": {
+        "id": "18c43958-e8d4-469f-a9ca-b6662dc55a22",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1945-03-28T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b6e23015-33ab-4ad5-9428-474018e2d7aa",
+      "resource": {
+        "id": "b6e23015-33ab-4ad5-9428-474018e2d7aa",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1946-12-28T01:51:08-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b24c3c31-8cc9-48c1-a626-0a73392a4189",
+      "resource": {
+        "id": "b24c3c31-8cc9-48c1-a626-0a73392a4189",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161621004",
+              "display": "History of upper limb amputation (situation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1949-11-20T05:46:05-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7bff4b46-e078-4a3b-b3d8-fbcee3180ab0",
+      "resource": {
+        "id": "7bff4b46-e078-4a3b-b3d8-fbcee3180ab0",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "62106007",
+              "display": "Concussion with no loss of consciousness"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1951-09-14T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a4eca429-2c45-43e9-b43c-2bec923a1463",
+      "resource": {
+        "id": "a4eca429-2c45-43e9-b43c-2bec923a1463",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39848009",
+              "display": "Whiplash injury to neck"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1958-07-02T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c1ed63d2-bd55-4a97-ae07-620db1a2685f",
+      "resource": {
+        "id": "c1ed63d2-bd55-4a97-ae07-620db1a2685f",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1958-11-02T01:51:08-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7a8ea866-3e64-4164-8b49-1bbe9d4b22f0",
+      "resource": {
+        "id": "7a8ea866-3e64-4164-8b49-1bbe9d4b22f0",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "284549007",
+              "display": "Laceration of hand"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1962-10-10T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fecd9ada-4fad-49d3-9abf-9b7b2d4840c7",
+      "resource": {
+        "id": "fecd9ada-4fad-49d3-9abf-9b7b2d4840c7",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39848009",
+              "display": "Whiplash injury to neck"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1985-09-02T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:967b06c4-b936-4e78-8f1c-72364e7c1d4b",
+      "resource": {
+        "id": "967b06c4-b936-4e78-8f1c-72364e7c1d4b",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "1998-12-03T01:51:08-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ab653b1e-0677-4962-bc16-10817fdf9d24",
+      "resource": {
+        "id": "ab653b1e-0677-4962-bc16-10817fdf9d24",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "82423001",
+              "display": "Chronic pain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2000-01-02T01:51:08-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ccb26b7d-58ac-46bd-9a3e-24f6874cca1d",
+      "resource": {
+        "id": "ccb26b7d-58ac-46bd-9a3e-24f6874cca1d",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "82423001",
+              "display": "Chronic pain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2001-02-02T01:51:08-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:609df9c9-d9c9-47de-af77-310c9261ff27",
+      "resource": {
+        "id": "609df9c9-d9c9-47de-af77-310c9261ff27",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2001-04-11T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ddd25db0-c2be-4591-bb7d-724a469f96ea",
+      "resource": {
+        "id": "ddd25db0-c2be-4591-bb7d-724a469f96ea",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "196416002",
+              "display": "Impacted molars"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2001-08-17T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:85e3a3d9-a2bd-439e-a144-a586a2b2af30",
+      "resource": {
+        "id": "85e3a3d9-a2bd-439e-a144-a586a2b2af30",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "124171000119105",
+              "display": "Chronic intractable migraine without aura"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2004-01-28T07:00:58-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a2fdf69-f59d-4fcb-b8b5-ba5f61ed9e82",
+      "resource": {
+        "id": "0a2fdf69-f59d-4fcb-b8b5-ba5f61ed9e82",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39848009",
+              "display": "Whiplash injury to neck"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2006-07-27T01:51:08-04:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d40fa542-8189-4fbe-a87f-0cc84e1a0a8a",
+      "resource": {
+        "id": "d40fa542-8189-4fbe-a87f-0cc84e1a0a8a",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "124171000119105",
+              "display": "Chronic intractable migraine without aura"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2006-12-03T10:03:28-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:96a57d2a-1355-41fd-9707-10171d639543",
+      "resource": {
+        "id": "96a57d2a-1355-41fd-9707-10171d639543",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26929004",
+              "display": "Alzheimer's disease (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "onsetDateTime": "2010-01-03T20:13:51-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cc46e07c-382e-4c9b-a2da-c1ed16c9259e",
+      "resource": {
+        "id": "cc46e07c-382e-4c9b-a2da-c1ed16c9259e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 94.5929154237794,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:434f2650-d330-4246-bfd3-af40917b9551",
+      "resource": {
+        "id": "434f2650-d330-4246-bfd3-af40917b9551",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 181.7460413902466,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:58148400-7a3b-42d3-bf1a-4e5968b356a8",
+      "resource": {
+        "id": "58148400-7a3b-42d3-bf1a-4e5968b356a8",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 28.63707720845782,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:244409f2-f75f-47b0-b6bd-1c92f444206d",
+      "resource": {
+        "id": "244409f2-f75f-47b0-b6bd-1c92f444206d",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 187,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 94,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e84b2e32-fb40-4894-826a-5f60ef2e3ace",
+      "resource": {
+        "id": "e84b2e32-fb40-4894-826a-5f60ef2e3ace",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 4.115832219719604,
+          "unit": "%"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66f10bb8-6663-4e1e-b046-ab46fed43b0d",
+      "resource": {
+        "id": "66f10bb8-6663-4e1e-b046-ab46fed43b0d",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Glucose"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 116,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c48cf202-5bc0-4d41-8746-e2034bd827be",
+      "resource": {
+        "id": "c48cf202-5bc0-4d41-8746-e2034bd827be",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea Nitrogen"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 18,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f2dd8041-d931-4688-952f-556ea9018bf4",
+      "resource": {
+        "id": "f2dd8041-d931-4688-952f-556ea9018bf4",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 5.079989902388153,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a6d6b541-2302-4249-866a-1eec5e6ed790",
+      "resource": {
+        "id": "a6d6b541-2302-4249-866a-1eec5e6ed790",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 9.19130291350463,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a76ecbe4-6d6b-4286-9909-a83c57230af4",
+      "resource": {
+        "id": "a76ecbe4-6d6b-4286-9909-a83c57230af4",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2947-0",
+              "display": "Sodium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 142,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:922c6f16-9f82-479c-864b-3d60bf7abb67",
+      "resource": {
+        "id": "922c6f16-9f82-479c-864b-3d60bf7abb67",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6298-4",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 4.05452108102939,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:20ffc3c4-dfa2-4151-a549-7ea14220683c",
+      "resource": {
+        "id": "20ffc3c4-dfa2-4151-a549-7ea14220683c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 104,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:af66516e-8e09-4040-820c-c22a6f44ef8e",
+      "resource": {
+        "id": "af66516e-8e09-4040-820c-c22a6f44ef8e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20565-8",
+              "display": "Carbon Dioxide"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 27,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a1d22024-b278-4ac2-aea7-f8066666da37",
+      "resource": {
+        "id": "a1d22024-b278-4ac2-aea7-f8066666da37",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51990-0",
+              "display": "Basic Metabolic Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "issued": "2011-12-27T06:41:58-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:66f10bb8-6663-4e1e-b046-ab46fed43b0d",
+            "display": "Glucose"
+          },
+          {
+            "reference": "urn:uuid:c48cf202-5bc0-4d41-8746-e2034bd827be",
+            "display": "Urea Nitrogen"
+          },
+          {
+            "reference": "urn:uuid:f2dd8041-d931-4688-952f-556ea9018bf4",
+            "display": "Creatinine"
+          },
+          {
+            "reference": "urn:uuid:a6d6b541-2302-4249-866a-1eec5e6ed790",
+            "display": "Calcium"
+          },
+          {
+            "reference": "urn:uuid:a76ecbe4-6d6b-4286-9909-a83c57230af4",
+            "display": "Sodium"
+          },
+          {
+            "reference": "urn:uuid:922c6f16-9f82-479c-864b-3d60bf7abb67",
+            "display": "Potassium"
+          },
+          {
+            "reference": "urn:uuid:20ffc3c4-dfa2-4151-a549-7ea14220683c",
+            "display": "Chloride"
+          },
+          {
+            "reference": "urn:uuid:af66516e-8e09-4040-820c-c22a6f44ef8e",
+            "display": "Carbon Dioxide"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0243d87b-25c4-4265-85aa-12d9a06db693",
+      "resource": {
+        "id": "0243d87b-25c4-4265-85aa-12d9a06db693",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Total Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 200,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3bfbb0eb-7af6-4ad1-a742-0f9a64070c30",
+      "resource": {
+        "id": "3bfbb0eb-7af6-4ad1-a742-0f9a64070c30",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 171,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:038ae18d-8477-443b-af13-4fd593c0ea28",
+      "resource": {
+        "id": "038ae18d-8477-443b-af13-4fd593c0ea28",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 58,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d446171f-360e-4c02-9d18-fde4b0ec8c56",
+      "resource": {
+        "id": "d446171f-360e-4c02-9d18-fde4b0ec8c56",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 107,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a851c809-1281-42ee-9813-953069d7229e",
+      "resource": {
+        "id": "a851c809-1281-42ee-9813-953069d7229e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "57698-3",
+              "display": "Lipid Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "issued": "2011-12-27T06:41:58-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:0243d87b-25c4-4265-85aa-12d9a06db693",
+            "display": "Total Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:3bfbb0eb-7af6-4ad1-a742-0f9a64070c30",
+            "display": "Triglycerides"
+          },
+          {
+            "reference": "urn:uuid:038ae18d-8477-443b-af13-4fd593c0ea28",
+            "display": "High Density Lipoprotein Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:d446171f-360e-4c02-9d18-fde4b0ec8c56",
+            "display": "Low Density Lipoprotein Cholesterol"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d3e936f5-f85b-4418-b71b-f87dfad253d8",
+      "resource": {
+        "id": "d3e936f5-f85b-4418-b71b-f87dfad253d8",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14959-1",
+              "display": "Microalbumin Creatine Ratio"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 496,
+          "unit": "mg/g"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8ba6b525-3453-492b-bcbf-7a5abba7c703",
+      "resource": {
+        "id": "8ba6b525-3453-492b-bcbf-7a5abba7c703",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Estimated Glomerular Filtration Rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "effectiveDateTime": "2011-12-27T06:41:58-05:00",
+        "valueQuantity": {
+          "value": 15,
+          "unit": "mL/min/{1.73_m2}"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2011-12-27T06:41:58-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "860975",
+              "display": "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "dateWritten": "1935-06-20",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:9540cf42-a308-410d-bf3a-d849c9d9dd4c"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "602735",
+              "display": "Galantamine 4 MG [Razadyne]"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "dateWritten": "2010-01-03",
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "996741",
+              "display": "Memantine hydrochloride 2 MG/ML [Namenda]"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:84777f49-b474-4235-bca3-c7a95cb16fff"
+        },
+        "dateWritten": "2011-06-03",
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f",
+      "resource": {
+        "id": "ba2c1b18-f878-4d07-a587-f25cc793bb9f",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "period": {
+          "start": "2012-12-29T19:08:32-05:00",
+          "end": "2012-12-29T19:23:32-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9b88c34f-b2dd-47b5-88ab-6e67eb741232",
+      "resource": {
+        "id": "9b88c34f-b2dd-47b5-88ab-6e67eb741232",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "53741008",
+              "display": "Coronary Heart Disease"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "onsetDateTime": "2012-12-29T19:08:32-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:76506812-ff43-4e89-a109-62b5d1b0a8f4",
+      "resource": {
+        "id": "76506812-ff43-4e89-a109-62b5d1b0a8f4",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 93.51164080586143,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e0c7e55-73a7-4a85-ae6d-edaca650798c",
+      "resource": {
+        "id": "1e0c7e55-73a7-4a85-ae6d-edaca650798c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 181.7460413902466,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:72c3ba1f-a7b7-475d-9859-9411dac933fd",
+      "resource": {
+        "id": "72c3ba1f-a7b7-475d-9859-9411dac933fd",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 28.30973192495387,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4aa54651-3ac3-46ff-b792-174b6e7a794a",
+      "resource": {
+        "id": "4aa54651-3ac3-46ff-b792-174b6e7a794a",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 143,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 106,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3336ab8e-e85c-4f1f-a7a6-9ff02c420edf",
+      "resource": {
+        "id": "3336ab8e-e85c-4f1f-a7a6-9ff02c420edf",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 4.056314895446158,
+          "unit": "%"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b56e691f-4dae-46bf-88d4-8d558f6f900c",
+      "resource": {
+        "id": "b56e691f-4dae-46bf-88d4-8d558f6f900c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Glucose"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 103,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f5fa8559-3a5f-4d20-831b-e065729648f7",
+      "resource": {
+        "id": "f5fa8559-3a5f-4d20-831b-e065729648f7",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea Nitrogen"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 11,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:be510ead-2761-4082-a0cc-b9d9659b3108",
+      "resource": {
+        "id": "be510ead-2761-4082-a0cc-b9d9659b3108",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 7.403004897130697,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3af9e669-a4d6-4fb9-9819-4fba2e5b15cf",
+      "resource": {
+        "id": "3af9e669-a4d6-4fb9-9819-4fba2e5b15cf",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 9.599372288235518,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3b349abe-443f-4050-8392-a0b817909284",
+      "resource": {
+        "id": "3b349abe-443f-4050-8392-a0b817909284",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2947-0",
+              "display": "Sodium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 139,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6b6f38ee-f5ca-4252-bec0-9ee423012b62",
+      "resource": {
+        "id": "6b6f38ee-f5ca-4252-bec0-9ee423012b62",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6298-4",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 5.119897819090955,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1c1e9d15-27ae-4a4d-9c0b-365baaa11254",
+      "resource": {
+        "id": "1c1e9d15-27ae-4a4d-9c0b-365baaa11254",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 106,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ba21e55d-3fb9-4fc0-b738-e65c1b8a85a3",
+      "resource": {
+        "id": "ba21e55d-3fb9-4fc0-b738-e65c1b8a85a3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20565-8",
+              "display": "Carbon Dioxide"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 29,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:461c17ad-ebdc-4507-bccb-c80ecd3297f7",
+      "resource": {
+        "id": "461c17ad-ebdc-4507-bccb-c80ecd3297f7",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51990-0",
+              "display": "Basic Metabolic Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "issued": "2012-12-29T19:08:32-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:b56e691f-4dae-46bf-88d4-8d558f6f900c",
+            "display": "Glucose"
+          },
+          {
+            "reference": "urn:uuid:f5fa8559-3a5f-4d20-831b-e065729648f7",
+            "display": "Urea Nitrogen"
+          },
+          {
+            "reference": "urn:uuid:be510ead-2761-4082-a0cc-b9d9659b3108",
+            "display": "Creatinine"
+          },
+          {
+            "reference": "urn:uuid:3af9e669-a4d6-4fb9-9819-4fba2e5b15cf",
+            "display": "Calcium"
+          },
+          {
+            "reference": "urn:uuid:3b349abe-443f-4050-8392-a0b817909284",
+            "display": "Sodium"
+          },
+          {
+            "reference": "urn:uuid:6b6f38ee-f5ca-4252-bec0-9ee423012b62",
+            "display": "Potassium"
+          },
+          {
+            "reference": "urn:uuid:1c1e9d15-27ae-4a4d-9c0b-365baaa11254",
+            "display": "Chloride"
+          },
+          {
+            "reference": "urn:uuid:ba21e55d-3fb9-4fc0-b738-e65c1b8a85a3",
+            "display": "Carbon Dioxide"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7043161a-3aa8-44fa-a8de-33e0e0b8f19e",
+      "resource": {
+        "id": "7043161a-3aa8-44fa-a8de-33e0e0b8f19e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Total Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 219,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:df18c456-23ff-4e7f-be46-826c00d4dce8",
+      "resource": {
+        "id": "df18c456-23ff-4e7f-be46-826c00d4dce8",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 175,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:189821b6-a793-46ef-9ae6-f6ec4e9ba2b6",
+      "resource": {
+        "id": "189821b6-a793-46ef-9ae6-f6ec4e9ba2b6",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 43,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e792384f-68b0-4af8-92c5-63f33a1eab97",
+      "resource": {
+        "id": "e792384f-68b0-4af8-92c5-63f33a1eab97",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 141,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bb30f762-ca91-44f1-a7df-5939e40f3a66",
+      "resource": {
+        "id": "bb30f762-ca91-44f1-a7df-5939e40f3a66",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "57698-3",
+              "display": "Lipid Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "issued": "2012-12-29T19:08:32-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:7043161a-3aa8-44fa-a8de-33e0e0b8f19e",
+            "display": "Total Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:df18c456-23ff-4e7f-be46-826c00d4dce8",
+            "display": "Triglycerides"
+          },
+          {
+            "reference": "urn:uuid:189821b6-a793-46ef-9ae6-f6ec4e9ba2b6",
+            "display": "High Density Lipoprotein Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:e792384f-68b0-4af8-92c5-63f33a1eab97",
+            "display": "Low Density Lipoprotein Cholesterol"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:23fc3ccd-fb1e-4596-8ab7-1f92bb48f1e8",
+      "resource": {
+        "id": "23fc3ccd-fb1e-4596-8ab7-1f92bb48f1e8",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14959-1",
+              "display": "Microalbumin Creatine Ratio"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 340,
+          "unit": "mg/g"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9b055505-83d5-4f7b-8a6c-e0dc903a8a76",
+      "resource": {
+        "id": "9b055505-83d5-4f7b-8a6c-e0dc903a8a76",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Estimated Glomerular Filtration Rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "effectiveDateTime": "2012-12-29T19:08:32-05:00",
+        "valueQuantity": {
+          "value": 10,
+          "unit": "mL/min/{1.73_m2}"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2012-12-29T19:08:32-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "309362",
+              "display": "Clopidogrel 75 MG Oral Tablet"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "dateWritten": "2012-12-29",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:9b88c34f-b2dd-47b5-88ab-6e67eb741232"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "312961",
+              "display": "Simvastatin 20 MG Oral Tablet"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "dateWritten": "2012-12-29",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:9b88c34f-b2dd-47b5-88ab-6e67eb741232"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197361",
+              "display": "Amlodipine 5 MG Oral Tablet"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "dateWritten": "2012-12-29",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:9b88c34f-b2dd-47b5-88ab-6e67eb741232"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "312006",
+              "display": "Nitroglycerin 0.4 MG/ML Injectible Solution"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ba2c1b18-f878-4d07-a587-f25cc793bb9f"
+        },
+        "dateWritten": "2012-12-29",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:9b88c34f-b2dd-47b5-88ab-6e67eb741232"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ec6cacd4-a964-4616-9e1b-38349ec9bb74",
+      "resource": {
+        "id": "ec6cacd4-a964-4616-9e1b-38349ec9bb74",
+        "status": "finished",
+        "class": {
+          "code": "ambulatory"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "316744009"
+              }
+            ],
+            "text": "Office Visit"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "period": {
+          "start": "2013-03-03T20:13:51-05:00",
+          "end": "2013-03-03T20:28:51-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:45ac4da6-5a0b-486b-bc97-bca8860f7372",
+      "resource": {
+        "id": "45ac4da6-5a0b-486b-bc97-bca8860f7372",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72106-8",
+              "display": "Total score [MMSE]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ec6cacd4-a964-4616-9e1b-38349ec9bb74"
+        },
+        "effectiveDateTime": "2013-03-03T20:13:51-05:00",
+        "valueQuantity": {
+          "value": 12,
+          "unit": "(score)"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6",
+      "resource": {
+        "id": "650ad1bd-cd96-476e-9f68-54bed3b871b6",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "period": {
+          "start": "2014-01-20T05:02:41-05:00",
+          "end": "2014-01-20T05:17:41-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fff1bedd-bc22-400e-ba6e-76434ce05f70",
+      "resource": {
+        "id": "fff1bedd-bc22-400e-ba6e-76434ce05f70",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "49436004",
+              "display": "Atrial Fibrillation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "onsetDateTime": "2014-01-20T05:02:41-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:693c43e5-2615-4795-99aa-f62f684029ee",
+      "resource": {
+        "id": "693c43e5-2615-4795-99aa-f62f684029ee",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 92.48928402663857,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8e5759fa-a81c-4186-8d71-1c9296b88cc8",
+      "resource": {
+        "id": "8e5759fa-a81c-4186-8d71-1c9296b88cc8",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 181.7460413902466,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:29c997f2-4f6b-451c-8a1b-861435b342b6",
+      "resource": {
+        "id": "29c997f2-4f6b-451c-8a1b-861435b342b6",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 28.00022343914357,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5eaa6800-b618-436c-9763-90d2014a3399",
+      "resource": {
+        "id": "5eaa6800-b618-436c-9763-90d2014a3399",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 154,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 95,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6a646fd1-736d-4c19-a456-4bc984a63229",
+      "resource": {
+        "id": "6a646fd1-736d-4c19-a456-4bc984a63229",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 4.000040625298831,
+          "unit": "%"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4112f5f1-2002-452c-98ae-9804d0528874",
+      "resource": {
+        "id": "4112f5f1-2002-452c-98ae-9804d0528874",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Glucose"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 111,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a85ae917-1b69-45d3-8adf-dff0e8438430",
+      "resource": {
+        "id": "a85ae917-1b69-45d3-8adf-dff0e8438430",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea Nitrogen"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 18,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9df9bfcb-abdb-465b-9a06-bece5cc6f157",
+      "resource": {
+        "id": "9df9bfcb-abdb-465b-9a06-bece5cc6f157",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 10.276587114070953,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0225421f-7600-4f12-b77b-eb77c4756230",
+      "resource": {
+        "id": "0225421f-7600-4f12-b77b-eb77c4756230",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 8.86618828032917,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7bf7f468-a716-4d56-822a-f0131cdaa464",
+      "resource": {
+        "id": "7bf7f468-a716-4d56-822a-f0131cdaa464",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2947-0",
+              "display": "Sodium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 136,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a11b14c9-f480-4aeb-a655-7dbd55e036fa",
+      "resource": {
+        "id": "a11b14c9-f480-4aeb-a655-7dbd55e036fa",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6298-4",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 4.945239314110109,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f818b68f-bd1c-4943-992a-46ed4148f265",
+      "resource": {
+        "id": "f818b68f-bd1c-4943-992a-46ed4148f265",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 101,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f2db73c-9058-469e-b6e1-22e9f488bd78",
+      "resource": {
+        "id": "9f2db73c-9058-469e-b6e1-22e9f488bd78",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20565-8",
+              "display": "Carbon Dioxide"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 21,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8f650789-7de4-4774-af74-51a6a3da15fa",
+      "resource": {
+        "id": "8f650789-7de4-4774-af74-51a6a3da15fa",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51990-0",
+              "display": "Basic Metabolic Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "issued": "2014-01-20T05:02:41-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:4112f5f1-2002-452c-98ae-9804d0528874",
+            "display": "Glucose"
+          },
+          {
+            "reference": "urn:uuid:a85ae917-1b69-45d3-8adf-dff0e8438430",
+            "display": "Urea Nitrogen"
+          },
+          {
+            "reference": "urn:uuid:9df9bfcb-abdb-465b-9a06-bece5cc6f157",
+            "display": "Creatinine"
+          },
+          {
+            "reference": "urn:uuid:0225421f-7600-4f12-b77b-eb77c4756230",
+            "display": "Calcium"
+          },
+          {
+            "reference": "urn:uuid:7bf7f468-a716-4d56-822a-f0131cdaa464",
+            "display": "Sodium"
+          },
+          {
+            "reference": "urn:uuid:a11b14c9-f480-4aeb-a655-7dbd55e036fa",
+            "display": "Potassium"
+          },
+          {
+            "reference": "urn:uuid:f818b68f-bd1c-4943-992a-46ed4148f265",
+            "display": "Chloride"
+          },
+          {
+            "reference": "urn:uuid:9f2db73c-9058-469e-b6e1-22e9f488bd78",
+            "display": "Carbon Dioxide"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0433f600-350c-408e-8def-8f67e71883ae",
+      "resource": {
+        "id": "0433f600-350c-408e-8def-8f67e71883ae",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Total Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 205,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ff338162-b936-4b19-b534-f03d2a28bbe0",
+      "resource": {
+        "id": "ff338162-b936-4b19-b534-f03d2a28bbe0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 184,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ab62f406-95f8-4923-95a2-c5a8d87b3e53",
+      "resource": {
+        "id": "ab62f406-95f8-4923-95a2-c5a8d87b3e53",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 42,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc0b698a-579b-4f28-96dc-e0766873cd0d",
+      "resource": {
+        "id": "fc0b698a-579b-4f28-96dc-e0766873cd0d",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 126,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b4ea032f-b6e9-4985-a946-e408a1fbc314",
+      "resource": {
+        "id": "b4ea032f-b6e9-4985-a946-e408a1fbc314",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "57698-3",
+              "display": "Lipid Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "issued": "2014-01-20T05:02:41-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:0433f600-350c-408e-8def-8f67e71883ae",
+            "display": "Total Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:ff338162-b936-4b19-b534-f03d2a28bbe0",
+            "display": "Triglycerides"
+          },
+          {
+            "reference": "urn:uuid:ab62f406-95f8-4923-95a2-c5a8d87b3e53",
+            "display": "High Density Lipoprotein Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:fc0b698a-579b-4f28-96dc-e0766873cd0d",
+            "display": "Low Density Lipoprotein Cholesterol"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8554cc02-58e8-4eb1-9c22-caecd9e7f38e",
+      "resource": {
+        "id": "8554cc02-58e8-4eb1-9c22-caecd9e7f38e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14959-1",
+              "display": "Microalbumin Creatine Ratio"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 371,
+          "unit": "mg/g"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4abf11ce-752a-4b1c-aefb-1b04a15726d8",
+      "resource": {
+        "id": "4abf11ce-752a-4b1c-aefb-1b04a15726d8",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Estimated Glomerular Filtration Rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "effectiveDateTime": "2014-01-20T05:02:41-05:00",
+        "valueQuantity": {
+          "value": 7,
+          "unit": "mL/min/{1.73_m2}"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "180325003",
+              "display": "Electrical cardioversion"
+            }
+          ],
+          "text": "Electrical cardioversion"
+        },
+        "reasonReference": {
+          "reference": "urn:uuid:fff1bedd-bc22-400e-ba6e-76434ce05f70"
+        },
+        "performedDateTime": "2014-01-20T05:02:41-05:00",
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "resourceType": "Procedure"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2014-01-20T05:02:41-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "855332",
+              "display": "Warfarin Sodium 5 MG Oral Tablet"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "dateWritten": "2014-01-20",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:fff1bedd-bc22-400e-ba6e-76434ce05f70"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "897718",
+              "display": "Verapamil Hydrochloride 40 MG"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "dateWritten": "2014-01-20",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:fff1bedd-bc22-400e-ba6e-76434ce05f70"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "resource": {
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197604",
+              "display": "Digoxin 0.125 MG Oral Tablet"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:650ad1bd-cd96-476e-9f68-54bed3b871b6"
+        },
+        "dateWritten": "2014-01-20",
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:fff1bedd-bc22-400e-ba6e-76434ce05f70"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:36128468-6132-48f1-8c02-098447d0eec7",
+      "resource": {
+        "id": "36128468-6132-48f1-8c02-098447d0eec7",
+        "status": "finished",
+        "class": {
+          "code": "ambulatory"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "316744009"
+              }
+            ],
+            "text": "Office Visit"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "period": {
+          "start": "2014-11-03T20:13:51-05:00",
+          "end": "2014-11-03T20:28:51-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21",
+      "resource": {
+        "id": "c0d31c4b-2861-44dd-9b33-31197e1cfe21",
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "period": {
+          "start": "2015-01-22T19:15:49-05:00",
+          "end": "2015-01-22T19:30:49-05:00"
+        },
+        "resourceType": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:35ad72b2-1d73-4fe2-b22e-6269478ce282",
+      "resource": {
+        "id": "35ad72b2-1d73-4fe2-b22e-6269478ce282",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "124171000119105",
+              "display": "Chronic intractable migraine without aura"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "context": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "onsetDateTime": "2015-01-22T19:15:49-05:00",
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1c3e6080-bb11-49ab-9d61-4c07759dbed9",
+      "resource": {
+        "id": "1c3e6080-bb11-49ab-9d61-4c07759dbed9",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 91.20406324981796,
+          "unit": "kg"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:105fa296-faa0-44c4-b729-07617d435d08",
+      "resource": {
+        "id": "105fa296-faa0-44c4-b729-07617d435d08",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 181.7460413902466,
+          "unit": "cm"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e683bf42-30aa-4c31-bce7-3eb6c8c54b40",
+      "resource": {
+        "id": "e683bf42-30aa-4c31-bce7-3eb6c8c54b40",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 27.61113545669966,
+          "unit": "kg/m2"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:633d4099-fdbc-4b3c-96b2-50143416771c",
+      "resource": {
+        "id": "633d4099-fdbc-4b3c-96b2-50143416771c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 175,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 103,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c1e69b65-f4bd-44ab-8130-6f06795de50c",
+      "resource": {
+        "id": "c1e69b65-f4bd-44ab-8130-6f06795de50c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 3.9292973557635746,
+          "unit": "%"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bbfb48b2-0392-46c8-b995-bf6c71c71071",
+      "resource": {
+        "id": "bbfb48b2-0392-46c8-b995-bf6c71c71071",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Glucose"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 123,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4111d89b-fbde-449f-9e5d-aae634e008aa",
+      "resource": {
+        "id": "4111d89b-fbde-449f-9e5d-aae634e008aa",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea Nitrogen"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 15,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:68331589-4fe2-434b-8374-fab7d5d57feb",
+      "resource": {
+        "id": "68331589-4fe2-434b-8374-fab7d5d57feb",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 5.359213118311954,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:377a711e-c9e7-484c-a7b0-aaf4a8fa715f",
+      "resource": {
+        "id": "377a711e-c9e7-484c-a7b0-aaf4a8fa715f",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 9.746386258173684,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:302a6f2d-9002-43d7-8128-d7bc0be643d9",
+      "resource": {
+        "id": "302a6f2d-9002-43d7-8128-d7bc0be643d9",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2947-0",
+              "display": "Sodium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 142,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f6550a12-ede0-42f0-825a-909bb8cea1fb",
+      "resource": {
+        "id": "f6550a12-ede0-42f0-825a-909bb8cea1fb",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6298-4",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 4.513129213538109,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aa7aa971-2a91-4e8e-a7e5-0d1d9db7a240",
+      "resource": {
+        "id": "aa7aa971-2a91-4e8e-a7e5-0d1d9db7a240",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 104,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:91291b6a-da93-4093-bc5f-804a7768ad92",
+      "resource": {
+        "id": "91291b6a-da93-4093-bc5f-804a7768ad92",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20565-8",
+              "display": "Carbon Dioxide"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 20,
+          "unit": "mmol/L"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b36ac96e-ba29-4e8f-8c5c-afe2055972d0",
+      "resource": {
+        "id": "b36ac96e-ba29-4e8f-8c5c-afe2055972d0",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51990-0",
+              "display": "Basic Metabolic Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "issued": "2015-01-22T19:15:49-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:bbfb48b2-0392-46c8-b995-bf6c71c71071",
+            "display": "Glucose"
+          },
+          {
+            "reference": "urn:uuid:4111d89b-fbde-449f-9e5d-aae634e008aa",
+            "display": "Urea Nitrogen"
+          },
+          {
+            "reference": "urn:uuid:68331589-4fe2-434b-8374-fab7d5d57feb",
+            "display": "Creatinine"
+          },
+          {
+            "reference": "urn:uuid:377a711e-c9e7-484c-a7b0-aaf4a8fa715f",
+            "display": "Calcium"
+          },
+          {
+            "reference": "urn:uuid:302a6f2d-9002-43d7-8128-d7bc0be643d9",
+            "display": "Sodium"
+          },
+          {
+            "reference": "urn:uuid:f6550a12-ede0-42f0-825a-909bb8cea1fb",
+            "display": "Potassium"
+          },
+          {
+            "reference": "urn:uuid:aa7aa971-2a91-4e8e-a7e5-0d1d9db7a240",
+            "display": "Chloride"
+          },
+          {
+            "reference": "urn:uuid:91291b6a-da93-4093-bc5f-804a7768ad92",
+            "display": "Carbon Dioxide"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7714dc54-25b7-482a-9151-90aebe5170a9",
+      "resource": {
+        "id": "7714dc54-25b7-482a-9151-90aebe5170a9",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Total Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 237,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b844b53d-e7d3-4fc9-b717-976739c6f90a",
+      "resource": {
+        "id": "b844b53d-e7d3-4fc9-b717-976739c6f90a",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 165,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:39c05835-3b0f-4f7b-a85b-db7706c4e12d",
+      "resource": {
+        "id": "39c05835-3b0f-4f7b-a85b-db7706c4e12d",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 43,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a480e13b-bd93-462a-bfd6-a971ebc63d83",
+      "resource": {
+        "id": "a480e13b-bd93-462a-bfd6-a971ebc63d83",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 161,
+          "unit": "mg/dL"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:815ac703-c2da-41dc-a21d-2c91421a4a9f",
+      "resource": {
+        "id": "815ac703-c2da-41dc-a21d-2c91421a4a9f",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "57698-3",
+              "display": "Lipid Panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "issued": "2015-01-22T19:15:49-05:00",
+        "performer": [
+          {
+            "display": "Hospital Lab"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:7714dc54-25b7-482a-9151-90aebe5170a9",
+            "display": "Total Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:b844b53d-e7d3-4fc9-b717-976739c6f90a",
+            "display": "Triglycerides"
+          },
+          {
+            "reference": "urn:uuid:39c05835-3b0f-4f7b-a85b-db7706c4e12d",
+            "display": "High Density Lipoprotein Cholesterol"
+          },
+          {
+            "reference": "urn:uuid:a480e13b-bd93-462a-bfd6-a971ebc63d83",
+            "display": "Low Density Lipoprotein Cholesterol"
+          }
+        ],
+        "resourceType": "DiagnosticReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3033f8ce-4343-4352-ae83-779ee03f60ab",
+      "resource": {
+        "id": "3033f8ce-4343-4352-ae83-779ee03f60ab",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14959-1",
+              "display": "Microalbumin Creatine Ratio"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 308,
+          "unit": "mg/g"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3dad9e36-d6c1-4186-9c73-a60fe589004f",
+      "resource": {
+        "id": "3dad9e36-d6c1-4186-9c73-a60fe589004f",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Estimated Glomerular Filtration Rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "effectiveDateTime": "2015-01-22T19:15:49-05:00",
+        "valueQuantity": {
+          "value": 13,
+          "unit": "mL/min/{1.73_m2}"
+        },
+        "resourceType": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "status": "completed",
+        "date": "2015-01-22T19:15:49-05:00",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/cvx",
+              "code": "140",
+              "display": "Influenza, seasonal, injectable, preservative free"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "wasNotGiven": false,
+        "reported": false,
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "resourceType": "Immunization"
+      }
+    },
+    {
+      "resource": {
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "status": "active",
+        "context": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "period": {
+          "start": "1934-10-05"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "698360004",
+                "display": "Diabetes self management plan"
+              }
+            ]
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "urn:uuid:9540cf42-a308-410d-bf3a-d849c9d9dd4c"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "160670007",
+                    "display": "Diabetic diet"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "229065009",
+                    "display": "Exercise therapy"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "resourceType": "CarePlan"
+      }
+    },
+    {
+      "resource": {
+        "subject": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "status": "active",
+        "context": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "period": {
+          "start": "2012-12-29"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "698358001",
+                "display": "Angina self management plan"
+              }
+            ]
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "urn:uuid:9b88c34f-b2dd-47b5-88ab-6e67eb741232"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "229065009",
+                    "display": "Exercise therapy"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226060000",
+                    "display": "Stress Management"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "710081004",
+                    "display": "Smoking Cessation Therapy"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226234005",
+                    "display": "Healthy Diet"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "resourceType": "CarePlan"
+      }
+    },
+    {
+      "resource": {
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049639",
+              "display": "Acetaminophen 325 MG / oxyCODONE Hydrochloride 5 MG [Percocet]"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "urn:uuid:8a039e68-3110-4fde-b57d-8d8b4bb10678"
+        },
+        "encounter": {
+          "reference": "urn:uuid:c0d31c4b-2861-44dd-9b33-31197e1cfe21"
+        },
+        "dateWritten": "2015-01-22",
+        "eventHistory": [
+          {
+            "status": "stopped",
+            "dateTime": "2015-01-23"
+          }
+        ],
+        "resourceType": "MedicationOrder"
+      }
+    }
+  ],
+  "resourceType": "Bundle"
+}
