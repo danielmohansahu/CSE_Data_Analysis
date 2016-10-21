@@ -113,7 +113,7 @@ def get_conditions(filename):
     return return_vals
 
 # Returns true if the given patient has the condition specified in keyword 
-def get_conditions(filename,keyword):
+def has_condition(filename,keyword):
   with open(filename) as file :
     # Check file extension:
     try:

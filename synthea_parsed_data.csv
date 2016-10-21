@@ -1,0 +1,881 @@
+Estimated Glomerular Filtration Rate,Systolic Blood Pressure,maritalStatus,Sodium,number,Body Weight,Chloride,ethnicity,Glucose,Potassium,race,Total score [MMSE],Urea Nitrogen,multipleBirthBoolean,Hemoglobin A1c/Hemoglobin.total in Blood,Body Mass Index,Carbon Dioxide,Calcium,Microalbumin Creatine Ratio,Total Cholesterol,Diastolic Blood Pressure,gender,age,Low Density Lipoprotein Cholesterol,High Density Lipoprotein Cholesterol,Body Height,Creatinine,Triglycerides
+,,M,,1313,,,Nonhispanic,,,Irish,,,,,,,,,,,male,"20444 days, 0:00:00",,,,,
+,100 mmHg,M,,1314,72.9037742459 kg,,Nonhispanic,,,Portuguese,,,False,,26.1707784135 kg/m2,,,,,73 mmHg,female,"13509 days, 0:00:00",,,166.903977328 cm,,
+,,M,,1315,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"28185 days, 0:00:00",,,,,
+136 mL/min/{1.73_m2},144 mmHg,M,,1316,77.0552965728 kg,,Nonhispanic,,,Scottish,,,False,,19.7887275146 kg/m2,,,,,107 mmHg,male,"27201 days, 0:00:00",,,197.329635621 cm,,
+,123 mmHg,S,,1317,80.3727236107 kg,,Nonhispanic,,,English,,,False,,22.1209616797 kg/m2,,,,,71 mmHg,male,"26213 days, 0:00:00",,,190.612922956 cm,,
+65 mL/min/{1.73_m2},184 mmHg,M,,1318,79.4469876096 kg,,Nonhispanic,,,English,,,False,,28.6563368823 kg/m2,,,,,118 mmHg,female,"9363 days, 0:00:00",,,166.505422037 cm,,
+,100 mmHg,,,1319,26.3731333908 kg,,Nonhispanic,,,French_canadian,,,False,,30.3768080204 kg/m2,,,,,76 mmHg,female,"1487 days, 0:00:00",,,93.1772304232 cm,,
+13 mL/min/{1.73_m2},159 mmHg,M,137 mmol/L,1320,110.448816231 kg,102 mmol/L,Nonhispanic,117 mg/dL,3.88037274025 mmol/L,Italian,,17 mg/dL,False,6.12668765336 %,39.6967820935 kg/m2,22 mmol/L,9.95925415348 mg/dL,334 mg/g,231 mg/dL,111 mmHg,male,"3022 days, 0:00:00",135 mg/dL,56 mg/dL,166.802625071 cm,11.092081972 mg/dL,197 mg/dL
+13 mL/min/{1.73_m2},129 mmHg,S,144 mmol/L,1321,120.126518342 kg,111 mmol/L,Nonhispanic,108 mg/dL,5.13291970973 mmol/L,German,,13 mg/dL,,6.87086747326 %,43.7897711029 kg/m2,22 mmol/L,8.5651930208 mg/dL,550 mg/g,204 mg/dL,72 mmHg,male,"16583 days, 0:00:00",128 mg/dL,44 mg/dL,165.627752027 cm,10.2672237899 mg/dL,158 mg/dL
+125 mL/min/{1.73_m2},165 mmHg,M,,1322,73.3091256781 kg,,Nonhispanic,,,Scottish,,,False,,25.9098169619 kg/m2,,,,176 mg/dL,92 mmHg,male,"8571 days, 0:00:00",92 mg/dL,62 mg/dL,168.208077623 cm,,109 mg/dL
+,100 mmHg,M,,1323,111.415943952 kg,,Nonhispanic,,,Scottish,,,False,,34.0329069599 kg/m2,,,,,80 mmHg,male,"19168 days, 0:00:00",,,180.935651627 cm,,
+,,M,,1324,,,Central_american,,,Other,,,False,,,,,,,,male,"13015 days, 0:00:00",,,,,
+125 mL/min/{1.73_m2},152 mmHg,M,,1325,73.3500125912 kg,,Nonhispanic,,,Irish,,,False,,24.8931055492 kg/m2,,,,,106 mmHg,female,"19692 days, 0:00:00",,,171.656619712 cm,,
+,118 mmHg,M,144 mmol/L,1326,90.6849778815 kg,108 mmol/L,Nonhispanic,104 mg/dL,3.70949184723 mmol/L,German,,9 mg/dL,False,4.88695371711 %,32.8782454441 kg/m2,28 mmol/L,8.83886547839 mg/dL,,,81 mmHg,female,"23083 days, 0:00:00",,,166.078479115 cm,0.494638086986 mg/dL,
+,113 mmHg,M,,1327,102.034862279 kg,,Nonhispanic,,,African,,,False,,31.597962814 kg/m2,,,,196 mg/dL,86 mmHg,male,"25439 days, 0:00:00",111 mg/dL,60 mg/dL,179.698623119 cm,,125 mg/dL
+,,M,,1328,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"26680 days, 0:00:00",,,,,
+,120 mmHg,M,,1329,80.3574408245 kg,,Nonhispanic,,,Asian_indian,,,,,26.8373964063 kg/m2,,,,,73 mmHg,female,"28232 days, 0:00:00",,,173.038546347 cm,,
+,,M,,1330,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"23247 days, 0:00:00",,,,,
+3 mL/min/{1.73_m2},199 mmHg,M,144 mmol/L,1331,75.0188800473 kg,107 mmol/L,Central_american,109 mg/dL,3.77957012353 mmol/L,Other,,8 mg/dL,False,4.25249057408 %,29.3886981575 kg/m2,26 mmol/L,9.30750480042 mg/dL,428 mg/g,233 mg/dL,94 mmHg,male,"29903 days, 0:00:00",153 mg/dL,42 mg/dL,159.7699554 cm,20.4912681611 mg/dL,186 mg/dL
+,125 mmHg,M,,1332,72.1135661571 kg,,Nonhispanic,,,African,,,False,,23.8512303863 kg/m2,,,,,75 mmHg,male,"27646 days, 0:00:00",,,173.88138577 cm,,
+,,M,,1333,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"16881 days, 0:00:00",,,,,
+143 mL/min/{1.73_m2},198 mmHg,M,140 mmol/L,1334,76.1647787592 kg,102 mmol/L,Nonhispanic,125 mg/dL,4.16918301976 mmol/L,Italian,,14 mg/dL,False,4.26364185066 %,29.4500301786 kg/m2,20 mmol/L,9.93272692646 mg/dL,,,120 mmHg,female,"7181 days, 0:00:00",,,160.817838411 cm,0.396136742672 mg/dL,
+154 mL/min/{1.73_m2},152 mmHg,M,,1335,107.486904284 kg,,Nonhispanic,,,American,,,False,,33.4593376314 kg/m2,,,,,98 mmHg,male,"20457 days, 0:00:00",,,179.233467909 cm,,
+106 mL/min/{1.73_m2},144 mmHg,M,136 mmol/L,1336,98.1458385471 kg,108 mmol/L,Nonhispanic,121 mg/dL,3.90470959179 mmol/L,Italian,,10 mg/dL,,4.73777901673 %,32.057784592 kg/m2,29 mmol/L,9.8212620017 mg/dL,,,98 mmHg,male,"24277 days, 0:00:00",,,174.97225614 cm,0.874465018501 mg/dL,
+79 mL/min/{1.73_m2},190 mmHg,M,,1337,70.4295383423 kg,,Nonhispanic,,,Scottish,,,False,,21.715351119 kg/m2,,,,,92 mmHg,male,"28341 days, 0:00:00",,,180.091822405 cm,,
+106 mL/min/{1.73_m2},173 mmHg,M,,1338,67.2403142278 kg,,Nonhispanic,,,African,,,False,,19.4722167908 kg/m2,,,,,110 mmHg,male,"5319 days, 0:00:00",,,185.826295471 cm,,
+,105 mmHg,M,140 mmol/L,1339,100.425963597 kg,111 mmol/L,Nonhispanic,120 mg/dL,4.29132480435 mmol/L,Chinese,,10 mg/dL,False,6.16343304432 %,39.8988817438 kg/m2,26 mmol/L,9.6391079245 mg/dL,,,84 mmHg,female,"16146 days, 0:00:00",,,158.65093717 cm,1.10909498327 mg/dL,
+,129 mmHg,S,141 mmol/L,1340,61.3418423447 kg,108 mmol/L,Nonhispanic,125 mg/dL,3.8487055844 mmol/L,Polish,,20 mg/dL,False,3.27257050734 %,23.9991377904 kg/m2,29 mmol/L,8.5291612754 mg/dL,,,89 mmHg,female,"24057 days, 0:00:00",,,159.875011277 cm,0.664815959837 mg/dL,
+10 mL/min/{1.73_m2},158 mmHg,M,144 mmol/L,1341,70.4315851134 kg,110 mmol/L,Nonhispanic,109 mg/dL,4.98500197056 mmol/L,Irish,,19 mg/dL,False,3.28566482072 %,24.071156514 kg/m2,23 mmol/L,9.32939314067 mg/dL,352 mg/g,206 mg/dL,120 mmHg,male,"31708 days, 0:00:00",120 mg/dL,55 mg/dL,171.05479505 cm,4.59761736157 mg/dL,152 mg/dL
+,128 mmHg,S,,1342,90.4126656617 kg,,Nonhispanic,,,English,,,False,,35.8768340885 kg/m2,,,,,85 mmHg,female,"13995 days, 0:00:00",,,158.747750822 cm,,
+,,M,,1343,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"25032 days, 0:00:00",,,,,
+,137 mmHg,M,143 mmol/L,1344,83.5952129762 kg,108 mmol/L,Nonhispanic,121 mg/dL,5.14152314973 mmol/L,Italian,,9 mg/dL,False,4.1720432897 %,28.9462380933 kg/m2,23 mmol/L,8.96328300049 mg/dL,,237 mg/dL,75 mmHg,male,"28234 days, 0:00:00",149 mg/dL,57 mg/dL,169.939618622 cm,0.7781469293 mg/dL,152 mg/dL
+,120 mmHg,M,143 mmol/L,1345,93.2141081344 kg,107 mmol/L,Nonhispanic,101 mg/dL,4.32261111529 mmol/L,Portuguese,,13 mg/dL,False,4.67244410563 %,31.698442581 kg/m2,26 mmol/L,9.67717288634 mg/dL,,,87 mmHg,male,"25586 days, 0:00:00",,,171.483311641 cm,0.612329914546 mg/dL,
+,,M,,1346,,,Nonhispanic,,,English,,,False,,,,,,,,male,"22283 days, 0:00:00",,,,,
+,101 mmHg,M,139 mmol/L,1347,66.6038636298 kg,102 mmol/L,Nonhispanic,107 mg/dL,3.89850847758 mmol/L,Irish,,12 mg/dL,False,3.2722818879 %,23.9975503834 kg/m2,23 mmol/L,8.71022972187 mg/dL,,,81 mmHg,male,"30475 days, 0:00:00",,,166.59664663 cm,0.400613790424 mg/dL,
+1 mL/min/{1.73_m2},163 mmHg,M,142 mmol/L,1348,112.76488318 kg,106 mmol/L,Nonhispanic,119 mg/dL,3.88728505797 mmol/L,German,,18 mg/dL,False,6.50683104032 %,41.7875707218 kg/m2,29 mmol/L,9.52175661223 mg/dL,459 mg/g,215 mg/dL,93 mmHg,male,"22683 days, 0:00:00",136 mg/dL,40 mg/dL,164.271935767 cm,122.161956779 mg/dL,191 mg/dL
+,,,,1349,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"2767 days, 0:00:00",,,,,
+,133 mmHg,M,,1350,71.5741239951 kg,,Puerto_rican,,,Other,,,False,,26.5334891617 kg/m2,,,,200 mg/dL,77 mmHg,female,"19753 days, 0:00:00",98 mg/dL,76 mg/dL,164.240719487 cm,,127 mg/dL
+,,M,,1351,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"22312 days, 0:00:00",,,,,
+,,S,,1352,,,Nonhispanic,,,English,,,False,,,,,,,,male,"28973 days, 0:00:00",,,,,
+,114 mmHg,M,139 mmol/L,1353,87.7592149088 kg,110 mmol/L,Nonhispanic,125 mg/dL,4.00103231219 mmol/L,Irish,,9 mg/dL,False,3.57526756958 %,25.6639716327 kg/m2,28 mmol/L,8.88196046428 mg/dL,,,89 mmHg,male,"11199 days, 0:00:00",,,184.920232761 cm,1.09898834699 mg/dL,
+9 mL/min/{1.73_m2},142 mmHg,M,143 mmol/L,1354,106.20703413 kg,105 mmol/L,Nonhispanic,122 mg/dL,3.79820706904 mmol/L,French,,13 mg/dL,False,5.55620904502 %,36.5591497476 kg/m2,29 mmol/L,8.55020672683 mg/dL,522 mg/g,228 mg/dL,97 mmHg,male,"24703 days, 0:00:00",147 mg/dL,50 mg/dL,170.442775307 cm,11.964681314 mg/dL,155 mg/dL
+,,M,,1355,,,Nonhispanic,,,French,,,False,,,,,,,,female,"1562 days, 0:00:00",,,,,
+,128 mmHg,M,,1356,104.925919034 kg,,Nonhispanic,,,French,,,False,,29.9582462874 kg/m2,,,,,85 mmHg,male,"24281 days, 0:00:00",,,187.14714127 cm,,
+109 mL/min/{1.73_m2},165 mmHg,S,,1357,85.4909138562 kg,,Nonhispanic,,,Italian,,,False,,26.765150789 kg/m2,,,,,94 mmHg,male,"1541 days, 0:00:00",,,178.720813473 cm,,
+,136 mmHg,M,140 mmol/L,1358,129.893196098 kg,107 mmol/L,Nonhispanic,119 mg/dL,4.28515447391 mmol/L,Irish,,13 mg/dL,False,6.29319088452 %,40.6125498649 kg/m2,20 mmol/L,8.72347333148 mg/dL,,,82 mmHg,male,"19419 days, 0:00:00",,,178.83934587 cm,1.05237543135 mg/dL,
+,100 mmHg,M,139 mmol/L,1359,96.6647975365 kg,107 mmol/L,Nonhispanic,120 mg/dL,4.84176488517 mmol/L,Irish,,11 mg/dL,False,5.05421254938 %,33.7981690216 kg/m2,23 mmol/L,8.60656423533 mg/dL,,,89 mmHg,male,"26614 days, 0:00:00",,,169.117124643 cm,1.04936242536 mg/dL,
+3 mL/min/{1.73_m2},142 mmHg,M,136 mmol/L,1360,77.8471100601 kg,108 mmol/L,Nonhispanic,125 mg/dL,3.97196482903 mmol/L,Irish,,15 mg/dL,False,3.48350926885 %,25.1593009787 kg/m2,21 mmol/L,9.77272311108 mg/dL,321 mg/g,203 mg/dL,100 mmHg,male,"31791 days, 0:00:00",126 mg/dL,42 mg/dL,175.902479836 cm,19.1013742277 mg/dL,175 mg/dL
+,,S,,1361,,,Nonhispanic,,,German,,,False,,,,,,,,male,"6580 days, 0:00:00",,,,,
+,117 mmHg,M,137 mmol/L,1362,108.496372785 kg,109 mmol/L,Nonhispanic,112 mg/dL,5.12224757824 mmol/L,Italian,,17 mg/dL,False,5.97764375929 %,38.8770406761 kg/m2,24 mmol/L,10.1273248308 mg/dL,,232 mg/dL,79 mmHg,male,"19350 days, 0:00:00",150 mg/dL,46 mg/dL,167.055589072 cm,1.52421468792 mg/dL,176 mg/dL
+,,M,,1363,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"26135 days, 0:00:00",,,,,
+,,M,,1364,,,Puerto_rican,,,Other,,,False,,,,,,,,female,"8480 days, 0:00:00",,,,,
+,,S,,1365,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"13741 days, 0:00:00",,,,,
+102 mL/min/{1.73_m2},155 mmHg,M,139 mmol/L,1366,103.520491275 kg,106 mmol/L,Nonhispanic,103 mg/dL,4.90744016724 mmol/L,English,,13 mg/dL,False,6.16376304338 %,39.9006967386 kg/m2,24 mmol/L,9.61588933838 mg/dL,,,107 mmHg,female,"6212 days, 0:00:00",,,161.073064897 cm,1.07833845078 mg/dL,
+6 mL/min/{1.73_m2},143 mmHg,M,140 mmol/L,1367,100.757199482 kg,109 mmol/L,Nonhispanic,110 mg/dL,3.85217225714 mmol/L,German,,14 mg/dL,False,5.40613413596 %,35.7337377478 kg/m2,28 mmol/L,9.19875873979 mg/dL,307 mg/g,226 mg/dL,101 mmHg,male,"26851 days, 0:00:00",145 mg/dL,46 mg/dL,167.918606323 cm,15.62669529 mg/dL,171 mg/dL
+,,S,,1368,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"23810 days, 0:00:00",,,,,
+,,M,,1369,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"780 days, 0:00:00",,,,,
+132 mL/min/{1.73_m2},150 mmHg,S,140 mmol/L,1370,105.969632412 kg,104 mmol/L,Nonhispanic,125 mg/dL,4.29388637808 mmol/L,Polish,,12 mg/dL,False,5.35546819237 %,35.455075058 kg/m2,28 mmol/L,8.8804669498 mg/dL,,237 mg/dL,94 mmHg,male,"20557 days, 0:00:00",163 mg/dL,42 mg/dL,172.882689188 cm,0.847400259186 mg/dL,156 mg/dL
+10 mL/min/{1.73_m2},153 mmHg,S,142 mmol/L,1371,120.149244327 kg,101 mmol/L,Nonhispanic,101 mg/dL,4.95696875864 mmol/L,English,,16 mg/dL,False,5.88019048261 %,38.3410476543 kg/m2,25 mmol/L,9.46689116835 mg/dL,477 mg/g,227 mg/dL,111 mmHg,male,"21992 days, 0:00:00",153 mg/dL,41 mg/dL,177.022526186 cm,12.3486723336 mg/dL,161 mg/dL
+,108 mmHg,M,141 mmol/L,1372,93.2004905483 kg,107 mmol/L,Nonhispanic,112 mg/dL,3.70824725174 mmol/L,Russian,,20 mg/dL,False,5.38084298532 %,35.5946364193 kg/m2,26 mmol/L,9.37527842653 mg/dL,,,86 mmHg,female,"5421 days, 0:00:00",,,161.814270068 cm,0.536214144373 mg/dL,
+,,M,,1373,,,Nonhispanic,,,American,,,False,,,,,,,,male,"27687 days, 0:00:00",,,,,
+,130 mmHg,,,1374,16.7020274536 kg,,Nonhispanic,,,Irish,,,False,,28.6567293977 kg/m2,,,,,89 mmHg,male,"1587 days, 0:00:00",,,76.3433626691 cm,,
+101 mL/min/{1.73_m2},195 mmHg,S,,1375,99.088878594 kg,,Nonhispanic,,,Portuguese,,,False,,25.1388620904 kg/m2,,,,174 mg/dL,100 mmHg,male,"24483 days, 0:00:00",79 mg/dL,70 mg/dL,198.536174309 cm,,124 mg/dL
+,127 mmHg,M,,1376,83.4505883009 kg,,Nonhispanic,,,African,,,False,,29.4132023157 kg/m2,,,,,75 mmHg,male,"26409 days, 0:00:00",,,168.43934589 cm,,
+,134 mmHg,,,1377,31.9688241921 kg,,Puerto_rican,,,Other,,,False,,23.980439509 kg/m2,,,,,79 mmHg,male,"1238 days, 0:00:00",,,115.460853198 cm,,
+24 mL/min/{1.73_m2},153 mmHg,M,138 mmol/L,1378,102.38347376 kg,109 mmol/L,Nonhispanic,117 mg/dL,4.11410547298 mmol/L,Irish,,14 mg/dL,False,6.88698797794 %,43.8784338787 kg/m2,26 mmol/L,9.57934392236 mg/dL,435 mg/g,235 mg/dL,112 mmHg,male,"16079 days, 0:00:00",149 mg/dL,48 mg/dL,152.752867345 cm,5.628721069 mg/dL,188 mg/dL
+,107 mmHg,S,,1379,91.9153534377 kg,,Nonhispanic,,,Dominican,,,False,,32.7992907705 kg/m2,,,,,82 mmHg,female,"4170 days, 0:00:00",,,167.402447887 cm,,
+13 mL/min/{1.73_m2},148 mmHg,S,141 mmol/L,1380,86.961557092 kg,104 mmol/L,Nonhispanic,123 mg/dL,4.3080514743 mmol/L,African,,18 mg/dL,False,4.84354038033 %,32.6394720918 kg/m2,26 mmol/L,8.66619898763 mg/dL,587 mg/g,220 mg/dL,99 mmHg,male,"20829 days, 0:00:00",144 mg/dL,44 mg/dL,163.227034614 cm,5.85318172735 mg/dL,159 mg/dL
+,134 mmHg,M,140 mmol/L,1381,100.300516739 kg,109 mmol/L,Nonhispanic,118 mg/dL,4.89402253 mmol/L,Scottish,,11 mg/dL,False,5.39535733288 %,35.6744653308 kg/m2,21 mmol/L,8.55120042999 mg/dL,,229 mg/dL,81 mmHg,male,"24006 days, 0:00:00",150 mg/dL,43 mg/dL,167.676750441 cm,0.941607217328 mg/dL,177 mg/dL
+,,,,1382,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"2903 days, 0:00:00",,,,,
+,131 mmHg,S,,1383,106.077184165 kg,,Nonhispanic,,,Irish,,,False,,30.1232054198 kg/m2,,,,193 mg/dL,86 mmHg,male,"22196 days, 0:00:00",99 mg/dL,71 mg/dL,187.655111988 cm,,111 mg/dL
+,117 mmHg,S,,1384,74.9161456159 kg,,Nonhispanic,,,Irish,,,False,,28.9664964165 kg/m2,,,,,79 mmHg,female,"5008 days, 0:00:00",,,160.819877873 cm,,
+,139 mmHg,M,137 mmol/L,1385,128.774734052 kg,107 mmol/L,Nonhispanic,105 mg/dL,3.81807023766 mmol/L,African,,20 mg/dL,False,6.11914557167 %,39.6553006442 kg/m2,23 mmol/L,8.90054933899 mg/dL,,,71 mmHg,male,"19063 days, 0:00:00",,,180.204116433 cm,1.00891885653 mg/dL,
+,,M,,1386,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"8422 days, 0:00:00",,,,,
+159 mL/min/{1.73_m2},191 mmHg,S,,1387,97.4880730654 kg,,Nonhispanic,,,Irish,,,False,,33.2833544942 kg/m2,,,,,92 mmHg,male,"22299 days, 0:00:00",,,171.144204791 cm,,
+,101 mmHg,M,,1388,94.6858691708 kg,,Nonhispanic,,,American,,,False,,30.739838295 kg/m2,,,,,83 mmHg,male,"14742 days, 0:00:00",,,175.505930311 cm,,
+,105 mmHg,M,,1389,89.2283810211 kg,,Nonhispanic,,,Scottish,,,False,,32.3100587396 kg/m2,,,,,78 mmHg,female,"23783 days, 0:00:00",,,166.181483955 cm,,
+158 mL/min/{1.73_m2},153 mmHg,M,,1390,73.3226987308 kg,,Nonhispanic,,,English,,,False,,24.235545885 kg/m2,,,,,106 mmHg,male,"29729 days, 0:00:00",,,173.937337331 cm,,
+,130 mmHg,M,,1391,71.6041867524 kg,,Nonhispanic,,,Irish,,,False,,24.2960195138 kg/m2,,,,,82 mmHg,female,"2729 days, 0:00:00",,,171.672860814 cm,,
+12 mL/min/{1.73_m2},157 mmHg,M,143 mmol/L,1392,104.712491111 kg,111 mmol/L,Nonhispanic,112 mg/dL,3.74985864092 mmol/L,French,,9 mg/dL,False,7.16814114902 %,45.4247763196 kg/m2,25 mmol/L,9.04185734157 mg/dL,496 mg/g,211 mg/dL,118 mmHg,female,"12001 days, 0:00:00",120 mg/dL,52 mg/dL,151.828341166 cm,9.06538696189 mg/dL,191 mg/dL
+,136 mmHg,S,,1393,90.1426432544 kg,,Nonhispanic,,,English,,,False,,32.8395638089 kg/m2,,,,175 mg/dL,71 mmHg,female,"6426 days, 0:00:00",77 mg/dL,69 mg/dL,165.678614617 cm,,141 mg/dL
+,108 mmHg,S,,1394,118.353797647 kg,,Nonhispanic,,,French,,,False,,33.8299955086 kg/m2,,,,194 mg/dL,74 mmHg,male,"18642 days, 0:00:00",98 mg/dL,66 mg/dL,187.04242688 cm,,149 mg/dL
+,,M,,1395,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"23230 days, 0:00:00",,,,,
+,119 mmHg,M,,1396,52.6758365844 kg,,Nonhispanic,,,Italian,,,False,,18.937667906 kg/m2,,,,,80 mmHg,female,"10237 days, 0:00:00",,,166.779425166 cm,,
+,126 mmHg,M,,1397,79.7989895363 kg,,Nonhispanic,,,Italian,,,False,,26.5233247055 kg/m2,,,,,71 mmHg,male,"27257 days, 0:00:00",,,173.454157962 cm,,
+,128 mmHg,M,,1398,77.8257666854 kg,,Nonhispanic,,,French,,,False,,21.9993496178 kg/m2,,,,,85 mmHg,male,"27500 days, 0:00:00",,,188.086135373 cm,,
+,,M,,1399,,,Nonhispanic,,,German,,,False,,,,,,,,male,"15754 days, 0:00:00",,,,,
+10 mL/min/{1.73_m2},102 mmHg,M,139 mmol/L,1400,96.7063024482 kg,104 mmol/L,Nonhispanic,104 mg/dL,4.32557788262 mmol/L,French,,11 mg/dL,False,5.47438267707 %,36.1091047239 kg/m2,24 mmol/L,8.58060708575 mg/dL,344 mg/g,204 mg/dL,79 mmHg,male,"28224 days, 0:00:00",123 mg/dL,42 mg/dL,163.651137676 cm,8.46180146422 mg/dL,193 mg/dL
+,117 mmHg,S,,1401,104.259714639 kg,,Nonhispanic,,,French,,,False,,33.7273766538 kg/m2,,,,,70 mmHg,female,"21922 days, 0:00:00",,,175.819477312 cm,,
+,,M,,1402,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"16691 days, 0:00:00",,,,,
+,111 mmHg,M,140 mmol/L,1403,98.5525452507 kg,106 mmol/L,Nonhispanic,104 mg/dL,4.79033222511 mmol/L,English,,9 mg/dL,False,5.76021661823 %,37.6811914002 kg/m2,27 mmol/L,9.22409467099 mg/dL,,,79 mmHg,female,"17661 days, 0:00:00",,,161.722933189 cm,0.733143934418 mg/dL,
+,106 mmHg,S,142 mmol/L,1404,102.073839243 kg,101 mmol/L,Nonhispanic,101 mg/dL,3.97754979853 mmol/L,English,,17 mg/dL,False,5.80981337097 %,37.9539735403 kg/m2,22 mmol/L,9.93543690537 mg/dL,,,78 mmHg,female,"17410 days, 0:00:00",,,163.994241969 cm,1.20503837995 mg/dL,
+,,M,,1405,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"22172 days, 0:00:00",,,,,
+2 mL/min/{1.73_m2},179 mmHg,S,142 mmol/L,1406,110.341787459 kg,104 mmol/L,Nonhispanic,113 mg/dL,4.08191062389 mmol/L,English,,19 mg/dL,False,6.52022216545 %,41.86122191 kg/m2,24 mmol/L,10.002885402 mg/dL,314 mg/g,224 mg/dL,110 mmHg,male,"22935 days, 0:00:00",137 mg/dL,49 mg/dL,162.354397728 cm,59.0022057939 mg/dL,186 mg/dL
+104 mL/min/{1.73_m2},151 mmHg,S,,1407,93.5211519442 kg,,Nonhispanic,,,Italian,,,False,,29.9248175636 kg/m2,,,,192 mg/dL,107 mmHg,male,"25301 days, 0:00:00",96 mg/dL,66 mg/dL,176.782458006 cm,,150 mg/dL
+107 mL/min/{1.73_m2},156 mmHg,M,,1408,98.955490068 kg,,Nonhispanic,,,French,,,False,,25.8639081316 kg/m2,,,,,99 mmHg,male,"27388 days, 0:00:00",,,195.60181147 cm,,
+,128 mmHg,M,,1409,61.8999048047 kg,,Nonhispanic,,,German,,,False,,22.0101942616 kg/m2,,,,,89 mmHg,male,"18771 days, 0:00:00",,,167.69999619 cm,,
+,,M,,1410,,,Nonhispanic,,,English,,,False,,,,,,,,female,"23644 days, 0:00:00",,,,,
+,,M,,1411,,,Nonhispanic,,,Russian,,,False,,,,,,,,male,"31669 days, 0:00:00",,,,,
+,103 mmHg,M,,1412,53.4517956656 kg,,Nonhispanic,,,Scottish,,,False,,18.1827237808 kg/m2,,,,,75 mmHg,female,"13024 days, 0:00:00",,,171.455601865 cm,,
+,,M,,1413,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"4291 days, 0:00:00",,,,,
+,132 mmHg,M,141 mmol/L,1414,107.353753062 kg,106 mmol/L,Nonhispanic,108 mg/dL,4.4503392031 mmol/L,Russian,,13 mg/dL,False,5.14774792849 %,34.3126136067 kg/m2,21 mmol/L,9.45266358796 mg/dL,,,83 mmHg,male,"21254 days, 0:00:00",,,176.881216353 cm,1.23972810965 mg/dL,
+,,S,,1415,,,Nonhispanic,,,Scottish,,,False,,,,,,,,female,"7275 days, 0:00:00",,,,,
+4 mL/min/{1.73_m2},198 mmHg,M,138 mmol/L,1416,118.602592847 kg,108 mmol/L,Nonhispanic,125 mg/dL,4.69475313778 mmol/L,Irish,,14 mg/dL,False,7.38949489677 %,46.6422219322 kg/m2,29 mmol/L,8.62459122197 mg/dL,505 mg/g,235 mg/dL,92 mmHg,male,"18257 days, 0:00:00",147 mg/dL,55 mg/dL,159.46209893 cm,35.4160520307 mg/dL,164 mg/dL
+,128 mmHg,M,140 mmol/L,1417,67.5027179234 kg,108 mmol/L,Nonhispanic,104 mg/dL,3.92945954133 mmol/L,English,,19 mg/dL,False,3.49884286982 %,25.243635784 kg/m2,22 mmol/L,9.29155281357 mg/dL,,,88 mmHg,female,"28746 days, 0:00:00",,,163.525195501 cm,0.544721299698 mg/dL,
+,105 mmHg,S,,1418,86.8281281116 kg,,Central_american,,,Other,,,False,,29.4604799245 kg/m2,,,,188 mg/dL,77 mmHg,male,"10459 days, 0:00:00",93 mg/dL,72 mg/dL,171.67628646 cm,,115 mg/dL
+,112 mmHg,M,136 mmol/L,1419,99.4350518593 kg,107 mmol/L,Nonhispanic,101 mg/dL,4.6190203751 mmol/L,French,,13 mg/dL,False,5.37261142002 %,35.5493628101 kg/m2,28 mmol/L,8.9784215371 mg/dL,,,71 mmHg,male,"3475 days, 0:00:00",,,167.245269195 cm,0.920694924623 mg/dL,
+,,M,,1420,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"23228 days, 0:00:00",,,,,
+88 mL/min/{1.73_m2},143 mmHg,M,,1421,80.1562266612 kg,,Nonhispanic,,,Portuguese,,,False,,25.7507270459 kg/m2,,,,191 mg/dL,90 mmHg,female,"22352 days, 0:00:00",92 mg/dL,71 mg/dL,176.430589262 cm,,138 mg/dL
+,,M,,1422,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"17572 days, 0:00:00",,,,,
+,,M,,1423,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,female,"10868 days, 0:00:00",,,,,
+,129 mmHg,M,,1424,91.8470273621 kg,,Nonhispanic,,,French_canadian,,,False,,28.8648495477 kg/m2,,,,199 mg/dL,83 mmHg,male,"22206 days, 0:00:00",118 mg/dL,60 mg/dL,178.38071623 cm,,104 mg/dL
+9 mL/min/{1.73_m2},170 mmHg,S,143 mmol/L,1425,77.5428064665 kg,101 mmol/L,Puerto_rican,117 mg/dL,4.71647322954 mmol/L,Other,,14 mg/dL,False,4.25379173353 %,29.3958545344 kg/m2,24 mmol/L,8.70514005294 mg/dL,360 mg/g,214 mg/dL,91 mmHg,male,"24702 days, 0:00:00",141 mg/dL,40 mg/dL,162.415589502 cm,6.58156536367 mg/dL,162 mg/dL
+,132 mmHg,M,137 mmol/L,1426,97.4358701465 kg,107 mmol/L,Nonhispanic,111 mg/dL,4.37296589357 mmol/L,Polish,,20 mg/dL,False,4.22387504458 %,29.2313127452 kg/m2,22 mmol/L,9.13447706868 mg/dL,,,77 mmHg,male,"22234 days, 0:00:00",,,182.572462907 cm,0.623850626431 mg/dL,
+,,M,,1427,,,Nonhispanic,,,Polish,,,False,,,,,,,,female,"17994 days, 0:00:00",,,,,
+,110 mmHg,M,,1428,98.9138588382 kg,,Nonhispanic,,,English,,,False,,26.8587306227 kg/m2,,,,,74 mmHg,male,"23638 days, 0:00:00",,,191.904796947 cm,,
+,,M,,1429,,,Nonhispanic,,,English,,,False,,,,,,,,male,"15234 days, 0:00:00",,,,,
+,,S,,1430,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"13229 days, 0:00:00",,,,,
+,109 mmHg,S,,1431,85.9636338391 kg,,Nonhispanic,,,English,,,False,,32.4756599274 kg/m2,,,,197 mg/dL,88 mmHg,female,"24391 days, 0:00:00",95 mg/dL,76 mg/dL,162.696567438 cm,,128 mg/dL
+,117 mmHg,M,,1432,102.528614441 kg,,Nonhispanic,,,French,,,False,,32.4131073569 kg/m2,,,,,79 mmHg,male,"16190 days, 0:00:00",,,177.853415735 cm,,
+,,M,,1433,,,Nonhispanic,,,German,,,False,,,,,,,,male,"33098 days, 0:00:00",,,,,
+83 mL/min/{1.73_m2},157 mmHg,M,,1434,56.7936171006 kg,,Nonhispanic,,,German,,,False,,19.6801091165 kg/m2,,,,,116 mmHg,female,"29371 days, 0:00:00",,,169.877559637 cm,,
+,,S,,1435,,,Nonhispanic,,,German,,,False,,,,,,,,female,"27818 days, 0:00:00",,,,,
+,,,,1436,,,Puerto_rican,,,Other,,,False,,,,,,,,female,"2660 days, 0:00:00",,,,,
+,113 mmHg,S,,1437,100.865920863 kg,,Nonhispanic,,,French_canadian,,,False,,30.7720537764 kg/m2,,,,176 mg/dL,73 mmHg,male,"24649 days, 0:00:00",90 mg/dL,61 mg/dL,181.048106687 cm,,123 mg/dL
+,130 mmHg,M,,1438,71.4308057107 kg,,Nonhispanic,,,Irish,,,False,,24.05706731 kg/m2,,,,,88 mmHg,female,"29432 days, 0:00:00",,,172.314344685 cm,,
+,,,,1439,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"1523 days, 0:00:00",,,,,
+,110 mmHg,M,142 mmol/L,1440,83.9183284674 kg,109 mmol/L,Puerto_rican,113 mg/dL,4.02900241145 mmol/L,Other,,15 mg/dL,False,4.84324504206 %,32.6378477313 kg/m2,26 mmol/L,8.99165639891 mg/dL,,209 mg/dL,89 mmHg,female,"24963 days, 0:00:00",133 mg/dL,45 mg/dL,160.349517115 cm,0.962795376489 mg/dL,153 mg/dL
+,109 mmHg,M,140 mmol/L,1441,100.732305443 kg,103 mmol/L,Nonhispanic,112 mg/dL,4.18075119869 mmol/L,Irish,,19 mg/dL,False,4.78052838349 %,32.2929061092 kg/m2,25 mmol/L,9.15307781094 mg/dL,,,85 mmHg,male,"25774 days, 0:00:00",,,176.616316093 cm,0.777255443234 mg/dL,
+,126 mmHg,M,137 mmol/L,1442,89.5527164975 kg,111 mmol/L,Nonhispanic,122 mg/dL,4.90317048469 mmol/L,English,,9 mg/dL,False,4.84371036314 %,32.6404069973 kg/m2,21 mmol/L,9.82449349563 mg/dL,,230 mg/dL,89 mmHg,male,"23006 days, 0:00:00",154 mg/dL,43 mg/dL,165.638618432 cm,1.1020903929 mg/dL,164 mg/dL
+1 mL/min/{1.73_m2},107 mmHg,M,142 mmol/L,1443,95.5079637869 kg,104 mmol/L,Nonhispanic,112 mg/dL,4.12176538377 mmol/L,French,,7 mg/dL,False,5.8235982155 %,38.0297901852 kg/m2,29 mmol/L,9.27510345333 mg/dL,513 mg/g,203 mg/dL,84 mmHg,female,"24330 days, 0:00:00",131 mg/dL,42 mg/dL,158.473930079 cm,83.4368183639 mg/dL,150 mg/dL
+,105 mmHg,,,1444,51.0966984875 kg,,Nonhispanic,,,Irish,,,False,,26.0749069871 kg/m2,,,,,72 mmHg,male,"616 days, 0:00:00",,,139.986139235 cm,,
+14 mL/min/{1.73_m2},175 mmHg,M,140 mmol/L,1445,81.7789008532 kg,106 mmol/L,Nonhispanic,117 mg/dL,4.1149594269 mmol/L,Irish,,19 mg/dL,False,4.03504108099 %,28.1927259455 kg/m2,26 mmol/L,9.51566669211 mg/dL,485 mg/g,238 mg/dL,112 mmHg,male,"25741 days, 0:00:00",142 mg/dL,58 mg/dL,170.3146866 cm,4.13762295984 mg/dL,190 mg/dL
+,105 mmHg,M,141 mmol/L,1446,91.2760219233 kg,110 mmol/L,Nonhispanic,102 mg/dL,5.12896039241 mmol/L,Italian,,9 mg/dL,False,4.60375589389 %,31.3206574164 kg/m2,24 mmol/L,10.0810358231 mg/dL,,,73 mmHg,male,"7423 days, 0:00:00",,,170.711554625 cm,1.12573760372 mg/dL,
+,103 mmHg,,,1447,59.1785724774 kg,,Puerto_rican,,,Other,,,False,,22.0326819407 kg/m2,,,,,71 mmHg,male,"6434 days, 0:00:00",,,163.888529996 cm,,
+,110 mmHg,S,,1448,38.0966023722 kg,,Nonhispanic,,,African,,,False,,12.3641543159 kg/m2,,,,,76 mmHg,male,"33833 days, 0:00:00",,,175.533864454 cm,,
+,,S,,1449,,,Nonhispanic,,,French,,,False,,,,,,,,female,"1508 days, 0:00:00",,,,,
+,,M,,1450,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"29744 days, 0:00:00",,,,,
+,,M,,1451,,,Nonhispanic,,,French,,,False,,,,,,,,male,"13823 days, 0:00:00",,,,,
+,105 mmHg,S,,1452,78.4295262997 kg,,Nonhispanic,,,Italian,,,False,,27.9383309585 kg/m2,,,,161 mg/dL,89 mmHg,female,"8256 days, 0:00:00",75 mg/dL,63 mg/dL,167.548123083 cm,,113 mg/dL
+,119 mmHg,M,138 mmol/L,1453,70.8653534604 kg,104 mmol/L,Nonhispanic,125 mg/dL,4.52761724603 mmol/L,Italian,,14 mg/dL,False,3.93584915906 %,27.6471703748 kg/m2,28 mmol/L,9.93395710411 mg/dL,,219 mg/dL,74 mmHg,female,"5718 days, 0:00:00",130 mg/dL,57 mg/dL,160.100111502 cm,0.66561993087 mg/dL,156 mg/dL
+,135 mmHg,S,144 mmol/L,1454,95.0903876979 kg,101 mmol/L,Nonhispanic,121 mg/dL,4.98496107696 mmol/L,American,,20 mg/dL,False,4.54528561443 %,30.9990708794 kg/m2,22 mmol/L,9.08952833811 mg/dL,,223 mg/dL,74 mmHg,male,"21722 days, 0:00:00",142 mg/dL,45 mg/dL,175.143478323 cm,1.25297163277 mg/dL,178 mg/dL
+,137 mmHg,S,,1455,85.7766828225 kg,,Nonhispanic,,,Irish,,,False,,25.716588111 kg/m2,,,,,77 mmHg,male,"28303 days, 0:00:00",,,182.632451612 cm,,
+1 mL/min/{1.73_m2},151 mmHg,M,144 mmol/L,1456,101.351570996 kg,107 mmol/L,Puerto_rican,114 mg/dL,5.07855762555 mmol/L,Other,,18 mg/dL,False,5.62603303361 %,36.9431816848 kg/m2,29 mmol/L,9.14450053358 mg/dL,530 mg/g,209 mg/dL,111 mmHg,male,"11072 days, 0:00:00",132 mg/dL,43 mg/dL,165.633467775 cm,154.842677911 mg/dL,168 mg/dL
+,,M,,1457,,,Nonhispanic,,,West_indian,,,False,,,,,,,,female,"12732 days, 0:00:00",,,,,
+,,S,,1458,,,Nonhispanic,,,French,,,,,,,,,,,female,"17692 days, 0:00:00",,,,,
+,118 mmHg,S,,1459,102.993379373 kg,,Nonhispanic,,,Irish,,,False,,33.2372930125 kg/m2,,,,,81 mmHg,male,"23925 days, 0:00:00",,,176.032084302 cm,,
+,,M,,1460,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"11858 days, 0:00:00",,,,,
+,,S,,1461,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"16851 days, 0:00:00",,,,,
+144 mL/min/{1.73_m2},154 mmHg,M,144 mmol/L,1462,94.9834575976 kg,101 mmol/L,Nonhispanic,120 mg/dL,4.9229302877 mmol/L,Chinese,,20 mg/dL,False,4.65770338116 %,31.6173685964 kg/m2,27 mmol/L,8.74318532959 mg/dL,,200 mg/dL,116 mmHg,male,"11859 days, 0:00:00",124 mg/dL,41 mg/dL,173.324967024 cm,0.93444373794 mg/dL,172 mg/dL
+,,M,,1463,,,Nonhispanic,,,Chinese,,,False,,,,,,,,male,"21156 days, 0:00:00",,,,,
+,,S,,1464,,,Nonhispanic,,,African,,,False,,,,,,,,male,"21250 days, 0:00:00",,,,,
+,,M,,1465,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"4416 days, 0:00:00",,,,,
+,114 mmHg,S,,1466,106.560547565 kg,,Puerto_rican,,,Other,,,False,,34.5990018021 kg/m2,,,,,72 mmHg,male,"9540 days, 0:00:00",,,175.49568271 cm,,
+,,M,,1467,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"79 days, 0:00:00",,,,,
+,,M,,1468,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"18956 days, 0:00:00",,,,,
+,135 mmHg,M,137 mmol/L,1469,101.148483451 kg,103 mmol/L,Nonhispanic,123 mg/dL,4.47901018628 mmol/L,Irish,,20 mg/dL,False,5.89766205395 %,38.4371412967 kg/m2,29 mmol/L,8.57204794069 mg/dL,,,78 mmHg,female,"1642 days, 0:00:00",,,162.219906863 cm,1.65185775635 mg/dL,
+,101 mmHg,M,,1470,115.97010858 kg,,Central_american,,,Other,,,False,,33.60353246 kg/m2,,,,,86 mmHg,male,"17789 days, 0:00:00",,,185.77213193 cm,,
+,130 mmHg,M,139 mmol/L,1471,116.555228326 kg,103 mmol/L,Nonhispanic,123 mg/dL,3.87703458385 mmol/L,Dominican,,8 mg/dL,False,6.05204611814 %,39.2862536497 kg/m2,25 mmol/L,9.17061611402 mg/dL,,,74 mmHg,male,"7078 days, 0:00:00",,,172.244582647 cm,1.38076046628 mg/dL,
+,,,,1472,,,Nonhispanic,,,American,,,False,,,,,,,,female,"1962 days, 0:00:00",,,,,
+,125 mmHg,,,1473,57.2599035437 kg,,Nonhispanic,,,Irish,,,,,23.5657169518 kg/m2,,,,,84 mmHg,male,"3933 days, 0:00:00",,,155.878054772 cm,,
+,,M,,1474,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"12061 days, 0:00:00",,,,,
+,136 mmHg,M,,1475,83.9021565107 kg,,Nonhispanic,,,Irish,,,False,,24.595989057 kg/m2,,,,187 mg/dL,74 mmHg,male,"29878 days, 0:00:00",95 mg/dL,71 mg/dL,184.694692802 cm,,101 mg/dL
+12 mL/min/{1.73_m2},198 mmHg,,142 mmol/L,1476,53.367527072 kg,103 mmol/L,Puerto_rican,123 mg/dL,4.30099925742 mmol/L,Other,,7 mg/dL,False,6.40704387273 %,41.2387413 kg/m2,24 mmol/L,9.46063685359 mg/dL,342 mg/g,224 mg/dL,99 mmHg,male,"4533 days, 0:00:00",139 mg/dL,49 mg/dL,113.75901918 cm,7.90630030697 mg/dL,179 mg/dL
+11 mL/min/{1.73_m2},187 mmHg,S,136 mmol/L,1477,93.0626719157 kg,109 mmol/L,Nonhispanic,118 mg/dL,4.40371182415 mmol/L,German,,9 mg/dL,False,6.78649862241 %,43.3257424233 kg/m2,24 mmol/L,9.7532639771 mg/dL,532 mg/g,220 mg/dL,106 mmHg,female,"5517 days, 0:00:00",145 mg/dL,44 mg/dL,146.559762301 cm,9.68815315587 mg/dL,151 mg/dL
+8 mL/min/{1.73_m2},190 mmHg,M,142 mmol/L,1478,79.5387438574 kg,104 mmol/L,Nonhispanic,120 mg/dL,3.71996312172 mmol/L,English,,20 mg/dL,False,4.7302251573 %,32.0162383651 kg/m2,21 mmol/L,8.82710626341 mg/dL,491 mg/g,232 mg/dL,115 mmHg,female,"20881 days, 0:00:00",142 mg/dL,52 mg/dL,157.617419008 cm,7.39461759299 mg/dL,188 mg/dL
+151 mL/min/{1.73_m2},192 mmHg,M,,1479,98.7264296693 kg,,Nonhispanic,,,English,,,False,,30.7160160405 kg/m2,,,,,105 mmHg,male,"23376 days, 0:00:00",,,179.281002868 cm,,
+,,M,,1480,,,Nonhispanic,,,English,,,False,,,,,,,,male,"25426 days, 0:00:00",,,,,
+,135 mmHg,,,1481,46.1617206506 kg,,Nonhispanic,,,African,,,False,,24.1964427064 kg/m2,,,,,77 mmHg,female,"1482 days, 0:00:00",,,138.122755347 cm,,
+12 mL/min/{1.73_m2},153 mmHg,M,139 mmol/L,1482,85.4890082241 kg,101 mmol/L,Nonhispanic,112 mg/dL,4.03197035644 mmol/L,French,,9 mg/dL,False,4.01785817263 %,28.0982199495 kg/m2,25 mmol/L,9.54649016607 mg/dL,556 mg/g,233 mg/dL,112 mmHg,male,"27441 days, 0:00:00",155 mg/dL,42 mg/dL,174.427812964 cm,5.34306301401 mg/dL,180 mg/dL
+,117 mmHg,S,141 mmol/L,1483,124.302676755 kg,110 mmol/L,Nonhispanic,115 mg/dL,5.09722327625 mmol/L,Russian,,14 mg/dL,False,5.61194648577 %,36.8657056717 kg/m2,24 mmol/L,9.06996822772 mg/dL,,,72 mmHg,male,"20477 days, 0:00:00",,,183.623797498 cm,1.18868679957 mg/dL,
+,125 mmHg,M,143 mmol/L,1484,89.1874698871 kg,102 mmol/L,Nonhispanic,104 mg/dL,5.13852003785 mmol/L,African,,13 mg/dL,False,5.30783031957 %,35.1930667576 kg/m2,29 mmol/L,9.41401064444 mg/dL,,,83 mmHg,female,"20844 days, 0:00:00",,,159.192779382 cm,0.881504062838 mg/dL,
+,107 mmHg,M,140 mmol/L,1485,78.0487462069 kg,105 mmol/L,Nonhispanic,108 mg/dL,3.96995290132 mmol/L,Chinese,,10 mg/dL,False,3.43827957783 %,24.910537678 kg/m2,29 mmol/L,9.50963634944 mg/dL,,,84 mmHg,male,"29501 days, 0:00:00",,,177.007396615 cm,0.673227489212 mg/dL,
+1 mL/min/{1.73_m2},174 mmHg,M,144 mmol/L,1486,96.968243166 kg,104 mmol/L,Nonhispanic,123 mg/dL,4.38039036424 mmol/L,English,,20 mg/dL,False,5.4368993181 %,35.9029462496 kg/m2,26 mmol/L,10.043371144 mg/dL,394 mg/g,207 mg/dL,92 mmHg,male,"25546 days, 0:00:00",131 mg/dL,40 mg/dL,164.342435658 cm,86.1939939254 mg/dL,178 mg/dL
+,104 mmHg,S,,1487,89.2205676838 kg,,Nonhispanic,,,Portuguese,,,False,,29.3785910645 kg/m2,,,,178 mg/dL,75 mmHg,male,"27345 days, 0:00:00",92 mg/dL,60 mg/dL,174.267744007 cm,,129 mg/dL
+82 mL/min/{1.73_m2},159 mmHg,M,142 mmol/L,1488,75.7913116945 kg,110 mmol/L,Nonhispanic,124 mg/dL,3.76612690252 mmol/L,African,,8 mg/dL,False,4.88651108254 %,32.875810954 kg/m2,28 mmol/L,9.2964466772 mg/dL,,,117 mmHg,female,"3273 days, 0:00:00",,,151.834853386 cm,1.23302091603 mg/dL,
+,122 mmHg,,,1489,3.5 kg,,Nonhispanic,,,German,,,False,,,,,,,83 mmHg,female,"332 days, 0:00:00",,,51 cm,,
+,130 mmHg,M,,1490,101.918562004 kg,,Nonhispanic,,,English,,,False,,30.6039689586 kg/m2,,,,,80 mmHg,male,"21334 days, 0:00:00",,,182.489452126 cm,,
+,,M,,1491,,,Nonhispanic,,,Dominican,,,False,,,,,,,,female,"22551 days, 0:00:00",,,,,
+,,S,,1492,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"12883 days, 0:00:00",,,,,
+,,M,,1493,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"16937 days, 0:00:00",,,,,
+77 mL/min/{1.73_m2},155 mmHg,S,,1494,70.4108305799 kg,,Nonhispanic,,,French_canadian,,,False,,23.7819226085 kg/m2,,,,,119 mmHg,male,"31099 days, 0:00:00",,,172.06647152 cm,,
+,134 mmHg,M,,1495,90.7597077724 kg,,Central_american,,,Other,,,False,,26.3593321197 kg/m2,,,,,78 mmHg,male,"12443 days, 0:00:00",,,185.55785493 cm,,
+,126 mmHg,M,,1496,80.7366912726 kg,,Nonhispanic,,,English,,,False,,22.6713924095 kg/m2,,,,,80 mmHg,male,"15450 days, 0:00:00",,,188.710635276 cm,,
+,,,,1497,,,Nonhispanic,,,African,,,False,,,,,,,,male,"5201 days, 0:00:00",,,,,
+,123 mmHg,S,,1498,91.2467682493 kg,,Nonhispanic,,,Italian,,,False,,24.1944923363 kg/m2,,,,179 mg/dL,80 mmHg,male,"28688 days, 0:00:00",71 mg/dL,80 mg/dL,194.200564909 cm,,139 mg/dL
+89 mL/min/{1.73_m2},155 mmHg,M,141 mmol/L,1499,115.696488301 kg,104 mmol/L,Puerto_rican,114 mg/dL,4.36760841675 mmol/L,Other,,9 mg/dL,False,5.68932451502 %,37.2912848326 kg/m2,27 mmol/L,9.03910762851 mg/dL,,,108 mmHg,male,"9867 days, 0:00:00",,,176.139360476 cm,1.37218057285 mg/dL,
+,139 mmHg,,,1500,26.3966857707 kg,,Nonhispanic,,,English,,,False,,30.0684731528 kg/m2,,,,,77 mmHg,male,"1619 days, 0:00:00",,,93.6955604814 cm,,
+85 mL/min/{1.73_m2},133 mmHg,M,141 mmol/L,1501,109.108410575 kg,107 mmol/L,Nonhispanic,106 mg/dL,3.77019439253 mmol/L,French,,11 mg/dL,False,6.57729195796 %,42.1751057688 kg/m2,28 mmol/L,9.38231684131 mg/dL,14 mg/g,231 mg/dL,87 mmHg,female,"17675 days, 0:00:00",135 mg/dL,56 mg/dL,160.842577644 cm,1.39416302401 mg/dL,197 mg/dL
+81 mL/min/{1.73_m2},179 mmHg,M,,1502,91.204178782 kg,,Nonhispanic,,,English,,,False,,36.9810795024 kg/m2,,,,,117 mmHg,female,"15253 days, 0:00:00",,,157.042636017 cm,,
+,132 mmHg,S,,1503,94.1685008996 kg,,Puerto_rican,,,Other,,,False,,27.2649450335 kg/m2,,,,,76 mmHg,male,"23689 days, 0:00:00",,,185.844843332 cm,,
+,,S,,1504,,,Nonhispanic,,,English,,,False,,,,,,,,male,"5997 days, 0:00:00",,,,,
+,123 mmHg,M,140 mmol/L,1505,93.9126541399 kg,107 mmol/L,Nonhispanic,104 mg/dL,4.90635267444 mmol/L,English,,17 mg/dL,False,4.47865386769 %,30.6325962723 kg/m2,22 mmol/L,9.84042051115 mg/dL,,,85 mmHg,male,"5090 days, 0:00:00",,,175.093552302 cm,1.18011933112 mg/dL,
+,114 mmHg,M,,1506,58.1179663076 kg,,Nonhispanic,,,French_canadian,,,False,,19.1967843499 kg/m2,,,,,80 mmHg,male,"29758 days, 0:00:00",,,173.996679863 cm,,
+,106 mmHg,M,139 mmol/L,1507,94.4864403077 kg,106 mmol/L,Nonhispanic,114 mg/dL,4.68150194772 mmol/L,Irish,,13 mg/dL,False,5.13213552653 %,34.2267453959 kg/m2,24 mmol/L,9.98154334298 mg/dL,,207 mg/dL,88 mmHg,male,"21060 days, 0:00:00",124 mg/dL,47 mg/dL,166.15061062 cm,0.660945294123 mg/dL,176 mg/dL
+,105 mmHg,S,,1508,93.3293982637 kg,,Nonhispanic,,,French_canadian,,,False,,29.271405691 kg/m2,,,,191 mg/dL,88 mmHg,male,"9634 days, 0:00:00",110 mg/dL,60 mg/dL,178.561342885 cm,,105 mg/dL
+,,M,,1509,,,Nonhispanic,,,German,,,False,,,,,,,,male,"16734 days, 0:00:00",,,,,
+,133 mmHg,M,,1510,94.0294304471 kg,,Nonhispanic,,,Polish,,,False,,28.4814397421 kg/m2,,,,,84 mmHg,male,"24830 days, 0:00:00",,,181.698328939 cm,,
+,116 mmHg,M,,1511,101.364352588 kg,,Nonhispanic,,,French,,,False,,36.3460747511 kg/m2,,,,,81 mmHg,female,"14390 days, 0:00:00",,,166.998998904 cm,,
+,136 mmHg,S,,1512,83.1685430029 kg,,Nonhispanic,,,Irish,,,False,,29.4486039157 kg/m2,,,,,76 mmHg,female,"25316 days, 0:00:00",,,168.053356607 cm,,
+,123 mmHg,M,,1513,106.955777855 kg,,Nonhispanic,,,Polish,,,False,,34.6973559812 kg/m2,,,,,79 mmHg,female,"2588 days, 0:00:00",,,175.571465562 cm,,
+109 mL/min/{1.73_m2},170 mmHg,M,,1514,66.9479990572 kg,,Nonhispanic,,,Irish,,,False,,22.9466473113 kg/m2,,,,,98 mmHg,male,"30836 days, 0:00:00",,,170.808382613 cm,,
+,,M,,1515,,,Nonhispanic,,,English,,,False,,,,,,,,male,"30913 days, 0:00:00",,,,,
+,122 mmHg,M,,1516,104.78089202 kg,,Mexican,,,Other,,,False,,30.5268692602 kg/m2,,,,,88 mmHg,male,"19320 days, 0:00:00",,,185.267786306 cm,,
+,105 mmHg,M,142 mmol/L,1517,101.358390748 kg,108 mmol/L,Nonhispanic,102 mg/dL,5.15709605558 mmol/L,Italian,,17 mg/dL,False,5.20710774719 %,34.6390926096 kg/m2,24 mmol/L,9.93013154345 mg/dL,,,87 mmHg,male,"20788 days, 0:00:00",,,171.059264314 cm,0.879847141908 mg/dL,
+,130 mmHg,,,1518,49.5797421865 kg,,Nonhispanic,,,Irish,,,False,,25.1152510862 kg/m2,,,,,85 mmHg,female,"1928 days, 0:00:00",,,140.502279383 cm,,
+,135 mmHg,M,141 mmol/L,1519,82.2188064718 kg,108 mmol/L,Nonhispanic,105 mg/dL,4.06722491552 mmol/L,French,,11 mg/dL,False,3.98801415865 %,27.9340778726 kg/m2,23 mmol/L,9.83034058434 mg/dL,,,85 mmHg,male,"29077 days, 0:00:00",,,171.560938878 cm,0.414585276795 mg/dL,
+,,M,,1520,,,Nonhispanic,,,German,,,False,,,,,,,,female,"16765 days, 0:00:00",,,,,
+78 mL/min/{1.73_m2},172 mmHg,S,136 mmol/L,1521,107.912512344 kg,103 mmol/L,Nonhispanic,102 mg/dL,4.2421033271 mmol/L,Asian_indian,,15 mg/dL,False,5.60134398047 %,36.8073918926 kg/m2,28 mmol/L,8.84100081718 mg/dL,,,113 mmHg,male,"20124 days, 0:00:00",,,171.225474817 cm,1.42192412989 mg/dL,
+,,M,,1522,,,Nonhispanic,,,Irish,13 (score),,False,,,,,,,,male,"25450 days, 0:00:00",,,,,
+,136 mmHg,M,,1523,68.7433971305 kg,,Nonhispanic,,,Russian,,,False,,22.7309560291 kg/m2,,,,,89 mmHg,male,"32349 days, 0:00:00",,,173.902827832 cm,,
+161 mL/min/{1.73_m2},140 mmHg,M,,1524,86.8193961686 kg,,Nonhispanic,,,German,,,False,,31.0255293939 kg/m2,,,,,101 mmHg,female,"18975 days, 0:00:00",,,167.281833583 cm,,
+,,M,,1525,,,Nonhispanic,,,Asian_indian,,,False,,,,,,,,male,"25914 days, 0:00:00",,,,,
+,113 mmHg,M,,1526,102.453940823 kg,,Nonhispanic,,,English,,,False,,29.6539761534 kg/m2,,,,,87 mmHg,male,"20702 days, 0:00:00",,,185.875806954 cm,,
+141 mL/min/{1.73_m2},170 mmHg,M,,1527,97.5190598888 kg,,Nonhispanic,,,French,,,False,,34.0271133067 kg/m2,,,,,91 mmHg,male,"8418 days, 0:00:00",,,169.290348619 cm,,
+13 mL/min/{1.73_m2},194 mmHg,S,136 mmol/L,1528,101.162798377 kg,102 mmol/L,Nonhispanic,121 mg/dL,4.7943926268 mmol/L,German,,16 mg/dL,False,6.1556348246 %,39.8559915353 kg/m2,24 mmol/L,10.0459165872 mg/dL,444 mg/g,236 mg/dL,117 mmHg,male,"23260 days, 0:00:00",161 mg/dL,41 mg/dL,159.317545974 cm,7.78175372132 mg/dL,166 mg/dL
+,,M,,1529,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"11988 days, 0:00:00",,,,,
+,104 mmHg,M,141 mmol/L,1530,94.5927120249 kg,103 mmol/L,Nonhispanic,121 mg/dL,4.24333629625 mmol/L,West_indian,,19 mg/dL,False,5.50648963433 %,36.2856929888 kg/m2,23 mmol/L,8.89265431285 mg/dL,,,86 mmHg,female,"23924 days, 0:00:00",,,161.458579658 cm,0.520210955106 mg/dL,
+,,M,,1531,,,Nonhispanic,,,Asian_indian,,,False,,,,,,,,male,"21908 days, 0:00:00",,,,,
+,129 mmHg,M,,1532,119.838676363 kg,,Puerto_rican,,,Other,,,False,,32.0697137412 kg/m2,,,,,83 mmHg,male,"25072 days, 0:00:00",,,193.308504094 cm,,
+133 mL/min/{1.73_m2},141 mmHg,M,,1533,89.936386966 kg,,Puerto_rican,,,Other,,,False,,23.4568969567 kg/m2,,,,,97 mmHg,male,"27649 days, 0:00:00",,,195.808904773 cm,,
+,,S,,1534,,,Nonhispanic,,,American,,,False,,,,,,,,female,"9921 days, 0:00:00",,,,,
+156 mL/min/{1.73_m2},178 mmHg,M,,1535,113.707873361 kg,,Nonhispanic,,,Irish,,,False,,32.2931250403 kg/m2,,,,,90 mmHg,male,"19358 days, 0:00:00",,,187.646397666 cm,,
+,100 mmHg,M,,1536,93.5122889078 kg,,Nonhispanic,,,Irish,,,False,,28.9941056088 kg/m2,,,,,79 mmHg,male,"27356 days, 0:00:00",,,179.588897975 cm,,
+,136 mmHg,M,,1537,102.083155624 kg,,Nonhispanic,,,West_indian,,,False,,36.776540742 kg/m2,,,,,82 mmHg,female,"7626 days, 0:00:00",,,166.60637114 cm,,
+,132 mmHg,M,,1538,103.599623526 kg,,Nonhispanic,,,Irish,,,False,,31.1695638515 kg/m2,,,,177 mg/dL,82 mmHg,male,"8498 days, 0:00:00",86 mg/dL,69 mg/dL,182.311357954 cm,,110 mg/dL
+,,,,1539,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"6318 days, 0:00:00",,,,,
+105 mL/min/{1.73_m2},181 mmHg,S,144 mmol/L,1540,86.3971608915 kg,107 mmol/L,Nonhispanic,112 mg/dL,4.01796072839 mmol/L,Portuguese,,11 mg/dL,False,2.97003980137 %,22.3352189076 kg/m2,29 mmol/L,10.1804852106 mg/dL,,,118 mmHg,male,"11732 days, 0:00:00",,,196.677477226 cm,1.21138876382 mg/dL,
+,136 mmHg,,,1541,70.7806202574 kg,,Nonhispanic,,,Chinese,,,False,,26.8260733258 kg/m2,,,,,73 mmHg,female,"8810 days, 0:00:00",,,162.434631815 cm,,
+,130 mmHg,S,,1542,96.168959559 kg,,Puerto_rican,,,Other,,,False,,32.9939078496 kg/m2,,,,,73 mmHg,male,"23004 days, 0:00:00",,,170.726359691 cm,,
+,116 mmHg,,,1543,67.6693794946 kg,,Nonhispanic,,,Swedish,,,False,,28.2703496086 kg/m2,,,,,80 mmHg,male,"6399 days, 0:00:00",,,154.714318073 cm,,
+,134 mmHg,M,143 mmol/L,1544,73.2143270206 kg,107 mmol/L,Central_american,119 mg/dL,4.63894465916 mmol/L,Other,,16 mg/dL,False,3.89633596082 %,27.4298477845 kg/m2,21 mmol/L,9.73337824532 mg/dL,,,70 mmHg,female,"28527 days, 0:00:00",,,163.375277618 cm,0.408716931096 mg/dL,
+,,S,,1545,,,Nonhispanic,,,English,,,False,,,,,,,,male,"10955 days, 0:00:00",,,,,
+,,S,,1546,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"22393 days, 0:00:00",,,,,
+133 mL/min/{1.73_m2},152 mmHg,M,140 mmol/L,1547,86.8562688805 kg,105 mmol/L,Nonhispanic,104 mg/dL,5.124466246 mmol/L,French,,7 mg/dL,False,4.11668283189 %,28.6417555754 kg/m2,26 mmol/L,9.5304826235 mg/dL,,,95 mmHg,male,"21759 days, 0:00:00",,,174.140893129 cm,0.580493025099 mg/dL,
+143 mL/min/{1.73_m2},156 mmHg,M,143 mmol/L,1548,63.2930563658 kg,104 mmol/L,Nonhispanic,105 mg/dL,5.17604888395 mmol/L,Irish,,17 mg/dL,False,3.33419981375 %,24.3380989756 kg/m2,24 mmol/L,9.62869026286 mg/dL,,,104 mmHg,female,"8728 days, 0:00:00",,,161.262989862 cm,0.303064071371 mg/dL,
+,,S,,1549,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"2796 days, 0:00:00",,,,,
+,,M,,1550,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"29717 days, 0:00:00",,,,,
+,135 mmHg,M,136 mmol/L,1551,105.272224432 kg,110 mmol/L,Nonhispanic,106 mg/dL,4.44148139661 mmol/L,Chinese,,8 mg/dL,False,5.03984408083 %,33.7191424446 kg/m2,28 mmol/L,8.68686144908 mg/dL,,,79 mmHg,male,"23206 days, 0:00:00",,,176.692713125 cm,0.870306088224 mg/dL,
+,121 mmHg,M,144 mmol/L,1552,111.727667259 kg,105 mmol/L,Nonhispanic,103 mg/dL,4.94932486602 mmol/L,German,,10 mg/dL,False,5.98166528492 %,38.8991590671 kg/m2,27 mmol/L,9.58753392332 mg/dL,,,86 mmHg,female,"15150 days, 0:00:00",,,169.476801591 cm,1.12691875822 mg/dL,
+,110 mmHg,S,,1553,79.7765204061 kg,,Nonhispanic,,,Scottish,21 (score),,False,,22.5936676314 kg/m2,,,,,86 mmHg,male,"25788 days, 0:00:00",,,187.907527057 cm,,
+8 mL/min/{1.73_m2},180 mmHg,M,139 mmol/L,1554,104.708703331 kg,104 mmol/L,Nonhispanic,101 mg/dL,4.06939911228 mmol/L,Italian,,14 mg/dL,False,6.42170882754 %,41.3193985515 kg/m2,27 mmol/L,10.0311213323 mg/dL,349 mg/g,224 mg/dL,109 mmHg,male,"24558 days, 0:00:00",140 mg/dL,49 mg/dL,159.189491369 cm,12.3614441432 mg/dL,175 mg/dL
+13 mL/min/{1.73_m2},189 mmHg,M,137 mmol/L,1555,64.8543783801 kg,110 mmol/L,Nonhispanic,110 mg/dL,4.96957563074 mmol/L,Italian,,16 mg/dL,False,3.91187740035 %,27.5153257019 kg/m2,27 mmol/L,9.244415543 mg/dL,574 mg/g,218 mg/dL,95 mmHg,female,"32275 days, 0:00:00",126 mg/dL,53 mg/dL,153.526136691 cm,3.06256786795 mg/dL,194 mg/dL
+,,S,,1556,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"25504 days, 0:00:00",,,,,
+,,S,,1557,,,Nonhispanic,,,Asian_indian,,,False,,,,,,,,female,"2527 days, 0:00:00",,,,,
+,119 mmHg,,,1558,60.4099283462 kg,,Nonhispanic,,,English,,,False,,24.9153549718 kg/m2,,,,,84 mmHg,female,"7300 days, 0:00:00",,,155.711475776 cm,,
+11 mL/min/{1.73_m2},115 mmHg,M,136 mmol/L,1559,114.624682079 kg,102 mmol/L,Nonhispanic,115 mg/dL,3.76052078761 mmol/L,American,,12 mg/dL,False,5.25774224967 %,34.9175823732 kg/m2,22 mmol/L,9.83345804437 mg/dL,385 mg/g,205 mg/dL,88 mmHg,male,"11518 days, 0:00:00",109 mg/dL,58 mg/dL,181.182809147 cm,12.0124351169 mg/dL,188 mg/dL
+,,M,,1560,,,Nonhispanic,,,German,,,False,,,,,,,,female,"23147 days, 0:00:00",,,,,
+,122 mmHg,M,136 mmol/L,1561,121.225406933 kg,110 mmol/L,Puerto_rican,109 mg/dL,3.86420645058 mmol/L,Other,,16 mg/dL,False,6.14370116231 %,39.7903563927 kg/m2,20 mmol/L,9.6773584129 mg/dL,,,71 mmHg,male,"20444 days, 0:00:00",,,174.545200243 cm,0.941535050196 mg/dL,
+,,M,,1562,,,Nonhispanic,,,Dominican,,,False,,,,,,,,female,"902 days, 0:00:00",,,,,
+,137 mmHg,M,,1563,91.3951250248 kg,,Nonhispanic,,,Irish,,,False,,33.1010512333 kg/m2,,,,,74 mmHg,female,"23132 days, 0:00:00",,,166.165409591 cm,,
+,,S,,1564,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"13047 days, 0:00:00",,,,,
+,125 mmHg,M,136 mmol/L,1565,117.278025778 kg,103 mmol/L,Nonhispanic,103 mg/dL,4.69023623152 mmol/L,Chinese,,7 mg/dL,False,6.30739076546 %,40.69064921 kg/m2,27 mmol/L,9.05631538592 mg/dL,,,86 mmHg,male,"7195 days, 0:00:00",,,169.770025467 cm,1.31666302089 mg/dL,
+9 mL/min/{1.73_m2},170 mmHg,M,137 mmol/L,1566,98.5347477173 kg,111 mmol/L,Nonhispanic,112 mg/dL,4.62429711826 mmol/L,Portuguese,,16 mg/dL,False,5.83427056716 %,38.0884881194 kg/m2,24 mmol/L,9.86390974441 mg/dL,578 mg/g,237 mg/dL,118 mmHg,female,"2716 days, 0:00:00",155 mg/dL,51 mg/dL,160.841397321 cm,13.0543334746 mg/dL,151 mg/dL
+15 mL/min/{1.73_m2},165 mmHg,M,141 mmol/L,1567,85.966659401 kg,104 mmol/L,Puerto_rican,104 mg/dL,4.46040378412 mmol/L,Other,,8 mg/dL,False,5.17750954026 %,34.4763024714 kg/m2,20 mmol/L,9.25871204682 mg/dL,371 mg/g,203 mg/dL,103 mmHg,male,"4079 days, 0:00:00",112 mg/dL,54 mg/dL,157.908200435 cm,8.83546221621 mg/dL,183 mg/dL
+27 mL/min/{1.73_m2},176 mmHg,,144 mmol/L,1568,53.9470684085 kg,109 mmol/L,Nonhispanic,116 mg/dL,4.57320129953 mmol/L,American,,19 mg/dL,False,4.72190215408 %,31.9704618474 kg/m2,25 mmol/L,9.46658176254 mg/dL,509 mg/g,237 mg/dL,119 mmHg,male,"499 days, 0:00:00",150 mg/dL,49 mg/dL,129.900095253 cm,3.57982089748 mg/dL,188 mg/dL
+,129 mmHg,S,,1569,115.221576959 kg,,Nonhispanic,,,American,,,False,,30.4293782449 kg/m2,,,,,89 mmHg,male,"12987 days, 0:00:00",,,194.589932804 cm,,
+,105 mmHg,,,1570,39.7872309172 kg,,Nonhispanic,,,Irish,,,False,,26.7892956317 kg/m2,,,,,89 mmHg,male,"3501 days, 0:00:00",,,121.868428185 cm,,
+,104 mmHg,M,,1571,74.8556171743 kg,,Nonhispanic,,,Irish,,,False,,25.9464179922 kg/m2,,,,,71 mmHg,male,"4917 days, 0:00:00",,,169.85310586 cm,,
+,106 mmHg,M,,1572,73.5983281585 kg,,Nonhispanic,,,Scottish,,,False,,26.3155751101 kg/m2,,,,,88 mmHg,female,"11071 days, 0:00:00",,,167.2351414 cm,,
+124 mL/min/{1.73_m2},146 mmHg,M,,1573,90.4409531857 kg,,Nonhispanic,,,French,,,False,,26.4350965953 kg/m2,,,,164 mg/dL,119 mmHg,male,"5752 days, 0:00:00",72 mg/dL,72 mg/dL,184.966089357 cm,,100 mg/dL
+135 mL/min/{1.73_m2},182 mmHg,M,139 mmol/L,1574,99.5324980824 kg,107 mmol/L,Nonhispanic,111 mg/dL,4.68889035917 mmol/L,French,,19 mg/dL,False,5.82476585679 %,38.0362122124 kg/m2,25 mmol/L,8.553799351 mg/dL,,214 mg/dL,96 mmHg,female,"22086 days, 0:00:00",128 mg/dL,52 mg/dL,161.764724047 cm,0.687613914222 mg/dL,166 mg/dL
+120 mL/min/{1.73_m2},181 mmHg,M,,1575,98.1585129704 kg,,Nonhispanic,,,Irish,,,False,,34.8510240537 kg/m2,,,,,103 mmHg,female,"5906 days, 0:00:00",,,167.824829002 cm,,
+,124 mmHg,S,142 mmol/L,1576,104.329505519 kg,109 mmol/L,Nonhispanic,110 mg/dL,4.0572777179 mmol/L,French,,14 mg/dL,False,4.50707422911 %,30.7889082601 kg/m2,28 mmol/L,8.9376328926 mg/dL,,213 mg/dL,89 mmHg,male,"24902 days, 0:00:00",132 mg/dL,48 mg/dL,184.079925421 cm,0.891705175374 mg/dL,164 mg/dL
+150 mL/min/{1.73_m2},193 mmHg,S,,1577,79.606067362 kg,,Nonhispanic,,,Irish,,,False,,23.6500029876 kg/m2,,,,199 mg/dL,119 mmHg,male,"23765 days, 0:00:00",106 mg/dL,68 mg/dL,183.466799487 cm,,123 mg/dL
+,,M,,1578,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"28247 days, 0:00:00",,,,,
+,134 mmHg,,,1579,48.6587336028 kg,,Nonhispanic,,,Italian,,,False,,19.1228961237 kg/m2,,,,,71 mmHg,female,"5057 days, 0:00:00",,,159.515749174 cm,,
+,105 mmHg,M,142 mmol/L,1580,112.717190899 kg,102 mmol/L,Nonhispanic,104 mg/dL,4.78800709826 mmol/L,Irish,,15 mg/dL,False,5.90742479279 %,38.4908363604 kg/m2,26 mmol/L,9.31554526934 mg/dL,,,71 mmHg,male,"18077 days, 0:00:00",,,171.126159772 cm,1.3971814284 mg/dL,
+,101 mmHg,M,139 mmol/L,1581,79.9397094995 kg,109 mmol/L,Nonhispanic,119 mg/dL,4.92525956855 mmol/L,French,,7 mg/dL,False,3.92226643925 %,27.5724654159 kg/m2,24 mmol/L,8.88186210575 mg/dL,,220 mg/dL,80 mmHg,male,"28961 days, 0:00:00",130 mg/dL,58 mg/dL,170.272096165 cm,0.541813586607 mg/dL,158 mg/dL
+,,S,,1582,,,Nonhispanic,,,French_canadian,,,False,,,,,,,,male,"23931 days, 0:00:00",,,,,
+2 mL/min/{1.73_m2},153 mmHg,M,138 mmol/L,1583,76.9640002908 kg,104 mmol/L,Nonhispanic,112 mg/dL,5.02212422467 mmol/L,African,,9 mg/dL,False,4.77407642892 %,32.257420359 kg/m2,28 mmol/L,9.80668390372 mg/dL,460 mg/g,235 mg/dL,101 mmHg,female,"29007 days, 0:00:00",150 mg/dL,47 mg/dL,154.464612561 cm,27.7123848269 mg/dL,187 mg/dL
+,130 mmHg,M,,1584,86.7265576132 kg,,Puerto_rican,,,Other,,,False,,27.6243724759 kg/m2,,,,,70 mmHg,male,"25546 days, 0:00:00",,,177.186179375 cm,,
+,,M,,1585,,,Nonhispanic,,,German,,,False,,,,,,,,male,"6558 days, 0:00:00",,,,,
+,,M,,1586,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"21101 days, 0:00:00",,,,,
+,125 mmHg,S,,1587,61.6759423516 kg,,Nonhispanic,,,Irish,,,False,,21.0000257012 kg/m2,,,,,79 mmHg,female,"27257 days, 0:00:00",,,171.375203614 cm,,
+114 mL/min/{1.73_m2},193 mmHg,M,,1588,99.7612060198 kg,,Nonhispanic,,,English,,,False,,28.3401710115 kg/m2,,,,176 mg/dL,110 mmHg,male,"5384 days, 0:00:00",80 mg/dL,66 mg/dL,187.620207561 cm,,146 mg/dL
+,108 mmHg,M,,1589,72.1584286918 kg,,Nonhispanic,,,African,,,False,,28.1430787659 kg/m2,,,,182 mg/dL,77 mmHg,female,"9692 days, 0:00:00",84 mg/dL,75 mg/dL,160.124479366 cm,,112 mg/dL
+2 mL/min/{1.73_m2},175 mmHg,M,140 mmol/L,1590,87.2609231649 kg,103 mmol/L,Nonhispanic,105 mg/dL,4.37160053943 mmol/L,Portuguese,,17 mg/dL,False,5.48859745669 %,36.1872860118 kg/m2,29 mmol/L,10.1464949414 mg/dL,321 mg/g,206 mg/dL,104 mmHg,female,"5915 days, 0:00:00",120 mg/dL,50 mg/dL,155.285854117 cm,36.570810507 mg/dL,179 mg/dL
+14 mL/min/{1.73_m2},100 mmHg,M,139 mmol/L,1591,120.154718012 kg,104 mmol/L,Puerto_rican,109 mg/dL,4.84484261135 mmol/L,Other,,15 mg/dL,False,6.18259920985 %,40.0042956542 kg/m2,23 mmol/L,9.65215024412 mg/dL,440 mg/g,200 mg/dL,77 mmHg,male,"22734 days, 0:00:00",125 mg/dL,44 mg/dL,173.307397288 cm,9.29768651282 mg/dL,151 mg/dL
+,136 mmHg,,,1592,41.1305584235 kg,,Nonhispanic,,,American,,,False,,23.5030106159 kg/m2,,,,,83 mmHg,male,"3063 days, 0:00:00",,,132.288031669 cm,,
+,118 mmHg,M,,1593,70.9320614731 kg,,Nonhispanic,,,Irish,,,False,,21.5803279351 kg/m2,,,,172 mg/dL,88 mmHg,male,"3201 days, 0:00:00",70 mg/dL,80 mg/dL,181.297690141 cm,,109 mg/dL
+,108 mmHg,M,143 mmol/L,1594,66.60184386 kg,110 mmol/L,Nonhispanic,110 mg/dL,3.79741632722 mmol/L,Italian,,18 mg/dL,False,2.90060055098 %,21.9533030304 kg/m2,28 mmol/L,9.89588730809 mg/dL,,,80 mmHg,male,"32539 days, 0:00:00",,,174.177956206 cm,0.54059938198 mg/dL,
+,,M,,1595,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"22521 days, 0:00:00",,,,,
+,131 mmHg,S,,1596,96.1237110008 kg,,Nonhispanic,,,Asian_indian,,,False,,32.2540316656 kg/m2,,,,,89 mmHg,female,"22894 days, 0:00:00",,,172.632778513 cm,,
+,,M,,1597,,,Nonhispanic,,,American,,,False,,,,,,,,female,"17598 days, 0:00:00",,,,,
+,134 mmHg,M,,1598,107.818059916 kg,,Nonhispanic,,,French,,,False,,35.8195734223 kg/m2,,,,167 mg/dL,88 mmHg,male,"20918 days, 0:00:00",70 mg/dL,73 mg/dL,173.494436091 cm,,119 mg/dL
+,106 mmHg,M,136 mmol/L,1599,80.9888907138 kg,106 mmol/L,Nonhispanic,118 mg/dL,4.07587543996 mmol/L,Italian,,7 mg/dL,False,4.01919807277 %,28.1055894002 kg/m2,26 mmol/L,9.51410449984 mg/dL,,225 mg/dL,70 mmHg,male,"28796 days, 0:00:00",152 mg/dL,41 mg/dL,169.752577256 cm,0.553202805422 mg/dL,158 mg/dL
+,,M,,1600,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"15830 days, 0:00:00",,,,,
+93 mL/min/{1.73_m2},183 mmHg,M,,1601,109.531429206 kg,,Nonhispanic,,,African,,,False,,32.5327656484 kg/m2,,,,,101 mmHg,male,"11821 days, 0:00:00",,,183.48851459 cm,,
+,,M,,1602,,,Nonhispanic,,,Swedish,,,False,,,,,,,,male,"13061 days, 0:00:00",,,,,
+,,M,,1603,,,Nonhispanic,,,English,,,False,,,,,,,,male,"22158 days, 0:00:00",,,,,
+75 mL/min/{1.73_m2},149 mmHg,M,,1604,87.1664044187 kg,,Nonhispanic,,,Italian,,,False,,32.7973993955 kg/m2,,,,,102 mmHg,female,"15729 days, 0:00:00",,,163.025245039 cm,,
+,,S,,1605,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"23277 days, 0:00:00",,,,,
+130 mL/min/{1.73_m2},182 mmHg,,,1606,74.0293422975 kg,,Nonhispanic,,,Chinese,,,False,,23.6346408372 kg/m2,,,,,105 mmHg,male,"2573 days, 0:00:00",,,176.981324925 cm,,
+,120 mmHg,M,,1607,92.1489026298 kg,,Nonhispanic,,,Dominican,,,False,,29.804348365 kg/m2,,,,195 mg/dL,73 mmHg,male,"25068 days, 0:00:00",96 mg/dL,73 mg/dL,175.834976766 cm,,126 mg/dL
+,,M,,1608,,,Nonhispanic,,,Asian_indian,,,False,,,,,,,,male,"19059 days, 0:00:00",,,,,
+,120 mmHg,M,,1609,105.228991654 kg,,Nonhispanic,,,Italian,,,False,,37.3075802658 kg/m2,,,,185 mg/dL,89 mmHg,male,"18806 days, 0:00:00",85 mg/dL,71 mg/dL,167.94580617 cm,,143 mg/dL
+,116 mmHg,M,,1610,94.7373128687 kg,,Puerto_rican,,,Other,,,False,,30.138011041 kg/m2,,,,176 mg/dL,71 mmHg,male,"14174 days, 0:00:00",83 mg/dL,71 mg/dL,177.297755338 cm,,107 mg/dL
+,,M,,1611,,,Nonhispanic,,,English,,,False,,,,,,,,female,"20328 days, 0:00:00",,,,,
+,107 mmHg,M,137 mmol/L,1612,93.0273080841 kg,103 mmol/L,Nonhispanic,117 mg/dL,4.80462132606 mmol/L,Swedish,,16 mg/dL,False,3.9005820585 %,27.4532013218 kg/m2,20 mmol/L,9.82038628468 mg/dL,,,89 mmHg,male,"26575 days, 0:00:00",,,184.080900244 cm,0.820987527942 mg/dL,
+,,M,,1613,,,Nonhispanic,,,Scottish,,,False,,,,,,,,male,"24245 days, 0:00:00",,,,,
+,124 mmHg,,,1614,57.7613111454 kg,,Nonhispanic,,,Irish,,,False,,21.0605702508 kg/m2,,,,,78 mmHg,female,"8420 days, 0:00:00",,,165.608818312 cm,,
+157 mL/min/{1.73_m2},152 mmHg,M,,1615,74.7952736409 kg,,Nonhispanic,,,English,,,False,,24.7259206141 kg/m2,,,,,97 mmHg,male,"27947 days, 0:00:00",,,173.9245316 cm,,
+160 mL/min/{1.73_m2},184 mmHg,M,136 mmol/L,1616,114.102308992 kg,106 mmol/L,Nonhispanic,101 mg/dL,4.54971112602 mmol/L,Polish,,14 mg/dL,,5.72752636711 %,37.5013950191 kg/m2,22 mmol/L,9.69302837081 mg/dL,,,94 mmHg,male,"17582 days, 0:00:00",,,174.430933408 cm,0.911233717645 mg/dL,
+,106 mmHg,M,,1617,83.1630351303 kg,,Nonhispanic,,,Irish,,,False,,26.8133396297 kg/m2,,,,,86 mmHg,male,"29778 days, 0:00:00",,,176.112308915 cm,,
+,125 mmHg,,,1618,26.7350824389 kg,,Nonhispanic,,,Italian,,,False,,20.2371487069 kg/m2,,,,,70 mmHg,male,"994 days, 0:00:00",,,114.938652764 cm,,
+,130 mmHg,S,139 mmol/L,1619,93.1526199264 kg,104 mmol/L,Nonhispanic,118 mg/dL,3.86667372088 mmol/L,French,,15 mg/dL,False,4.73502073873 %,32.042614063 kg/m2,24 mmol/L,8.61459084098 mg/dL,,,88 mmHg,male,"22584 days, 0:00:00",,,170.503605662 cm,0.973817711297 mg/dL,
+97 mL/min/{1.73_m2},158 mmHg,M,,1620,95.9461838465 kg,,Nonhispanic,,,French,,,False,,33.045442227 kg/m2,,,,,101 mmHg,female,"7030 days, 0:00:00",,,170.395479444 cm,,
+,125 mmHg,M,137 mmol/L,1621,109.877126793 kg,101 mmol/L,Puerto_rican,122 mg/dL,5.01460611332 mmol/L,Other,,19 mg/dL,False,5.11390337465 %,34.1264685606 kg/m2,21 mmol/L,8.52809558727 mg/dL,,237 mg/dL,81 mmHg,male,"24556 days, 0:00:00",146 mg/dL,57 mg/dL,179.435336103 cm,0.831367149242 mg/dL,168 mg/dL
+,,M,,1622,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"19765 days, 0:00:00",,,,,
+122 mL/min/{1.73_m2},199 mmHg,M,,1623,99.089657506 kg,,Nonhispanic,,,Italian,,,False,,27.7043220069 kg/m2,,,,198 mg/dL,99 mmHg,male,"19889 days, 0:00:00",92 mg/dL,76 mg/dL,189.121280825 cm,,148 mg/dL
+,100 mmHg,M,,1624,70.0151890045 kg,,Nonhispanic,,,American,,,False,,23.9273186059 kg/m2,,,,,75 mmHg,female,"296 days, 0:00:00",,,171.060255554 cm,,
+,,M,,1625,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"32052 days, 0:00:00",,,,,
+,101 mmHg,,,1626,18.7242255227 kg,,Nonhispanic,,,English,,,False,,31.7341042418 kg/m2,,,,,76 mmHg,female,"1582 days, 0:00:00",,,76.813722062 cm,,
+,138 mmHg,M,,1627,56.6971670736 kg,,Nonhispanic,,,Chinese,,,False,,16.2332305188 kg/m2,,,,,77 mmHg,male,"22247 days, 0:00:00",,,186.886616688 cm,,
+,117 mmHg,M,,1628,69.9902748716 kg,,Nonhispanic,,,Polish,,,False,,24.7927372912 kg/m2,,,,,73 mmHg,female,"28217 days, 0:00:00",,,168.018309305 cm,,
+80 mL/min/{1.73_m2},152 mmHg,M,138 mmol/L,1629,88.0409496905 kg,103 mmol/L,Nonhispanic,118 mg/dL,4.95257404025 mmol/L,French,,19 mg/dL,False,5.09284599719 %,34.0106529845 kg/m2,29 mmol/L,8.82610559508 mg/dL,,,97 mmHg,female,"7033 days, 0:00:00",,,160.89215704 cm,0.948427244496 mg/dL,
+61 mL/min/{1.73_m2},197 mmHg,M,,1630,98.856676608 kg,,Nonhispanic,,,French,,,False,,35.9076503653 kg/m2,,,,164 mg/dL,96 mmHg,female,"981 days, 0:00:00",71 mg/dL,71 mg/dL,165.924114725 cm,,108 mg/dL
+,130 mmHg,M,,1631,93.2458136238 kg,,Nonhispanic,,,African,,,False,,30.6641959087 kg/m2,,,,185 mg/dL,74 mmHg,male,"15697 days, 0:00:00",94 mg/dL,65 mg/dL,174.380886414 cm,,129 mg/dL
+3 mL/min/{1.73_m2},155 mmHg,S,138 mmol/L,1632,119.636756746 kg,101 mmol/L,Nonhispanic,105 mg/dL,5.03241178038 mmol/L,West_indian,,18 mg/dL,False,5.95423257638 %,38.7482791701 kg/m2,27 mmol/L,9.49775660928 mg/dL,315 mg/g,227 mg/dL,100 mmHg,male,"22444 days, 0:00:00",132 mg/dL,56 mg/dL,175.713894927 cm,40.9866666629 mg/dL,191 mg/dL
+,139 mmHg,M,,1633,63.4794277243 kg,,Nonhispanic,,,Irish,,,False,,22.0257296843 kg/m2,,,,,75 mmHg,female,"5377 days, 0:00:00",,,169.766247428 cm,,
+,134 mmHg,M,,1634,66.7028719601 kg,,Nonhispanic,,,African,,,False,,22.1128536699 kg/m2,,,,,71 mmHg,female,"9693 days, 0:00:00",,,173.680024075 cm,,
+,,M,,1635,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"28997 days, 0:00:00",,,,,
+,,S,,1636,,,Nonhispanic,,,German,,,False,,,,,,,,female,"24627 days, 0:00:00",,,,,
+,,M,,1637,,,Nonhispanic,,,French,,,False,,,,,,,,male,"24074 days, 0:00:00",,,,,
+,,M,,1638,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"25099 days, 0:00:00",,,,,
+,103 mmHg,M,144 mmol/L,1639,85.9609925872 kg,103 mmol/L,Nonhispanic,121 mg/dL,3.87686180271 mmol/L,Chinese,,17 mg/dL,False,5.03189633476 %,33.6754298412 kg/m2,21 mmol/L,8.7591032942 mg/dL,,,80 mmHg,female,"26301 days, 0:00:00",,,159.769595948 cm,0.971937670489 mg/dL,
+,123 mmHg,S,138 mmol/L,1640,101.687402546 kg,104 mmol/L,Nonhispanic,120 mg/dL,3.78408388104 mmol/L,Dominican,,14 mg/dL,False,5.57474634335 %,36.6611048884 kg/m2,26 mmol/L,9.47264389848 mg/dL,,212 mg/dL,88 mmHg,female,"11383 days, 0:00:00",132 mg/dL,44 mg/dL,166.544694513 cm,1.3188330964 mg/dL,179 mg/dL
+95 mL/min/{1.73_m2},189 mmHg,S,,1641,82.3669542369 kg,,Nonhispanic,,,German,,,False,,27.067952965 kg/m2,,,,,118 mmHg,male,"7038 days, 0:00:00",,,174.441092084 cm,,
+92 mL/min/{1.73_m2},192 mmHg,M,,1642,97.0442516487 kg,,Nonhispanic,,,Irish,,,False,,34.5844535243 kg/m2,,,,189 mg/dL,109 mmHg,female,"13794 days, 0:00:00",94 mg/dL,75 mg/dL,167.511431051 cm,,100 mg/dL
+,110 mmHg,M,,1643,61.9361605931 kg,,Nonhispanic,,,Italian,,,False,,22.0741619694 kg/m2,,,,,76 mmHg,male,"31088 days, 0:00:00",,,167.50586874 cm,,
+,120 mmHg,M,,1644,112.083576089 kg,,Nonhispanic,,,French_canadian,,,False,,27.6959042312 kg/m2,,,,,83 mmHg,male,"8618 days, 0:00:00",,,201.169999599 cm,,
+,138 mmHg,M,,1645,116.293454983 kg,,Nonhispanic,,,Irish,,,False,,31.0520437688 kg/m2,,,,177 mg/dL,78 mmHg,male,"24107 days, 0:00:00",81 mg/dL,66 mg/dL,193.522979479 cm,,150 mg/dL
+,139 mmHg,M,142 mmol/L,1646,90.0416505321 kg,108 mmol/L,Nonhispanic,116 mg/dL,4.80349105331 mmol/L,English,,9 mg/dL,False,4.49221256447 %,30.7071691046 kg/m2,20 mmol/L,9.52586093995 mg/dL,,,85 mmHg,male,"23415 days, 0:00:00",,,171.238664996 cm,0.573895603658 mg/dL,
+,,M,,1647,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"12876 days, 0:00:00",,,,,
+4 mL/min/{1.73_m2},115 mmHg,S,143 mmol/L,1648,116.728603581 kg,101 mmol/L,Nonhispanic,101 mg/dL,4.75101586923 mmol/L,Irish,,19 mg/dL,False,6.55202497247 %,42.0361373486 kg/m2,22 mmol/L,9.32181192963 mg/dL,365 mg/g,210 mg/dL,85 mmHg,male,"22945 days, 0:00:00",118 mg/dL,53 mg/dL,166.639227579 cm,31.6139968031 mg/dL,194 mg/dL
+,,M,,1649,,,Nonhispanic,,,Russian,,,False,,,,,,,,female,"21843 days, 0:00:00",,,,,
+,134 mmHg,M,,1650,100.962626774 kg,,Nonhispanic,,,French_canadian,,,False,,26.9675172917 kg/m2,,,,187 mg/dL,71 mmHg,male,"25765 days, 0:00:00",97 mg/dL,65 mg/dL,193.490585001 cm,,125 mg/dL
+,123 mmHg,,,1651,33.7254484792 kg,,Nonhispanic,,,Polish,,,False,,14.1047345453 kg/m2,,,,,76 mmHg,male,"1638 days, 0:00:00",,,154.630944387 cm,,
+,114 mmHg,S,144 mmol/L,1652,104.449509389 kg,108 mmol/L,Nonhispanic,125 mg/dL,3.98584177772 mmol/L,English,,15 mg/dL,False,4.85907070422 %,32.7248888732 kg/m2,23 mmol/L,8.94561952881 mg/dL,,207 mg/dL,81 mmHg,male,"10835 days, 0:00:00",129 mg/dL,47 mg/dL,178.654562594 cm,1.38761425517 mg/dL,151 mg/dL
+124 mL/min/{1.73_m2},147 mmHg,M,136 mmol/L,1653,89.4634261635 kg,103 mmol/L,Nonhispanic,124 mg/dL,4.57747332101 mmol/L,French_canadian,,20 mg/dL,False,4.12922659213 %,28.7107462567 kg/m2,29 mmol/L,9.57933531181 mg/dL,,,108 mmHg,male,"26054 days, 0:00:00",,,176.522684184 cm,0.611253247757 mg/dL,
+,129 mmHg,M,137 mmol/L,1654,130.945953871 kg,107 mmol/L,Nonhispanic,114 mg/dL,4.57891148015 mmol/L,Scottish,,15 mg/dL,False,5.94804544254 %,38.7142499339 kg/m2,27 mmol/L,9.72227555863 mg/dL,,236 mg/dL,83 mmHg,male,"6055 days, 0:00:00",143 mg/dL,56 mg/dL,183.912232823 cm,1.05882858438 mg/dL,181 mg/dL
+,111 mmHg,M,140 mmol/L,1655,115.142591998 kg,110 mmol/L,Nonhispanic,125 mg/dL,3.92483333834 mmol/L,Italian,,11 mg/dL,False,5.70252964539 %,37.3639130497 kg/m2,29 mmol/L,9.07696144117 mg/dL,,,86 mmHg,male,"21198 days, 0:00:00",,,175.546358302 cm,1.21420943207 mg/dL,
+100 mL/min/{1.73_m2},150 mmHg,M,136 mmol/L,1656,87.7950712429 kg,102 mmol/L,Central_american,113 mg/dL,4.54648759435 mmol/L,Other,,7 mg/dL,False,4.30055538763 %,29.653054632 kg/m2,27 mmol/L,9.2832644464 mg/dL,,,120 mmHg,male,"24190 days, 0:00:00",,,172.068094351 cm,0.756013113481 mg/dL,
+,102 mmHg,S,,1657,99.7607730359 kg,,Nonhispanic,,,Chinese,,,False,,27.9936325695 kg/m2,,,,,75 mmHg,male,"23212 days, 0:00:00",,,188.777518919 cm,,
+,107 mmHg,M,,1658,104.017622145 kg,,Nonhispanic,,,Polish,,,,,29.0208347704 kg/m2,,,,169 mg/dL,76 mmHg,male,"22821 days, 0:00:00",75 mg/dL,68 mg/dL,189.320878257 cm,,128 mg/dL
+,121 mmHg,M,137 mmol/L,1659,79.2967884527 kg,108 mmol/L,Nonhispanic,124 mg/dL,4.10648275383 mmol/L,Dominican,,7 mg/dL,False,3.44739598951 %,24.9606779423 kg/m2,28 mmol/L,9.62069655064 mg/dL,,234 mg/dL,77 mmHg,male,"29309 days, 0:00:00",147 mg/dL,53 mg/dL,178.237717057 cm,0.635390933115 mg/dL,170 mg/dL
+7 mL/min/{1.73_m2},101 mmHg,,138 mmol/L,1660,69.2737511433 kg,102 mmol/L,Nonhispanic,125 mg/dL,3.70619860992 mmol/L,Portuguese,,17 mg/dL,False,2.73912287685 %,21.0651758227 kg/m2,22 mmol/L,9.63651257291 mg/dL,575 mg/g,232 mg/dL,80 mmHg,male,"4285 days, 0:00:00",148 mg/dL,49 mg/dL,181.343422692 cm,16.0814065154 mg/dL,171 mg/dL
+,116 mmHg,S,,1661,78.7595700696 kg,,Nonhispanic,,,Scottish,,,False,,23.6005646171 kg/m2,,,,,74 mmHg,male,"28973 days, 0:00:00",,,182.679776597 cm,,
+,,M,,1662,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"20969 days, 0:00:00",,,,,
+,,M,,1663,,,Nonhispanic,,,Dominican,,,False,,,,,,,,female,"26341 days, 0:00:00",,,,,
+,138 mmHg,M,,1664,94.25113386 kg,,Nonhispanic,,,French,,,False,,27.1005827588 kg/m2,,,,,71 mmHg,male,"23903 days, 0:00:00",,,186.489324928 cm,,
+8 mL/min/{1.73_m2},200 mmHg,M,137 mmol/L,1665,121.719663585 kg,108 mmol/L,Nonhispanic,106 mg/dL,4.72421386129 mmol/L,Italian,,11 mg/dL,False,6.49576608131 %,41.7267134472 kg/m2,26 mmol/L,9.82915754549 mg/dL,481 mg/g,208 mg/dL,108 mmHg,male,"14861 days, 0:00:00",117 mg/dL,59 mg/dL,170.794264334 cm,16.9055088313 mg/dL,160 mg/dL
+,,M,,1666,,,Nonhispanic,,,Swedish,,,False,,,,,,,,male,"11080 days, 0:00:00",,,,,
+,124 mmHg,M,,1667,91.4806569428 kg,,Nonhispanic,,,Chinese,,,False,,29.0071691962 kg/m2,,,,,81 mmHg,male,"20801 days, 0:00:00",,,177.58732409 cm,,
+,,M,,1668,,,Nonhispanic,,,American,,,False,,,,,,,,male,"12264 days, 0:00:00",,,,,
+,104 mmHg,,,1669,3.5 kg,,Nonhispanic,,,German,,,False,,,,,,,88 mmHg,male,"319 days, 0:00:00",,,51 cm,,
+,120 mmHg,M,,1670,86.2464522128 kg,,Nonhispanic,,,Swedish,,,False,,25.3729521538 kg/m2,,,,,75 mmHg,male,"7233 days, 0:00:00",,,184.367819497 cm,,
+,127 mmHg,M,138 mmol/L,1671,122.281495059 kg,110 mmol/L,Nonhispanic,117 mg/dL,4.00198960841 mmol/L,English,,10 mg/dL,False,5.65723127982 %,37.114772039 kg/m2,29 mmol/L,10.1659932293 mg/dL,,,82 mmHg,male,"17457 days, 0:00:00",,,181.512680895 cm,1.22218005186 mg/dL,
+1 mL/min/{1.73_m2},170 mmHg,S,138 mmol/L,1672,113.749471742 kg,109 mmol/L,Mexican,113 mg/dL,4.02184183367 mmol/L,Other,,20 mg/dL,False,5.97992372006 %,38.8895804603 kg/m2,24 mmol/L,9.58966427177 mg/dL,528 mg/g,215 mg/dL,119 mmHg,male,"10947 days, 0:00:00",137 mg/dL,45 mg/dL,171.02439596 cm,154.825669871 mg/dL,163 mg/dL
+8 mL/min/{1.73_m2},178 mmHg,S,144 mmol/L,1673,112.421840842 kg,106 mmol/L,Nonhispanic,107 mg/dL,3.92564178366 mmol/L,Polish,,20 mg/dL,False,7.10121172457 %,45.0566644851 kg/m2,23 mmol/L,10.1255815781 mg/dL,589 mg/g,231 mg/dL,103 mmHg,female,"14282 days, 0:00:00",137 mg/dL,58 mg/dL,157.959527926 cm,14.9310257368 mg/dL,176 mg/dL
+,127 mmHg,M,,1674,66.9590685431 kg,,Nonhispanic,,,Irish,,,False,,22.5536384017 kg/m2,,,,,88 mmHg,female,"30287 days, 0:00:00",,,172.304410869 cm,,
+122 mL/min/{1.73_m2},170 mmHg,M,,1675,100.607267257 kg,,Nonhispanic,,,American,,,False,,36.747183317 kg/m2,,,,200 mg/dL,99 mmHg,female,"10611 days, 0:00:00",95 mg/dL,76 mg/dL,165.463668319 cm,,141 mg/dL
+,138 mmHg,M,140 mmol/L,1676,90.207182327 kg,109 mmol/L,Nonhispanic,121 mg/dL,4.70686652603 mmol/L,Polish,,13 mg/dL,False,5.79230239959 %,37.8576631977 kg/m2,20 mmol/L,9.30028953243 mg/dL,,213 mg/dL,77 mmHg,female,"5334 days, 0:00:00",119 mg/dL,57 mg/dL,154.36315882 cm,1.24647077221 mg/dL,181 mg/dL
+,,S,,1677,,,Nonhispanic,,,American,,,False,,,,,,,,female,"5774 days, 0:00:00",,,,,
+,117 mmHg,M,,1678,104.903882748 kg,,Nonhispanic,,,Portuguese,,,False,,28.7217445736 kg/m2,,,,,74 mmHg,male,"21284 days, 0:00:00",,,191.113063227 cm,,
+,,M,,1679,,,Mexican,,,Other,,,False,,,,,,,,male,"30203 days, 0:00:00",,,,,
+,,M,,1680,,,Puerto_rican,,,Other,,,False,,,,,,,,female,"10469 days, 0:00:00",,,,,
+,,S,,1681,,,Nonhispanic,,,Dominican,,,,,,,,,,,female,"26366 days, 0:00:00",,,,,
+,106 mmHg,M,,1682,104.254486023 kg,,Nonhispanic,,,Italian,,,False,,32.7751373143 kg/m2,,,,161 mg/dL,83 mmHg,male,"1993 days, 0:00:00",70 mg/dL,65 mg/dL,178.350822219 cm,,127 mg/dL
+,122 mmHg,M,137 mmol/L,1683,72.0562023223 kg,109 mmol/L,Nonhispanic,125 mg/dL,4.15538675155 mmol/L,German,,8 mg/dL,False,3.62359091379 %,25.9297500259 kg/m2,20 mmol/L,8.87009688081 mg/dL,,,85 mmHg,male,"27476 days, 0:00:00",,,166.70035304 cm,0.596424794755 mg/dL,
+,123 mmHg,,,1684,44.9040389149 kg,,Nonhispanic,,,Swedish,,,False,,24.9039398353 kg/m2,,,,,85 mmHg,female,"5705 days, 0:00:00",,,134.279177856 cm,,
+,105 mmHg,M,141 mmol/L,1685,101.576870645 kg,102 mmol/L,Nonhispanic,107 mg/dL,4.46181177513 mmol/L,Irish,,18 mg/dL,False,4.85242205384 %,32.6883212961 kg/m2,20 mmol/L,9.37992101623 mg/dL,,,88 mmHg,male,"25821 days, 0:00:00",,,176.27921405 cm,0.695459795104 mg/dL,
+,,M,,1686,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"27675 days, 0:00:00",,,,,
+,128 mmHg,,,1687,30.0612152998 kg,,Nonhispanic,,,Scottish,,,False,,23.2342163069 kg/m2,,,,,87 mmHg,female,"3689 days, 0:00:00",,,113.746817091 cm,,
+,138 mmHg,S,136 mmol/L,1688,116.113113512 kg,104 mmol/L,Puerto_rican,104 mg/dL,3.70134284022 mmol/L,Other,,20 mg/dL,False,6.46245831344 %,41.5435207239 kg/m2,22 mmol/L,9.13911511293 mg/dL,,,73 mmHg,male,"19295 days, 0:00:00",,,167.181795692 cm,1.07512142141 mg/dL,
+,,M,,1689,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"23564 days, 0:00:00",,,,,
+,,M,,1690,,,Nonhispanic,,,Russian,,,False,,,,,,,,male,"25361 days, 0:00:00",,,,,
+,,M,,1691,,,Nonhispanic,,,Irish,,,,,,,,,,,male,"19795 days, 0:00:00",,,,,
+,120 mmHg,M,139 mmol/L,1692,112.608003048 kg,106 mmol/L,Nonhispanic,103 mg/dL,3.9006505248 mmol/L,Asian_indian,,10 mg/dL,False,6.11067515695 %,39.6087133632 kg/m2,22 mmol/L,9.22974218133 mg/dL,,206 mg/dL,73 mmHg,male,"21919 days, 0:00:00",115 mg/dL,52 mg/dL,168.612303238 cm,0.828609293949 mg/dL,195 mg/dL
+9 mL/min/{1.73_m2},164 mmHg,M,137 mmol/L,1693,119.768614043 kg,111 mmol/L,Nonhispanic,106 mg/dL,4.69410994083 mmol/L,Italian,,12 mg/dL,False,6.21140436162 %,40.1627239889 kg/m2,29 mmol/L,9.76489773193 mg/dL,411 mg/g,210 mg/dL,110 mmHg,male,"25843 days, 0:00:00",130 mg/dL,42 mg/dL,172.68711406 cm,12.9379675664 mg/dL,188 mg/dL
+111 mL/min/{1.73_m2},178 mmHg,M,,1694,91.1776639996 kg,,Nonhispanic,,,German,,,False,,33.9694192649 kg/m2,,,,168 mg/dL,108 mmHg,female,"16047 days, 0:00:00",80 mg/dL,66 mg/dL,163.832541892 cm,,108 mg/dL
+,111 mmHg,S,,1695,86.9619800644 kg,,Nonhispanic,,,English,,,False,,23.9720102766 kg/m2,,,,179 mg/dL,83 mmHg,male,"25707 days, 0:00:00",95 mg/dL,61 mg/dL,190.463816432 cm,,111 mg/dL
+,135 mmHg,M,138 mmol/L,1696,108.111716388 kg,105 mmol/L,Puerto_rican,106 mg/dL,4.21026843736 mmol/L,Other,,8 mg/dL,False,6.22784858683 %,40.2531672275 kg/m2,25 mmol/L,8.89526296821 mg/dL,,,72 mmHg,male,"14952 days, 0:00:00",,,163.883923371 cm,1.44379963125 mg/dL,
+,,M,,1697,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"13234 days, 0:00:00",,,,,
+,123 mmHg,M,142 mmol/L,1698,63.2827124151 kg,110 mmol/L,Nonhispanic,124 mg/dL,4.41187376773 mmol/L,Irish,,11 mg/dL,False,3.46097209137 %,25.0353465025 kg/m2,27 mmol/L,8.51435932092 mg/dL,,,81 mmHg,female,"27865 days, 0:00:00",,,158.988510071 cm,0.391331588016 mg/dL,
+,108 mmHg,,,1699,22.0416411822 kg,,Nonhispanic,,,French,,,False,,17.9524931448 kg/m2,,,,,71 mmHg,female,"1948 days, 0:00:00",,,110.805056447 cm,,
+99 mL/min/{1.73_m2},168 mmHg,M,139 mmol/L,1700,109.848395599 kg,106 mmol/L,Nonhispanic,109 mg/dL,5.14946617612 mmol/L,Portuguese,,11 mg/dL,False,5.79899314009 %,37.8944622705 kg/m2,21 mmol/L,8.94236785197 mg/dL,,238 mg/dL,92 mmHg,male,"20931 days, 0:00:00",155 mg/dL,45 mg/dL,170.258571289 cm,1.27909888254 mg/dL,186 mg/dL
+,,S,,1701,,,Nonhispanic,,,Chinese,,,False,,,,,,,,female,"18606 days, 0:00:00",,,,,
+,121 mmHg,M,,1702,77.1641106147 kg,,Puerto_rican,,,Other,,,False,,28.451166399 kg/m2,,,,162 mg/dL,85 mmHg,female,"4096 days, 0:00:00",73 mg/dL,66 mg/dL,164.686363421 cm,,114 mg/dL
+,131 mmHg,M,,1703,85.0441370062 kg,,Nonhispanic,,,Irish,,,False,,27.0834741427 kg/m2,,,,172 mg/dL,89 mmHg,female,"26107 days, 0:00:00",77 mg/dL,74 mg/dL,177.202564511 cm,,102 mg/dL
+,114 mmHg,M,142 mmol/L,1704,60.577220946 kg,104 mmol/L,Nonhispanic,111 mg/dL,4.3598617761 mmol/L,Polish,,17 mg/dL,False,2.32468892965 %,18.7857891131 kg/m2,28 mmol/L,9.34260953284 mg/dL,,,77 mmHg,male,"7435 days, 0:00:00",,,179.572550679 cm,1.02931152612 mg/dL,
+,,M,,1705,,,Nonhispanic,,,French,,,False,,,,,,,,male,"28321 days, 0:00:00",,,,,
+102 mL/min/{1.73_m2},193 mmHg,M,,1706,94.2644558781 kg,,Nonhispanic,,,Irish,,,False,,28.7092322055 kg/m2,,,,,107 mmHg,male,"28210 days, 0:00:00",,,181.202086228 cm,,
+,,M,,1707,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"13091 days, 0:00:00",,,,,
+,,S,,1708,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"13385 days, 0:00:00",,,,,
+,,M,,1709,,,Nonhispanic,,,English,,,False,,,,,,,,male,"23858 days, 0:00:00",,,,,
+7 mL/min/{1.73_m2},126 mmHg,M,144 mmol/L,1710,106.859694034 kg,107 mmol/L,Nonhispanic,118 mg/dL,3.96616190464 mmol/L,Russian,,9 mg/dL,False,4.4559883705 %,30.5079360377 kg/m2,24 mmol/L,10.1516571367 mg/dL,524 mg/g,200 mg/dL,77 mmHg,male,"28482 days, 0:00:00",120 mg/dL,42 mg/dL,187.15461881 cm,13.3574617542 mg/dL,186 mg/dL
+,,S,,1711,,,Nonhispanic,,,English,,,False,,,,,,,,female,"13818 days, 0:00:00",,,,,
+,124 mmHg,M,,1712,94.7109474033 kg,,Nonhispanic,,,Irish,,,False,,34.9823272262 kg/m2,,,,,82 mmHg,male,"18905 days, 0:00:00",,,164.541609646 cm,,
+,108 mmHg,M,139 mmol/L,1713,99.0652803954 kg,110 mmol/L,Nonhispanic,119 mg/dL,4.44386265584 mmol/L,Irish,,10 mg/dL,False,6.33053868904 %,40.8179627897 kg/m2,26 mmol/L,8.60455401819 mg/dL,,,87 mmHg,female,"9821 days, 0:00:00",,,155.788384522 cm,0.820716260586 mg/dL,
+,135 mmHg,S,137 mmol/L,1714,76.3577950352 kg,103 mmol/L,Nonhispanic,118 mg/dL,5.09165301247 mmol/L,Irish,,16 mg/dL,False,2.99781321621 %,22.4879726892 kg/m2,23 mmol/L,8.57865387639 mg/dL,,215 mg/dL,81 mmHg,male,"21128 days, 0:00:00",135 mg/dL,42 mg/dL,184.268685116 cm,0.650776662232 mg/dL,190 mg/dL
+59 mL/min/{1.73_m2},187 mmHg,M,140 mmol/L,1715,113.616322555 kg,109 mmol/L,Nonhispanic,116 mg/dL,4.63414821411 mmol/L,French,,12 mg/dL,False,7.16690363843 %,45.4179700113 kg/m2,29 mmol/L,9.19019441123 mg/dL,246 mg/g,215 mg/dL,110 mmHg,male,"18295 days, 0:00:00",134 mg/dL,42 mg/dL,158.163586534 cm,2.246650446 mg/dL,194 mg/dL
+,,M,,1716,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"2718 days, 0:00:00",,,,,
+,122 mmHg,M,138 mmol/L,1717,92.9336085752 kg,105 mmol/L,Nonhispanic,114 mg/dL,4.41744601498 mmol/L,English,,18 mg/dL,False,4.98087996131 %,33.3948397872 kg/m2,25 mmol/L,9.21041276406 mg/dL,,238 mg/dL,87 mmHg,female,"24923 days, 0:00:00",153 mg/dL,46 mg/dL,166.819462809 cm,0.69292602885 mg/dL,193 mg/dL
+,,M,,1718,,,Nonhispanic,,,German,,,False,,,,,,,,male,"20671 days, 0:00:00",,,,,
+,,S,,1719,,,Nonhispanic,,,Italian,,,,,,,,,,,female,"3534 days, 0:00:00",,,,,
+,,M,,1720,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"21726 days, 0:00:00",,,,,
+,,M,,1721,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"6029 days, 0:00:00",,,,,
+135 mL/min/{1.73_m2},174 mmHg,M,,1722,101.131075449 kg,,Nonhispanic,,,Irish,,,False,,27.5804702771 kg/m2,,,,,114 mmHg,male,"21170 days, 0:00:00",,,191.487963005 cm,,
+,119 mmHg,M,,1723,57.0840747629 kg,,Nonhispanic,,,American,,,False,,18.1302982627 kg/m2,,,,,87 mmHg,male,"21095 days, 0:00:00",,,177.44142181 cm,,
+,103 mmHg,S,,1724,73.481683627 kg,,Nonhispanic,,,Chinese,,,False,,26.6875538622 kg/m2,,,,,85 mmHg,female,"28698 days, 0:00:00",,,165.93391684 cm,,
+,,M,,1725,,,Nonhispanic,,,French,,,False,,,,,,,,male,"29479 days, 0:00:00",,,,,
+,123 mmHg,M,,1726,98.7949946193 kg,,Nonhispanic,,,English,,,False,,30.0797756836 kg/m2,,,,,84 mmHg,male,"23974 days, 0:00:00",,,181.230035008 cm,,
+156 mL/min/{1.73_m2},180 mmHg,S,144 mmol/L,1727,108.202529082 kg,107 mmol/L,Nonhispanic,116 mg/dL,3.92649331256 mmol/L,Polish,,20 mg/dL,False,4.67982320031 %,31.7390276017 kg/m2,24 mmol/L,9.86262746718 mg/dL,,,105 mmHg,male,"18239 days, 0:00:00",,,184.638344465 cm,0.626172043298 mg/dL,
+119 mL/min/{1.73_m2},151 mmHg,S,,1728,72.1526913898 kg,,Nonhispanic,,,Italian,,,False,,27.262820795 kg/m2,,,,,116 mmHg,female,"7394 days, 0:00:00",,,162.682513325 cm,,
+3 mL/min/{1.73_m2},133 mmHg,M,140 mmol/L,1729,102.272177615 kg,105 mmol/L,Nonhispanic,104 mg/dL,4.08644950912 mmol/L,Polish,,15 mg/dL,False,5.80844911581 %,37.946470137 kg/m2,25 mmol/L,9.54424814525 mg/dL,417 mg/g,212 mg/dL,81 mmHg,male,"23554 days, 0:00:00",115 mg/dL,58 mg/dL,164.169720974 cm,31.7233143528 mg/dL,191 mg/dL
+,,M,,1730,,,Nonhispanic,,,African,,,False,,,,,,,,male,"19749 days, 0:00:00",,,,,
+,124 mmHg,M,,1731,71.5530839902 kg,,Nonhispanic,,,Irish,,,False,,28.6984456597 kg/m2,,,,170 mg/dL,81 mmHg,female,"8686 days, 0:00:00",67 mg/dL,80 mg/dL,157.901040092 cm,,113 mg/dL
+117 mL/min/{1.73_m2},151 mmHg,M,136 mmol/L,1732,92.3389247414 kg,102 mmol/L,Nonhispanic,119 mg/dL,4.70890354779 mmol/L,Irish,,18 mg/dL,False,4.76583524853 %,32.2120938669 kg/m2,26 mmol/L,9.84949119099 mg/dL,,228 mg/dL,111 mmHg,male,"26005 days, 0:00:00",138 mg/dL,53 mg/dL,169.310124289 cm,0.756337346529 mg/dL,182 mg/dL
+,110 mmHg,M,144 mmol/L,1733,118.240419646 kg,103 mmol/L,Nonhispanic,106 mg/dL,3.72182803349 mmol/L,German,,7 mg/dL,False,4.85767033018 %,32.717186816 kg/m2,29 mmol/L,9.33488410954 mg/dL,,,78 mmHg,male,"20751 days, 0:00:00",,,190.105641182 cm,1.38562991772 mg/dL,
+,,M,,1734,,,Nonhispanic,,,West_indian,,,False,,,,,,,,male,"31275 days, 0:00:00",,,,,
+,,M,,1735,,,Nonhispanic,,,English,,,False,,,,,,,,male,"27771 days, 0:00:00",,,,,
+,,M,,1736,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"2961 days, 0:00:00",,,,,
+,128 mmHg,,,1737,22.2131021625 kg,,Nonhispanic,,,Scottish,,,False,,28.3284003505 kg/m2,,,,,70 mmHg,female,"632 days, 0:00:00",,,88.5510226884 cm,,
+,,M,,1738,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"4270 days, 0:00:00",,,,,
+,,M,,1739,,,Nonhispanic,,,English,,,False,,,,,,,,female,"24821 days, 0:00:00",,,,,
+,124 mmHg,M,,1740,99.8861109828 kg,,Nonhispanic,,,African,,,False,,35.9642548836 kg/m2,,,,164 mg/dL,71 mmHg,female,"15240 days, 0:00:00",78 mg/dL,66 mg/dL,166.654489942 cm,,100 mg/dL
+11 mL/min/{1.73_m2},167 mmHg,S,138 mmol/L,1741,79.6106387925 kg,107 mmol/L,Nonhispanic,110 mg/dL,4.18557904973 mmol/L,Irish,,10 mg/dL,False,5.16336526592 %,34.3985089626 kg/m2,20 mmol/L,9.16690480326 mg/dL,321 mg/g,226 mg/dL,118 mmHg,female,"26827 days, 0:00:00",136 mg/dL,51 mg/dL,152.130308276 cm,5.46820549282 mg/dL,192 mg/dL
+,101 mmHg,M,,1742,59.9919693643 kg,,Puerto_rican,,,Other,,,False,,19.5254459378 kg/m2,,,,,89 mmHg,male,"28577 days, 0:00:00",,,175.285535075 cm,,
+,133 mmHg,M,,1743,94.4744015605 kg,,Puerto_rican,,,Other,,,False,,29.214866798 kg/m2,,,,171 mg/dL,89 mmHg,male,"22912 days, 0:00:00",73 mg/dL,74 mg/dL,179.827091259 cm,,120 mg/dL
+,,M,,1744,,,Nonhispanic,,,German,,,False,,,,,,,,female,"23352 days, 0:00:00",,,,,
+,,S,,1745,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"27559 days, 0:00:00",,,,,
+,,M,,1746,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"4227 days, 0:00:00",,,,,
+,,M,,1747,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"26936 days, 0:00:00",,,,,
+5 mL/min/{1.73_m2},178 mmHg,M,137 mmol/L,1748,103.710393053 kg,109 mmol/L,Nonhispanic,102 mg/dL,4.18564350907 mmol/L,French_canadian,,19 mg/dL,False,5.01868445362 %,33.6027644949 kg/m2,27 mmol/L,9.5768598291 mg/dL,304 mg/g,228 mg/dL,97 mmHg,male,"28115 days, 0:00:00",153 mg/dL,40 mg/dL,175.680531225 cm,18.1493187843 mg/dL,172 mg/dL
+68 mL/min/{1.73_m2},159 mmHg,M,139 mmol/L,1749,86.1530643327 kg,109 mmol/L,Nonhispanic,115 mg/dL,4.37445615237 mmol/L,English,,9 mg/dL,False,5.27807640422 %,35.0294202232 kg/m2,28 mmol/L,9.55001378334 mg/dL,,,113 mmHg,female,"22446 days, 0:00:00",,,156.826297723 cm,1.09187043338 mg/dL,
+,130 mmHg,S,140 mmol/L,1750,82.5076749451 kg,108 mmol/L,Nonhispanic,118 mg/dL,5.09995644188 mmol/L,Irish,,20 mg/dL,False,4.55598194127 %,31.057900677 kg/m2,27 mmol/L,9.9008667256 mg/dL,,200 mg/dL,76 mmHg,male,"19159 days, 0:00:00",116 mg/dL,52 mg/dL,162.990062426 cm,0.859454947345 mg/dL,157 mg/dL
+77 mL/min/{1.73_m2},182 mmHg,M,,1751,78.5973532579 kg,,Nonhispanic,,,Irish,,,False,,32.1881679603 kg/m2,,,,176 mg/dL,110 mmHg,female,"5382 days, 0:00:00",84 mg/dL,63 mg/dL,156.262882537 cm,,144 mg/dL
+,120 mmHg,,,1752,3.5 kg,,Nonhispanic,,,Irish,,,False,,,,,,,80 mmHg,female,"338 days, 0:00:00",,,51 cm,,
+,,M,,1753,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"24199 days, 0:00:00",,,,,
+,,M,,1754,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"23787 days, 0:00:00",,,,,
+,127 mmHg,,,1755,53.9008612222 kg,,Nonhispanic,,,French,,,False,,19.2276603561 kg/m2,,,,,76 mmHg,female,"8379 days, 0:00:00",,,167.430521974 cm,,
+93 mL/min/{1.73_m2},149 mmHg,M,143 mmol/L,1756,100.863063502 kg,109 mmol/L,Nonhispanic,116 mg/dL,4.6344691664 mmol/L,English,,19 mg/dL,False,3.91437810049 %,27.5290795527 kg/m2,24 mmol/L,10.0035105391 mg/dL,,,95 mmHg,male,"17704 days, 0:00:00",,,191.412471999 cm,1.0242963438 mg/dL,
+,137 mmHg,M,137 mmol/L,1757,97.228607669 kg,107 mmol/L,Nonhispanic,115 mg/dL,5.19252660507 mmol/L,Italian,,8 mg/dL,False,5.87641160858 %,38.3202638472 kg/m2,26 mmol/L,9.33355336478 mg/dL,,,75 mmHg,female,"8727 days, 0:00:00",,,159.287900465 cm,0.929748560835 mg/dL,
+,,M,,1758,,,Nonhispanic,,,Swedish,,,False,,,,,,,,female,"16824 days, 0:00:00",,,,,
+,,M,,1759,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"11983 days, 0:00:00",,,,,
+,,M,,1760,,,Nonhispanic,,,Polish,,,False,,,,,,,,female,"4299 days, 0:00:00",,,,,
+,103 mmHg,M,,1761,77.1175314709 kg,,Nonhispanic,,,French,,,False,,24.5358019185 kg/m2,,,,189 mg/dL,89 mmHg,male,"26533 days, 0:00:00",92 mg/dL,72 mg/dL,177.286812295 cm,,125 mg/dL
+111 mL/min/{1.73_m2},199 mmHg,S,144 mmol/L,1762,117.578521435 kg,102 mmol/L,Nonhispanic,105 mg/dL,4.23271319252 mmol/L,Irish,,19 mg/dL,False,5.46500367691 %,36.057520223 kg/m2,24 mmol/L,9.07061035987 mg/dL,,233 mg/dL,104 mmHg,male,"20575 days, 0:00:00",161 mg/dL,41 mg/dL,180.578511739 cm,1.23581028535 mg/dL,152 mg/dL
+,,M,,1763,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"2266 days, 0:00:00",,,,,
+,104 mmHg,,,1764,39.4477947326 kg,,Nonhispanic,,,Irish,,,False,,29.0781476034 kg/m2,,,,,71 mmHg,male,"3782 days, 0:00:00",,,116.473733421 cm,,
+,,M,,1765,,,Nonhispanic,,,West_indian,,,False,,,,,,,,female,"25675 days, 0:00:00",,,,,
+,109 mmHg,M,,1766,103.097099211 kg,,Nonhispanic,,,Italian,,,False,,33.1873911674 kg/m2,,,,194 mg/dL,71 mmHg,male,"307 days, 0:00:00",97 mg/dL,76 mg/dL,176.253060067 cm,,104 mg/dL
+,135 mmHg,,,1767,66.1676192389 kg,,Nonhispanic,,,Portuguese,,,False,,21.9896135482 kg/m2,,,,,81 mmHg,male,"1520 days, 0:00:00",,,173.465836936 cm,,
+118 mL/min/{1.73_m2},193 mmHg,M,,1768,104.931809314 kg,,Nonhispanic,,,English,,,False,,35.2451519181 kg/m2,,,,171 mg/dL,120 mmHg,male,"15598 days, 0:00:00",72 mg/dL,73 mg/dL,172.54559929 cm,,129 mg/dL
+,104 mmHg,M,,1769,74.3307555281 kg,,Nonhispanic,,,Irish,,,False,,25.4411546161 kg/m2,,,,,71 mmHg,female,"29157 days, 0:00:00",,,170.929044499 cm,,
+,139 mmHg,M,,1770,86.4931571294 kg,,Nonhispanic,,,French_canadian,,,False,,24.7568129428 kg/m2,,,,,83 mmHg,male,"11943 days, 0:00:00",,,186.914721195 cm,,
+2 mL/min/{1.73_m2},153 mmHg,S,139 mmol/L,1771,115.557040028 kg,102 mmol/L,Nonhispanic,120 mg/dL,4.87108217324 mmol/L,Portuguese,,15 mg/dL,False,6.84018991313 %,43.6210445222 kg/m2,21 mmol/L,9.65354604943 mg/dL,352 mg/g,236 mg/dL,119 mmHg,male,"21798 days, 0:00:00",141 mg/dL,59 mg/dL,162.760934277 cm,65.0008350158 mg/dL,176 mg/dL
+,104 mmHg,S,,1772,57.5565774693 kg,,Nonhispanic,,,French,,,False,,19.513532118 kg/m2,,,,,80 mmHg,male,"33833 days, 0:00:00",,,171.743194552 cm,,
+,,M,,1773,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"19742 days, 0:00:00",,,,,
+,125 mmHg,M,136 mmol/L,1774,75.4533038938 kg,107 mmol/L,Nonhispanic,115 mg/dL,4.73152657118 mmol/L,Irish,20 (score),14 mg/dL,False,4.35502115509 %,29.952616353 kg/m2,28 mmol/L,9.07097052157 mg/dL,,239 mg/dL,72 mmHg,female,"26737 days, 0:00:00",164 mg/dL,43 mg/dL,158.716379657 cm,0.932522928983 mg/dL,156 mg/dL
+,,M,,1775,,,Nonhispanic,,,Chinese,,,False,,,,,,,,male,"17447 days, 0:00:00",,,,,
+105 mL/min/{1.73_m2},144 mmHg,M,,1776,109.395656032 kg,,Nonhispanic,,,French,,,False,,29.6538033729 kg/m2,,,,,105 mmHg,male,"21774 days, 0:00:00",,,192.070132843 cm,,
+,,M,,1777,,,Nonhispanic,,,French,,,False,,,,,,,,male,"3796 days, 0:00:00",,,,,
+,,M,,1778,,,Nonhispanic,,,French,,,False,,,,,,,,male,"220 days, 0:00:00",,,,,
+,,M,,1779,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"20972 days, 0:00:00",,,,,
+,122 mmHg,,,1780,59.9938435272 kg,,Nonhispanic,,,American,,,False,,21.8434201112 kg/m2,,,,,73 mmHg,male,"5324 days, 0:00:00",,,165.726906485 cm,,
+15 mL/min/{1.73_m2},129 mmHg,M,138 mmol/L,1781,128.645522674 kg,104 mmol/L,Nonhispanic,111 mg/dL,4.60203336931 mmol/L,Italian,,12 mg/dL,False,6.74591656484 %,43.1025411066 kg/m2,23 mmol/L,8.64544480911 mg/dL,459 mg/g,238 mg/dL,70 mmHg,male,"18797 days, 0:00:00",156 mg/dL,44 mg/dL,172.761076106 cm,10.6013439981 mg/dL,189 mg/dL
+,117 mmHg,,,1782,42.8198359107 kg,,Nonhispanic,,,Italian,,,False,,25.3189928048 kg/m2,,,,,76 mmHg,female,"2011 days, 0:00:00",,,130.04668516 cm,,
+122 mL/min/{1.73_m2},146 mmHg,M,142 mmol/L,1783,94.0776524643 kg,105 mmol/L,Nonhispanic,114 mg/dL,3.79828687624 mmol/L,Asian_indian,,8 mg/dL,False,4.65581343827 %,31.6069739105 kg/m2,21 mmol/L,9.07371685535 mg/dL,,,97 mmHg,male,"26626 days, 0:00:00",,,172.524897058 cm,0.728287837839 mg/dL,
+,,M,,1784,,,Nonhispanic,,,English,,,False,,,,,,,,female,"23930 days, 0:00:00",,,,,
+,,M,,1785,,,Nonhispanic,,,English,,,False,,,,,,,,male,"5669 days, 0:00:00",,,,,
+,100 mmHg,M,144 mmol/L,1786,64.8209601089 kg,111 mmol/L,Nonhispanic,118 mg/dL,4.05590363492 mmol/L,Irish,,8 mg/dL,False,3.5024198678 %,25.2633092729 kg/m2,22 mmol/L,9.47983457845 mg/dL,,224 mg/dL,86 mmHg,female,"28445 days, 0:00:00",132 mg/dL,53 mg/dL,160.181593714 cm,0.288278147364 mg/dL,194 mg/dL
+,104 mmHg,M,,1787,55.7502626105 kg,,Nonhispanic,,,Italian,,,False,,17.957230772 kg/m2,,,,,78 mmHg,female,"32845 days, 0:00:00",,,176.199136927 cm,,
+,139 mmHg,M,142 mmol/L,1788,86.3260012778 kg,109 mmol/L,Nonhispanic,121 mg/dL,4.13286717259 mmol/L,Irish,,18 mg/dL,False,4.76751304086 %,32.2213217247 kg/m2,28 mmol/L,8.6821654154 mg/dL,,213 mg/dL,74 mmHg,female,"21332 days, 0:00:00",137 mg/dL,44 mg/dL,163.681326708 cm,0.593098153132 mg/dL,156 mg/dL
+2 mL/min/{1.73_m2},145 mmHg,M,143 mmol/L,1789,127.374895304 kg,105 mmol/L,Nonhispanic,121 mg/dL,4.66825218183 mmol/L,Irish,,13 mg/dL,False,7.27229522224 %,45.9976237223 kg/m2,25 mmol/L,10.0842845003 mg/dL,595 mg/g,230 mg/dL,106 mmHg,male,"15035 days, 0:00:00",143 mg/dL,47 mg/dL,166.408008014 cm,73.4174743766 mg/dL,198 mg/dL
+,101 mmHg,M,139 mmol/L,1790,98.7656380459 kg,101 mmol/L,Nonhispanic,113 mg/dL,5.03930250585 mmol/L,Portuguese,,11 mg/dL,False,5.61206703245 %,36.8663686785 kg/m2,27 mmol/L,9.58670221519 mg/dL,,,73 mmHg,male,"23467 days, 0:00:00",,,163.677037521 cm,1.10907040359 mg/dL,
+79 mL/min/{1.73_m2},162 mmHg,M,,1791,83.4368134658 kg,,Nonhispanic,,,English,,,False,,27.8668740718 kg/m2,,,,200 mg/dL,112 mmHg,female,"11874 days, 0:00:00",115 mg/dL,65 mg/dL,173.035306783 cm,,100 mg/dL
+,135 mmHg,M,136 mmol/L,1792,82.984626669 kg,101 mmol/L,Nonhispanic,115 mg/dL,5.01756020473 mmol/L,Irish,,7 mg/dL,False,4.07067407814 %,28.3887074298 kg/m2,21 mmol/L,9.79595673446 mg/dL,,,85 mmHg,male,"29684 days, 0:00:00",,,170.972401833 cm,0.547940385565 mg/dL,
+,,M,,1793,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"3856 days, 0:00:00",,,,,
+,,M,,1794,,,Nonhispanic,,,German,,,False,,,,,,,,female,"28387 days, 0:00:00",,,,,
+,124 mmHg,,,1795,46.3330140723 kg,,Nonhispanic,,,French,,,False,,25.0036182557 kg/m2,,,,,85 mmHg,female,"6045 days, 0:00:00",,,136.126866202 cm,,
+,134 mmHg,M,136 mmol/L,1796,73.4426560396 kg,106 mmol/L,Nonhispanic,106 mg/dL,3.83529729126 mmol/L,English,,11 mg/dL,False,3.87201738449 %,27.2960956147 kg/m2,21 mmol/L,9.81019561244 mg/dL,,226 mg/dL,77 mmHg,female,"20700 days, 0:00:00",146 mg/dL,45 mg/dL,164.030240609 cm,0.361741559135 mg/dL,171 mg/dL
+,114 mmHg,M,,1797,102.337316214 kg,,Puerto_rican,,,Other,,,False,,31.784813398 kg/m2,,,,172 mg/dL,79 mmHg,male,"23642 days, 0:00:00",70 mg/dL,72 mg/dL,179.435008116 cm,,147 mg/dL
+,,S,,1798,,,Nonhispanic,,,German,,,False,,,,,,,,male,"22974 days, 0:00:00",,,,,
+,,M,,1799,,,Nonhispanic,,,German,,,False,,,,,,,,female,"3766 days, 0:00:00",,,,,
+,109 mmHg,M,144 mmol/L,1800,127.26715972 kg,109 mmol/L,Nonhispanic,118 mg/dL,4.47777168535 mmol/L,English,,13 mg/dL,False,6.22578958101 %,40.2418426956 kg/m2,23 mmol/L,8.84024840962 mg/dL,,206 mg/dL,81 mmHg,male,"18363 days, 0:00:00",127 mg/dL,41 mg/dL,177.835821883 cm,0.930315495032 mg/dL,187 mg/dL
+78 mL/min/{1.73_m2},165 mmHg,,,1801,75.2356921067 kg,,Nonhispanic,,,West_indian,,,False,,25.5942027328 kg/m2,,,,,108 mmHg,male,"7567 days, 0:00:00",,,171.45144803 cm,,
+,,S,,1802,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"22078 days, 0:00:00",,,,,
+,,M,,1803,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"25035 days, 0:00:00",,,,,
+,110 mmHg,,,1804,58.0793022523 kg,,Nonhispanic,,,Chinese,,,False,,18.83262604 kg/m2,,,,,70 mmHg,male,"6242 days, 0:00:00",,,175.612430556 cm,,
+10 mL/min/{1.73_m2},157 mmHg,M,144 mmol/L,1805,81.1404218131 kg,105 mmol/L,Puerto_rican,101 mg/dL,4.37681526737 mmol/L,Other,,16 mg/dL,False,4.78790126231 %,32.3334569427 kg/m2,22 mmol/L,8.8269629152 mg/dL,402 mg/g,222 mg/dL,113 mmHg,female,"820 days, 0:00:00",140 mg/dL,45 mg/dL,158.413635403 cm,6.1306096481 mg/dL,181 mg/dL
+,,M,,1806,,,Nonhispanic,,,French,,,,,,,,,,,female,"6306 days, 0:00:00",,,,,
+,122 mmHg,M,138 mmol/L,1807,74.0863082646 kg,106 mmol/L,Nonhispanic,101 mg/dL,3.83301136977 mmol/L,French,,19 mg/dL,False,3.56774620777 %,25.6226041427 kg/m2,20 mmol/L,9.14786784879 mg/dL,,,87 mmHg,female,"27373 days, 0:00:00",,,170.042446064 cm,0.374841440625 mg/dL,
+,,M,,1808,,,Nonhispanic,,,German,,,False,,,,,,,,female,"26868 days, 0:00:00",,,,,
+,,S,,1809,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"13811 days, 0:00:00",,,,,
+,121 mmHg,M,,1810,90.1202789404 kg,,Nonhispanic,,,Italian,,,False,,29.5701961615 kg/m2,,,,,87 mmHg,male,"27033 days, 0:00:00",,,174.575848231 cm,,
+,109 mmHg,M,,1811,67.4599778359 kg,,Nonhispanic,,,Italian,,,False,,22.7381570576 kg/m2,,,,199 mg/dL,83 mmHg,male,"31344 days, 0:00:00",100 mg/dL,78 mg/dL,172.244540822 cm,,101 mg/dL
+,,M,,1812,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"26349 days, 0:00:00",,,,,
+,,M,,1813,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"328 days, 0:00:00",,,,,
+,133 mmHg,M,140 mmol/L,1814,98.3126390717 kg,110 mmol/L,Nonhispanic,124 mg/dL,4.73634136093 mmol/L,Irish,,11 mg/dL,False,5.77038541602 %,37.7371197881 kg/m2,21 mmol/L,9.63953310213 mg/dL,,,84 mmHg,female,"5759 days, 0:00:00",,,161.406233058 cm,1.34151355443 mg/dL,
+,132 mmHg,S,,1815,64.7346586874 kg,,Nonhispanic,,,Italian,25 (score),,False,,22.3394454034 kg/m2,,,,,75 mmHg,female,"29245 days, 0:00:00",,,170.228486432 cm,,
+,120 mmHg,,,1816,23.4726220308 kg,,Nonhispanic,,,English,,,False,,24.6140710013 kg/m2,,,,,76 mmHg,male,"2850 days, 0:00:00",,,97.6537844022 cm,,
+,,M,,1817,,,Nonhispanic,,,African,,,False,,,,,,,,male,"25320 days, 0:00:00",,,,,
+,135 mmHg,M,143 mmol/L,1818,121.858892772 kg,111 mmol/L,Nonhispanic,100 mg/dL,4.01839247441 mmol/L,English,,19 mg/dL,False,6.43274867143 %,41.3801176929 kg/m2,28 mmol/L,9.53006242182 mg/dL,,,76 mmHg,male,"20812 days, 0:00:00",,,171.606112507 cm,1.29331372046 mg/dL,
+,130 mmHg,M,138 mmol/L,1819,116.98935346 kg,108 mmol/L,Nonhispanic,122 mg/dL,4.0945652646 mmol/L,French,,8 mg/dL,False,5.72179564066 %,37.4698760236 kg/m2,28 mmol/L,8.61244131904 mg/dL,,,81 mmHg,male,"9892 days, 0:00:00",,,176.698166199 cm,1.10070628255 mg/dL,
+132 mL/min/{1.73_m2},151 mmHg,S,142 mmol/L,1820,93.7414174821 kg,110 mmol/L,Nonhispanic,120 mg/dL,3.73234735438 mmol/L,French_canadian,,14 mg/dL,False,4.85149221032 %,32.6832071567 kg/m2,26 mmol/L,9.39863514344 mg/dL,,228 mg/dL,92 mmHg,male,"23704 days, 0:00:00",141 mg/dL,50 mg/dL,169.357106402 cm,0.710162253652 mg/dL,183 mg/dL
+,127 mmHg,M,,1821,70.6038782118 kg,,Nonhispanic,,,Asian_indian,,,False,,23.1806690513 kg/m2,,,,192 mg/dL,88 mmHg,female,"986 days, 0:00:00",95 mg/dL,75 mg/dL,174.522447646 cm,,108 mg/dL
+86 mL/min/{1.73_m2},194 mmHg,M,,1822,92.7129898029 kg,,Nonhispanic,,,West_indian,,,False,,27.0708445423 kg/m2,,,,183 mg/dL,113 mmHg,male,"27084 days, 0:00:00",91 mg/dL,63 mg/dL,185.062911647 cm,,141 mg/dL
+,,M,,1823,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"27461 days, 0:00:00",,,,,
+,,S,,1824,,,Nonhispanic,,,Chinese,,,False,,,,,,,,female,"2931 days, 0:00:00",,,,,
+4 mL/min/{1.73_m2},181 mmHg,M,143 mmol/L,1825,97.0285909663 kg,104 mmol/L,Nonhispanic,121 mg/dL,5.03402858308 mmol/L,Portuguese,,14 mg/dL,False,6.58067492616 %,42.1937120939 kg/m2,25 mmol/L,9.53036468047 mg/dL,300 mg/g,229 mg/dL,110 mmHg,male,"27014 days, 0:00:00",137 mg/dL,54 mg/dL,151.644266494 cm,19.5404801252 mg/dL,188 mg/dL
+,121 mmHg,M,,1826,88.7359885129 kg,,Nonhispanic,,,Italian,,,False,,25.2916309251 kg/m2,,,,171 mg/dL,73 mmHg,male,"19958 days, 0:00:00",63 mg/dL,78 mg/dL,187.310221757 cm,,146 mg/dL
+,121 mmHg,S,143 mmol/L,1827,98.5847696561 kg,111 mmol/L,Nonhispanic,106 mg/dL,5.19255516394 mmol/L,German,,17 mg/dL,False,5.63547398075 %,36.9951068941 kg/m2,29 mmol/L,9.1640021743 mg/dL,,,86 mmHg,female,"1150 days, 0:00:00",,,163.242324295 cm,0.542165205795 mg/dL,
+,117 mmHg,M,138 mmol/L,1828,70.593203036 kg,107 mmol/L,Nonhispanic,107 mg/dL,3.91220629939 mmol/L,Chinese,,16 mg/dL,False,4.0317309571 %,28.174520264 kg/m2,25 mmol/L,8.57934184211 mg/dL,,236 mg/dL,79 mmHg,female,"27921 days, 0:00:00",143 mg/dL,58 mg/dL,158.289890574 cm,0.463800754246 mg/dL,171 mg/dL
+,,M,,1829,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"15809 days, 0:00:00",,,,,
+14 mL/min/{1.73_m2},194 mmHg,M,137 mmol/L,1830,117.234525498 kg,105 mmol/L,Nonhispanic,112 mg/dL,4.92300059046 mmol/L,French,,19 mg/dL,False,5.596795284 %,36.782374062 kg/m2,20 mmol/L,9.72288801938 mg/dL,584 mg/g,209 mg/dL,104 mmHg,male,"22363 days, 0:00:00",129 mg/dL,44 mg/dL,178.528635904 cm,8.95541514224 mg/dL,179 mg/dL
+,,M,,1831,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"26338 days, 0:00:00",,,,,
+,,M,,1832,,,Nonhispanic,,,French,,,False,,,,,,,,male,"23589 days, 0:00:00",,,,,
+,136 mmHg,M,142 mmol/L,1833,82.658854818 kg,110 mmol/L,Nonhispanic,115 mg/dL,4.97294344491 mmol/L,English,,11 mg/dL,False,3.99608761598 %,27.9784818879 kg/m2,24 mmol/L,9.83719564149 mg/dL,,,80 mmHg,male,"7131 days, 0:00:00",,,171.882878868 cm,1.41390146399 mg/dL,
+,106 mmHg,M,137 mmol/L,1834,54.5294219033 kg,110 mmol/L,Puerto_rican,102 mg/dL,4.16665768751 mmol/L,Other,,10 mg/dL,False,2.73168035135 %,21.0242419324 kg/m2,28 mmol/L,9.13844107161 mg/dL,,,74 mmHg,female,"18812 days, 0:00:00",,,161.047977079 cm,0.37737075982 mg/dL,
+142 mL/min/{1.73_m2},185 mmHg,M,,1835,92.4859735414 kg,,Nonhispanic,,,Dominican,,,False,,28.2398259642 kg/m2,,,,,93 mmHg,male,"23172 days, 0:00:00",,,180.970142459 cm,,
+,,S,,1836,,,Nonhispanic,,,French,,,False,,,,,,,,male,"29155 days, 0:00:00",,,,,
+,,,,1837,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"1622 days, 0:00:00",,,,,
+,137 mmHg,M,140 mmol/L,1838,102.466100219 kg,107 mmol/L,Nonhispanic,100 mg/dL,4.77372896838 mmol/L,Italian,,8 mg/dL,False,5.11416470551 %,34.1279058803 kg/m2,20 mmol/L,10.0240999951 mg/dL,,,79 mmHg,male,"23833 days, 0:00:00",,,173.274751073 cm,1.18055955114 mg/dL,
+,114 mmHg,M,,1839,91.9361064188 kg,,Nonhispanic,,,Russian,,,False,,28.6952007817 kg/m2,,,,,88 mmHg,male,"14130 days, 0:00:00",,,178.993977824 cm,,
+,110 mmHg,M,,1840,97.9796909778 kg,,Nonhispanic,,,French,,,False,,27.4417595781 kg/m2,,,,,86 mmHg,male,"22285 days, 0:00:00",,,188.956595348 cm,,
+,101 mmHg,S,144 mmol/L,1841,104.336346269 kg,109 mmol/L,Nonhispanic,109 mg/dL,4.76233383267 mmol/L,Italian,,18 mg/dL,False,4.50646464238 %,30.7855555331 kg/m2,21 mmol/L,8.74236245472 mg/dL,,,84 mmHg,male,"27788 days, 0:00:00",,,184.095984008 cm,0.662452992181 mg/dL,
+,103 mmHg,M,,1842,79.5956275111 kg,,Nonhispanic,,,African,,,False,,22.3022065017 kg/m2,,,,,77 mmHg,male,"25915 days, 0:00:00",,,188.916847203 cm,,
+,118 mmHg,M,,1843,96.5830479885 kg,,Puerto_rican,,,Other,,,False,,33.3980025669 kg/m2,,,,162 mg/dL,71 mmHg,female,"13982 days, 0:00:00",76 mg/dL,61 mg/dL,170.055313586 cm,,122 mg/dL
+,,M,,1844,,,Nonhispanic,,,American,,,False,,,,,,,,female,"25425 days, 0:00:00",,,,,
+,,S,,1845,,,Nonhispanic,,,Dominican,,,False,,,,,,,,female,"3449 days, 0:00:00",,,,,
+,130 mmHg,M,,1846,85.9186209613 kg,,Nonhispanic,,,Asian_indian,,,False,,26.2053620037 kg/m2,,,,195 mg/dL,74 mmHg,male,"28548 days, 0:00:00",106 mg/dL,60 mg/dL,181.070861191 cm,,143 mg/dL
+,125 mmHg,M,,1847,86.7965335406 kg,,Nonhispanic,,,Italian,,,False,,36.4277870508 kg/m2,,,,167 mg/dL,89 mmHg,female,"14312 days, 0:00:00",86 mg/dL,59 mg/dL,154.360009216 cm,,107 mg/dL
+,126 mmHg,M,143 mmol/L,1848,78.4448247599 kg,103 mmol/L,Nonhispanic,119 mg/dL,5.10212426935 mmol/L,German,,16 mg/dL,False,4.28285621742 %,29.5557091958 kg/m2,20 mmol/L,9.47160761049 mg/dL,,,74 mmHg,male,"28190 days, 0:00:00",,,162.915143834 cm,0.722518122789 mg/dL,
+,,M,,1849,,,Nonhispanic,,,English,,,False,,,,,,,,female,"3635 days, 0:00:00",,,,,
+,,M,,1850,,,Central_american,,,Other,,,False,,,,,,,,female,"8582 days, 0:00:00",,,,,
+,,M,,1851,,,Nonhispanic,,,French,,,False,,,,,,,,female,"20228 days, 0:00:00",,,,,
+,109 mmHg,S,,1852,104.619130709 kg,,Nonhispanic,,,English,,,False,,31.0091421016 kg/m2,,,,,78 mmHg,male,"23873 days, 0:00:00",,,183.67949553 cm,,
+94 mL/min/{1.73_m2},189 mmHg,M,,1853,90.5666459575 kg,,Puerto_rican,,,Other,,,False,,30.0917311022 kg/m2,,,,,109 mmHg,male,"25214 days, 0:00:00",,,173.484450976 cm,,
+,,S,,1854,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"23986 days, 0:00:00",,,,,
+,,,,1855,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"4852 days, 0:00:00",,,,,
+138 mL/min/{1.73_m2},168 mmHg,S,,1856,66.1970680054 kg,,Nonhispanic,,,German,,,False,,18.7484510938 kg/m2,,,,,93 mmHg,male,"3943 days, 0:00:00",,,187.904283274 cm,,
+3 mL/min/{1.73_m2},143 mmHg,M,136 mmol/L,1857,91.564646061 kg,109 mmol/L,Nonhispanic,121 mg/dL,4.66796040144 mmol/L,Italian,,9 mg/dL,False,5.67808572335 %,37.2294714784 kg/m2,25 mmol/L,9.40678652692 mg/dL,353 mg/g,238 mg/dL,104 mmHg,female,"25036 days, 0:00:00",156 mg/dL,43 mg/dL,156.82687011 cm,25.9433163839 mg/dL,192 mg/dL
+,139 mmHg,,,1858,63.000906637 kg,,Nonhispanic,,,Italian,,,False,,22.4193794402 kg/m2,,,,,70 mmHg,female,"5119 days, 0:00:00",,,167.633806219 cm,,
+,130 mmHg,S,139 mmol/L,1859,84.6480717606 kg,102 mmol/L,Nonhispanic,123 mg/dL,4.31802996282 mmol/L,Dominican,,12 mg/dL,False,4.50637837254 %,30.785081049 kg/m2,29 mmol/L,9.97054382934 mg/dL,,,83 mmHg,female,"25143 days, 0:00:00",,,165.820562533 cm,0.666211675893 mg/dL,
+,136 mmHg,M,140 mmol/L,1860,106.133076497 kg,104 mmol/L,Nonhispanic,101 mg/dL,5.14647158639 mmol/L,Asian_indian,,9 mg/dL,False,4.35167027636 %,29.93418652 kg/m2,20 mmol/L,8.50928052343 mg/dL,,235 mg/dL,71 mmHg,male,"16640 days, 0:00:00",152 mg/dL,44 mg/dL,188.296239393 cm,1.70776461166 mg/dL,194 mg/dL
+12 mL/min/{1.73_m2},166 mmHg,S,142 mmol/L,1861,83.1803232788 kg,102 mmol/L,Nonhispanic,118 mg/dL,4.26836496466 mmol/L,English,,20 mg/dL,False,5.10889930691 %,34.098946188 kg/m2,23 mmol/L,9.07217595096 mg/dL,556 mg/g,223 mg/dL,115 mmHg,female,"27875 days, 0:00:00",143 mg/dL,44 mg/dL,156.18518027 cm,5.23727961385 mg/dL,177 mg/dL
+,,M,,1862,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"9652 days, 0:00:00",,,,,
+,,S,,1863,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"21754 days, 0:00:00",,,,,
+,124 mmHg,M,,1864,61.0803223267 kg,,Nonhispanic,,,Irish,,,False,,19.4537346172 kg/m2,,,,,76 mmHg,male,"1633 days, 0:00:00",,,177.19406304 cm,,
+,,S,,1865,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"16250 days, 0:00:00",,,,,
+,101 mmHg,,,1866,57.6305317657 kg,,Nonhispanic,,,Irish,,,False,,19.8214640813 kg/m2,,,,,82 mmHg,female,"6958 days, 0:00:00",,,170.513374213 cm,,
+,,M,,1867,,,Nonhispanic,,,African,,,False,,,,,,,,male,"22456 days, 0:00:00",,,,,
+,,M,,1868,,,Nonhispanic,,,Irish,,,,,,,,,,,male,"27517 days, 0:00:00",,,,,
+,124 mmHg,S,,1869,103.519816934 kg,,Nonhispanic,,,German,,,False,,36.0391988298 kg/m2,,,,,82 mmHg,male,"4172 days, 0:00:00",,,169.482235484 cm,,
+,108 mmHg,,144 mmol/L,1870,62.8093699614 kg,109 mmol/L,Mexican,123 mg/dL,4.62405359924 mmol/L,Other,,9 mg/dL,False,4.38246081025 %,30.1035344564 kg/m2,27 mmol/L,8.89827814915 mg/dL,,,89 mmHg,male,"3419 days, 0:00:00",,,144.445319538 cm,0.736784088324 mg/dL,
+99 mL/min/{1.73_m2},185 mmHg,S,,1871,73.032453282 kg,,Nonhispanic,,,English,,,False,,22.3649720225 kg/m2,,,,,118 mmHg,male,"14606 days, 0:00:00",,,180.706496165 cm,,
+14 mL/min/{1.73_m2},153 mmHg,M,139 mmol/L,1872,123.831654151 kg,109 mmol/L,Nonhispanic,145 mg/dL,4.85859308957 mmol/L,Dominican,,14 mg/dL,False,8.11387218503 %,50.6262970177 kg/m2,22 mmol/L,8.5344096255 mg/dL,561 mg/g,259 mg/dL,92 mmHg,male,"19481 days, 0:00:00",146 mg/dL,22 mg/dL,156.396761454 cm,10.6878511024 mg/dL,454 mg/dL
+,123 mmHg,S,,1873,104.852166304 kg,,Nonhispanic,,,Swedish,,,False,,30.2780908408 kg/m2,,,,199 mg/dL,82 mmHg,male,"6310 days, 0:00:00",117 mg/dL,60 mg/dL,186.090610225 cm,,106 mg/dL
+,,M,,1874,,,Nonhispanic,,,English,,,False,,,,,,,,male,"21598 days, 0:00:00",,,,,
+,,M,,1875,,,Nonhispanic,,,German,,,,,,,,,,,female,"26253 days, 0:00:00",,,,,
+,,M,,1876,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"10129 days, 0:00:00",,,,,
+91 mL/min/{1.73_m2},174 mmHg,M,136 mmol/L,1877,86.596369874 kg,108 mmol/L,Nonhispanic,110 mg/dL,4.88405577913 mmol/L,Irish,,20 mg/dL,False,3.77442822721 %,26.7593552496 kg/m2,23 mmol/L,9.75941409823 mg/dL,,,110 mmHg,male,"26396 days, 0:00:00",,,179.892070658 cm,0.819440618466 mg/dL,
+13 mL/min/{1.73_m2},195 mmHg,M,144 mmol/L,1878,84.2288462288 kg,103 mmol/L,Puerto_rican,115 mg/dL,3.72433741363 mmol/L,Other,18 (score),12 mg/dL,False,4.27015802232 %,29.4858691228 kg/m2,25 mmol/L,9.70121368937 mg/dL,324 mg/g,226 mg/dL,117 mmHg,male,"28437 days, 0:00:00",141 mg/dL,50 mg/dL,169.014303135 cm,5.6692492654 mg/dL,171 mg/dL
+,101 mmHg,M,,1879,92.2898791209 kg,,Central_american,,,Other,,,False,,29.8431751619 kg/m2,,,,,88 mmHg,male,"22549 days, 0:00:00",,,175.854920504 cm,,
+99 mL/min/{1.73_m2},144 mmHg,M,,1880,93.7241769405 kg,,Nonhispanic,,,Dominican,,,False,,37.2195254467 kg/m2,,,,,117 mmHg,female,"20493 days, 0:00:00",,,158.686653627 cm,,
+,107 mmHg,M,,1881,111.355255404 kg,,Nonhispanic,,,Italian,,,False,,32.4437203134 kg/m2,,,,,87 mmHg,male,"20175 days, 0:00:00",,,185.263572635 cm,,
+,,M,,1882,,,Nonhispanic,,,English,,,False,,,,,,,,male,"2051 days, 0:00:00",,,,,
+91 mL/min/{1.73_m2},144 mmHg,M,,1883,77.2464960728 kg,,Nonhispanic,,,Italian,,,False,,30.2358266038 kg/m2,,,,192 mg/dL,95 mmHg,female,"7158 days, 0:00:00",106 mg/dL,60 mg/dL,159.837423879 cm,,128 mg/dL
+,,M,,1884,,,Nonhispanic,,,Chinese,,,False,,,,,,,,male,"19585 days, 0:00:00",,,,,
+,139 mmHg,M,,1885,99.7455700742 kg,,Nonhispanic,,,English,,,False,,28.3004988028 kg/m2,,,,,88 mmHg,male,"15577 days, 0:00:00",,,187.736952312 cm,,
+,130 mmHg,M,,1886,84.9869986067 kg,,Nonhispanic,,,Portuguese,21 (score),,False,,26.8024723263 kg/m2,,,,195 mg/dL,85 mmHg,male,"28997 days, 0:00:00",86 mg/dL,79 mg/dL,178.069204218 cm,,147 mg/dL
+,136 mmHg,M,,1887,60.8012974032 kg,,Nonhispanic,,,English,,,False,,21.0953454852 kg/m2,,,,,83 mmHg,male,"4207 days, 0:00:00",,,169.770841799 cm,,
+84 mL/min/{1.73_m2},155 mmHg,S,,1888,105.071380673 kg,,Nonhispanic,,,Irish,,,False,,30.5247135469 kg/m2,,,,,110 mmHg,male,"20033 days, 0:00:00",,,185.530972484 cm,,
+,,M,,1889,,,Nonhispanic,,,Chinese,,,False,,,,,,,,male,"140 days, 0:00:00",,,,,
+,,S,,1890,,,Nonhispanic,,,French,,,False,,,,,,,,male,"6849 days, 0:00:00",,,,,
+13 mL/min/{1.73_m2},188 mmHg,M,139 mmol/L,1891,103.173390033 kg,103 mmol/L,Nonhispanic,100 mg/dL,4.96587329273 mmol/L,Irish,,18 mg/dL,False,6.35573458471 %,40.9565402159 kg/m2,24 mmol/L,10.1608119568 mg/dL,567 mg/g,204 mg/dL,105 mmHg,female,"10740 days, 0:00:00",108 mg/dL,58 mg/dL,158.71655156 cm,7.30811512735 mg/dL,189 mg/dL
+,122 mmHg,,,1892,38.2933128328 kg,,Nonhispanic,,,French_canadian,,,False,,18.9020093065 kg/m2,,,,,79 mmHg,male,"3468 days, 0:00:00",,,142.333616236 cm,,
+,111 mmHg,M,137 mmol/L,1893,123.154109153 kg,106 mmol/L,Nonhispanic,108 mg/dL,4.02577015008 mmol/L,Polish,,9 mg/dL,False,5.31373165748 %,35.2255241161 kg/m2,23 mmol/L,9.2048182156 mg/dL,,215 mg/dL,75 mmHg,male,"11755 days, 0:00:00",132 mg/dL,49 mg/dL,186.980243799 cm,1.31909415407 mg/dL,168 mg/dL
+,,M,,1894,,,Central_american,,,Other,,,False,,,,,,,,female,"23270 days, 0:00:00",,,,,
+,122 mmHg,M,137 mmol/L,1895,73.2899846128 kg,107 mmol/L,Nonhispanic,109 mg/dL,4.15281577726 mmol/L,German,,14 mg/dL,False,3.27178865098 %,23.9948375804 kg/m2,20 mmol/L,8.52437749241 mg/dL,,,78 mmHg,male,"31844 days, 0:00:00",,,174.768600274 cm,0.421481031302 mg/dL,
+,,M,,1896,,,Puerto_rican,,,Other,,,False,,,,,,,,female,"12905 days, 0:00:00",,,,,
+158 mL/min/{1.73_m2},165 mmHg,M,,1897,102.391977334 kg,,Nonhispanic,,,French_canadian,,,False,,30.1592348685 kg/m2,,,,200 mg/dL,107 mmHg,male,"20042 days, 0:00:00",102 mg/dL,75 mg/dL,184.256494862 cm,,113 mg/dL
+86 mL/min/{1.73_m2},149 mmHg,M,,1898,81.1298644351 kg,,Nonhispanic,,,Italian,,,False,,26.4579355187 kg/m2,,,,,118 mmHg,male,"15601 days, 0:00:00",,,175.110584758 cm,,
+,,M,,1899,,,Nonhispanic,,,French_canadian,,,False,,,,,,,,female,"21555 days, 0:00:00",,,,,
+,,M,,1900,,,Nonhispanic,,,West_indian,,,False,,,,,,,,female,"25903 days, 0:00:00",,,,,
+,115 mmHg,S,,1901,87.2766675178 kg,,Nonhispanic,,,Portuguese,,,False,,28.1029060876 kg/m2,,,,164 mg/dL,79 mmHg,male,"23760 days, 0:00:00",64 mg/dL,78 mg/dL,176.227411256 cm,,107 mg/dL
+,,M,,1902,,,Nonhispanic,,,English,,,False,,,,,,,,male,"29737 days, 0:00:00",,,,,
+,134 mmHg,M,137 mmol/L,1903,92.1776378169 kg,101 mmol/L,Nonhispanic,103 mg/dL,4.04705315451 mmol/L,Italian,,14 mg/dL,False,4.72036270218 %,31.961994862 kg/m2,22 mmol/L,9.86216777296 mg/dL,,,88 mmHg,male,"26094 days, 0:00:00",,,169.822741904 cm,1.05162979652 mg/dL,
+161 mL/min/{1.73_m2},140 mmHg,M,137 mmol/L,1904,98.6225211044 kg,101 mmol/L,Central_american,101 mg/dL,5.1737175191 mmol/L,Other,,15 mg/dL,False,5.8873666852 %,38.3805167686 kg/m2,21 mmol/L,10.0280173638 mg/dL,,,109 mmHg,female,"23654 days, 0:00:00",,,160.299674753 cm,0.54960445681 mg/dL,
+99 mL/min/{1.73_m2},166 mmHg,S,143 mmol/L,1905,92.2285088322 kg,106 mmol/L,Nonhispanic,115 mg/dL,4.844963563 mmol/L,Irish,,14 mg/dL,False,4.97794383478 %,33.3786910913 kg/m2,25 mmol/L,9.61291094379 mg/dL,,,112 mmHg,male,"24885 days, 0:00:00",,,166.225612664 cm,0.853967674372 mg/dL,
+,,M,,1906,,,Nonhispanic,,,African,,,False,,,,,,,,male,"6049 days, 0:00:00",,,,,
+,,M,,1907,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"26130 days, 0:00:00",,,,,
+,,M,,1908,,,Nonhispanic,,,American,,,False,,,,,,,,male,"14342 days, 0:00:00",,,,,
+119 mL/min/{1.73_m2},199 mmHg,M,143 mmol/L,1909,109.139886677 kg,106 mmol/L,Nonhispanic,123 mg/dL,3.77093542161 mmol/L,American,,9 mg/dL,False,5.37225319869 %,35.5473925928 kg/m2,27 mmol/L,9.78012266484 mg/dL,,,102 mmHg,male,"19951 days, 0:00:00",,,175.221693699 cm,0.9680942329 mg/dL,
+,118 mmHg,M,,1910,50.5379415285 kg,,Nonhispanic,,,English,,,False,,18.0109185586 kg/m2,,,,,75 mmHg,female,"30732 days, 0:00:00",,,167.510040288 cm,,
+96 mL/min/{1.73_m2},180 mmHg,M,,1911,74.2330454424 kg,,Nonhispanic,,,French_canadian,,,False,,23.9892670387 kg/m2,,,,173 mg/dL,103 mmHg,male,"29870 days, 0:00:00",73 mg/dL,77 mg/dL,175.909846479 cm,,115 mg/dL
+,,M,,1912,,,Nonhispanic,,,French,,,False,,,,,,,,male,"24657 days, 0:00:00",,,,,
+,117 mmHg,,,1913,49.1113906467 kg,,Nonhispanic,,,Scottish,,,False,,30.2081256355 kg/m2,,,,,71 mmHg,female,"4769 days, 0:00:00",,,127.505590388 cm,,
+3 mL/min/{1.73_m2},185 mmHg,,140 mmol/L,1914,44.9185062841 kg,101 mmol/L,Puerto_rican,105 mg/dL,4.27993798572 mmol/L,Other,,17 mg/dL,False,4.22310907313 %,29.2270999022 kg/m2,20 mmol/L,10.164778904 mg/dL,580 mg/g,216 mg/dL,92 mmHg,male,"4625 days, 0:00:00",137 mg/dL,44 mg/dL,123.970910506 cm,26.6183740943 mg/dL,174 mg/dL
+27 mL/min/{1.73_m2},200 mmHg,M,143 mmol/L,1915,111.427855504 kg,111 mmol/L,Nonhispanic,125 mg/dL,4.81273490304 mmol/L,Chinese,,19 mg/dL,False,7.11381989259 %,45.1260094092 kg/m2,28 mmol/L,8.94976295972 mg/dL,427 mg/g,234 mg/dL,101 mmHg,male,"985 days, 0:00:00",154 mg/dL,43 mg/dL,157.138796041 cm,5.15869701408 mg/dL,183 mg/dL
+,,M,,1916,,,Nonhispanic,,,American,,,False,,,,,,,,male,"21450 days, 0:00:00",,,,,
+,112 mmHg,M,143 mmol/L,1917,101.206224977 kg,106 mmol/L,Nonhispanic,112 mg/dL,4.49700568561 mmol/L,African,,10 mg/dL,False,5.7578485863 %,37.6681672246 kg/m2,26 mmol/L,8.99790996158 mg/dL,,,71 mmHg,female,"3490 days, 0:00:00",,,163.914120593 cm,1.01098098668 mg/dL,
+115 mL/min/{1.73_m2},190 mmHg,M,,1918,66.6872019119 kg,,Nonhispanic,,,Irish,,,False,,20.904552303 kg/m2,,,,160 mg/dL,106 mmHg,male,"27138 days, 0:00:00",68 mg/dL,68 mg/dL,178.607960864 cm,,118 mg/dL
+,137 mmHg,M,,1919,111.305018977 kg,,Nonhispanic,,,Italian,,,False,,32.978107517 kg/m2,,,,,87 mmHg,male,"20728 days, 0:00:00",,,183.714954357 cm,,
+9 mL/min/{1.73_m2},157 mmHg,M,139 mmol/L,1920,109.780302447 kg,103 mmol/L,Nonhispanic,115 mg/dL,3.8860120335 mmol/L,Irish,,9 mg/dL,False,7.09805302423 %,45.0392916333 kg/m2,23 mmol/L,9.00476361968 mg/dL,337 mg/g,230 mg/dL,108 mmHg,male,"24891 days, 0:00:00",146 mg/dL,47 mg/dL,156.122837451 cm,12.197811383 mg/dL,182 mg/dL
+,,M,,1921,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"22256 days, 0:00:00",,,,,
+,,M,,1922,,,Nonhispanic,,,French,,,False,,,,,,,,male,"1133 days, 0:00:00",,,,,
+,124 mmHg,,,1923,33.0135389453 kg,,Nonhispanic,,,French_canadian,,,False,,19.8384943619 kg/m2,,,,,75 mmHg,female,"4699 days, 0:00:00",,,129.00058706 cm,,
+,136 mmHg,M,137 mmol/L,1924,125.666196317 kg,106 mmol/L,Nonhispanic,117 mg/dL,4.19300492751 mmol/L,English,,13 mg/dL,False,6.39735758873 %,41.185466738 kg/m2,25 mmol/L,9.74599928834 mg/dL,,,87 mmHg,male,"19806 days, 0:00:00",,,174.677609139 cm,1.15462530805 mg/dL,
+,114 mmHg,M,,1925,99.6022577483 kg,,Nonhispanic,,,Dominican,,,False,,29.3626326772 kg/m2,,,,,84 mmHg,male,"17976 days, 0:00:00",,,184.177721276 cm,,
+,110 mmHg,M,,1926,68.8233293276 kg,,Nonhispanic,,,Polish,,,False,,20.9630761674 kg/m2,,,,,70 mmHg,male,"29311 days, 0:00:00",,,181.192548202 cm,,
+,117 mmHg,,,1927,41.5622199828 kg,,Nonhispanic,,,Portuguese,,,False,,21.2120896478 kg/m2,,,,,72 mmHg,male,"5276 days, 0:00:00",,,139.977309404 cm,,
+128 mL/min/{1.73_m2},173 mmHg,S,141 mmol/L,1928,65.3306154747 kg,102 mmol/L,Nonhispanic,121 mg/dL,4.87198389018 mmol/L,Irish,,19 mg/dL,False,3.38510024112 %,24.6180513261 kg/m2,29 mmol/L,10.1578373604 mg/dL,,218 mg/dL,92 mmHg,female,"17260 days, 0:00:00",122 mg/dL,57 mg/dL,162.903921294 cm,0.349479095367 mg/dL,192 mg/dL
+,,M,,1929,,,Nonhispanic,,,Italian,,,,,,,,,,,female,"26278 days, 0:00:00",,,,,
+,115 mmHg,S,137 mmol/L,1930,122.610456199 kg,102 mmol/L,Nonhispanic,120 mg/dL,3.87586202232 mmol/L,Irish,,8 mg/dL,,6.44224649883 %,41.4323557436 kg/m2,25 mmol/L,10.0033125777 mg/dL,,217 mg/dL,70 mmHg,male,"11195 days, 0:00:00",135 mg/dL,43 mg/dL,172.025940419 cm,0.957894189057 mg/dL,193 mg/dL
+,110 mmHg,M,,1931,105.943038455 kg,,Nonhispanic,,,Portuguese,,,False,,28.9149884401 kg/m2,,,,,77 mmHg,male,"21206 days, 0:00:00",,,191.414441553 cm,,
+,,S,,1932,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"21621 days, 0:00:00",,,,,
+,115 mmHg,M,,1933,85.5398170743 kg,,Nonhispanic,,,Irish,,,False,,30.112202277 kg/m2,,,,,72 mmHg,female,"6528 days, 0:00:00",,,168.543845683 cm,,
+,,M,,1934,,,Nonhispanic,,,Scottish,,,,,,,,,,,male,"27928 days, 0:00:00",,,,,
+,100 mmHg,M,137 mmol/L,1935,84.0317070386 kg,111 mmol/L,Nonhispanic,119 mg/dL,4.20329899336 mmol/L,English,,8 mg/dL,False,3.21075034632 %,23.6591269048 kg/m2,20 mmol/L,9.83350352319 mg/dL,,,74 mmHg,male,"30423 days, 0:00:00",,,188.461323244 cm,0.500188732373 mg/dL,
+,118 mmHg,M,,1936,83.1179386217 kg,,Nonhispanic,,,Irish,,,False,,25.7035615771 kg/m2,,,,,82 mmHg,male,"24693 days, 0:00:00",,,179.825273501 cm,,
+95 mL/min/{1.73_m2},190 mmHg,M,,1937,66.0075498236 kg,,Nonhispanic,,,Polish,,,False,,23.7793790004 kg/m2,,,,165 mg/dL,117 mmHg,female,"29653 days, 0:00:00",55 mg/dL,80 mg/dL,166.608268789 cm,,148 mg/dL
+,137 mmHg,,,1938,46.6125179579 kg,,Nonhispanic,,,Chinese,,,False,,24.3747634585 kg/m2,,,,,73 mmHg,male,"5460 days, 0:00:00",,,138.286911411 cm,,
+2 mL/min/{1.73_m2},174 mmHg,M,144 mmol/L,1939,88.7858766475 kg,104 mmol/L,Nonhispanic,100 mg/dL,4.89256654674 mmol/L,Portuguese,,11 mg/dL,False,5.75503400009 %,37.6526870005 kg/m2,23 mmol/L,9.27826490492 mg/dL,485 mg/g,226 mg/dL,115 mmHg,female,"25627 days, 0:00:00",136 mg/dL,57 mg/dL,153.558533718 cm,36.6858309759 mg/dL,163 mg/dL
+,110 mmHg,M,144 mmol/L,1940,59.8512520452 kg,108 mmol/L,Nonhispanic,101 mg/dL,5.01347547744 mmol/L,Irish,,16 mg/dL,False,3.01986758753 %,22.6092717314 kg/m2,27 mmol/L,9.40356761589 mg/dL,,,80 mmHg,female,"17945 days, 0:00:00",,,162.702165493 cm,0.328053737649 mg/dL,
+,,M,,1941,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"3058 days, 0:00:00",,,,,
+,,M,,1942,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"5644 days, 0:00:00",,,,,
+,117 mmHg,M,,1943,103.778497597 kg,,Nonhispanic,,,Swedish,,,False,,33.0039287717 kg/m2,,,,,73 mmHg,male,"24461 days, 0:00:00",,,177.325367662 cm,,
+,133 mmHg,M,,1944,94.118869015 kg,,Puerto_rican,,,Other,,,False,,27.2367899933 kg/m2,,,,,81 mmHg,male,"24713 days, 0:00:00",,,185.891866794 cm,,
+,,M,,1945,,,Nonhispanic,,,French,,,False,,,,,,,,male,"27362 days, 0:00:00",,,,,
+,132 mmHg,,,1946,38.0319119403 kg,,Central_american,,,Other,,,False,,18.8081133717 kg/m2,,,,,87 mmHg,female,"2596 days, 0:00:00",,,142.200610991 cm,,
+,,M,,1947,,,Nonhispanic,,,English,,,False,,,,,,,,female,"23889 days, 0:00:00",,,,,
+,126 mmHg,M,,1948,111.193088477 kg,,Nonhispanic,,,German,,,False,,35.6904858434 kg/m2,,,,,86 mmHg,male,"22266 days, 0:00:00",,,176.507297971 cm,,
+160 mL/min/{1.73_m2},149 mmHg,S,142 mmol/L,1949,71.9064319682 kg,109 mmol/L,Central_american,104 mg/dL,5.06272368658 mmol/L,Other,,8 mg/dL,False,3.94696106007 %,27.7082858304 kg/m2,27 mmol/L,10.1455118852 mg/dL,,,110 mmHg,female,"18693 days, 0:00:00",,,161.093879408 cm,0.307724574308 mg/dL,
+,124 mmHg,M,136 mmol/L,1950,117.17734361 kg,111 mmol/L,Nonhispanic,118 mg/dL,3.84338530823 mmol/L,Italian,,20 mg/dL,False,5.56007336646 %,36.5804035155 kg/m2,22 mmol/L,9.93226238444 mg/dL,,,85 mmHg,male,"22493 days, 0:00:00",,,178.977145924 cm,0.745483100028 mg/dL,
+,136 mmHg,M,,1951,53.9026428639 kg,,Nonhispanic,,,French,,,False,,17.4219412608 kg/m2,,,,,71 mmHg,male,"26153 days, 0:00:00",,,175.89632145 cm,,
+,,S,,1952,,,Nonhispanic,,,English,,,False,,,,,,,,male,"23614 days, 0:00:00",,,,,
+,118 mmHg,M,,1953,91.7251488478 kg,,Nonhispanic,,,Irish,,,False,,26.3457097665 kg/m2,,,,,78 mmHg,male,"25805 days, 0:00:00",,,186.590385088 cm,,
+,107 mmHg,M,,1954,93.398821364 kg,,Nonhispanic,,,French,,,False,,27.3672056893 kg/m2,,,,,88 mmHg,male,"20821 days, 0:00:00",,,184.737673367 cm,,
+,101 mmHg,M,,1955,88.5824721257 kg,,Nonhispanic,,,Portuguese,,,False,,26.5250525606 kg/m2,,,,,81 mmHg,male,"24447 days, 0:00:00",,,182.745112889 cm,,
+,132 mmHg,M,140 mmol/L,1956,70.0884467677 kg,104 mmol/L,Puerto_rican,104 mg/dL,4.1647784663 mmol/L,Other,,20 mg/dL,False,3.2155555368 %,23.6855554524 kg/m2,28 mmol/L,8.74833396179 mg/dL,,,77 mmHg,male,"32113 days, 0:00:00",,,172.020985308 cm,0.37386148135 mg/dL,
+,,M,,1957,,,Nonhispanic,,,German,,,False,,,,,,,,male,"10848 days, 0:00:00",,,,,
+,,M,,1958,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"28436 days, 0:00:00",,,,,
+,138 mmHg,M,,1959,92.7520917496 kg,,Nonhispanic,,,African,,,False,,27.2869648864 kg/m2,,,,,81 mmHg,male,"24717 days, 0:00:00",,,184.367446321 cm,,
+,110 mmHg,M,,1960,119.353628103 kg,,Nonhispanic,,,Dominican,,,False,,29.1453312589 kg/m2,,,,,76 mmHg,male,"17705 days, 0:00:00",,,202.36402771 cm,,
+,134 mmHg,S,,1961,56.4339399929 kg,,Nonhispanic,,,West_indian,,,False,,20.9256302636 kg/m2,,,,199 mg/dL,87 mmHg,female,"32171 days, 0:00:00",100 mg/dL,71 mg/dL,164.221839422 cm,,138 mg/dL
+115 mL/min/{1.73_m2},158 mmHg,M,,1962,96.7878253087 kg,,Nonhispanic,,,English,,,False,,25.3240539291 kg/m2,,,,,116 mmHg,male,"19465 days, 0:00:00",,,195.498644764 cm,,
+,130 mmHg,,,1963,50.7140564279 kg,,Nonhispanic,,,Chinese,,,False,,25.9218772942 kg/m2,,,,,82 mmHg,male,"5351 days, 0:00:00",,,139.87205305 cm,,
+,,M,,1964,,,Nonhispanic,,,Chinese,,,False,,,,,,,,male,"18178 days, 0:00:00",,,,,
+,105 mmHg,M,141 mmol/L,1965,116.488273737 kg,111 mmol/L,Nonhispanic,117 mg/dL,4.25617923005 mmol/L,French,,16 mg/dL,False,5.28646097869 %,35.0755353828 kg/m2,20 mmol/L,8.79152089746 mg/dL,,,89 mmHg,male,"12964 days, 0:00:00",,,182.238004126 cm,1.64930808284 mg/dL,
+,121 mmHg,M,,1966,85.7761998256 kg,,Nonhispanic,,,Dominican,,,False,,26.2422994675 kg/m2,,,,187 mg/dL,88 mmHg,male,"24422 days, 0:00:00",97 mg/dL,62 mg/dL,180.793352141 cm,,138 mg/dL
+,,M,,1967,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"8600 days, 0:00:00",,,,,
+,,M,,1968,,,Nonhispanic,,,English,,,False,,,,,,,,male,"15484 days, 0:00:00",,,,,
+,,M,,1969,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"3930 days, 0:00:00",,,,,
+,,M,,1970,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"4985 days, 0:00:00",,,,,
+,,M,,1971,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"11509 days, 0:00:00",,,,,
+,112 mmHg,S,,1972,104.606632575 kg,,Mexican,,,Other,,,False,,31.1385727235 kg/m2,,,,,74 mmHg,male,"24248 days, 0:00:00",,,183.286407862 cm,,
+153 mL/min/{1.73_m2},193 mmHg,S,,1973,87.6816237921 kg,,Nonhispanic,,,French,,,False,,26.0811159775 kg/m2,,,,174 mg/dL,106 mmHg,male,"18800 days, 0:00:00",80 mg/dL,65 mg/dL,183.354345337 cm,,144 mg/dL
+154 mL/min/{1.73_m2},193 mmHg,M,,1974,54.7776019349 kg,,Nonhispanic,,,Italian,,,False,,20.6931601869 kg/m2,,,,,116 mmHg,female,"31142 days, 0:00:00",,,162.700204205 cm,,
+,,M,,1975,,,Nonhispanic,,,French,,,False,,,,,,,,male,"25775 days, 0:00:00",,,,,
+,110 mmHg,,,1976,35.4682279454 kg,,Nonhispanic,,,Chinese,,,False,,25.8913866701 kg/m2,,,,,80 mmHg,female,"4344 days, 0:00:00",,,117.04209588 cm,,
+,117 mmHg,S,,1977,100.750655845 kg,,Nonhispanic,,,African,,,False,,27.8185768882 kg/m2,,,,185 mg/dL,74 mmHg,male,"2592 days, 0:00:00",88 mg/dL,67 mg/dL,190.307755158 cm,,146 mg/dL
+,121 mmHg,M,,1978,63.2047318236 kg,,Nonhispanic,,,African,,,False,,21.7211411393 kg/m2,,,,,86 mmHg,female,"9531 days, 0:00:00",,,170.582108283 cm,,
+,120 mmHg,M,,1979,94.7608329066 kg,,Nonhispanic,,,American,,,False,,28.1875751662 kg/m2,,,,175 mg/dL,86 mmHg,male,"10439 days, 0:00:00",83 mg/dL,64 mg/dL,183.351968083 cm,,139 mg/dL
+,,M,,1980,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"28948 days, 0:00:00",,,,,
+,122 mmHg,M,144 mmol/L,1981,116.645522041 kg,106 mmol/L,Puerto_rican,122 mg/dL,4.57498036678 mmol/L,Other,,11 mg/dL,False,5.1040494386 %,34.0722719123 kg/m2,25 mmol/L,9.53952633059 mg/dL,,206 mg/dL,83 mmHg,male,"18811 days, 0:00:00",127 mg/dL,45 mg/dL,185.026310577 cm,0.995189969792 mg/dL,169 mg/dL
+,,S,,1982,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"5464 days, 0:00:00",,,,,
+,,M,,1983,,,Puerto_rican,,,Other,,,False,,,,,,,,male,"8126 days, 0:00:00",,,,,
+,117 mmHg,M,,1984,71.0536737626 kg,,Nonhispanic,,,French,,,False,,22.2671090544 kg/m2,,,,160 mg/dL,80 mmHg,male,"31689 days, 0:00:00",58 mg/dL,79 mg/dL,178.632859674 cm,,115 mg/dL
+,,M,,1985,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"9443 days, 0:00:00",,,,,
+,100 mmHg,M,,1986,80.4128492923 kg,,Nonhispanic,,,French_canadian,,,False,,23.5842072241 kg/m2,,,,,70 mmHg,male,"30507 days, 0:00:00",,,184.65117874 cm,,
+,120 mmHg,M,,1987,89.9622908893 kg,,Nonhispanic,,,French_canadian,,,False,,34.6937909769 kg/m2,,,,181 mg/dL,87 mmHg,female,"9637 days, 0:00:00",94 mg/dL,65 mg/dL,161.029103208 cm,,106 mg/dL
+126 mL/min/{1.73_m2},150 mmHg,M,137 mmol/L,1988,113.550732734 kg,106 mmol/L,Nonhispanic,119 mg/dL,5.10822739629 mmol/L,Irish,,11 mg/dL,False,6.40516432736 %,41.2284038005 kg/m2,20 mmol/L,9.74283459362 mg/dL,,220 mg/dL,107 mmHg,male,"12367 days, 0:00:00",127 mg/dL,53 mg/dL,165.957433539 cm,1.17656182506 mg/dL,197 mg/dL
+,,M,,1989,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"8416 days, 0:00:00",,,,,
+,,S,,1990,,,Nonhispanic,,,French,,,False,,,,,,,,female,"8590 days, 0:00:00",,,,,
+10 mL/min/{1.73_m2},112 mmHg,M,140 mmol/L,1991,97.1532240836 kg,111 mmol/L,Nonhispanic,125 mg/dL,4.18363837396 mmol/L,English,,19 mg/dL,False,5.27460117781 %,35.010306478 kg/m2,29 mmol/L,9.56225044365 mg/dL,400 mg/g,215 mg/dL,74 mmHg,male,"25399 days, 0:00:00",125 mg/dL,57 mg/dL,166.582989801 cm,8.50090710732 mg/dL,164 mg/dL
+,130 mmHg,M,140 mmol/L,1992,90.1765539067 kg,108 mmol/L,Nonhispanic,104 mg/dL,4.91078938593 mmol/L,African,,13 mg/dL,False,4.25151862475 %,29.3833524361 kg/m2,24 mmol/L,9.3735453265 mg/dL,,,72 mmHg,male,"27953 days, 0:00:00",,,175.18468849 cm,0.826360173258 mg/dL,
+,,M,,1993,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"68 days, 0:00:00",,,,,
+145 mL/min/{1.73_m2},160 mmHg,S,139 mmol/L,1994,112.274926363 kg,104 mmol/L,Nonhispanic,120 mg/dL,4.82086602667 mmol/L,Chinese,,19 mg/dL,False,5.4768342476 %,36.1225883618 kg/m2,22 mmol/L,9.69526203379 mg/dL,,,109 mmHg,male,"21750 days, 0:00:00",,,176.299856335 cm,0.817327050149 mg/dL,
+,136 mmHg,S,143 mmol/L,1995,68.0880166544 kg,106 mmol/L,Nonhispanic,115 mg/dL,4.70692613243 mmol/L,English,,11 mg/dL,False,3.8439986641 %,27.1419926526 kg/m2,23 mmol/L,8.57935456536 mg/dL,,,81 mmHg,female,"28726 days, 0:00:00",,,158.385156322 cm,0.518591524698 mg/dL,
+,123 mmHg,S,,1996,118.139064015 kg,,Nonhispanic,,,German,,,False,,33.2010374443 kg/m2,,,,199 mg/dL,88 mmHg,male,"6511 days, 0:00:00",93 mg/dL,80 mg/dL,188.634417641 cm,,129 mg/dL
+,,M,,1997,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"8766 days, 0:00:00",,,,,
+,114 mmHg,M,,1998,70.9823594423 kg,,Nonhispanic,,,Italian,,,False,,24.7209973653 kg/m2,,,,170 mg/dL,78 mmHg,female,"29217 days, 0:00:00",72 mg/dL,76 mg/dL,169.450252922 cm,,106 mg/dL
+,116 mmHg,M,143 mmol/L,1999,54.7139874343 kg,107 mmol/L,Nonhispanic,104 mg/dL,5.06003705031 mmol/L,Italian,,7 mg/dL,False,2.47449595501 %,19.6097277525 kg/m2,21 mmol/L,9.42800941091 mg/dL,,205 mg/dL,85 mmHg,female,"33517 days, 0:00:00",123 mg/dL,50 mg/dL,167.037276776 cm,0.340328192449 mg/dL,159 mg/dL
+,,S,,2000,,,Nonhispanic,,,English,,,False,,,,,,,,male,"10838 days, 0:00:00",,,,,
+,108 mmHg,M,,2001,88.7452420162 kg,,Central_american,,,Other,,,False,,25.7498761634 kg/m2,,,,,84 mmHg,male,"27057 days, 0:00:00",,,185.645730902 cm,,
+,,S,,2002,,,Nonhispanic,,,Chinese,,,False,,,,,,,,male,"21291 days, 0:00:00",,,,,
+,101 mmHg,M,142 mmol/L,2003,68.637243763 kg,111 mmol/L,Nonhispanic,108 mg/dL,4.68731924767 mmol/L,French_canadian,22 (score),18 mg/dL,False,3.74846176688 %,26.6165397179 kg/m2,21 mmol/L,8.52651606324 mg/dL,,,83 mmHg,female,"15485 days, 0:00:00",,,160.584683658 cm,0.531197187456 mg/dL,
+,,M,,2004,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"12740 days, 0:00:00",,,,,
+,,M,,2005,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"6532 days, 0:00:00",,,,,
+,116 mmHg,M,137 mmol/L,2006,70.0262902106 kg,101 mmol/L,Nonhispanic,103 mg/dL,3.8465303396 mmol/L,German,,12 mg/dL,False,3.67581245129 %,26.2169684821 kg/m2,23 mmol/L,9.51535152517 mg/dL,,,77 mmHg,female,"28305 days, 0:00:00",,,163.432838528 cm,0.561339003317 mg/dL,
+,118 mmHg,S,137 mmol/L,2007,42.0995056317 kg,111 mmol/L,Nonhispanic,102 mg/dL,4.36938299191 mmol/L,Swedish,,10 mg/dL,False,2.03961889479 %,17.2179039213 kg/m2,22 mmol/L,9.62344007365 mg/dL,,,71 mmHg,female,"34459 days, 0:00:00",,,156.368171582 cm,0.285779630243 mg/dL,
+,,M,,2008,,,Nonhispanic,,,English,,,False,,,,,,,,female,"2315 days, 0:00:00",,,,,
+,,S,,2009,,,Nonhispanic,,,French,,,False,,,,,,,,male,"2381 days, 0:00:00",,,,,
+,102 mmHg,M,142 mmol/L,2010,115.096932942 kg,106 mmol/L,Nonhispanic,108 mg/dL,4.55452761735 mmol/L,Italian,,16 mg/dL,False,5.42669972532 %,35.8468484893 kg/m2,29 mmol/L,10.1225197912 mg/dL,,231 mg/dL,84 mmHg,male,"18792 days, 0:00:00",149 mg/dL,48 mg/dL,179.18695332 cm,1.32965044546 mg/dL,166 mg/dL
+,106 mmHg,M,,2011,115.450006218 kg,,Nonhispanic,,,French,,,False,,27.3372037817 kg/m2,,,,,77 mmHg,male,"23134 days, 0:00:00",,,205.503837073 cm,,
+109 mL/min/{1.73_m2},166 mmHg,S,142 mmol/L,2012,66.0915104607 kg,110 mmol/L,Nonhispanic,102 mg/dL,4.1365604724 mmol/L,Asian_indian,,19 mg/dL,False,3.52927678787 %,25.4110223333 kg/m2,23 mmol/L,10.0914504007 mg/dL,,,115 mmHg,female,"31848 days, 0:00:00",,,161.273038984 cm,0.379386155231 mg/dL,
+156 mL/min/{1.73_m2},147 mmHg,M,,2013,91.766442485 kg,,Nonhispanic,,,American,,,False,,31.8458295648 kg/m2,,,,174 mg/dL,103 mmHg,female,"6412 days, 0:00:00",80 mg/dL,73 mg/dL,169.752298945 cm,,102 mg/dL
+,132 mmHg,M,,2014,107.4797385 kg,,Puerto_rican,,,Other,,,False,,31.7962897242 kg/m2,,,,199 mg/dL,74 mmHg,male,"16596 days, 0:00:00",106 mg/dL,64 mg/dL,183.854844473 cm,,145 mg/dL
+,125 mmHg,S,,2015,87.9072125994 kg,,Nonhispanic,,,Russian,,,False,,30.6885884124 kg/m2,,,,171 mg/dL,75 mmHg,female,"14359 days, 0:00:00",72 mg/dL,77 mg/dL,169.248098637 cm,,107 mg/dL
+,103 mmHg,S,,2016,58.6914743991 kg,,Nonhispanic,,,French,,,False,,21.700482597 kg/m2,,,,193 mg/dL,73 mmHg,female,"23063 days, 0:00:00",90 mg/dL,76 mg/dL,164.457170421 cm,,131 mg/dL
+,136 mmHg,M,142 mmol/L,2017,86.7242379457 kg,109 mmol/L,Nonhispanic,101 mg/dL,4.49686427987 mmol/L,Irish,,14 mg/dL,False,4.05881977023 %,28.3235087362 kg/m2,20 mmol/L,9.82485833616 mg/dL,,,73 mmHg,male,"24253 days, 0:00:00",,,174.983347155 cm,0.889038153543 mg/dL,
+,109 mmHg,M,,2018,106.861374552 kg,,Puerto_rican,,,Other,,,False,,32.3587604166 kg/m2,,,,,79 mmHg,male,"8259 days, 0:00:00",,,181.724900539 cm,,
+,,M,,2019,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"21217 days, 0:00:00",,,,,
+,,S,,2020,,,Nonhispanic,,,French,,,False,,,,,,,,male,"3015 days, 0:00:00",,,,,
+,125 mmHg,M,,2021,87.060160324 kg,,Nonhispanic,,,French,,,False,,26.6671230509 kg/m2,,,,,88 mmHg,female,"26822 days, 0:00:00",,,180.684812276 cm,,
+101 mL/min/{1.73_m2},142 mmHg,M,138 mmol/L,2022,113.720702875 kg,103 mmol/L,Nonhispanic,109 mg/dL,4.21226913053 mmol/L,Polish,,17 mg/dL,False,5.35956841996 %,35.4776263098 kg/m2,22 mmol/L,8.64883289923 mg/dL,,,97 mmHg,male,"24916 days, 0:00:00",,,179.036875544 cm,1.12594755322 mg/dL,
+,,S,,2023,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"25741 days, 0:00:00",,,,,
+,,M,,2024,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"24350 days, 0:00:00",,,,,
+,110 mmHg,M,,2025,108.565331347 kg,,Nonhispanic,,,French,,,False,,32.9463133454 kg/m2,,,,,87 mmHg,male,"5811 days, 0:00:00",,,181.527392251 cm,,
+7 mL/min/{1.73_m2},166 mmHg,M,143 mmol/L,2026,86.8475833599 kg,107 mmol/L,Nonhispanic,112 mg/dL,4.58131819081 mmol/L,English,,15 mg/dL,False,5.68011326028 %,37.2406229316 kg/m2,25 mmol/L,9.46431263248 mg/dL,528 mg/g,230 mg/dL,116 mmHg,female,"27008 days, 0:00:00",152 mg/dL,40 mg/dL,152.711027982 cm,9.81343228641 mg/dL,188 mg/dL
+,134 mmHg,M,,2027,79.9713918256 kg,,Puerto_rican,,,Other,,,False,,31.1154590819 kg/m2,,,,193 mg/dL,88 mmHg,female,"787 days, 0:00:00",95 mg/dL,73 mg/dL,160.316868376 cm,,122 mg/dL
+,,M,,2028,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"6028 days, 0:00:00",,,,,
+,,,,2029,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"4955 days, 0:00:00",,,,,
+,126 mmHg,M,,2030,107.663651853 kg,,Nonhispanic,,,English,,,False,,30.5511941101 kg/m2,,,,,88 mmHg,male,"10674 days, 0:00:00",,,187.724284851 cm,,
+,,M,,2031,,,Nonhispanic,,,African,,,False,,,,,,,,male,"5720 days, 0:00:00",,,,,
+78 mL/min/{1.73_m2},200 mmHg,S,139 mmol/L,2032,76.6376490824 kg,101 mmol/L,Nonhispanic,123 mg/dL,4.33480372496 mmol/L,German,,7 mg/dL,False,4.79154567817 %,32.3535012299 kg/m2,22 mmol/L,9.2823565379 mg/dL,,,112 mmHg,female,"26187 days, 0:00:00",,,153.90773397 cm,0.777157071803 mg/dL,
+,117 mmHg,M,143 mmol/L,2033,94.4682570758 kg,109 mmol/L,Nonhispanic,100 mg/dL,4.51012236015 mmol/L,French_canadian,,16 mg/dL,False,4.08841459236 %,28.486280258 kg/m2,21 mmol/L,9.8303050913 mg/dL,,,70 mmHg,male,"27073 days, 0:00:00",,,182.106345905 cm,0.816942474712 mg/dL,
+,109 mmHg,M,,2034,71.1368241197 kg,,Nonhispanic,,,Irish,,,False,,24.5539695113 kg/m2,,,,,88 mmHg,female,"30820 days, 0:00:00",,,170.210512769 cm,,
+143 mL/min/{1.73_m2},191 mmHg,M,,2035,89.1255760211 kg,,Nonhispanic,,,Irish,,,False,,29.6323042775 kg/m2,,,,165 mg/dL,102 mmHg,female,"14157 days, 0:00:00",63 mg/dL,78 mg/dL,173.42769923 cm,,117 mg/dL
+,,M,,2036,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"26831 days, 0:00:00",,,,,
+,101 mmHg,M,141 mmol/L,2037,102.611976984 kg,105 mmol/L,Nonhispanic,124 mg/dL,3.79984416673 mmol/L,Portuguese,,8 mg/dL,False,5.47454676833 %,36.1100072258 kg/m2,27 mmol/L,9.11569076707 mg/dL,,,78 mmHg,male,"23820 days, 0:00:00",,,168.571922523 cm,0.763481971607 mg/dL,
+,128 mmHg,M,,2038,99.2502613567 kg,,Nonhispanic,,,French,,,False,,28.6937764189 kg/m2,,,,,84 mmHg,male,"24874 days, 0:00:00",,,185.982454303 cm,,
+,138 mmHg,M,,2039,76.102744504 kg,,Nonhispanic,,,Portuguese,,,False,,20.0511183231 kg/m2,,,,193 mg/dL,72 mmHg,male,"24805 days, 0:00:00",111 mg/dL,59 mg/dL,194.818798065 cm,,115 mg/dL
+,,M,,2040,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"5006 days, 0:00:00",,,,,
+6 mL/min/{1.73_m2},116 mmHg,M,140 mmol/L,2041,87.7010563724 kg,109 mmol/L,Nonhispanic,110 mg/dL,3.98523362286 mmol/L,Scottish,,11 mg/dL,False,4.91968918555 %,33.0582905205 kg/m2,24 mmol/L,9.53793290255 mg/dL,320 mg/g,209 mg/dL,77 mmHg,male,"27202 days, 0:00:00",135 mg/dL,40 mg/dL,162.877920621 cm,13.3987725013 mg/dL,167 mg/dL
+,118 mmHg,S,143 mmol/L,2042,92.9792644249 kg,106 mmol/L,Nonhispanic,102 mg/dL,3.73799460025 mmol/L,Polish,,14 mg/dL,False,4.55435686297 %,31.0489627463 kg/m2,23 mmol/L,9.25687140725 mg/dL,,,87 mmHg,male,"27982 days, 0:00:00",,,173.04916374 cm,0.594591619024 mg/dL,
+,132 mmHg,M,,2043,71.1134024097 kg,,Nonhispanic,,,Irish,,,False,,22.7266803445 kg/m2,,,,168 mg/dL,73 mmHg,female,"8329 days, 0:00:00",80 mg/dL,60 mg/dL,176.891810573 cm,,139 mg/dL
+122 mL/min/{1.73_m2},160 mmHg,M,,2044,74.1755384923 kg,,Nonhispanic,,,Portuguese,,,False,,24.3030554393 kg/m2,,,,,117 mmHg,male,"26995 days, 0:00:00",,,174.702819936 cm,,
+93 mL/min/{1.73_m2},157 mmHg,M,,2045,89.681432459 kg,,Nonhispanic,,,English,,,False,,30.3410589416 kg/m2,,,,168 mg/dL,120 mmHg,male,"24418 days, 0:00:00",77 mg/dL,69 mg/dL,171.923760202 cm,,108 mg/dL
+,109 mmHg,M,,2046,76.1917108541 kg,,Nonhispanic,,,Italian,,,False,,21.9337289743 kg/m2,,,,,86 mmHg,male,"31592 days, 0:00:00",,,186.379278595 cm,,
+,106 mmHg,S,,2047,106.162677033 kg,,Nonhispanic,,,French,,,False,,32.0069549387 kg/m2,,,,,70 mmHg,male,"22264 days, 0:00:00",,,182.122562146 cm,,
+94 mL/min/{1.73_m2},193 mmHg,M,140 mmol/L,2048,102.202091489 kg,107 mmol/L,Nonhispanic,120 mg/dL,4.47896578041 mmol/L,Scottish,,7 mg/dL,False,5.75851744865 %,37.6718459676 kg/m2,22 mmol/L,9.1660143482 mg/dL,,205 mg/dL,90 mmHg,female,"12806 days, 0:00:00",128 mg/dL,41 mg/dL,164.7105589 cm,1.16804547527 mg/dL,179 mg/dL
+,116 mmHg,M,,2049,113.87258945 kg,,Nonhispanic,,,English,,,False,,34.5234045076 kg/m2,,,,,77 mmHg,male,"23064 days, 0:00:00",,,181.615449464 cm,,
+103 mL/min/{1.73_m2},175 mmHg,S,143 mmol/L,2050,115.730447589 kg,102 mmol/L,Nonhispanic,120 mg/dL,4.40134338469 mmol/L,English,,12 mg/dL,False,5.69703694171 %,37.3337031794 kg/m2,27 mmol/L,9.28303030329 mg/dL,,231 mg/dL,98 mmHg,male,"15369 days, 0:00:00",145 mg/dL,54 mg/dL,176.065101423 cm,1.23283513478 mg/dL,157 mg/dL
+,,S,,2051,,,Nonhispanic,,,French,,,False,,,,,,,,male,"28449 days, 0:00:00",,,,,
+151 mL/min/{1.73_m2},164 mmHg,M,,2052,84.4161510908 kg,,Nonhispanic,,,French,,,False,,26.8211669589 kg/m2,,,,188 mg/dL,116 mmHg,male,"18209 days, 0:00:00",101 mg/dL,60 mg/dL,177.408301758 cm,,135 mg/dL
+,116 mmHg,M,,2053,98.5957028161 kg,,Nonhispanic,,,West_indian,,,False,,29.5916375705 kg/m2,,,,,71 mmHg,male,"20292 days, 0:00:00",,,182.534303888 cm,,
+,,M,,2054,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"3159 days, 0:00:00",,,,,
+128 mL/min/{1.73_m2},192 mmHg,S,,2055,108.946806696 kg,,Nonhispanic,,,German,,,False,,37.0837616648 kg/m2,,,,176 mg/dL,102 mmHg,male,"14446 days, 0:00:00",72 mg/dL,78 mg/dL,171.401793537 cm,,130 mg/dL
+,137 mmHg,M,,2056,45.7106340365 kg,,Nonhispanic,,,Chinese,,,False,,17.3306323667 kg/m2,,,,,72 mmHg,female,"32223 days, 0:00:00",,,162.405756114 cm,,
+147 mL/min/{1.73_m2},146 mmHg,S,,2057,95.9141229359 kg,,Puerto_rican,,,Other,,,False,,29.4020378679 kg/m2,,,,,113 mmHg,male,"20994 days, 0:00:00",,,180.614479391 cm,,
+,119 mmHg,M,,2058,107.650165877 kg,,Nonhispanic,,,English,,,False,,33.6564108633 kg/m2,,,,163 mg/dL,75 mmHg,male,"12949 days, 0:00:00",72 mg/dL,68 mg/dL,178.843619758 cm,,114 mg/dL
+,108 mmHg,M,,2059,108.444827305 kg,,Nonhispanic,,,Irish,,,False,,31.565306294 kg/m2,,,,186 mg/dL,87 mmHg,male,"12926 days, 0:00:00",96 mg/dL,68 mg/dL,185.352913443 cm,,107 mg/dL
+,100 mmHg,S,142 mmol/L,2060,110.991018572 kg,111 mmol/L,Nonhispanic,123 mg/dL,4.8435820793 mmol/L,English,,20 mg/dL,False,5.9596237545 %,38.7779306498 kg/m2,23 mmol/L,9.09765828243 mg/dL,,,88 mmHg,male,"22754 days, 0:00:00",,,169.181006233 cm,1.002002251 mg/dL,
+,,M,,2061,,,Nonhispanic,,,Dominican,,,False,,,,,,,,female,"11344 days, 0:00:00",,,,,
+34 mL/min/{1.73_m2},182 mmHg,M,138 mmol/L,2062,108.281698084 kg,101 mmol/L,Nonhispanic,102 mg/dL,4.72457960829 mmol/L,American,,17 mg/dL,False,6.76762370861 %,43.2219303973 kg/m2,28 mmol/L,9.27794920015 mg/dL,262 mg/g,236 mg/dL,91 mmHg,female,"16509 days, 0:00:00",144 mg/dL,53 mg/dL,158.279784057 cm,3.42140087697 mg/dL,195 mg/dL
+126 mL/min/{1.73_m2},146 mmHg,M,141 mmol/L,2063,96.6894037108 kg,107 mmol/L,Puerto_rican,116 mg/dL,4.70118133215 mmol/L,Other,,9 mg/dL,False,3.93100324715 %,27.6205178593 kg/m2,27 mmol/L,9.63099998233 mg/dL,,221 mg/dL,114 mmHg,male,"23867 days, 0:00:00",130 mg/dL,55 mg/dL,187.099890138 cm,0.660796189381 mg/dL,176 mg/dL
+,125 mmHg,M,136 mmol/L,2064,122.451619502 kg,101 mmol/L,Nonhispanic,107 mg/dL,4.18398298804 mmol/L,Italian,,20 mg/dL,False,5.89714573732 %,38.4343015553 kg/m2,29 mmol/L,9.72171136527 mg/dL,,228 mg/dL,87 mmHg,male,"23011 days, 0:00:00",153 mg/dL,41 mg/dL,178.493649809 cm,1.1750407932 mg/dL,167 mg/dL
+,,S,,2065,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"1626 days, 0:00:00",,,,,
+,120 mmHg,S,141 mmol/L,2066,114.697650121 kg,106 mmol/L,Nonhispanic,120 mg/dL,3.70132651701 mmol/L,African,,14 mg/dL,False,5.31912705298 %,35.2551987914 kg/m2,21 mmol/L,9.89008088888 mg/dL,,,79 mmHg,male,"21070 days, 0:00:00",,,180.370569387 cm,0.911868291194 mg/dL,
+,125 mmHg,M,,2067,59.6570326246 kg,,Nonhispanic,,,English,,,False,,16.2441947674 kg/m2,,,,,85 mmHg,male,"29743 days, 0:00:00",,,191.638044115 cm,,
+129 mL/min/{1.73_m2},148 mmHg,S,,2068,103.175135715 kg,,Nonhispanic,,,Irish,,,False,,32.2124138894 kg/m2,,,,,117 mmHg,male,"21698 days, 0:00:00",,,178.968207819 cm,,
+,105 mmHg,M,140 mmol/L,2069,66.2844914956 kg,101 mmol/L,Nonhispanic,123 mg/dL,3.98581669343 mmol/L,Russian,,16 mg/dL,False,3.58983012101 %,25.7440656655 kg/m2,29 mmol/L,8.63999720953 mg/dL,,225 mg/dL,85 mmHg,female,"16367 days, 0:00:00",142 mg/dL,49 mg/dL,160.460225134 cm,0.381230248452 mg/dL,170 mg/dL
+,,M,,2070,,,Nonhispanic,,,American,,,False,,,,,,,,male,"29049 days, 0:00:00",,,,,
+,117 mmHg,,,2071,19.0304206146 kg,,Nonhispanic,,,Polish,,,False,,31.7593027566 kg/m2,,,,,84 mmHg,female,"1983 days, 0:00:00",,,77.4085110597 cm,,
+,106 mmHg,,,2072,39.3783107378 kg,,Nonhispanic,,,German,,,False,,31.9510315581 kg/m2,,,,,84 mmHg,male,"3375 days, 0:00:00",,,111.016133815 cm,,
+,100 mmHg,M,,2073,86.0980163991 kg,,Puerto_rican,,,Other,,,False,,24.6422202224 kg/m2,,,,,71 mmHg,male,"16294 days, 0:00:00",,,186.920380206 cm,,
+63 mL/min/{1.73_m2},188 mmHg,M,,2074,103.607495267 kg,,Nonhispanic,,,Irish,,,False,,34.4038827419 kg/m2,,,,160 mg/dL,112 mmHg,female,"8753 days, 0:00:00",56 mg/dL,74 mg/dL,173.536909122 cm,,148 mg/dL
+,105 mmHg,S,,2075,77.7607918638 kg,,Nonhispanic,,,Irish,,,False,,29.1355844147 kg/m2,,,,196 mg/dL,78 mmHg,male,"9713 days, 0:00:00",105 mg/dL,61 mg/dL,163.368555994 cm,,146 mg/dL
+,,M,,2076,,,Nonhispanic,,,French,,,False,,,,,,,,male,"8483 days, 0:00:00",,,,,
+,,M,,2077,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"14101 days, 0:00:00",,,,,
+,126 mmHg,,137 mmol/L,2078,45.2201974304 kg,101 mmol/L,Nonhispanic,102 mg/dL,3.77405440692 mmol/L,Irish,,14 mg/dL,False,4.63912588065 %,31.5151923436 kg/m2,23 mmol/L,9.89720187946 mg/dL,,,76 mmHg,male,"2348 days, 0:00:00",,,119.786050537 cm,0.531756025339 mg/dL,
+,133 mmHg,S,139 mmol/L,2079,81.6383815407 kg,111 mmol/L,Mexican,124 mg/dL,4.7601013883 mmol/L,Other,,16 mg/dL,False,5.24336348512 %,34.8384991682 kg/m2,25 mmol/L,9.952083736 mg/dL,,212 mg/dL,80 mmHg,female,"6045 days, 0:00:00",122 mg/dL,50 mg/dL,153.079654885 cm,0.887024696189 mg/dL,198 mg/dL
+,,M,,2080,,,Nonhispanic,,,French_canadian,,,False,,,,,,,,male,"22272 days, 0:00:00",,,,,
+96 mL/min/{1.73_m2},141 mmHg,S,,2081,82.1775615124 kg,,Nonhispanic,,,Italian,,,False,,24.5044025907 kg/m2,,,,162 mg/dL,116 mmHg,male,"26536 days, 0:00:00",69 mg/dL,64 mg/dL,183.127921228 cm,,141 mg/dL
+102 mL/min/{1.73_m2},173 mmHg,M,138 mmol/L,2082,75.7662378848 kg,109 mmol/L,Nonhispanic,110 mg/dL,4.26006389306 mmol/L,German,,17 mg/dL,False,3.71197242432 %,26.4158483338 kg/m2,21 mmol/L,9.68854016022 mg/dL,,211 mg/dL,90 mmHg,male,"21821 days, 0:00:00",119 mg/dL,53 mg/dL,169.357946992 cm,0.546787936805 mg/dL,194 mg/dL
+,,M,,2083,,,Nonhispanic,,,English,,,False,,,,,,,,male,"10892 days, 0:00:00",,,,,
+,104 mmHg,M,,2084,87.318686416 kg,,Nonhispanic,,,Irish,,,False,,29.13613009 kg/m2,,,,,80 mmHg,female,"7514 days, 0:00:00",,,173.116181101 cm,,
+,,M,,2085,,,Nonhispanic,,,French_canadian,,,False,,,,,,,,male,"5717 days, 0:00:00",,,,,
+,118 mmHg,M,,2086,92.1316227942 kg,,Nonhispanic,,,American,,,False,,26.6195601972 kg/m2,,,,189 mg/dL,85 mmHg,male,"12874 days, 0:00:00",96 mg/dL,72 mg/dL,186.038968327 cm,,104 mg/dL
+,,M,,2087,,,Nonhispanic,,,Polish,,,False,,,,,,,,female,"2696 days, 0:00:00",,,,,
+16 mL/min/{1.73_m2},160 mmHg,M,141 mmol/L,2088,107.047937765 kg,107 mmol/L,Nonhispanic,112 mg/dL,4.70387699128 mmol/L,Dominican,,7 mg/dL,False,7.26155349251 %,45.9385442088 kg/m2,22 mmol/L,9.39733867528 mg/dL,580 mg/g,223 mg/dL,98 mmHg,female,"17920 days, 0:00:00",143 mg/dL,48 mg/dL,152.651310998 cm,7.18763714073 mg/dL,156 mg/dL
+68 mL/min/{1.73_m2},161 mmHg,M,138 mmol/L,2089,80.0692920995 kg,107 mmol/L,Nonhispanic,101 mg/dL,4.28152633616 mmol/L,Portuguese,,17 mg/dL,False,4.61911829046 %,31.4051505975 kg/m2,25 mmol/L,10.1036074868 mg/dL,,202 mg/dL,107 mmHg,female,"18144 days, 0:00:00",118 mg/dL,46 mg/dL,159.673393109 cm,0.945262476174 mg/dL,190 mg/dL
+,120 mmHg,M,,2090,109.096731635 kg,,Nonhispanic,,,Irish,,,False,,32.0495933777 kg/m2,,,,,80 mmHg,male,"21101 days, 0:00:00",,,184.499251275 cm,,
+,,S,,2091,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"10755 days, 0:00:00",,,,,
+,,M,,2092,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,female,"11981 days, 0:00:00",,,,,
+,137 mmHg,M,,2093,113.127802209 kg,,Nonhispanic,,,Irish,,,False,,35.9375613248 kg/m2,,,,167 mg/dL,79 mmHg,male,"17678 days, 0:00:00",76 mg/dL,68 mg/dL,177.423185909 cm,,112 mg/dL
+,133 mmHg,S,139 mmol/L,2094,96.2243071709 kg,109 mmol/L,Nonhispanic,108 mg/dL,3.77579112181 mmol/L,Dominican,,7 mg/dL,False,3.49401012575 %,25.2170556916 kg/m2,29 mmol/L,10.1027804871 mg/dL,,239 mg/dL,86 mmHg,male,"27664 days, 0:00:00",152 mg/dL,52 mg/dL,195.341810053 cm,0.560446233522 mg/dL,172 mg/dL
+14 mL/min/{1.73_m2},164 mmHg,M,142 mmol/L,2095,85.6720777342 kg,111 mmol/L,Nonhispanic,107 mg/dL,4.17049383433 mmol/L,Polish,,18 mg/dL,False,4.04013974465 %,28.2207685956 kg/m2,23 mmol/L,9.75131225099 mg/dL,444 mg/g,204 mg/dL,97 mmHg,male,"13248 days, 0:00:00",119 mg/dL,53 mg/dL,174.234932317 cm,8.83918262337 mg/dL,159 mg/dL
+,,M,,2096,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"5305 days, 0:00:00",,,,,
+2 mL/min/{1.73_m2},139 mmHg,M,140 mmol/L,2097,124.053749457 kg,105 mmol/L,Nonhispanic,119 mg/dL,5.00100581744 mmol/L,French_canadian,,12 mg/dL,False,6.54413591155 %,41.9927475135 kg/m2,27 mmol/L,9.85101425771 mg/dL,420 mg/g,204 mg/dL,70 mmHg,male,"21334 days, 0:00:00",124 mg/dL,47 mg/dL,171.877014822 cm,70.6417184408 mg/dL,165 mg/dL
+,113 mmHg,M,,2098,95.2489719799 kg,,Nonhispanic,,,Chinese,,,False,,25.4045541145 kg/m2,,,,,77 mmHg,male,"23889 days, 0:00:00",,,193.630764475 cm,,
+,114 mmHg,M,,2099,68.899693309 kg,,Nonhispanic,,,English,,,False,,30.0054407096 kg/m2,,,,,78 mmHg,female,"3655 days, 0:00:00",,,151.533494795 cm,,
+,113 mmHg,M,,2100,94.3724294855 kg,,Nonhispanic,,,French,,,False,,27.4713558942 kg/m2,,,,195 mg/dL,84 mmHg,male,"26512 days, 0:00:00",113 mg/dL,62 mg/dL,185.345702225 cm,,100 mg/dL
+,,M,,2101,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"11799 days, 0:00:00",,,,,
+80 mL/min/{1.73_m2},182 mmHg,M,,2102,73.6103735608 kg,,Nonhispanic,,,Irish,,,False,,26.4295829601 kg/m2,,,,,102 mmHg,female,"1945 days, 0:00:00",,,166.887710112 cm,,
+150 mL/min/{1.73_m2},160 mmHg,M,,2103,109.185213327 kg,,Nonhispanic,,,Irish,,,False,,27.529933069 kg/m2,,,,,97 mmHg,male,"17436 days, 0:00:00",,,199.149552891 cm,,
+123 mL/min/{1.73_m2},191 mmHg,M,136 mmol/L,2104,76.2500683642 kg,111 mmol/L,Nonhispanic,103 mg/dL,4.79951484844 mmol/L,Italian,,20 mg/dL,False,3.20559615295 %,23.6307788412 kg/m2,29 mmol/L,9.64805252058 mg/dL,,,115 mmHg,male,"14013 days, 0:00:00",,,179.63092276 cm,0.542429348119 mg/dL,
+83 mL/min/{1.73_m2},166 mmHg,M,,2105,111.690855115 kg,,Puerto_rican,,,Other,,,False,,36.4342092939 kg/m2,,,,,99 mmHg,male,"21506 days, 0:00:00",,,175.087093592 cm,,
+,111 mmHg,M,,2106,67.6008852457 kg,,Nonhispanic,,,French,,,False,,24.1706173191 kg/m2,,,,,80 mmHg,female,"27959 days, 0:00:00",,,167.23698153 cm,,
+,,M,,2107,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"7051 days, 0:00:00",,,,,
+,116 mmHg,S,138 mmol/L,2108,94.955960356 kg,101 mmol/L,Nonhispanic,115 mg/dL,5.08849569596 mmol/L,Irish,,11 mg/dL,False,4.36616365013 %,30.0139000757 kg/m2,25 mmol/L,9.88099495155 mg/dL,,223 mg/dL,88 mmHg,male,"9655 days, 0:00:00",138 mg/dL,46 mg/dL,177.868850777 cm,0.659416391361 mg/dL,192 mg/dL
+,131 mmHg,M,,2109,95.0276158252 kg,,Nonhispanic,,,Irish,,,False,,34.6065031227 kg/m2,,,,181 mg/dL,82 mmHg,female,"13365 days, 0:00:00",79 mg/dL,77 mg/dL,165.70898528 cm,,125 mg/dL
+,,M,,2110,,,Nonhispanic,,,American,,,False,,,,,,,,male,"1569 days, 0:00:00",,,,,
+,,M,,2111,,,Nonhispanic,,,African,,,False,,,,,,,,male,"1847 days, 0:00:00",,,,,
+,125 mmHg,M,139 mmol/L,2112,76.9100172476 kg,104 mmol/L,Nonhispanic,113 mg/dL,5.04271195913 mmol/L,Irish,,15 mg/dL,,2.91139170966 %,22.0126544031 kg/m2,22 mmol/L,9.89389989185 mg/dL,,,82 mmHg,male,"30772 days, 0:00:00",,,186.91977378 cm,0.393545409893 mg/dL,
+,128 mmHg,M,,2113,68.9769228789 kg,,Mexican,,,Other,,,False,,22.2721664513 kg/m2,,,,178 mg/dL,82 mmHg,male,"32049 days, 0:00:00",82 mg/dL,75 mg/dL,175.982983544 cm,,102 mg/dL
+11 mL/min/{1.73_m2},174 mmHg,,137 mmol/L,2114,85.1944530874 kg,107 mmol/L,Nonhispanic,112 mg/dL,4.56920498411 mmol/L,French,,19 mg/dL,False,4.25452020375 %,29.3998611206 kg/m2,24 mmol/L,8.9966690305 mg/dL,528 mg/g,210 mg/dL,115 mmHg,male,"7003 days, 0:00:00",124 mg/dL,52 mg/dL,170.228793149 cm,13.0158192217 mg/dL,166 mg/dL
+,110 mmHg,M,,2115,83.4443964483 kg,,Nonhispanic,,,Irish,,,False,,27.4691425899 kg/m2,,,,,88 mmHg,male,"26303 days, 0:00:00",,,174.291431548 cm,,
+,136 mmHg,S,139 mmol/L,2116,77.4775044076 kg,104 mmol/L,Nonhispanic,109 mg/dL,4.79095601319 mmol/L,French_canadian,,14 mg/dL,False,3.94025617298 %,27.6714089514 kg/m2,28 mmol/L,9.75265799656 mg/dL,,,76 mmHg,female,"28638 days, 0:00:00",,,167.329369766 cm,0.416979624416 mg/dL,
+120 mL/min/{1.73_m2},146 mmHg,S,,2117,104.667142361 kg,,Nonhispanic,,,French_canadian,,,False,,33.6152907623 kg/m2,,,,,104 mmHg,male,"16210 days, 0:00:00",,,176.456128934 cm,,
+9 mL/min/{1.73_m2},163 mmHg,S,144 mmol/L,2118,91.3065123184 kg,102 mmol/L,Nonhispanic,114 mg/dL,4.10789317384 mmol/L,Italian,,12 mg/dL,False,4.26902503703 %,29.4796377037 kg/m2,27 mmol/L,8.68672329297 mg/dL,342 mg/g,214 mg/dL,106 mmHg,male,"28397 days, 0:00:00",129 mg/dL,50 mg/dL,175.990735433 cm,8.73611691935 mg/dL,173 mg/dL
+13 mL/min/{1.73_m2},197 mmHg,M,142 mmol/L,2119,125.454303802 kg,107 mmol/L,Nonhispanic,107 mg/dL,4.32769824719 mmol/L,English,,11 mg/dL,False,7.04706075269 %,44.7588341398 kg/m2,20 mmol/L,9.23697137195 mg/dL,474 mg/g,212 mg/dL,100 mmHg,male,"21994 days, 0:00:00",126 mg/dL,47 mg/dL,167.418481881 cm,10.1864605651 mg/dL,193 mg/dL
+156 mL/min/{1.73_m2},171 mmHg,M,,2120,80.2697386964 kg,,Nonhispanic,,,American,,,False,,23.6788270803 kg/m2,,,,,107 mmHg,male,"10489 days, 0:00:00",,,184.117823181 cm,,
+,129 mmHg,M,,2121,65.6574838047 kg,,Central_american,,,Other,,,False,,22.8666751794 kg/m2,,,,167 mg/dL,78 mmHg,female,"30819 days, 0:00:00",72 mg/dL,70 mg/dL,169.449622744 cm,,121 mg/dL
+,129 mmHg,,,2122,63.6099813658 kg,,Nonhispanic,,,Dominican,,,False,,23.4153855383 kg/m2,,,,,72 mmHg,male,"4208 days, 0:00:00",,,164.820784801 cm,,
+,,M,,2123,,,Nonhispanic,,,Scottish,,,False,,,,,,,,female,"619 days, 0:00:00",,,,,
+,,M,,2124,,,Nonhispanic,,,Scottish,,,False,,,,,,,,female,"4434 days, 0:00:00",,,,,
+,,M,,2125,,,Nonhispanic,,,Scottish,,,False,,,,,,,,female,"7446 days, 0:00:00",,,,,
+,125 mmHg,M,,2126,86.5466314114 kg,,Nonhispanic,,,Portuguese,,,False,,29.3286435144 kg/m2,,,,,75 mmHg,male,"25144 days, 0:00:00",,,171.782570072 cm,,
+,126 mmHg,M,,2127,51.0315158152 kg,,Nonhispanic,,,Italian,,,False,,18.4112435295 kg/m2,,,,,79 mmHg,female,"28189 days, 0:00:00",,,166.485982355 cm,,
+,,M,,2128,,,Nonhispanic,,,African,,,False,,,,,,,,male,"23493 days, 0:00:00",,,,,
+135 mL/min/{1.73_m2},154 mmHg,M,137 mmol/L,2129,120.42001861 kg,111 mmol/L,Nonhispanic,102 mg/dL,4.78112152227 mmol/L,French,,12 mg/dL,False,5.58493495707 %,36.7171422639 kg/m2,29 mmol/L,9.56236209278 mg/dL,,211 mg/dL,111 mmHg,male,"21035 days, 0:00:00",140 mg/dL,40 mg/dL,181.098523236 cm,0.916777919461 mg/dL,151 mg/dL
+,106 mmHg,M,,2130,84.4814119917 kg,,Puerto_rican,,,Other,,,False,,23.5129626031 kg/m2,,,,193 mg/dL,89 mmHg,male,"14254 days, 0:00:00",93 mg/dL,73 mg/dL,189.551360271 cm,,131 mg/dL
+,,M,,2131,,,Nonhispanic,,,English,,,False,,,,,,,,male,"28507 days, 0:00:00",,,,,
+,133 mmHg,,,2132,41.374903312 kg,,Puerto_rican,,,Other,,,False,,27.3077506462 kg/m2,,,,,74 mmHg,male,"4121 days, 0:00:00",,,123.090782252 cm,,
+,,M,,2133,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"21948 days, 0:00:00",,,,,
+,114 mmHg,M,143 mmol/L,2134,80.1210920419 kg,105 mmol/L,Nonhispanic,119 mg/dL,4.70106895378 mmol/L,French_canadian,,18 mg/dL,False,4.58523240972 %,31.2187782535 kg/m2,25 mmol/L,8.72017477009 mg/dL,,231 mg/dL,73 mmHg,female,"24641 days, 0:00:00",142 mg/dL,57 mg/dL,160.20109438 cm,0.976886265675 mg/dL,158 mg/dL
+,106 mmHg,M,140 mmol/L,2135,80.9480046177 kg,107 mmol/L,Nonhispanic,119 mg/dL,5.06651618885 mmol/L,Asian_indian,,11 mg/dL,False,3.52168794381 %,25.369283691 kg/m2,24 mmol/L,9.80040781003 mg/dL,,,86 mmHg,male,"17694 days, 0:00:00",,,178.627767906 cm,0.426450215898 mg/dL,
+,101 mmHg,M,,2136,63.8972792956 kg,,Nonhispanic,,,Italian,,,False,,25.8771209952 kg/m2,,,,,84 mmHg,female,"6485 days, 0:00:00",,,157.138717772 cm,,
+,,M,,2137,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"1944 days, 0:00:00",,,,,
+,,,,2138,,,Nonhispanic,,,Italian,,,False,,,,,,,,female,"1816 days, 0:00:00",,,,,
+136 mL/min/{1.73_m2},189 mmHg,,,2139,66.2944579839 kg,,Central_american,,,Other,,,False,,19.4837842239 kg/m2,,,,,104 mmHg,male,"7436 days, 0:00:00",,,184.459894739 cm,,
+,,M,,2140,,,Nonhispanic,,,English,,,False,,,,,,,,male,"19911 days, 0:00:00",,,,,
+,117 mmHg,S,137 mmol/L,2141,98.5359597037 kg,103 mmol/L,Nonhispanic,104 mg/dL,5.09251286309 mmol/L,Portuguese,,13 mg/dL,False,5.01140582593 %,33.5627320426 kg/m2,22 mmol/L,9.40496045331 mg/dL,,222 mg/dL,84 mmHg,male,"20494 days, 0:00:00",140 mg/dL,42 mg/dL,171.343929523 cm,1.24729062916 mg/dL,198 mg/dL
+,135 mmHg,S,139 mmol/L,2142,84.3325959111 kg,108 mmol/L,Nonhispanic,106 mg/dL,4.50189787798 mmol/L,Italian,,13 mg/dL,False,4.74681515115 %,32.1074833314 kg/m2,29 mmol/L,10.0516901972 mg/dL,,233 mg/dL,86 mmHg,male,"22059 days, 0:00:00",149 mg/dL,53 mg/dL,162.067003189 cm,0.65512609818 mg/dL,152 mg/dL
+,,M,,2143,,,Nonhispanic,,,Irish,,,False,,,,,,,,male,"24892 days, 0:00:00",,,,,
+11 mL/min/{1.73_m2},166 mmHg,M,136 mmol/L,2144,120.454804145 kg,107 mmol/L,Nonhispanic,181 mg/dL,4.58959513743 mmol/L,German,,16 mg/dL,False,4.87894812816 %,32.8342147049 kg/m2,20 mmol/L,9.33707525233 mg/dL,545 mg/g,253 mg/dL,99 mmHg,male,"20218 days, 0:00:00",130 mg/dL,30 mg/dL,191.535264623 cm,12.9275989297 mg/dL,462 mg/dL
+7 mL/min/{1.73_m2},124 mmHg,M,144 mmol/L,2145,82.1675546465 kg,108 mmol/L,Nonhispanic,107 mg/dL,4.43325204459 mmol/L,Italian,,9 mg/dL,False,4.46877406727 %,30.57825737 kg/m2,22 mmol/L,10.1252019395 mg/dL,455 mg/g,230 mg/dL,81 mmHg,male,"29452 days, 0:00:00",138 mg/dL,55 mg/dL,163.92448024 cm,7.9885122573 mg/dL,185 mg/dL
+,109 mmHg,M,,2146,91.9248773131 kg,,Nonhispanic,,,German,,,False,,33.7969031438 kg/m2,,,,190 mg/dL,71 mmHg,female,"15640 days, 0:00:00",103 mg/dL,59 mg/dL,164.9218037 cm,,137 mg/dL
+,111 mmHg,M,,2147,61.7284130924 kg,,Puerto_rican,,,Other,,,False,,20.6291064836 kg/m2,,,,,73 mmHg,female,"2770 days, 0:00:00",,,172.982570885 cm,,
+,124 mmHg,M,,2148,69.1384965428 kg,,Nonhispanic,,,African,,,False,,28.4754326418 kg/m2,,,,200 mg/dL,78 mmHg,female,"9746 days, 0:00:00",101 mg/dL,73 mg/dL,155.820574069 cm,,127 mg/dL
+,101 mmHg,S,,2149,91.532740596 kg,,Nonhispanic,,,Irish,,,False,,25.3079506037 kg/m2,,,,,86 mmHg,male,"18725 days, 0:00:00",,,190.177767041 cm,,
+,,,,2150,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,female,"3774 days, 0:00:00",,,,,
+,138 mmHg,M,142 mmol/L,2151,72.1222941653 kg,108 mmol/L,Puerto_rican,109 mg/dL,4.42834267679 mmol/L,Other,,18 mg/dL,False,3.19241991824 %,23.5583095503 kg/m2,27 mmol/L,9.83096222524 mg/dL,,,85 mmHg,male,"23717 days, 0:00:00",,,174.969642494 cm,0.710882827794 mg/dL,
+,,M,,2152,,,Nonhispanic,,,Russian,,,False,,,,,,,,female,"12572 days, 0:00:00",,,,,
+,125 mmHg,M,,2153,90.5461822571 kg,,Central_american,,,Other,,,False,,30.9367727002 kg/m2,,,,,83 mmHg,female,"11756 days, 0:00:00",,,171.079340968 cm,,
+89 mL/min/{1.73_m2},146 mmHg,M,141 mmol/L,2154,99.5927954714 kg,107 mmol/L,Nonhispanic,115 mg/dL,3.92859971002 mmol/L,American,,18 mg/dL,False,4.83292826541 %,32.5811054598 kg/m2,20 mmol/L,8.52188425487 mg/dL,,,106 mmHg,male,"9037 days, 0:00:00",,,174.836077169 cm,1.61636247332 mg/dL,
+,116 mmHg,M,,2155,87.514239952 kg,,Nonhispanic,,,Irish,,,False,,23.417033958 kg/m2,,,,,86 mmHg,male,"15139 days, 0:00:00",,,193.318501388 cm,,
+12 mL/min/{1.73_m2},175 mmHg,M,137 mmol/L,2156,82.0441108326 kg,105 mmol/L,Nonhispanic,102 mg/dL,3.87757766324 mmol/L,American,,19 mg/dL,False,5.25526136562 %,34.9039375109 kg/m2,21 mmol/L,8.87723386424 mg/dL,318 mg/g,207 mg/dL,116 mmHg,female,"26052 days, 0:00:00",119 mg/dL,49 mg/dL,153.315652294 cm,5.32716969642 mg/dL,194 mg/dL
+12 mL/min/{1.73_m2},195 mmHg,M,144 mmol/L,2157,108.257075741 kg,104 mmol/L,Nonhispanic,102 mg/dL,4.68705078214 mmol/L,Asian_indian,,20 mg/dL,False,5.94964059653 %,38.7230232809 kg/m2,24 mmol/L,8.6367467363 mg/dL,303 mg/g,213 mg/dL,98 mmHg,male,"21045 days, 0:00:00",131 mg/dL,45 mg/dL,167.202788942 cm,9.27201806111 mg/dL,183 mg/dL
+,,M,,2158,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"32524 days, 0:00:00",,,,,
+,,M,,2159,,,Nonhispanic,,,Polish,,,False,,,,,,,,male,"23887 days, 0:00:00",,,,,
+89 mL/min/{1.73_m2},151 mmHg,M,140 mmol/L,2160,111.88321014 kg,106 mmol/L,Nonhispanic,108 mg/dL,4.12146546715 mmol/L,French,,14 mg/dL,False,4.92418755183 %,33.0830315351 kg/m2,26 mmol/L,9.5567725675 mg/dL,,,96 mmHg,male,"20006 days, 0:00:00",,,183.899187246 cm,1.50155369414 mg/dL,
+,123 mmHg,M,,2161,89.433656323 kg,,Nonhispanic,,,Italian,,,False,,25.059836425 kg/m2,,,,174 mg/dL,80 mmHg,male,"6161 days, 0:00:00",84 mg/dL,62 mg/dL,188.912796625 cm,,137 mg/dL
+,139 mmHg,M,,2162,100.073024238 kg,,Nonhispanic,,,French,,,False,,28.2271657266 kg/m2,,,,192 mg/dL,87 mmHg,male,"22620 days, 0:00:00",89 mg/dL,78 mg/dL,188.288968263 cm,,122 mg/dL
+,127 mmHg,M,,2163,96.894361039 kg,,Nonhispanic,,,Russian,,,False,,29.5281518081 kg/m2,,,,161 mg/dL,82 mmHg,male,"25760 days, 0:00:00",68 mg/dL,70 mg/dL,181.14698877 cm,,112 mg/dL
+,,M,,2164,,,Nonhispanic,,,Dominican,,,False,,,,,,,,male,"25170 days, 0:00:00",,,,,
+,,M,,2165,,,Puerto_rican,,,Other,,,False,,,,,,,,female,"9566 days, 0:00:00",,,,,
+,120 mmHg,M,,2166,86.9484819738 kg,,Nonhispanic,,,French_canadian,,,,,29.318631959 kg/m2,,,,200 mg/dL,71 mmHg,male,"3758 days, 0:00:00",113 mg/dL,64 mg/dL,172.210311048 cm,,114 mg/dL
+,138 mmHg,M,,2167,59.8358808143 kg,,Puerto_rican,,,Other,,,False,,19.8393459153 kg/m2,,,,177 mg/dL,75 mmHg,male,"32629 days, 0:00:00",79 mg/dL,68 mg/dL,173.666946888 cm,,150 mg/dL
+,101 mmHg,,,2168,35.6950041159 kg,,Nonhispanic,,,English,,,False,,30.0568308949 kg/m2,,,,,80 mmHg,male,"2531 days, 0:00:00",,,108.976316492 cm,,
+,,M,,2169,,,Nonhispanic,,,Irish,,,False,,,,,,,,female,"3803 days, 0:00:00",,,,,
+,,M,,2170,,,Nonhispanic,,,Asian_indian,,,False,,,,,,,,male,"25432 days, 0:00:00",,,,,
+,,M,,2171,,,Nonhispanic,,,Italian,,,False,,,,,,,,male,"25826 days, 0:00:00",,,,,
+108 mL/min/{1.73_m2},180 mmHg,M,,2172,74.4740625902 kg,,Nonhispanic,,,French,,,False,,26.2431932438 kg/m2,,,,,113 mmHg,female,"2195 days, 0:00:00",,,168.458986497 cm,,
+129 mL/min/{1.73_m2},171 mmHg,M,,2173,93.7896470104 kg,,Nonhispanic,,,Portuguese,,,False,,32.0931343169 kg/m2,,,,,101 mmHg,male,"24886 days, 0:00:00",,,170.950896947 cm,,
+,109 mmHg,,,2174,12.0590875621 kg,,Nonhispanic,,,American,,,False,,25.985580506 kg/m2,,,,,83 mmHg,female,"1176 days, 0:00:00",,,68.1225682532 cm,,
+,,M,,2175,,,Nonhispanic,,,American,,,False,,,,,,,,male,"23411 days, 0:00:00",,,,,
+,128 mmHg,M,,2176,104.734296065 kg,,Nonhispanic,,,American,,,False,,29.4665324522 kg/m2,,,,,79 mmHg,male,"24768 days, 0:00:00",,,188.529772283 cm,,
+,127 mmHg,M,,2177,98.2261929022 kg,,Nonhispanic,,,Irish,,,False,,29.7435642302 kg/m2,,,,,83 mmHg,male,"24812 days, 0:00:00",,,181.726035018 cm,,
+,117 mmHg,M,,2178,98.4710073941 kg,,Nonhispanic,,,Irish,,,False,,29.7554176072 kg/m2,,,,184 mg/dL,70 mmHg,male,"4603 days, 0:00:00",86 mg/dL,77 mg/dL,181.916112028 cm,,104 mg/dL
+112 mL/min/{1.73_m2},153 mmHg,M,137 mmol/L,2179,75.5805027254 kg,109 mmol/L,Nonhispanic,116 mg/dL,4.84728153183 mmol/L,Italian,,13 mg/dL,False,5.02803624689 %,33.6541993579 kg/m2,20 mmol/L,9.73218653643 mg/dL,,,112 mmHg,female,"10707 days, 0:00:00",,,149.859837258 cm,0.884303128985 mg/dL,
+8 mL/min/{1.73_m2},179 mmHg,M,138 mmol/L,2180,121.885654679 kg,110 mmol/L,Nonhispanic,108 mg/dL,5.04037561541 mmol/L,Irish,,9 mg/dL,False,6.91008023871 %,44.0054413129 kg/m2,23 mmol/L,8.51369496615 mg/dL,473 mg/g,223 mg/dL,106 mmHg,male,"24423 days, 0:00:00",129 mg/dL,59 mg/dL,166.426740235 cm,15.6589209136 mg/dL,174 mg/dL
+,,M,,2181,,,Nonhispanic,,,Scottish,,,False,,,,,,,,male,"13121 days, 0:00:00",,,,,
+,,M,,2182,,,Nonhispanic,,,West_indian,,,False,,,,,,,,male,"2645 days, 0:00:00",,,,,
+,108 mmHg,M,,2183,56.8256911256 kg,,Nonhispanic,,,Chinese,,,False,,19.4521144881 kg/m2,,,,175 mg/dL,76 mmHg,female,"29965 days, 0:00:00",89 mg/dL,61 mg/dL,170.918453544 cm,,125 mg/dL
+11 mL/min/{1.73_m2},191 mmHg,M,136 mmol/L,2184,109.674939977 kg,107 mmol/L,Nonhispanic,120 mg/dL,3.99535107212 mmol/L,Irish,,20 mg/dL,False,5.34771223089 %,35.4124172699 kg/m2,29 mmol/L,9.49105901414 mg/dL,324 mg/g,203 mg/dL,115 mmHg,male,"15317 days, 0:00:00",117 mg/dL,53 mg/dL,175.985106868 cm,13.7093674971 mg/dL,162 mg/dL
+,109 mmHg,,,2185,9.39086846718 kg,,Nonhispanic,,,Irish,,,False,,23.2626316821 kg/m2,,,,,83 mmHg,female,"923 days, 0:00:00",,,63.5365247461 cm,,
+,,M,,2186,,,Nonhispanic,,,Portuguese,,,False,,,,,,,,male,"9799 days, 0:00:00",,,,,
+,,M,,2187,,,Nonhispanic,,,American,,,False,,,,,,,,male,"26971 days, 0:00:00",,,,,
+133 mL/min/{1.73_m2},151 mmHg,S,,2188,93.741156831 kg,,Nonhispanic,,,French,,,False,,35.7620441891 kg/m2,,,,188 mg/dL,107 mmHg,female,"17330 days, 0:00:00",81 mg/dL,79 mg/dL,161.902660936 cm,,139 mg/dL
+,116 mmHg,M,,2189,87.7881739864 kg,,Nonhispanic,,,French,,,False,,32.9240837111 kg/m2,,,,,86 mmHg,female,"10541 days, 0:00:00",,,163.290590377 cm,,
+,,S,,2190,,,Nonhispanic,,,Polish,,,False,,,,,,,,female,"15717 days, 0:00:00",,,,,
+,138 mmHg,M,,2191,73.8309129919 kg,,Nonhispanic,,,Italian,,,False,,23.1226089679 kg/m2,,,,175 mg/dL,87 mmHg,male,"11833 days, 0:00:00",82 mg/dL,63 mg/dL,178.690186486 cm,,150 mg/dL
+,,,,2192,,,Nonhispanic,,,French,,,False,,,,,,,,male,"6142 days, 0:00:00",,,,,
