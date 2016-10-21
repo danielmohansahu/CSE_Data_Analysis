@@ -8,7 +8,7 @@ csv_loc = "../synthea_parsed_data.csv"
 patient_files = spb.get_patients(files_loc)
 
 # Create Header:
-header = ['number']
+header = ['number','Heart Disease']
 for patient in patient_files:
 	# Kinda slow :/
 	if spb.has_condition(patient,'heart disease'):
@@ -28,10 +28,12 @@ with open(csv_loc,'wb') as csvfile:
 		if spb.has_condition(patient,'heart disease'):
 			conds = spb.get_biometrics(patient,'heart disease')
 			conds["number"] = count
+			conds["Heart Disease"] = 1
 			writer.writerow(conds)
 		else:
 			conds = spb.get_biometrics_gen(patient)
 			conds["number"] = count
+			conds["Heart Disease"] = 0
 			writer.writerow(conds)
 
 
