@@ -23,15 +23,15 @@ with open(csv_loc,'wb') as csvfile:
 
 	writer.writeheader()
 	for patient in patient_files:
-		
 		count = count + 1
 
 		if spb.has_condition(patient,'heart disease'):
 			conds = spb.get_biometrics(patient,'heart disease')
 			conds["number"] = count
-
-			print conds['number']
-
+			writer.writerow(conds)
+		else:
+			conds = spb.get_biometrics_gen(patient)
+			conds["number"] = count
 			writer.writerow(conds)
 
 

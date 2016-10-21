@@ -1,3 +1,5 @@
+from random import randint
+import copy
 import json
 import os
 import fnmatch
@@ -88,6 +90,87 @@ def get_biometrics(filename,condition):
             except:
               pass   
   return return_vals
+
+  # # # # # # # # # # PATIENT BIOMETRICS + METADATA # # # # # # # # # # 
+# Return biometrics for patient with heart disease (specifically)
+# By default it filters out encounters not containing Cholesterol and 
+# blood pressure information. If filter_true is input as False it will return 
+# data for all encounters. If filter_true is true it will return either a 
+# random encounter with BP and Cholesterol info or "False" if no 
+# encounters have sufficient information
+def get_biometrics_gen(filename,filter_true = True):
+  biometric_keys = [
+    'multipleBirthBoolean',
+    'maritalStatus',
+    'birthDate',
+    'gender',
+    'extension']
+  gen_vals = {}
+
+  with open(filename) as file :
+    # Check file extension:
+    try:
+      data = json.load(file)
+      data = data['entry']
+      data_general = data[0]['resource']  # Location of biometric data
+    except TypeError as e:
+      print e
+  
+  # Append general patient data:
+  try:
+    gen_vals['multipleBirthBoolean'] = data_general['multipleBirthBoolean']
+  except: pass
+  try:
+    gen_vals['maritalStatus'] = data_general['maritalStatus']['coding'][0]['code']
+  except: pass
+  try:
+    gen_vals['gender'] = data_general['gender']
+  except: pass
+  try:
+    gen_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
+  except: pass
+  try:
+    gen_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
+  except: pass
+
+  # Load all encounter reference ID's
+  encounters = []
+  for i in range(0,len(data)):
+    if data[i]['resource']['resourceType'] == 'Encounter':
+      encounters.append(data[i]['resource']['id'])
+
+  # Collect data generated during each encounter:
+  if len(encounters)<1:
+    print "No encounter data; not a great patient resource."
+  else:
+    encounter_vals = {}
+    for encounter in encounters:
+      new_vals = copy.copy(gen_vals)
+      for i in range(0,len(data)):
+        if data[i]['resource']['resourceType'].lower() == 'observation':
+          if data[i]['resource']['encounter']['reference'][9:] == encounter:
+            try:
+              new_vals[data[i]['resource']['code']['coding'][0]['display']] = str(data[i]['resource']['valueQuantity']['value']) + " " + data[i]['resource']['valueQuantity']['unit']
+            except:
+              try:
+                for k in range(0,len(data[i]['resource']['component'])):
+                  new_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value']) + " " + data[i]['resource']['component'][k]['valueQuantity']['unit']
+              except:
+                pass
+      encounter_vals[encounter] = new_vals
+      new_vals = None
+
+  # Filter Encounters and return a random sufficient encounter (or the full set)
+  if filter_true:
+    for encounter in encounters:
+      if not encounter_vals[encounter].has_key('Total Cholesterol') & encounter_vals[encounter].has_key('Systolic Blood Pressure') & encounter_vals[encounter].has_key('Diastolic Blood Pressure'):
+        encounters.remove(encounter)
+    if len(encounters) < 1:
+      return False
+    else:
+      return encounter_vals[encounters[randint(0,len(encounters)-1)]]
+  else:
+    return encounter_vals
 
 # # # # # # # # # # PATIENT CONDITIONS # # # # # # # # # #
 # Returns keywords i.e. "diabetic","opiod addict", "hear disease", etc. 
