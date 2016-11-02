@@ -9,16 +9,22 @@ Created on Fri Oct 21 10:34:47 2016
 #from sklearn.feature_selection import SelectFromModel
 from sklearn import tree
 import numpy as np
+import json
 
 TREE_UNDEFINED = tree._tree.TREE_UNDEFINED
 
 class model:
     
-    def __init__(self, sourcefile, outfile):
+    def __init__(self, sourcefile, outfile, out_python='tree.py'):
         self.sourcefile = sourcefile
         self.outfile = outfile
+        self.out_python = out_python
             
         # Extract required information from raw csv
+        # num_point - number of datapoints
+        # data - numpy array of size num_point x num_feature
+        # target - numpy array of size num_point x 1
+        # feature_names - list of strings
         self.num_point, self.data, self.target, self.feature_names = self.parse_data(sourcefile)
 #        self.target_names = ['negative', 'positive']
         self.target_names = ['setosa', 'versicolor', 'virginica']
@@ -37,7 +43,7 @@ class model:
 
         f = open(sourcefile, 'r')
         
-        num_point = 0
+        num_point = 0 # number of datapoints
         f.readline() # skip over header
         for line in f:
             num_point += 1
@@ -47,7 +53,7 @@ class model:
         list_feature_name = header_text.split(',')[0:-1]
         # Count number of commas (no need for +1) because the last column should be
         # the target
-        num_feature = header_text.count(',')             
+        num_feature = header_text.count(',')
         f.seek(0) # rewind
 
         # initialize arrays
@@ -81,7 +87,9 @@ class model:
                 feature_name.append(self.feature_names[idx_feature])
             else:
                 feature_name.append("undefined")
-                            
+    
+        f = open(self.out_python, 'w')
+        f.write('def tree():\n')
         print "def tree():"
         
         def recurse(node, depth):
@@ -98,12 +106,15 @@ class model:
                 s = "{}# ".format(indent)
                 for idx in range(0, len(self.target_names)):
                     s += "%s:%d%% " % (self.target_names[idx], percentages[idx])
+                f.write(s+"\n")
                 print s
 
+                f.write("{}if {} <= {}:\n".format(indent, name, threshold))
                 print "{}if {} <= {}:".format(indent, name, threshold)
                 # Left branch satisfies rule
                 recurse( self.clf_tree.children_left[node], depth+1 )
                 
+                f.write("{}else:\n".format(indent))
                 print "{}else:".format(indent)
                 # Right branch does not satisfy rule
                 recurse( self.clf_tree.children_right[node], depth+1 )
@@ -112,10 +123,12 @@ class model:
                 values = self.clf_tree.value[node][0]
                 idx_feature = np.argmax(values)
                 # Return the majority
+                f.write("{}return {}\n".format(indent, self.target_names[idx_feature]))
                 print "{}return {}".format(indent, self.target_names[idx_feature])
                 
         recurse(0,1)
-                
+        f.close()
+
 
     def tree_to_json(self):
         """
@@ -136,8 +149,14 @@ class model:
         
         """
         tree_names = []
+        # clf_tree.feature is a list of indices, e.g. [0, 3, -2, 1, ... ]
+        # Each index of the list corresponds to a node in the tree
+        # -2 means the node is a leaf and hence does not have a feature
+        # Numbers other than -2 are indices of self.feature_names,
+        # indicating which feature is used for splitting at a node
         for idx_feature in self.clf_tree.feature:
             if idx_feature != TREE_UNDEFINED:
+                # Get the actual feature name
                 tree_names.append(self.feature_names[idx_feature])
             else:
                 tree_names.append("undefined")
@@ -157,7 +176,15 @@ class model:
             else:
                 feature_type = "numeric"
                 val = ""
+                # clf_tree.threshold is a numpy array of real numbers
+                # Value v_n at index n is the value used for the decision rule at node n
+                # if (x < threshold) then branch left else branch right
                 threshold = self.clf_tree.threshold[node]
+            # clf_tree.value is a 3D numpy matrix
+            # Topmost dimension picks out rows. Each row is a node.
+            # Second dimension appears useless. Last dimension goes across a row.
+            # Value v_n in a row is the number of datapoints belonging to the nth label
+            # that ended up in that node.
             counts = self.clf_tree.value[node][0]
             num_negative = counts[0]
             num_positive = counts[1]
@@ -166,6 +193,10 @@ class model:
                 # Not a leaf
                 is_leaf = 0                
                 label = "internal_node"
+                # clf_tree.children_left is a numpy array, where each index is a node
+                # and the value v_n at index n is the index of the left child of node n
+                # Values at indices corresponding to leaf nodes have value -1.
+                # Same for clf_tree.children_right
                 recurse( self.clf_tree.children_left[node], depth+1 )
                 recurse( self.clf_tree.children_right[node], depth+1 )
             else:
@@ -184,5 +215,8 @@ class model:
             final_list.append( node_map )
                 
         recurse(0,1)
-        return final_list            
-    
+        
+        with open(self.outfile, 'w') as f:
+            json.dump(final_list, f, indent=4, sort_keys=True, separators=(',', ':'))
+
+        return final_list
