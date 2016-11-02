@@ -220,3 +220,102 @@ class model:
             json.dump(final_list, f, indent=4, sort_keys=True, separators=(',', ':'))
 
         return final_list
+
+
+    def tree_to_json2(self):
+        """
+        Writes tree to json output
+        json output is a list of objects
+        Each object has the following fields:
+            node_id - unique id
+            is_leaf - binary indicator
+            feature_type - "categorical" or "numeric"
+            feature_name - e.g. "cholesterol"
+            val - only for categorical decision, e.g. "irish"
+            threshold - only for numeric decision, e.g. "<= 140"
+            num_negative - number of healthy patients at this node
+            num_positive - number of patients with heart disease at this node
+            label - "internal_node" or heart_disease" or "healthy"
+            left - id of left child (the one that satisfies the rule)
+            right - id of right child
+        
+        """
+        tree_names = []
+        # clf_tree.feature is a list of indices, e.g. [0, 3, -2, 1, ... ]
+        # Each index of the list corresponds to a node in the tree
+        # -2 means the node is a leaf and hence does not have a feature
+        # Numbers other than -2 are indices of self.feature_names,
+        # indicating which feature is used for splitting at a node
+        for idx_feature in self.clf_tree.feature:
+            if idx_feature != TREE_UNDEFINED:
+                # Get the actual feature name
+                tree_names.append(self.feature_names[idx_feature])
+            else:
+                tree_names.append("undefined")
+                            
+        def recurse(node, depth):
+            node_id = node
+            feature_name = tree_names[node]            
+            if "categorical" in feature_name:
+                feature_type = "categorical"
+                # assumes that the categorical feature has been converted
+                # into binary 1,0, so that the decision rule is simply
+                # the proposition "is <name>"
+                val = feature_name 
+                threshold = -1
+            else:
+                feature_type = "numeric"
+                val = ""
+                # clf_tree.threshold is a numpy array of real numbers
+                # Value v_n at index n is the value used for the decision rule at node n
+                # if (x < threshold) then branch left else branch right
+                threshold = self.clf_tree.threshold[node]
+            # clf_tree.value is a 3D numpy matrix
+            # Topmost dimension picks out rows. Each row is a node.
+            # Second dimension appears useless. Last dimension goes across a row.
+            # Value v_n in a row is the number of datapoints belonging to the nth label
+            # that ended up in that node.
+            counts = self.clf_tree.value[node][0]
+            num_negative = counts[0]
+            num_positive = counts[1]
+            
+            if self.clf_tree.feature[node] != TREE_UNDEFINED:
+                # Not a leaf
+                is_leaf = 0                
+                label = "internal_node"
+                map_internal = {}
+                if feature_type == "categorical":
+                    map_internal["name"] = "%s == %s" % (feature_name, val)
+                else:
+                    map_internal["name"] = "%s < %.3f" % (feature_name, threshold)
+                map_internal["node_id"] = node_id
+                map_internal["is_leaf"] = is_leaf
+                map_internal["num_negative"] = num_negative
+                map_internal["num_positive"] = num_positive
+                map_internal["label"] = label
+                children = []
+                # clf_tree.children_left is a numpy array, where each index is a node
+                # and the value v_n at index n is the index of the left child of node n
+                # Values at indices corresponding to leaf nodes have value -1.
+                # Same for clf_tree.children_right
+                children.append( recurse( self.clf_tree.children_left[node], depth+1 ) )
+                children.append( recurse( self.clf_tree.children_right[node], depth+1 ) )
+                map_internal["children"] = children
+                return map_internal
+            else:
+                is_leaf = 1
+                if ( num_positive > num_negative ):
+                    label = "heart_disease"
+                else:
+                    label = "healthy"
+                map_leaf = {"name": label, "node_id": node_id, "is_leaf": is_leaf,
+                            "num_positive": num_positive, "num_negative": num_negative,
+                            "label": label}
+                return map_leaf
+                
+        final_map = recurse(0,1)
+        
+        with open(self.outfile, 'w') as f:
+            json.dump(final_map, f, indent=4, sort_keys=True, separators=(',', ':'))
+
+        return final_map
