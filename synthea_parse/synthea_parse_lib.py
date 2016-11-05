@@ -51,19 +51,15 @@ def get_biometrics(filename,condition):
   # General Patient Data:
   try:
     return_vals['multipleBirthBoolean'] = data_general['multipleBirthBoolean']
-  except: pass
-  try:
+  except:
+    print "Error with multipleBirthBoolean"
+  try: 
     return_vals['maritalStatus'] = data_general['maritalStatus']['coding'][0]['code']
-  except: pass
-  try:
-    return_vals['gender'] = data_general['gender']
-  except: pass
-  try:
-    return_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
-  except: pass
-  try:
-    return_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
-  except: pass
+  except:
+    print "Error with Marital Status"
+  return_vals['gender'] = data_general['gender']
+  return_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
+  return_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
 
   # Append test results for encounter with first diagnosis of heart disease
   # ASSUMING ONLY FIRST ENCOUNTER HAS A DIAGNOSIS
@@ -82,16 +78,16 @@ def get_biometrics(filename,condition):
       if data[i]['resource']['resourceType'].lower() == 'observation':
         if data[i]['resource']['encounter']['reference'] == encounter_id:
           try:
-            return_vals[data[i]['resource']['code']['coding'][0]['display']] = str(data[i]['resource']['valueQuantity']['value']) + " " + data[i]['resource']['valueQuantity']['unit']
+            return_vals[data[i]['resource']['code']['coding'][0]['display']] = str(data[i]['resource']['valueQuantity']['value'])
           except:
             try:
               for k in range(0,len(data[i]['resource']['component'])):
-                return_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value']) + " " + data[i]['resource']['component'][k]['valueQuantity']['unit']
+                return_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value'])
             except:
               pass   
   return return_vals
 
-  # # # # # # # # # # PATIENT BIOMETRICS + METADATA # # # # # # # # # # 
+# # # # # # # # # # PATIENT BIOMETRICS + METADATA # # # # # # # # # # 
 # Return biometrics for patient with heart disease (specifically)
 # By default it filters out encounters not containing Cholesterol and 
 # blood pressure information. If filter_true is input as False it will return 
@@ -119,19 +115,15 @@ def get_biometrics_gen(filename,filter_true = True):
   # Append general patient data:
   try:
     gen_vals['multipleBirthBoolean'] = data_general['multipleBirthBoolean']
-  except: pass
+  except: 
+    print "Error with multipleBirthBoolean"
   try:
     gen_vals['maritalStatus'] = data_general['maritalStatus']['coding'][0]['code']
-  except: pass
-  try:
-    gen_vals['gender'] = data_general['gender']
-  except: pass
-  try:
-    gen_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
-  except: pass
-  try:
-    gen_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
-  except: pass
+  except: 
+    print "Error with marital Status"
+  gen_vals['gender'] = data_general['gender']
+  gen_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
+  gen_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
 
   # Load all encounter reference ID's
   encounters = []
@@ -150,11 +142,13 @@ def get_biometrics_gen(filename,filter_true = True):
         if data[i]['resource']['resourceType'].lower() == 'observation':
           if data[i]['resource']['encounter']['reference'][9:] == encounter:
             try:
-              new_vals[data[i]['resource']['code']['coding'][0]['display']] = str(data[i]['resource']['valueQuantity']['value']) + " " + data[i]['resource']['valueQuantity']['unit']
+              new_vals[data[i]['resource']['code']['coding'][0]['display']] = str(data[i]['resource']['valueQuantity']['value'])
+              new_vals['age'] = datetime.strptime(data[i]['resource']['effectiveDateTime'][0:10],'%Y-%m-%d') - datetime.strptime(data_general['birthDate'],'%Y-%m-%d')
             except:
               try:
                 for k in range(0,len(data[i]['resource']['component'])):
-                  new_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value']) + " " + data[i]['resource']['component'][k]['valueQuantity']['unit']
+                  new_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value'])
+                  new_vals['age'] = datetime.strptime(data[i]['resource']['effectiveDateTime'][0:10],'%Y-%m-%d') - datetime.strptime(data_general['birthDate'],'%Y-%m-%d')
               except:
                 pass
       encounter_vals[encounter] = new_vals

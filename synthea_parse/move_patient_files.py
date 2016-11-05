@@ -1,7 +1,7 @@
 import synthea_parse_lib as spb
 from shutil import copy
 
-patient_files = spb.get_patients("../../Patient_Records/output/fhir")
+patient_files = spb.get_patients("../../Patient_Records_New/Output/fhir")
 
 count = 0
 hd = 0
