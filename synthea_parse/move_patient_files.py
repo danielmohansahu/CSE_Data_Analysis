@@ -14,8 +14,8 @@ for patient in patient_files:
 	elif nhd < 1000:
 		try:
 			len(spb.get_biometrics_gen(patient).keys())		# To see if the function worked
-			nhd = nhd + 1
 			copy(patient,"../Patient_Data/Healthy/")
+			nhd = nhd + 1
 		except:
 			print "Skipping a healthy patient! Bias? ..."
 	print "Patient #%d/%d " %(count,len(patient_files))
