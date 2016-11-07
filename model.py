@@ -8,6 +8,12 @@ Created on Fri Oct 21 10:34:47 2016
 #from sklearn.datasets import load_iris
 #from sklearn.feature_selection import SelectFromModel
 from sklearn import tree
+from sklearn.feature_selection import SelectFromModel
+from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import classification_report
+
 import numpy as np
 import json
 
@@ -26,16 +32,11 @@ class model:
         # target - numpy array of size num_point x 1
         # feature_names - list of strings
         self.num_point, self.data, self.target, self.feature_names = self.parse_data(sourcefile)
-#        self.target_names = ['negative', 'positive']
-        self.target_names = ['setosa', 'versicolor', 'virginica']
+        self.target_names = ['negative', 'positive']
+#        self.target_names = ['setosa', 'versicolor', 'virginica']
         
-        # Construct decision tree
-        self.clf = tree.DecisionTreeClassifier()
-        self.clf = self.clf.fit(self.data, self.target)
 
-        self.clf_tree = self.clf.tree_
 
-    
     def parse_data(self, sourcefile):
         """
         Extract data, target (labels) and feature names (headers) from raw CSV
@@ -50,7 +51,7 @@ class model:
         f.seek(0) # rewind
 
         header_text = f.readline()
-        list_feature_name = header_text.split(',')[0:-1]
+        feature_names = np.array(header_text.split(',')[0:-1])
         # Count number of commas (no need for +1) because the last column should be
         # the target
         num_feature = header_text.count(',')
@@ -58,7 +59,7 @@ class model:
 
         # initialize arrays
         target = np.zeros(num_point, dtype=int)
-        data = np.zeros((num_point, num_feature))
+        data = np.zeros((num_point, num_feature), dtype=np.float32)
         
         f.readline() # skip over header
         idx = 0
@@ -69,7 +70,86 @@ class model:
             idx += 1
         f.close()
         
-        return num_point, data, target, list_feature_name
+        return num_point, data, target, feature_names
+
+
+    def pre_selection(self):
+        """
+        Uses extra-trees classifier to estimate the importance of features.
+        Eliminates all features whose importance is below the mean of all values
+        The extra-trees method fits many randomized decision trees on random 
+        subsamples of the data and uses averaging to determine the importance
+        of a feature.
+        """
+        clf = ExtraTreesClassifier(n_estimators=10, criterion="gini")
+        clf = clf.fit(self.data, self.target)
+
+        print "Feature importances:"
+        print clf.feature_importances_
+
+        model = SelectFromModel(clf, threshold='mean', prefit=True)
+        # Eliminate variables that have been filtered out
+        self.data = model.transform(self.data)
+        
+        discarded_features = self.feature_names[model.get_support() == False]
+        self.feature_names = self.feature_names[model.get_support()]
+        
+        print "Discarded features are:"
+        print discarded_features        
+        
+        print "Remaining features are:"
+        print self.feature_names
+
+
+    def train(self):
+        clf = tree.DecisionTreeClassifier().fit(self.data, self.target)
+        self.clf_tree = clf.tree_
+
+
+    def train_split(self):
+        X_train, X_test, y_train, y_test = train_test_split(self.data, self.target,
+                                                            test_size=0.1, random_state=0)        
+        clf = tree.DecisionTreeClassifier().fit(X_train, y_train)
+        print clf.score(X_test, y_test)
+        
+        
+    def train_gridsearch(self):
+        # Construct decision tree
+        """
+        Parameters to tune: criterion, max_depth, min_impurity_split
+        """
+    
+        X_train, X_test, y_train, y_test = train_test_split(self.data, self.target,
+                                                            test_size=0.25, random_state=0)
+        
+        parameters = {'criterion': ['gini', 'entropy'], 'max_depth': range(5,10),
+                      'min_impurity_split': list(np.logspace(-8,-2,7))}
+                      
+        # Searches over the given parameter grid to find the best set
+        clf = GridSearchCV(tree.DecisionTreeClassifier(), parameters, cv=5)
+        clf.fit(X_train, y_train)
+        param_best = clf.best_params_
+        print "Best parameters set found on development set:"
+        print param_best 
+        print "Grid scores on development set:"
+        means = clf.cv_results_['mean_test_score']
+        stds = clf.cv_results_['std_test_score']
+        for mean, std, params in zip(means, stds, clf.cv_results_['params']):
+            print("%0.3f (+/-%0.03f) for %r"
+                  % (mean, std * 2, params))
+        
+        print "Detailed classification report:"
+        print"The model is trained on the full development set."
+        print"The scores are computed on the full evaluation set."
+        y_true, y_pred = y_test, clf.predict(X_test)
+        print classification_report(y_true, y_pred)
+
+        # Use the best params to fit again
+        clf = tree.DecisionTreeClassifier(criterion=param_best['criterion'],
+                                          min_impurity_split=param_best['min_impurity_split'],
+                                            max_depth=param_best['max_depth'])
+        clf = clf.fit(self.data, self.target)
+        self.clf_tree = clf.tree_
 
 
     def tree_to_code(self):
@@ -90,7 +170,6 @@ class model:
     
         f = open(self.out_python, 'w')
         f.write('def tree():\n')
-        print "def tree():"
         
         def recurse(node, depth):
             indent = "    " * depth
@@ -107,24 +186,26 @@ class model:
                 for idx in range(0, len(self.target_names)):
                     s += "%s:%d%% " % (self.target_names[idx], percentages[idx])
                 f.write(s+"\n")
-                print s
 
                 f.write("{}if {} <= {}:\n".format(indent, name, threshold))
-                print "{}if {} <= {}:".format(indent, name, threshold)
                 # Left branch satisfies rule
                 recurse( self.clf_tree.children_left[node], depth+1 )
                 
                 f.write("{}else:\n".format(indent))
-                print "{}else:".format(indent)
                 # Right branch does not satisfy rule
                 recurse( self.clf_tree.children_right[node], depth+1 )
             else:
                 # At a leaf
                 values = self.clf_tree.value[node][0]
+                total = np.sum(values)
+                percentages = [ num*100.0/total for num in values]                
                 idx_feature = np.argmax(values)
                 # Return the majority
+                s = "{}# ".format(indent)
+                for idx in range(0, len(self.target_names)):
+                    s += "%s:%d%% " % (self.target_names[idx], percentages[idx])
+                f.write(s+"\n")             
                 f.write("{}return {}\n".format(indent, self.target_names[idx_feature]))
-                print "{}return {}".format(indent, self.target_names[idx_feature])
                 
         recurse(0,1)
         f.close()
