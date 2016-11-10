@@ -10,10 +10,13 @@ Created on Fri Oct 21 10:34:47 2016
 from sklearn import tree
 from sklearn.feature_selection import SelectFromModel
 from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report
+import sklearn.metrics as metrics
 
+import random
 import numpy as np
 import json
 
@@ -21,8 +24,8 @@ TREE_UNDEFINED = tree._tree.TREE_UNDEFINED
 
 class model:
     
-    def __init__(self, sourcefile, outfile, out_python='tree.py'):
-        self.sourcefile = sourcefile
+    def __init__(self, trainfile, testfile, outfile='tree.json', out_python='tree.py'):
+        self.trainfile = trainfile
         self.outfile = outfile
         self.out_python = out_python
             
@@ -31,13 +34,34 @@ class model:
         # data - numpy array of size num_point x num_feature
         # target - numpy array of size num_point x 1
         # feature_names - list of strings
-        self.num_point, self.data, self.target, self.feature_names = self.parse_data(sourcefile)
+        self.num_point, self.data, self.target, self.feature_names = self.read_data(trainfile)
+        self.num_point_test, self.data_test, self.target_test, feature_names = self.read_data(testfile)
         self.target_names = ['negative', 'positive']
 #        self.target_names = ['setosa', 'versicolor', 'virginica']
         
 
+    def randomize_data(self, sourcefile, outfile):
+        """
+        Read in data, randomize rows and write to file
+        """
+        with open(sourcefile, 'r') as f:
+            list_lines = f.readlines()
+        
+        num_rows = len(list_lines)
+        # In-place randomization
+        for idx in range(1, num_rows-1):
+            temp = list_lines[idx]
+            # Random index from current index to end of list
+            rand_idx = random.randint(idx, num_rows-1)
+            # Swap
+            list_lines[idx] = list_lines[rand_idx]
+            list_lines[rand_idx] = temp
+        
+        with open(outfile, 'w') as f:
+            f.writelines(list_lines)
 
-    def parse_data(self, sourcefile):
+
+    def read_data(self, sourcefile):
         """
         Extract data, target (labels) and feature names (headers) from raw CSV
         """
@@ -87,9 +111,10 @@ class model:
         print "Feature importances:"
         print clf.feature_importances_
 
-        model = SelectFromModel(clf, threshold='mean', prefit=True)
+        model = SelectFromModel(clf, threshold='0.25*mean', prefit=True)
         # Eliminate variables that have been filtered out
         self.data = model.transform(self.data)
+        self.data_test = model.transform(self.data_test)
         
         discarded_features = self.feature_names[model.get_support() == False]
         self.feature_names = self.feature_names[model.get_support()]
@@ -102,53 +127,121 @@ class model:
 
 
     def train(self):
-        clf = tree.DecisionTreeClassifier().fit(self.data, self.target)
+        """
+        Trains a single decision tree and outputs accuracy, precision, recall,
+        and f1 score.
+        Parameters of decision tree were acquired from prior runs of train_gridsearch()
+        """
+        clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                          min_impurity_split=1e-5, min_samples_split=25,
+                                          min_samples_leaf=10)
+        clf = clf.fit(self.data, self.target)
+        
         self.clf_tree = clf.tree_
+        
+        y_predicted = clf.predict(self.data_test)
+
+        print "Mean accuracy"
+        print clf.score(self.data_test, self.target_test)
+        
+        self.evaluate(self.target_test, y_predicted)
 
 
-    def train_split(self):
+    def train_gbc(self):
+        """
+        Incomplete. To try next
+        """
         X_train, X_test, y_train, y_test = train_test_split(self.data, self.target,
-                                                            test_size=0.1, random_state=0)        
-        clf = tree.DecisionTreeClassifier().fit(X_train, y_train)
+                                                            test_size=0.1, random_state=0)
+        clf = GradientBoostingClassifier(n_estimators=200, learning_rate=1.0,
+                                         max_depth=2, random_state=0).fit(X_train, y_train)
+                
+        y_predicted = clf.predict(X_test)
+
+        print "Mean accuracy"
         print clf.score(X_test, y_test)
         
-        
-    def train_gridsearch(self):
-        # Construct decision tree
+        self.evaluate(y_test, y_predicted)        
+
+
+    def train_extratree(self):
         """
-        Parameters to tune: criterion, max_depth, min_impurity_split
+        Incomplete. To try next
         """
-    
         X_train, X_test, y_train, y_test = train_test_split(self.data, self.target,
-                                                            test_size=0.25, random_state=0)
+                                                            test_size=0.1, random_state=0)
+        clf = ExtraTreesClassifier(n_estimators=10, min_samples_split=2,
+                                   random_state=0).fit(X_train, y_train)
+                
+        y_predicted = clf.predict(X_test)
+
+        print "Mean accuracy"
+        print clf.score(X_test, y_test)
         
-        parameters = {'criterion': ['gini', 'entropy'], 'max_depth': range(5,10),
-                      'min_impurity_split': list(np.logspace(-8,-2,7))}
+        self.evaluate(y_test, y_predicted)                
+
+        
+    def evaluate(self, y_test, y_predicted):
+        """
+        Prints precision, recall, f1 score
+        Inputs:
+        1. y_test - the true labels
+        2. y_predicted - labels predicted by model
+        Obviously dimensions must match
+        """
+        
+        print "f1_score"
+        print metrics.f1_score(y_test, y_predicted, average=None)
+        print "precision score"
+        print metrics.precision_score(y_test, y_predicted)
+        print "recall score"
+        print metrics.recall_score(y_test, y_predicted)
+        print "f1_score for positive class"
+        print metrics.f1_score(y_test, y_predicted, average='binary')
+
+        
+    def train_gridsearch(self, verbose=0):
+        """
+        Exhaustive grid search with 5-fold cross validation to find good
+        parameters for the decision tree        
+        """
+        
+        parameters = {'max_depth': range(4,9), 'min_samples_leaf': range(10,50,10),
+                      'min_impurity_split': list(np.logspace(-5,-2,4)),
+                        'min_samples_split': range(15,35,5)}
                       
         # Searches over the given parameter grid to find the best set
-        clf = GridSearchCV(tree.DecisionTreeClassifier(), parameters, cv=5)
-        clf.fit(X_train, y_train)
+        clf = GridSearchCV(tree.DecisionTreeClassifier(criterion='gini'), 
+                           parameters, cv=5)
+        clf.fit(self.data, self.target)
         param_best = clf.best_params_
         print "Best parameters set found on development set:"
         print param_best 
-        print "Grid scores on development set:"
-        means = clf.cv_results_['mean_test_score']
-        stds = clf.cv_results_['std_test_score']
-        for mean, std, params in zip(means, stds, clf.cv_results_['params']):
-            print("%0.3f (+/-%0.03f) for %r"
-                  % (mean, std * 2, params))
-        
-        print "Detailed classification report:"
-        print"The model is trained on the full development set."
-        print"The scores are computed on the full evaluation set."
-        y_true, y_pred = y_test, clf.predict(X_test)
-        print classification_report(y_true, y_pred)
+        if verbose:
+            print "Grid scores on development set:"
+            means = clf.cv_results_['mean_test_score']
+            stds = clf.cv_results_['std_test_score']
+            for mean, std, params in zip(means, stds, clf.cv_results_['params']):
+                print("%0.3f (+/-%0.03f) for %r"
+                      % (mean, std * 2, params))
 
-        # Use the best params to fit again
-        clf = tree.DecisionTreeClassifier(criterion=param_best['criterion'],
+        print "Mean accuracy"
+        print clf.score(self.data_test, self.target_test)
+
+        y_predicted = clf.predict(self.data_test)
+        print "Scores using test set."        
+        self.evaluate(self.target_test, y_predicted)                
+
+        print "Classification report"
+        print classification_report(self.target_test, y_predicted)
+
+        # Use the "good" params to fit again
+        clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=param_best['max_depth'],
+                                          min_samples_leaf=param_best['min_samples_leaf'],
                                           min_impurity_split=param_best['min_impurity_split'],
-                                            max_depth=param_best['max_depth'])
+                                            min_samples_split=param_best['min_samples_split'])
         clf = clf.fit(self.data, self.target)
+        
         self.clf_tree = clf.tree_
 
 
@@ -184,7 +277,8 @@ class model:
                 
                 s = "{}# ".format(indent)
                 for idx in range(0, len(self.target_names)):
-                    s += "%s:%d%% " % (self.target_names[idx], percentages[idx])
+#                    s += "%s:%d%% " % (self.target_names[idx], percentages[idx])
+                    s += "%s:%d " % (self.target_names[idx], values[idx])                
                 f.write(s+"\n")
 
                 f.write("{}if {} <= {}:\n".format(indent, name, threshold))
@@ -198,12 +292,13 @@ class model:
                 # At a leaf
                 values = self.clf_tree.value[node][0]
                 total = np.sum(values)
-                percentages = [ num*100.0/total for num in values]                
+                percentages = [ num*100.0/total for num in values]             
                 idx_feature = np.argmax(values)
                 # Return the majority
                 s = "{}# ".format(indent)
                 for idx in range(0, len(self.target_names)):
-                    s += "%s:%d%% " % (self.target_names[idx], percentages[idx])
+#                    s += "%s:%d%% " % (self.target_names[idx], percentages[idx])
+                    s += "%s:%d " % (self.target_names[idx], values[idx])     
                 f.write(s+"\n")             
                 f.write("{}return {}\n".format(indent, self.target_names[idx_feature]))
                 
