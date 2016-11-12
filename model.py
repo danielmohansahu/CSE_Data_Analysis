@@ -11,10 +11,15 @@ from sklearn import tree
 from sklearn.feature_selection import SelectFromModel
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import learning_curve
 from sklearn.metrics import classification_report
 import sklearn.metrics as metrics
+
+import matplotlib.pyplot as plt
 
 import random
 import numpy as np
@@ -145,6 +150,79 @@ class model:
         print clf.score(self.data_test, self.target_test)
         
         self.evaluate(self.target_test, y_predicted)
+        
+
+    def learning_curve(self, choice=0):
+        
+        if choice == 0:
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                              min_impurity_split=1e-5, min_samples_split=25,
+                                              min_samples_leaf=10)
+        elif choice == 1:
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6)
+        elif choice == 2:
+            clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                              min_impurity_split=1e-5, min_samples_split=25,
+                                              min_samples_leaf=10), n_estimators=10)
+        train_sizes = range(500,1050,50)
+        train_sizes, train_scores, valid_scores = learning_curve(clf, self.data,
+                                                                 self.target, train_sizes=train_sizes,
+                                                                 cv=5)
+        print train_sizes
+        print train_scores
+        plt.plot(train_sizes, np.mean(train_scores, axis=1), c='red', ls='-')
+        plt.plot(train_sizes, np.mean(valid_scores, axis=1), c='blue', ls='-')
+        plt.show()
+        
+
+    def train_extratree(self):
+        """
+        Incomplete. To try next
+        """
+
+        clf = ExtraTreesClassifier(n_estimators=10, min_samples_split=2,
+                                   random_state=0)
+        clf = clf.fit(self.data, self.target)
+                
+        y_predicted = clf.predict(self.data_test)
+
+        print "Mean accuracy"
+        print clf.score(self.data_test, self.target_test)
+        
+        self.evaluate(self.target_test, y_predicted)
+
+
+    def train_adaboost(self, choice=0):
+        """
+        Boost weak learner to produce strong learner
+        """
+
+        
+        if choice == 0:
+            clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                              min_impurity_split=1e-5, min_samples_split=25,
+                                              min_samples_leaf=10), n_estimators=600)
+            scores = cross_val_score(clf, self.data, self.target, cv=3)        
+            return scores
+        elif choice == 1:
+            list_mean = []
+            for n in range(100,650,50):
+                clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                                  min_impurity_split=1e-5, min_samples_split=25,
+                                                  min_samples_leaf=10), n_estimators=n)
+                scores = cross_val_score(clf, self.data, self.target, cv=3)        
+                print scores
+                list_mean.append(scores.mean())
+            return list_mean
+        else:            
+            clf = clf.fit(self.data, self.target)
+    
+            y_predicted = clf.predict(self.data_test)
+    
+            print "Mean accuracy"
+            print clf.score(self.data_test, self.target_test)
+            
+            self.evaluate(self.target_test, y_predicted)               
 
 
     def train_gbc(self):
@@ -162,23 +240,6 @@ class model:
         print clf.score(X_test, y_test)
         
         self.evaluate(y_test, y_predicted)        
-
-
-    def train_extratree(self):
-        """
-        Incomplete. To try next
-        """
-        X_train, X_test, y_train, y_test = train_test_split(self.data, self.target,
-                                                            test_size=0.1, random_state=0)
-        clf = ExtraTreesClassifier(n_estimators=10, min_samples_split=2,
-                                   random_state=0).fit(X_train, y_train)
-                
-        y_predicted = clf.predict(X_test)
-
-        print "Mean accuracy"
-        print clf.score(X_test, y_test)
-        
-        self.evaluate(y_test, y_predicted)                
 
         
     def evaluate(self, y_test, y_predicted):
@@ -243,6 +304,42 @@ class model:
         clf = clf.fit(self.data, self.target)
         
         self.clf_tree = clf.tree_
+
+
+    def train_gridsearch_extratree(self, verbose=0):
+        """
+        Exhaustive grid search with 5-fold cross validation to find good
+        parameters for the decision tree        
+        """
+        
+        parameters = {'min_impurity_split': list(np.logspace(-5,-2,4)),
+                      'min_samples_split': range(5,30,5)}
+                      
+        # Searches over the given parameter grid to find the best set
+        clf = GridSearchCV(ExtraTreesClassifier(n_estimators=10, max_depth=8,
+                                                criterion='gini'), 
+                           parameters, cv=5)
+        clf.fit(self.data, self.target)
+        param_best = clf.best_params_
+        print "Best parameters set found on development set:"
+        print param_best 
+        if verbose:
+            print "Grid scores on development set:"
+            means = clf.cv_results_['mean_test_score']
+            stds = clf.cv_results_['std_test_score']
+            for mean, std, params in zip(means, stds, clf.cv_results_['params']):
+                print("%0.3f (+/-%0.03f) for %r"
+                      % (mean, std * 2, params))
+
+        print "Mean accuracy"
+        print clf.score(self.data_test, self.target_test)
+
+        y_predicted = clf.predict(self.data_test)
+        print "Scores using test set."        
+        self.evaluate(self.target_test, y_predicted)                
+
+        print "Classification report"
+        print classification_report(self.target_test, y_predicted)
 
 
     def tree_to_code(self):
