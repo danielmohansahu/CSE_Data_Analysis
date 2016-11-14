@@ -10,11 +10,13 @@ Created on Fri Oct 21 10:34:47 2016
 from sklearn import tree
 from sklearn.feature_selection import SelectFromModel
 from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import validation_curve
 from sklearn.model_selection import learning_curve
 from sklearn.metrics import classification_report
 import sklearn.metrics as metrics
@@ -129,49 +131,108 @@ class model:
         
         print "Remaining features are:"
         print self.feature_names
+        
+        
+    def evaluate(self, clf):
+        
+        print "Mean accuracy on training set"
+        print clf.score(self.data, self.target)
+        print "Mean accuracy on test set"
+        print clf.score(self.data_test, self.target_test)
+
+        print ''
+        scores = cross_val_score(clf, self.data, self.target, cv=5) 
+        print("Cross validation score: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+        
+        print ''
+              
+        print "Training set classification report"
+        y_predicted = clf.predict(self.data)
+        print classification_report(self.target, y_predicted)
+
+        print ''
+
+        print "Test set classification report"
+        y_predicted = clf.predict(self.data_test)
+        print classification_report(self.target_test, y_predicted)        
 
 
-    def train(self):
+    def train(self, choice1=0):
         """
         Trains a single decision tree and outputs accuracy, precision, recall,
         and f1 score.
         Parameters of decision tree were acquired from prior runs of train_gridsearch()
         """
-        clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
-                                          min_impurity_split=1e-5, min_samples_split=25,
-                                          min_samples_leaf=10)
+        if choice1 == 0:
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                              min_samples_split=150)
+        elif choice1 == 1:
+            clf = tree.DecisionTreeClassifier(criterion='gini')
+            
         clf = clf.fit(self.data, self.target)
         
         self.clf_tree = clf.tree_
         
-        y_predicted = clf.predict(self.data_test)
+        self.evaluate(clf)        
+        
+    
+    def train_forest(self, n):
+        clf = RandomForestClassifier(n_estimators=n, criterion='gini', max_depth=6,
+                                     min_samples_split=80)
+        clf = clf.fit(self.data, self.target)
+        
+        self.evaluate(clf)
+        
 
-        print "Mean accuracy"
-        print clf.score(self.data_test, self.target_test)
-        
-        self.evaluate(self.target_test, y_predicted)
-        
+    def validation_curve(self, choice=0):
+        if choice == 0:
+            clf = tree.DecisionTreeClassifier(criterion='gini')
+            param_range = range(10,110,10)
+            train_scores, valid_scores = validation_curve(clf, self.data, self.target,
+                                                          'min_samples_split', param_range)
+        elif choice == 1:
+            clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', 
+                                                                 max_depth=6, min_samples_split=150))
+            param_range = range(10,50,10)
+            train_scores, valid_scores = validation_curve(clf, self.data, self.target,
+                                                          'n_estimators', param_range)
+        elif choice == 2:
+            clf = RandomForestClassifier(criterion='gini')
+            param_range = range(10,100,10)
+            train_scores, valid_scores = validation_curve(clf, self.data, self.target,
+                                                          'n_estimators', param_range) 
+
+        plt.plot(param_range, np.mean(train_scores, axis=1), c='red', ls='-')
+        plt.plot(param_range, np.mean(valid_scores, axis=1), c='blue', ls='-')
+#        plt.xscale('log')
+        plt.show()
+
 
     def learning_curve(self, choice=0):
         
         if choice == 0:
-            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
-                                              min_impurity_split=1e-5, min_samples_split=25,
-                                              min_samples_leaf=10)
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6, min_samples_split=150)
         elif choice == 1:
-            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6)
+            clf = RandomForestClassifier(n_estimators=10, criterion='gini', max_depth=6,
+                                         min_samples_split=80)
         elif choice == 2:
-            clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
-                                              min_impurity_split=1e-5, min_samples_split=25,
-                                              min_samples_leaf=10), n_estimators=10)
-        train_sizes = range(500,1050,50)
+            clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini'), 
+                                     n_estimators=10)
+        train_sizes = range(100,1100,100)
         train_sizes, train_scores, valid_scores = learning_curve(clf, self.data,
                                                                  self.target, train_sizes=train_sizes,
                                                                  cv=5)
-        print train_sizes
-        print train_scores
-        plt.plot(train_sizes, np.mean(train_scores, axis=1), c='red', ls='-')
-        plt.plot(train_sizes, np.mean(valid_scores, axis=1), c='blue', ls='-')
+#        print train_sizes
+#        print train_scores
+        plt.plot(train_sizes, np.mean(train_scores, axis=1), c='red', ls='-', label='training')
+        plt.plot(train_sizes, np.mean(valid_scores, axis=1), c='blue', ls='-', label='validation')
+        plt.xlabel('Training examples')
+        plt.ylabel('Score')
+#        if choice == 0:
+#            plt.title('Learning curve for single decision tree. \n Max_depth=6. Min_samples_split=150')
+#        elif choice ==1:
+#            plt.title('Learning curve for random forest. \n N=10. Max_depth=6. Min_samples_split=80')
+        plt.legend(loc='lower right')
         plt.show()
         
 
@@ -242,38 +303,25 @@ class model:
         self.evaluate(y_test, y_predicted)        
 
         
-    def evaluate(self, y_test, y_predicted):
-        """
-        Prints precision, recall, f1 score
-        Inputs:
-        1. y_test - the true labels
-        2. y_predicted - labels predicted by model
-        Obviously dimensions must match
-        """
-        
-        print "f1_score"
-        print metrics.f1_score(y_test, y_predicted, average=None)
-        print "precision score"
-        print metrics.precision_score(y_test, y_predicted)
-        print "recall score"
-        print metrics.recall_score(y_test, y_predicted)
-        print "f1_score for positive class"
-        print metrics.f1_score(y_test, y_predicted, average='binary')
-
-        
-    def train_gridsearch(self, verbose=0):
+    def train_gridsearch(self, choice=0, verbose=0):
         """
         Exhaustive grid search with 5-fold cross validation to find good
         parameters for the decision tree        
         """
         
-        parameters = {'max_depth': range(4,9), 'min_samples_leaf': range(10,50,10),
-                      'min_impurity_split': list(np.logspace(-5,-2,4)),
-                        'min_samples_split': range(15,35,5)}
-                      
-        # Searches over the given parameter grid to find the best set
-        clf = GridSearchCV(tree.DecisionTreeClassifier(criterion='gini'), 
-                           parameters, cv=5)
+#        parameters = {'max_depth': range(4,9), 'min_samples_leaf': range(10,50,10),
+#                      'min_impurity_split': list(np.logspace(-5,-2,4)),
+#                        'min_samples_split': range(15,35,5)}
+
+        if choice == 0:
+            parameters = {'max_depth': range(4,8,1), 'min_samples_split': range(50,200,10)}
+            clf = GridSearchCV(tree.DecisionTreeClassifier(criterion='gini'), 
+                               parameters, cv=5)
+        elif choice == 1:
+            parameters = {'max_depth': range(4,10,1), 'min_samples_split': range(30,130,10)}
+            clf = GridSearchCV(RandomForestClassifier(criterion='gini'), 
+                               parameters, cv=5)            
+
         clf.fit(self.data, self.target)
         param_best = clf.best_params_
         print "Best parameters set found on development set:"
@@ -286,24 +334,15 @@ class model:
                 print("%0.3f (+/-%0.03f) for %r"
                       % (mean, std * 2, params))
 
-        print "Mean accuracy"
-        print clf.score(self.data_test, self.target_test)
-
-        y_predicted = clf.predict(self.data_test)
-        print "Scores using test set."        
-        self.evaluate(self.target_test, y_predicted)                
-
-        print "Classification report"
-        print classification_report(self.target_test, y_predicted)
+        self.evaluate(clf.best_estimator_)
 
         # Use the "good" params to fit again
-        clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=param_best['max_depth'],
-                                          min_samples_leaf=param_best['min_samples_leaf'],
-                                          min_impurity_split=param_best['min_impurity_split'],
-                                            min_samples_split=param_best['min_samples_split'])
-        clf = clf.fit(self.data, self.target)
-        
-        self.clf_tree = clf.tree_
+#        clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=param_best['max_depth'],
+#                                          min_samples_leaf=param_best['min_samples_leaf'],
+#                                          min_impurity_split=param_best['min_impurity_split'],
+#                                            min_samples_split=param_best['min_samples_split'])
+        if choice == 0:
+            self.clf_tree = clf.best_estimator_.tree_
 
 
     def train_gridsearch_extratree(self, verbose=0):
