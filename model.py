@@ -58,7 +58,7 @@ class model:
         for idx in range(1, num_rows-1):
             temp = list_lines[idx]
             # Random index from current index to end of list
-            rand_idx = random.randint(idx, num_rows-1)
+            rand_idx = random.randint(idx+1, num_rows-1)
             # Swap
             list_lines[idx] = list_lines[rand_idx]
             list_lines[rand_idx] = temp
@@ -148,26 +148,14 @@ class model:
         print "Training set classification report"
         y_predicted = clf.predict(self.data)
         print classification_report(self.target, y_predicted)
-<<<<<<< HEAD
-=======
 
         print ''
 
         print "Test set classification report"
         y_predicted = clf.predict(self.data_test)
         print classification_report(self.target_test, y_predicted)        
->>>>>>> bf05e84bafa5cbb9b638579a33542f5a2a0b3fe0
-
-        print ''
-
-<<<<<<< HEAD
-        print "Test set classification report"
-        y_predicted = clf.predict(self.data_test)
-        print classification_report(self.target_test, y_predicted)        
 
 
-=======
->>>>>>> bf05e84bafa5cbb9b638579a33542f5a2a0b3fe0
     def train(self, choice1=0):
         """
         Trains a single decision tree and outputs accuracy, precision, recall,
