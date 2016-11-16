@@ -2,7 +2,7 @@ import csv
 import synthea_parse_lib as spb
 
 # Load Biometric Data from Patient Files and Load into CSV
-files_loc = "../Patient_Data/"
+files_loc = "../../Patient_Data/"
 csv_loc = "../synthea_parsed_data.csv"
 
 patient_files = spb.get_patients(files_loc)
