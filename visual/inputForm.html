@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: "#45a049";
+}
+
+div {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+<h1>Heart Disease Risk Estimator</h1>
+
+<div>
+  <form action="action_page.php">
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      
+    </select>
+
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age">
+
+    <label for="weight">Weight in Pounds</label>
+    <input type="text" id="weight" name="weight">
+
+    <label for="bp">Blood Pressure</label>
+    <input type="text" id="bp" name="bp">
+    
+    <label for="chol">Cholestrol</label>
+    <input type="text" id="chol" name="chol">
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
