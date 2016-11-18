@@ -4,6 +4,7 @@ var margin = {top: 20, right: 120, bottom: 20, left: 180},
     height = 480 - margin.top - margin.bottom;
 
 var i = 0,
+    counter = 0,
     root;
 
 // Tree
@@ -60,7 +61,13 @@ function update(source) {
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-      .text(function(d) { return d.name; })
+      .text(function(d) {
+        if (d.is_leaf) {
+          return (d.num_positive/(d.num_negative+d.num_positive)*100).toFixed() + "% chance of Heart Disease"; 
+        } else {
+          return d.name;
+        }
+      })
 
   nodeEnter.append("title")
       .text(function(d) {return hover_text(d)});
@@ -80,16 +87,24 @@ function update(source) {
 
   link.enter().insert("path", "g")
       .attr("class", "link")
+      .style("stroke",function(d) {
+        counter = counter + 1;
+        if (counter%2 > 0.5) {
+          return "green";
+        } else {
+        return "red";
+        }
+      })
 
-  link.attr("d", diagonal);
-  link.exit().remove();
+  link.attr("d", diagonal)
+  link.exit().remove()
 }
 
 // Toggle children on click.
 function click(d) {
   if (d.children) {
     d._children = d.children;
-    d.children = null;
+    recursive_close(d);
   } else {
     d.children = d._children;
     d._children = null;
@@ -106,5 +121,9 @@ function collapse(d) {
 }
 
 function hover_text(d) {
-  return d.name + "\n" + "Healthy: " + d.num_negative + "\n" + "Diseased:" + d.num_positive + "\n" + "Probability of Having Heart Disease: " + d.num_positive/(d.num_positive+d.num_negative);
+  return d.name + "\n" + "Healthy: " + d.num_negative + "\n" + "Diseased: " + d.num_positive;
+}
+
+function recursive_close(d) {
+  d.children = null;
 }
