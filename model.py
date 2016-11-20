@@ -8,6 +8,9 @@ Created on Fri Oct 21 10:34:47 2016
 #from sklearn.feature_selection import SelectFromModel
 from sklearn import tree
 from sklearn.feature_selection import SelectFromModel
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import SelectPercentile
+from sklearn.feature_selection import mutual_info_classif
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
@@ -132,6 +135,39 @@ class model:
         print self.feature_names
         
         
+    def feature_selection(self, choice, n, p):
+        """
+        Selects n highest scoring features from the full set of features.
+        Arguments:
+        1. choice - 0 = select n best, 1 = select top p percentile
+        2. n - number of features to select (only used if choice = 0)
+        3. p - percentile to select (only used if choice = 1)
+        """
+#        n_initial = self.data.shape[1]
+        if choice == 0:        
+            selector = SelectKBest(mutual_info_classif, k=n).fit(self.data, self.target)
+        elif choice == 1:
+            selector = SelectPercentile(mutual_info_classif, percentile=p).fit(self.data, self.target)            
+        self.data = selector.transform(self.data)
+        self.data_test = selector.transform(self.data_test)
+        print "Scores:"
+        print selector.scores_
+#        list_scores = list(selector.scores_)
+#        list_sorted = sorted(list_scores)
+#        threshold = list_sorted[-n]
+#        list_indices = [idx for idx in range(0,n_initial) if list_scores[idx] >= threshold]
+#        list_discarded_indices = [idx for idx in range(0, n_initial) if list_scores[idx] < threshold]
+        
+#        discarded_features = self.feature_names[list_discarded_indices]
+#        self.feature_names = self.feature_names[list_indices]
+        discarded_features = self.feature_names[selector.get_support() == False]
+        self.feature_names = self.feature_names[selector.get_support()]
+        print "Discarded features are:"
+        print discarded_features
+        print "Remaining features are:"
+        print self.feature_names
+        
+        
     def evaluate(self, clf):
         
         print "Mean accuracy on training set"
@@ -166,18 +202,19 @@ class model:
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
                                               min_samples_split=150)
         elif choice1 == 1:
-            clf = tree.DecisionTreeClassifier(criterion='gini')
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                              min_samples_split=40, min_samples_leaf=20)
             
         clf = clf.fit(self.data, self.target)
         
         self.clf_tree = clf.tree_
         
-        self.evaluate(clf)        
+        self.evaluate(clf)
         
     
     def train_forest(self, n):
-        clf = RandomForestClassifier(n_estimators=n, criterion='gini', max_depth=6,
-                                     min_samples_split=80)
+        clf = RandomForestClassifier(n_estimators=n, criterion='gini', max_depth=14,
+                                     min_samples_split=10)
         clf = clf.fit(self.data, self.target)
         
         self.evaluate(clf)
@@ -186,9 +223,9 @@ class model:
     def validation_curve(self, choice=0):
         if choice == 0:
             clf = tree.DecisionTreeClassifier(criterion='gini')
-            param_range = range(10,110,10)
+            param_range = range(5,15,1)
             train_scores, valid_scores = validation_curve(clf, self.data, self.target,
-                                                          'min_samples_split', param_range)
+                                                          'max_depth', param_range)
         elif choice == 1:
             clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', 
                                                                  max_depth=6, min_samples_split=150))
@@ -196,10 +233,17 @@ class model:
             train_scores, valid_scores = validation_curve(clf, self.data, self.target,
                                                           'n_estimators', param_range)
         elif choice == 2:
-            clf = RandomForestClassifier(criterion='gini')
-            param_range = range(10,100,10)
+            clf = RandomForestClassifier(criterion='gini', min_samples_split=20,
+                                         max_depth=12)
+            param_range = range(50,450,50)
             train_scores, valid_scores = validation_curve(clf, self.data, self.target,
-                                                          'n_estimators', param_range) 
+                                                          'n_estimators', param_range)
+        elif choice == 3:
+            clf = GradientBoostingClassifier(learning_rate=0.1, n_estimators=300,
+                                             max_depth=3, min_samples_split=8).fit(self.data, self.target)
+            param_range = range(5,35,5)
+            train_scores, valid_scores = validation_curve(clf, self.data, self.target,
+                                                          'min_samples_split', param_range)
 
         plt.plot(param_range, np.mean(train_scores, axis=1), c='red', ls='-')
         plt.plot(param_range, np.mean(valid_scores, axis=1), c='blue', ls='-')
@@ -212,12 +256,12 @@ class model:
         if choice == 0:
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6, min_samples_split=150)
         elif choice == 1:
-            clf = RandomForestClassifier(n_estimators=10, criterion='gini', max_depth=6,
-                                         min_samples_split=80)
+            clf = RandomForestClassifier(n_estimators=30, criterion='gini', max_depth=12,
+                                         min_samples_split=20)
         elif choice == 2:
             clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini'), 
                                      n_estimators=10)
-        train_sizes = range(100,1100,100)
+        train_sizes = range(200,2200,200)
         train_sizes, train_scores, valid_scores = learning_curve(clf, self.data,
                                                                  self.target, train_sizes=train_sizes,
                                                                  cv=5)
@@ -287,39 +331,40 @@ class model:
 
     def train_gbc(self):
         """
-        Incomplete. To try next
-        """
-        X_train, X_test, y_train, y_test = train_test_split(self.data, self.target,
-                                                            test_size=0.1, random_state=0)
-        clf = GradientBoostingClassifier(n_estimators=200, learning_rate=1.0,
-                                         max_depth=2, random_state=0).fit(X_train, y_train)
-                
-        y_predicted = clf.predict(X_test)
-
-        print "Mean accuracy"
-        print clf.score(X_test, y_test)
         
-        self.evaluate(y_test, y_predicted)        
+        """
+        clf = GradientBoostingClassifier(learning_rate=0.1, n_estimators=300, 
+                                         max_depth=3, min_samples_split=8).fit(self.data, self.target)
+                
+#        y_predicted = clf.predict(X_test)
 
+#        print "Mean accuracy"
+#        print clf.score(X_test, y_test)
+        
+#        self.evaluate(y_test, y_predicted)
+        self.evaluate(clf)
         
     def train_gridsearch(self, choice=0, verbose=0):
         """
         Exhaustive grid search with 5-fold cross validation to find good
-        parameters for the decision tree        
+        parameters for the decision tree
         """
-        
-#        parameters = {'max_depth': range(4,9), 'min_samples_leaf': range(10,50,10),
-#                      'min_impurity_split': list(np.logspace(-5,-2,4)),
-#                        'min_samples_split': range(15,35,5)}
 
         if choice == 0:
-            parameters = {'max_depth': range(4,8,1), 'min_samples_split': range(50,200,10)}
+            parameters = {'max_depth':range(5,15,1), 'min_samples_split':range(10,150,10),
+                          'min_samples_leaf':range(10,55,5)}
             clf = GridSearchCV(tree.DecisionTreeClassifier(criterion='gini'), 
-                               parameters, cv=5)
+                               parameters, cv=10)
         elif choice == 1:
-            parameters = {'max_depth': range(4,10,1), 'min_samples_split': range(30,130,10)}
+            parameters = {'n_estimators':range(10,60,10),
+                          'max_depth': range(10,15,1), 'min_samples_split': range(10,30,5)}
             clf = GridSearchCV(RandomForestClassifier(criterion='gini'), 
-                               parameters, cv=5)            
+                               parameters, cv=5)
+        elif choice == 2:
+            parameters = {'n_estimators':range(100,500,100), 'max_depth':range(1,4),
+                          'min_samples_split':range(4,24,4)}
+            clf = GridSearchCV(GradientBoostingClassifier(learning_rate=0.1, n_estimators=300),
+                               parameters, cv=5)
 
         clf.fit(self.data, self.target)
         param_best = clf.best_params_
