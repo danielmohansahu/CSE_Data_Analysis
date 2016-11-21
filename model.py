@@ -15,13 +15,13 @@ from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import AdaBoostClassifier
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import validation_curve
 from sklearn.model_selection import learning_curve
 from sklearn.metrics import classification_report
-import sklearn.metrics as metrics
+#import sklearn.metrics as metrics
 
 import matplotlib.pyplot as plt
 
@@ -33,10 +33,8 @@ TREE_UNDEFINED = tree._tree.TREE_UNDEFINED
 
 class model:
     
-    def __init__(self, trainfile, testfile, outfile='tree.json', out_python='tree.py'):
+    def __init__(self, trainfile, testfile):
         self.trainfile = trainfile
-        self.outfile = outfile
-        self.out_python = out_python
             
         # Extract required information from raw csv
         # num_point - number of datapoints
@@ -401,7 +399,7 @@ class model:
         print classification_report(self.target_test, y_predicted)
 
 
-    def tree_to_code(self):
+    def tree_to_code(self, out_python):
         """
         Traverses the decision tree and output representation of tree in 
         pseudocode (if...else...if...)
@@ -417,7 +415,7 @@ class model:
             else:
                 feature_name.append("undefined")
     
-        f = open(self.out_python, 'w')
+        f = open(out_python, 'w')
         f.write('def tree():\n')
         
         def recurse(node, depth):
@@ -462,7 +460,7 @@ class model:
         f.close()
 
 
-    def tree_to_json(self):
+    def tree_to_json(self, out_json):
         """
         Writes tree to json output
         json output is a list of objects
@@ -548,13 +546,13 @@ class model:
                 
         recurse(0,1)
         
-        with open(self.outfile, 'w') as f:
+        with open(out_json, 'w') as f:
             json.dump(final_list, f, indent=4, sort_keys=True, separators=(',', ':'))
 
         return final_list
 
 
-    def tree_to_json2(self):
+    def tree_to_json2(self, out_json):
         """
         Writes tree to json output
         json output is a list of objects
@@ -587,44 +585,50 @@ class model:
                             
         def recurse(node, depth):
             node_id = node
-            feature_name = tree_names[node]            
-            if "categorical" in feature_name:
-                feature_type = "categorical"
-                # assumes that the categorical feature has been converted
-                # into binary 1,0, so that the decision rule is simply
-                # the proposition "is <name>"
-                val = feature_name 
-                threshold = -1
+            feature_name = tree_names[node]
+            if feature_name != 'undefined':
+                if "is_" in feature_name:
+                    feature_type = "categorical"
+                    # assumes that the categorical feature has been converted
+                    # into binary 1,0, so that the decision rule is simply
+                    # the proposition "is <name>"
+                    threshold = -1
+                    units = 'categorical'
+                    feature_name = feature_name.split('_')[1].strip()
+                else:
+                    feature_type = "numeric"
+                    # clf_tree.threshold is a numpy array of real numbers
+                    # Value v_n at index n is the value used for the decision rule at node n
+                    # if (x < threshold) then branch left else branch right
+                    threshold = self.clf_tree.threshold[node]
+                    # Extract units
+                    units = feature_name.split('(')[1].split(')')[0]
+                    feature_name = feature_name.split('(')[0].strip()
             else:
-                feature_type = "numeric"
-                val = ""
-                # clf_tree.threshold is a numpy array of real numbers
-                # Value v_n at index n is the value used for the decision rule at node n
-                # if (x < threshold) then branch left else branch right
-                threshold = self.clf_tree.threshold[node]
+                feature_type = 'leaf'
+                threshold = -1
+                units = 'leaf'
             # clf_tree.value is a 3D numpy matrix
             # Topmost dimension picks out rows. Each row is a node.
-            # Second dimension appears useless. Last dimension goes across a row.
+            # Second dimension appears to be useless. Last dimension goes across a row.
             # Value v_n in a row is the number of datapoints belonging to the nth label
             # that ended up in that node.
             counts = self.clf_tree.value[node][0]
             num_negative = counts[0]
             num_positive = counts[1]
+            total = num_negative + num_positive
+            proportion = num_negative / float(total)
+            impurity = 2*proportion*(1 - proportion) # Gini impurity for 2 classes
             
+            map_info = {'node_id':node_id, 'num_positive':num_positive,
+                            'num_negative':num_negative, 'impurity':impurity,
+                            'units':units, 'feature_type':feature_type,
+                            'threshold':threshold}
             if self.clf_tree.feature[node] != TREE_UNDEFINED:
                 # Not a leaf
-                is_leaf = 0                
-                label = "internal_node"
-                map_internal = {}
-                if feature_type == "categorical":
-                    map_internal["name"] = "%s == %s" % (feature_name, val)
-                else:
-                    map_internal["name"] = "%s < %.3f" % (feature_name, threshold)
-                map_internal["node_id"] = node_id
-                map_internal["is_leaf"] = is_leaf
-                map_internal["num_negative"] = num_negative
-                map_internal["num_positive"] = num_positive
-                map_internal["label"] = label
+                map_info["name"] = feature_name
+                map_info["is_leaf"] = 0
+                map_info["label"] = 'internal_node'
                 children = []
                 # clf_tree.children_left is a numpy array, where each index is a node
                 # and the value v_n at index n is the index of the left child of node n
@@ -632,22 +636,21 @@ class model:
                 # Same for clf_tree.children_right
                 children.append( recurse( self.clf_tree.children_left[node], depth+1 ) )
                 children.append( recurse( self.clf_tree.children_right[node], depth+1 ) )
-                map_internal["children"] = children
-                return map_internal
+                map_info["children"] = children
+                return map_info
             else:
-                is_leaf = 1
                 if ( num_positive > num_negative ):
-                    label = "heart_disease"
+                    label = "Heart Disease"
                 else:
-                    label = "healthy"
-                map_leaf = {"name": label, "node_id": node_id, "is_leaf": is_leaf,
-                            "num_positive": num_positive, "num_negative": num_negative,
-                            "label": label}
-                return map_leaf
+                    label = "Healthy"
+                map_info['name'] = label
+                map_info['is_leaf'] = 1
+                map_info['label'] = label
+                return map_info
                 
         final_map = recurse(0,1)
         
-        with open(self.outfile, 'w') as f:
+        with open(out_json, 'w') as f:
             json.dump(final_map, f, indent=4, sort_keys=True, separators=(',', ':'))
 
         return final_map
