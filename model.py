@@ -143,7 +143,6 @@ class model:
         2. n - number of features to select (only used if choice = 0)
         3. p - percentile to select (only used if choice = 1)
         """
-#        n_initial = self.data.shape[1]
         if choice == 0:        
             selector = SelectKBest(mutual_info_classif, k=n).fit(self.data, self.target)
         elif choice == 1:
@@ -152,14 +151,7 @@ class model:
         self.data_test = selector.transform(self.data_test)
         print "Scores:"
         print selector.scores_
-#        list_scores = list(selector.scores_)
-#        list_sorted = sorted(list_scores)
-#        threshold = list_sorted[-n]
-#        list_indices = [idx for idx in range(0,n_initial) if list_scores[idx] >= threshold]
-#        list_discarded_indices = [idx for idx in range(0, n_initial) if list_scores[idx] < threshold]
-        
-#        discarded_features = self.feature_names[list_discarded_indices]
-#        self.feature_names = self.feature_names[list_indices]
+
         discarded_features = self.feature_names[selector.get_support() == False]
         self.feature_names = self.feature_names[selector.get_support()]
         print "Discarded features are:"
@@ -233,8 +225,8 @@ class model:
             train_scores, valid_scores = validation_curve(clf, self.data, self.target,
                                                           'n_estimators', param_range)
         elif choice == 2:
-            clf = RandomForestClassifier(criterion='gini', min_samples_split=20,
-                                         max_depth=12)
+            clf = RandomForestClassifier(criterion='gini', min_samples_split=10,
+                                         max_depth=14)
             param_range = range(50,450,50)
             train_scores, valid_scores = validation_curve(clf, self.data, self.target,
                                                           'n_estimators', param_range)
@@ -265,16 +257,11 @@ class model:
         train_sizes, train_scores, valid_scores = learning_curve(clf, self.data,
                                                                  self.target, train_sizes=train_sizes,
                                                                  cv=5)
-#        print train_sizes
-#        print train_scores
+
         plt.plot(train_sizes, np.mean(train_scores, axis=1), c='red', ls='-', label='training')
         plt.plot(train_sizes, np.mean(valid_scores, axis=1), c='blue', ls='-', label='validation')
         plt.xlabel('Training examples')
         plt.ylabel('Score')
-#        if choice == 0:
-#            plt.title('Learning curve for single decision tree. \n Max_depth=6. Min_samples_split=150')
-#        elif choice ==1:
-#            plt.title('Learning curve for random forest. \n N=10. Max_depth=6. Min_samples_split=80')
         plt.legend(loc='lower right')
         plt.show()
         
@@ -284,16 +271,11 @@ class model:
         Incomplete. To try next
         """
 
-        clf = ExtraTreesClassifier(n_estimators=10, min_samples_split=2,
+        clf = ExtraTreesClassifier(n_estimators=1000, max_depth=15, min_samples_split=10,
                                    random_state=0)
         clf = clf.fit(self.data, self.target)
                 
-        y_predicted = clf.predict(self.data_test)
-
-        print "Mean accuracy"
-        print clf.score(self.data_test, self.target_test)
-        
-        self.evaluate(self.target_test, y_predicted)
+        self.evaluate(clf)
 
 
     def train_adaboost(self, choice=0):
@@ -334,15 +316,10 @@ class model:
         
         """
         clf = GradientBoostingClassifier(learning_rate=0.1, n_estimators=300, 
-                                         max_depth=3, min_samples_split=8).fit(self.data, self.target)
-                
-#        y_predicted = clf.predict(X_test)
-
-#        print "Mean accuracy"
-#        print clf.score(X_test, y_test)
-        
-#        self.evaluate(y_test, y_predicted)
+                                         max_depth=3, min_samples_split=8)                
+        clf = clf.fit(self.data, self.target)
         self.evaluate(clf)
+
         
     def train_gridsearch(self, choice=0, verbose=0):
         """
@@ -365,6 +342,11 @@ class model:
                           'min_samples_split':range(4,24,4)}
             clf = GridSearchCV(GradientBoostingClassifier(learning_rate=0.1, n_estimators=300),
                                parameters, cv=5)
+        elif choice == 3:
+            parameters = {'n_estimators':[10,100,500,1000], 'max_depth':range(6,16,2),
+                          'min_samples_split':range(10,50,5)}
+            clf = GridSearchCV(ExtraTreesClassifier(criterion='gini'),
+                               parameters, cv=10)
 
         clf.fit(self.data, self.target)
         param_best = clf.best_params_
@@ -380,11 +362,6 @@ class model:
 
         self.evaluate(clf.best_estimator_)
 
-        # Use the "good" params to fit again
-#        clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=param_best['max_depth'],
-#                                          min_samples_leaf=param_best['min_samples_leaf'],
-#                                          min_impurity_split=param_best['min_impurity_split'],
-#                                            min_samples_split=param_best['min_samples_split'])
         if choice == 0:
             self.clf_tree = clf.best_estimator_.tree_
 
@@ -395,8 +372,7 @@ class model:
         parameters for the decision tree        
         """
         
-        parameters = {'min_impurity_split': list(np.logspace(-5,-2,4)),
-                      'min_samples_split': range(5,30,5)}
+        parameters = {'min_samples_split': range(5,30,5)}
                       
         # Searches over the given parameter grid to find the best set
         clf = GridSearchCV(ExtraTreesClassifier(n_estimators=10, max_depth=8,
