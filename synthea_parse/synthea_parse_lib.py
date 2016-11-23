@@ -27,8 +27,6 @@ def get_all_keys(filename):
 # Return biometrics for patient with heart disease (specifically)
 def get_biometrics(filename,condition):
   biometric_keys = [
-    'multipleBirthBoolean',
-    'maritalStatus',
     'birthDate',
     'gender',
     'extension']
@@ -49,14 +47,6 @@ def get_biometrics(filename,condition):
       print e
   
   # General Patient Data:
-  try:
-    return_vals['multipleBirthBoolean'] = data_general['multipleBirthBoolean']
-  except:
-    print "Error with multipleBirthBoolean"
-  try: 
-    return_vals['maritalStatus'] = data_general['maritalStatus']['coding'][0]['code']
-  except:
-    print "Error with Marital Status"
   return_vals['gender'] = data_general['gender']
   return_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
   return_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
@@ -69,7 +59,7 @@ def get_biometrics(filename,condition):
       for j in range(0,len(data[i]['resource']['code']['coding'])):
         if data[i]['resource']['code']['coding'][j]['code'].lower() == condition_dict[condition]:
           encounter_id = (data[i]['resource']['context']['reference'])
-          return_vals['age'] = datetime.strptime(data[i]['resource']['onsetDateTime'][0:10],'%Y-%m-%d') - datetime.strptime(data_general['birthDate'],'%Y-%m-%d')
+          return_vals['age'] = datetime.strptime(data[i]['resource']['onsetDateTime'][0:10],'%Y-%m-%d').year - datetime.strptime(data_general['birthDate'],'%Y-%m-%d').year
   
   if encounter_id == 0:
     print "No diagnosis of this condition!"
@@ -96,8 +86,6 @@ def get_biometrics(filename,condition):
 # encounters have sufficient information
 def get_biometrics_gen(filename,filter_true = True):
   biometric_keys = [
-    'multipleBirthBoolean',
-    'maritalStatus',
     'birthDate',
     'gender',
     'extension']
@@ -113,14 +101,6 @@ def get_biometrics_gen(filename,filter_true = True):
       print e
   
   # Append general patient data:
-  try:
-    gen_vals['multipleBirthBoolean'] = data_general['multipleBirthBoolean']
-  except: 
-    print "Error with multipleBirthBoolean"
-  try:
-    gen_vals['maritalStatus'] = data_general['maritalStatus']['coding'][0]['code']
-  except: 
-    print "Error with marital Status"
   gen_vals['gender'] = data_general['gender']
   gen_vals['race'] = data_general['extension'][0]['valueCodeableConcept']['coding'][0]['display']
   gen_vals['ethnicity'] = data_general['extension'][1]['valueCodeableConcept']['coding'][0]['display']
@@ -143,12 +123,12 @@ def get_biometrics_gen(filename,filter_true = True):
           if data[i]['resource']['encounter']['reference'][9:] == encounter:
             try:
               new_vals[data[i]['resource']['code']['coding'][0]['display']] = str(data[i]['resource']['valueQuantity']['value'])
-              new_vals['age'] = datetime.strptime(data[i]['resource']['effectiveDateTime'][0:10],'%Y-%m-%d') - datetime.strptime(data_general['birthDate'],'%Y-%m-%d')
+              new_vals['age'] = datetime.strptime(data[i]['resource']['effectiveDateTime'][0:10],'%Y-%m-%d').year - datetime.strptime(data_general['birthDate'],'%Y-%m-%d').year
             except:
               try:
                 for k in range(0,len(data[i]['resource']['component'])):
                   new_vals[data[i]['resource']['component'][k]['code']['coding'][0]['display']] = str(data[i]['resource']['component'][k]['valueQuantity']['value'])
-                  new_vals['age'] = datetime.strptime(data[i]['resource']['effectiveDateTime'][0:10],'%Y-%m-%d') - datetime.strptime(data_general['birthDate'],'%Y-%m-%d')
+                  new_vals['age'] = datetime.strptime(data[i]['resource']['effectiveDateTime'][0:10],'%Y-%m-%d').year - datetime.strptime(data_general['birthDate'],'%Y-%m-%d').year
               except:
                 pass
       encounter_vals[encounter] = new_vals
@@ -156,11 +136,8 @@ def get_biometrics_gen(filename,filter_true = True):
 
   # Filter Encounters and return a random sufficient encounter (or the full set)
   if filter_true:
-    for encounter in encounters:
-      if not encounter_vals[encounter].has_key('Total Cholesterol') & encounter_vals[encounter].has_key('Systolic Blood Pressure') & encounter_vals[encounter].has_key('Diastolic Blood Pressure'):
-        encounters.remove(encounter)
     if len(encounters) < 1:
-      return False
+      return gen_vals
     else:
       return encounter_vals[encounters[randint(0,len(encounters)-1)]]
   else:
