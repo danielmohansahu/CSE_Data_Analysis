@@ -133,13 +133,20 @@ function update(source) {
     // Determine the nodes belonging to the patient path
     patient_Path = return_node_idx(d3.select(nodes)[0][0]);
     // Highlight the user path:
+    nodes.forEach(function(d) {
+      if (patient_Path.indexOf(d.node_id)>-1) {
+        d.highlight = 1
+      } else {
+        d.highlight = 0
+      }
+      console.log(d)
+    })
     link.style("stroke-width",function(d) {return highlight_path(d, patient_Path);})
   }
 }
 
 // Toggle children on click.
 function click(d) {
-  console.log(d)
   if (d.children) {
     d._children = d.children;
     d.children = null;
@@ -148,14 +155,6 @@ function click(d) {
     d._children = null;
   }
   update(d);
-}
-
-function open(d) {
-  if (d._children) {
-    d.children = d._children;
-    d._children = null;
-    update(d)
-  }
 }
 
 function collapse(d) {
@@ -179,10 +178,9 @@ function calc_probability(d) {
 
 // Function to highlight the path that our user biometrics would follow:
 function highlight_path(d,patient_Path) {
-  if(patient_Path.indexOf(d.source.node_id)>-1 && patient_Path.indexOf(d.target.node_id)>-1) {
+  if(d.target.highlight == 1) {
     if(d.target.is_leaf == 0 && highlighted == false) {
-      console.log(highlighted)
-      open(d.target)
+      click(d.target)
     } else if (d.target.is_leaf == 1) {
       highlighted = true;
     }
