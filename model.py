@@ -5,7 +5,7 @@ Created on Fri Oct 21 10:34:47 2016
 """
 
 #from sklearn.datasets import load_iris
-#from sklearn.feature_selection import SelectFromModel
+from sklearn.preprocessing import Imputer
 from sklearn import tree
 from sklearn.feature_selection import SelectFromModel
 from sklearn.feature_selection import SelectKBest
@@ -25,7 +25,6 @@ from sklearn.metrics import classification_report
 
 import matplotlib.pyplot as plt
 
-import random
 import numpy as np
 import json
 
@@ -44,29 +43,8 @@ class model:
         self.num_point, self.data, self.target, self.feature_names = self.read_data(trainfile)
         self.num_point_test, self.data_test, self.target_test, feature_names = self.read_data(testfile)
         self.target_names = ['negative', 'positive']
-#        self.target_names = ['setosa', 'versicolor', 'virginica']
+        self.clf = None
         
-
-    def randomize_data(self, sourcefile, outfile):
-        """
-        Read in data, randomize rows and write to file
-        """
-        with open(sourcefile, 'r') as f:
-            list_lines = f.readlines()
-        
-        num_rows = len(list_lines)
-        # In-place randomization
-        for idx in range(1, num_rows-1):
-            temp = list_lines[idx]
-            # Random index from current index to end of list
-            rand_idx = random.randint(idx+1, num_rows-1)
-            # Swap
-            list_lines[idx] = list_lines[rand_idx]
-            list_lines[rand_idx] = temp
-        
-        with open(outfile, 'w') as f:
-            f.writelines(list_lines)
-
 
     def read_data(self, sourcefile):
         """
@@ -103,6 +81,33 @@ class model:
         
         return num_point, data, target, feature_names
 
+
+    def impute(self):
+        """
+        Reads sourcefile, imputes all -1 entries using average of column, writes \n
+        to outfile.
+        """
+        # Compute some values manually to check correctness
+        # First column
+        col = self.data[:,0]
+        # Index of first occurrence of -1
+        itemindex = np.where(col == -1)
+        idx_first = itemindex[0][0]
+        # Remove all -1
+        col = col[col != -1]
+        # Calculate mean
+        avg = np.mean(col)
+        
+        im = Imputer(missing_values=-1, strategy='mean', axis=0)
+        im = im.fit(self.data)
+        self.data = im.transform(self.data)
+
+        col = self.data[:,0]
+        if avg == col[idx_first]:
+            print "Passed check"
+        else:
+            print "Failed check"
+        
 
     def pre_selection(self):
         """
@@ -196,6 +201,7 @@ class model:
                                               min_samples_split=40, min_samples_leaf=20)
             
         clf = clf.fit(self.data, self.target)
+        self.clf = clf
         
         self.clf_tree = clf.tree_
         
@@ -326,8 +332,9 @@ class model:
         """
 
         if choice == 0:
-            parameters = {'max_depth':range(5,15,1), 'min_samples_split':range(10,150,10),
-                          'min_samples_leaf':range(10,55,5)}
+#            parameters = {'max_depth':range(5,12,1), 'min_samples_split':range(50,200,10),
+#                          'min_samples_leaf':range(10,60,10)}
+            parameters = {'max_depth':range(5,12,1), 'min_samples_split':range(20,150,10)}
             clf = GridSearchCV(tree.DecisionTreeClassifier(criterion='gini'), 
                                parameters, cv=10)
         elif choice == 1:
