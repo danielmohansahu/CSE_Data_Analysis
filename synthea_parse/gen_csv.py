@@ -6,6 +6,7 @@ import os
 files_loc = "../../Patient_Data/"
 csv_loc = "../synthea_parsed_data.csv"
 
+print "Gathering patient files..."
 patient_files = spb.get_patients(files_loc)
 
 # Create Header:
