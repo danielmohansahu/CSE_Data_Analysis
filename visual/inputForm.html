@@ -1,9 +1,10 @@
 <!-- REQUIRES leaf.css to work -->
-<!-- createTree(data,loc) is a function on the entire file leaf.js. 
-data: merics from input form
+<!-- createTree(input,loc) is a function on the entire file leaf.js. 
+input: merics from input form tailored according to the hardcoded input in leaf.js
 loc: location of svg in the html
 function createTree(data,loc){
     all of leaf.js
+    except clear out the variable input
 };
 
 -->
@@ -123,19 +124,20 @@ $( "form" ).submit(function( event ) {
   console.log(data);
   event.preventDefault();
   loc = "#tree";
-  createTree(data,loc);});
+  var input = {"Body Height": data[3]["value"], 
+  "Body Weight": data[2]["value"], 
+  "Low Density Lipoprotein Cholesterol": data[5]["value"],
+  "Age": data[1]["value"], 
+  "Creatinine": 0.6,
+  "Calcium": 10,
+  "Systolic Blood Pressure": data[4]["value"],
+  "Total Cholesterol": 100,
+  "Potassium": 4,
+  "Body Mass Index": 30,
+  "Female": 0}
+  createTree(input,loc);});
 
-//   var input = {"Body Height": data[3]["value"], 
-//   "Body Weight": data[2]["value"], 
-//   "Low Density Lipoprotein Cholesterol": data[5]["value"],
-//   "Age": data[1]["value"], 
-//   "Creatinine": 0.6,
-//   "Calcium": 10,
-//   "Systolic Blood Pressure": data[4]["value"],
-//   "Total Cholesterol": 100,
-//   "Potassium": 4,
-//   "Body Mass Index": 30,
-//   "Female": 0}
+
 
 // // Population numbers (hardcoded from generated synthea data)
 // var num_healthy = 1335,
