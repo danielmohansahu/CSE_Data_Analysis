@@ -42,7 +42,7 @@ var diagonal = d3.svg.diagonal()
     .projection(function(d) { return [d.y, d.x]; });
 
 // SVG Body
-var svg = d3.select("body").append("svg")
+var svg = d3.select(sessionStorage.location).append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
