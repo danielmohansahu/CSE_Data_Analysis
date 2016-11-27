@@ -1,10 +1,25 @@
 import synthea_parse_lib as spb
 from shutil import copy
+from distutils.dir_util import copy_tree
 import csv
 import os
 
+synthea_output_path = "../../synthea/output/"
+new_file_temp_path = "../../Patient_Records_New/output"
+final_file_path = "../../Patient_Records_Final/output/"
+
+# Move from synthea output folder to 
+copy_tree(synthea_output_path,new_file_temp_path)
+
+
+"""
+
 print("Collecting patient files...\n")
-patient_files = spb.get_patients("../../Patient_Records_Final/output/fhir")
+
+# Total Collection:
+#patient_files = spb.get_patients("../../Patient_Records_Final/output/fhir")
+# Only new files (faster):
+patient_files = spb.get_patients("../../Patient_Records_New/output/fhir")
 
 count = 0
 hd = 0
@@ -36,3 +51,6 @@ for patient in patient_files:
 		print "Patient #%d/%d; %d with heart disease" %(count,len(patient_files),hd)
 	except:
 		print("SKIPPING PATIENT FOR UNKNOWN ERROR!")
+
+
+"""
