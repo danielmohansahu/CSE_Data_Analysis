@@ -13,37 +13,70 @@ function createTree(data,loc){
 <html>
 <head>
 <style>
+label{
+    margin: auto;
+    width: 30%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+}
 input[type=text], select {
-    width: 100%;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 10px;
     padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+    /*margin: 8px 0;*/
+    display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 30%;
+    background-color: #85144b;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    /*margin: 8px 0;*/
+    display: block;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 input[type=submit]:hover {
-    background-color: "#45a049";
+
+    opacity: 0.7;
 }
 
-div {
-    width: 100%;
+body{
+  background-color: #f2f2f2;
+}
+div #user{
+    width: 90%;
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
 }
+
+div .err{
+  display: inline-block;
+  position: relative;
+  float: left;
+  
+  
+}
+h1{
+  text-align: center
+}
+
+div #tree{
+  margin: auto;
+  display: block;
+}
+
 
 </style>
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -51,21 +84,6 @@ div {
 <link rel="stylesheet" type="text/css" href="leaf.css">
 <script type="text/javascript" src="leaf.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script type="text/javascript">
-
-    function validate() {
-      if( document.userMetrics.age.value == "" ) {
-        document.getElementById('errfn').innerHTML="Please enter your age";
-        return false;
-      }
-         
-      if( document.userMetrics.weight.value == "" || isNaN( document.userMetrics.weight.value ) ) {
-        document.getElementById('errfn').innerHTML="Please enter your weight";
-        return false;
-      }
-      return( true );
-      }
-  </script>
 </head>
 <body>
 
@@ -73,7 +91,7 @@ div {
 
 <div id="user">
 
-  <form name="userMetrics", onsubmit="return(validate());">
+  <form name="userMetrics">
     <label for="gender">Gender</label>
     <select id="gender" name="gender">
       <option value="Male">Male</option>
@@ -81,14 +99,17 @@ div {
       
     </select>
 
-    <label for="age">Age</label>
-    <input type="text" id="age" name="age"><div id="errfn"></div>
+    <label for="age">Age *</label>
+    <input type="text" id="age" name="age">
+    
 
-    <label for="weight">Weight in Kg</label>
+    <label for="weight">Weight in Kg *</label>
     <input type="text" id="weight" name="weight">
+    
 
-    <label for="height">Height in cm</label>
+    <label for="height">Height in cm *</label>
     <input type="text" id="height" name="height">
+    
 
     <label for="bp">Blood Pressure</label>
     <input type="text" id="bp" name="bp">
@@ -107,28 +128,59 @@ div {
 <script>
 
 
-$( "form" ).submit(function( event ) {
-  
-  $('#tree').empty();
+$( "form" ).submit(function(event) {
+  sessionStorage.location = '#tree'
+  $(sessionStorage.location).empty();
   var data = $( this ).serializeArray();
   event.preventDefault();
-  loc = "#tree";
 
-  // Define input variables and assign to localStorage:
-  sessionStorage.height = Number(data[3]["value"]);
-  sessionStorage.weight = Number(data[2]["value"]);
-  sessionStorage.ldl = Number(data[5]["value"]); 
-  sessionStorage.age = Number(data[1]["value"]);
-  sessionStorage.creatinine = Number(0.6);
-  sessionStorage.calcium = Number(10);
-  sessionStorage.blood_pressure = Number(data[4]["value"]);
-  sessionStorage.cholesterol = Number(100);
-  sessionStorage.potassium = Number(4);
-  sessionStorage.bmi = Number(30);
-  sessionStorage.female = Number(0);
+  ///////////////// VALIDATION BEGINS /////////////////////////////
+  flag = true;
+  if( data[1]["value"] == "" || isNaN( data[1]["value"] ) ) {
+        document.getElementById('age').value="Please enter your age as a number";
+        document.getElementById('age').setAttribute("style", "color: #85144b;");
+        flag = false;
+   	}
+         
+  if( data[2]["value"] == "" || isNaN( data[2]["value"] ) ) {
+        document.getElementById('weight').value="Please enter your weight as a number in kg";
+        document.getElementById('weight').setAttribute("style", "color: #85144b;");
+        flag = false;
 
-  // Run leaf.js script
-  $.getScript('leaf.js');
+    }
+
+  if( data[3]["value"] == "" || isNaN( data[3]["value"] ) ) {
+        document.getElementById('height').value="Please enter your height as a number in cm";
+        document.getElementById('height').setAttribute("style", "color: #85144b;");
+
+    }
+
+  ///////////////// VALIDATION ENDS /////////////////////////////
+
+  if (flag){
+	  // Define input variables and assign to localStorage:
+    if (data[4]["value"]==""){
+      coeffs = [0.26456366, 0.46270952, -1.07032508, 0.11771949, 0.0845266, 72.85746549];
+      data[4]["value"] = 100;
+    }
+	  sessionStorage.height = Number(data[3]["value"]);
+	  sessionStorage.weight = Number(data[2]["value"]);
+	  sessionStorage.ldl = Number(data[5]["value"]); 
+	  sessionStorage.age = Number(data[1]["value"]);
+	  sessionStorage.creatinine = Number(0.6);
+	  sessionStorage.calcium = Number(10);
+	  sessionStorage.blood_pressure = Number(data[4]["value"]);
+	  sessionStorage.cholesterol = Number(100);
+	  sessionStorage.potassium = Number(4);
+	  sessionStorage.bmi = Number(30);
+	  sessionStorage.female = Number(0);
+
+	  // Run leaf.js script
+	  $.getScript('leaf.js');
+	  $('html, body').animate({
+        scrollTop: $("#tree").offset().top
+    }, 200);
+  }
 });
 
 </script>
