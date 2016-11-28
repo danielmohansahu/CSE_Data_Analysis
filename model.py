@@ -193,13 +193,16 @@ class model:
         and f1 score.
         Parameters of decision tree were acquired from prior runs of train_gridsearch()
         """
-        if choice1 == 0:
+        if choice1 == 0: # best params for synthea_data_train_v1.csv
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
                                               min_samples_split=150)
-        elif choice1 == 1:
+        elif choice1 == 1: # best params for synthea_data_train.csv
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
                                               min_samples_split=40, min_samples_leaf=20)
-            
+        elif choice1 == 2: # best params for synthea_imputed_data.csv
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=9,
+                                              min_samples_split=140)
+
         clf = clf.fit(self.data, self.target)
         self.clf = clf
         
@@ -250,14 +253,14 @@ class model:
     def learning_curve(self, choice=0):
         
         if choice == 0:
-            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6, min_samples_split=150)
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=9, min_samples_split=140)
         elif choice == 1:
             clf = RandomForestClassifier(n_estimators=30, criterion='gini', max_depth=12,
                                          min_samples_split=20)
         elif choice == 2:
             clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini'), 
                                      n_estimators=10)
-        train_sizes = range(200,2200,200)
+        train_sizes = range(400,5000,400)
         train_sizes, train_scores, valid_scores = learning_curve(clf, self.data,
                                                                  self.target, train_sizes=train_sizes,
                                                                  cv=5)
@@ -334,9 +337,9 @@ class model:
         if choice == 0:
 #            parameters = {'max_depth':range(5,12,1), 'min_samples_split':range(50,200,10),
 #                          'min_samples_leaf':range(10,60,10)}
-            parameters = {'max_depth':range(5,12,1), 'min_samples_split':range(20,150,10)}
+            parameters = {'max_depth':range(9,13,1), 'min_samples_split':range(30,100,10)}
             clf = GridSearchCV(tree.DecisionTreeClassifier(criterion='gini'), 
-                               parameters, cv=10)
+                               parameters, cv=5)
         elif choice == 1:
             parameters = {'n_estimators':range(10,60,10),
                           'max_depth': range(10,15,1), 'min_samples_split': range(10,30,5)}
