@@ -12,175 +12,617 @@
                                             "feature_type":"leaf",
                                             "impurity":0.0,
                                             "is_leaf":1,
-                                            "label":"Heart Disease",
-                                            "name":"Heart Disease",
+                                            "label":"Healthy",
+                                            "name":"Healthy",
                                             "node_id":5,
-                                            "num_negative":0.0,
-                                            "num_positive":2.0,
+                                            "num_negative":176.0,
+                                            "num_positive":0.0,
                                             "threshold":-1,
                                             "units":"leaf"
                                         },
                                         {
-                                            "children":[
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.48979591836734687,
-                                                    "is_leaf":1,
-                                                    "label":"Heart Disease",
-                                                    "name":"Heart Disease",
-                                                    "node_id":7,
-                                                    "num_negative":3.0,
-                                                    "num_positive":4.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                },
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.24042257012642779,
-                                                    "is_leaf":1,
-                                                    "label":"Healthy",
-                                                    "name":"Healthy",
-                                                    "node_id":8,
-                                                    "num_negative":197.0,
-                                                    "num_positive":32.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                }
-                                            ],
-                                            "feature_type":"numeric",
-                                            "impurity":0.25854639471416263,
-                                            "is_leaf":0,
-                                            "label":"internal_node",
-                                            "name":"Systolic Blood Pressure",
+                                            "feature_type":"leaf",
+                                            "impurity":0.14719999999999994,
+                                            "is_leaf":1,
+                                            "label":"Healthy",
+                                            "name":"Healthy",
                                             "node_id":6,
-                                            "num_negative":200.0,
-                                            "num_positive":36.0,
-                                            "threshold":100.5,
-                                            "units":"mmHg"
+                                            "num_negative":23.0,
+                                            "num_positive":2.0,
+                                            "threshold":-1,
+                                            "units":"leaf"
                                         }
                                     ],
                                     "feature_type":"numeric",
-                                    "impurity":0.26834263117011509,
+                                    "impurity":0.019702482611816452,
                                     "is_leaf":0,
                                     "label":"internal_node",
-                                    "name":"Age",
+                                    "name":"Total Cholesterol",
                                     "node_id":4,
-                                    "num_negative":200.0,
-                                    "num_positive":38.0,
-                                    "threshold":0.5,
-                                    "units":"years"
+                                    "num_negative":199.0,
+                                    "num_positive":2.0,
+                                    "threshold":194.5,
+                                    "units":"mg/dl"
                                 },
                                 {
                                     "feature_type":"leaf",
-                                    "impurity":0.16528925619834711,
+                                    "impurity":0.27777777777777773,
                                     "is_leaf":1,
-                                    "label":"Heart Disease",
-                                    "name":"Heart Disease",
-                                    "node_id":9,
-                                    "num_negative":3.0,
-                                    "num_positive":30.0,
+                                    "label":"Healthy",
+                                    "name":"Healthy",
+                                    "node_id":7,
+                                    "num_negative":5.0,
+                                    "num_positive":1.0,
                                     "threshold":-1,
                                     "units":"leaf"
                                 }
                             ],
                             "feature_type":"numeric",
-                            "impurity":0.37592080717855153,
+                            "impurity":0.028565427431211838,
                             "is_leaf":0,
                             "label":"internal_node",
-                            "name":"Body Height",
+                            "name":"Glucose",
                             "node_id":3,
-                            "num_negative":203.0,
-                            "num_positive":68.0,
-                            "threshold":110.63513565063477,
-                            "units":"cm"
+                            "num_negative":204.0,
+                            "num_positive":3.0,
+                            "threshold":99.5,
+                            "units":"mg/dl"
+                        },
+                        {
+                            "feature_type":"leaf",
+                            "impurity":0.0,
+                            "is_leaf":1,
+                            "label":"Heart Disease",
+                            "name":"Heart Disease",
+                            "node_id":8,
+                            "num_negative":0.0,
+                            "num_positive":1.0,
+                            "threshold":-1,
+                            "units":"leaf"
+                        }
+                    ],
+                    "feature_type":"numeric",
+                    "impurity":0.037721893491124342,
+                    "is_leaf":0,
+                    "label":"internal_node",
+                    "name":"LDL Cholesterol",
+                    "node_id":2,
+                    "num_negative":204.0,
+                    "num_positive":4.0,
+                    "threshold":112.5,
+                    "units":"mg/dl"
+                },
+                {
+                    "children":[
+                        {
+                            "feature_type":"leaf",
+                            "impurity":0.32000000000000006,
+                            "is_leaf":1,
+                            "label":"Heart Disease",
+                            "name":"Heart Disease",
+                            "node_id":10,
+                            "num_negative":3.0,
+                            "num_positive":12.0,
+                            "threshold":-1,
+                            "units":"leaf"
                         },
                         {
                             "children":[
                                 {
                                     "feature_type":"leaf",
-                                    "impurity":0.09209157127991667,
+                                    "impurity":0.0,
                                     "is_leaf":1,
-                                    "label":"Healthy",
-                                    "name":"Healthy",
-                                    "node_id":11,
-                                    "num_negative":118.0,
-                                    "num_positive":6.0,
+                                    "label":"Heart Disease",
+                                    "name":"Heart Disease",
+                                    "node_id":12,
+                                    "num_negative":0.0,
+                                    "num_positive":2.0,
                                     "threshold":-1,
                                     "units":"leaf"
                                 },
                                 {
-                                    "feature_type":"leaf",
-                                    "impurity":0.375,
-                                    "is_leaf":1,
-                                    "label":"Healthy",
-                                    "name":"Healthy",
-                                    "node_id":12,
-                                    "num_negative":33.0,
-                                    "num_positive":11.0,
-                                    "threshold":-1,
-                                    "units":"leaf"
+                                    "children":[
+                                        {
+                                            "children":[
+                                                {
+                                                    "feature_type":"leaf",
+                                                    "impurity":0.3598615916955018,
+                                                    "is_leaf":1,
+                                                    "label":"Healthy",
+                                                    "name":"Healthy",
+                                                    "node_id":15,
+                                                    "num_negative":39.0,
+                                                    "num_positive":12.0,
+                                                    "threshold":-1,
+                                                    "units":"leaf"
+                                                },
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "children":[
+                                                                {
+                                                                    "children":[
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.1669969612894702,
+                                                                            "is_leaf":1,
+                                                                            "label":"Healthy",
+                                                                            "name":"Healthy",
+                                                                            "node_id":19,
+                                                                            "num_negative":158.0,
+                                                                            "num_positive":16.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        },
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.48979591836734687,
+                                                                            "is_leaf":1,
+                                                                            "label":"Heart Disease",
+                                                                            "name":"Heart Disease",
+                                                                            "node_id":20,
+                                                                            "num_negative":3.0,
+                                                                            "num_positive":4.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        }
+                                                                    ],
+                                                                    "feature_type":"numeric",
+                                                                    "impurity":0.19657519611733471,
+                                                                    "is_leaf":0,
+                                                                    "label":"internal_node",
+                                                                    "name":"Body Height",
+                                                                    "node_id":18,
+                                                                    "num_negative":161.0,
+                                                                    "num_positive":20.0,
+                                                                    "threshold":127.40389251708984,
+                                                                    "units":"cm"
+                                                                },
+                                                                {
+                                                                    "feature_type":"leaf",
+                                                                    "impurity":0.038446751249519497,
+                                                                    "is_leaf":1,
+                                                                    "label":"Healthy",
+                                                                    "name":"Healthy",
+                                                                    "node_id":21,
+                                                                    "num_negative":100.0,
+                                                                    "num_positive":2.0,
+                                                                    "threshold":-1,
+                                                                    "units":"leaf"
+                                                                }
+                                                            ],
+                                                            "feature_type":"numeric",
+                                                            "impurity":0.14339047809312139,
+                                                            "is_leaf":0,
+                                                            "label":"internal_node",
+                                                            "name":"Age",
+                                                            "node_id":17,
+                                                            "num_negative":261.0,
+                                                            "num_positive":22.0,
+                                                            "threshold":12.5,
+                                                            "units":"years"
+                                                        },
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.44444444444444448,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":22,
+                                                            "num_negative":1.0,
+                                                            "num_positive":2.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.15374834955254543,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Calcium",
+                                                    "node_id":16,
+                                                    "num_negative":262.0,
+                                                    "num_positive":24.0,
+                                                    "threshold":10.184073448181152,
+                                                    "units":"mg/dl"
+                                                }
+                                            ],
+                                            "feature_type":"numeric",
+                                            "impurity":0.19082672208084955,
+                                            "is_leaf":0,
+                                            "label":"internal_node",
+                                            "name":"Age",
+                                            "node_id":14,
+                                            "num_negative":301.0,
+                                            "num_positive":36.0,
+                                            "threshold":5.5,
+                                            "units":"years"
+                                        },
+                                        {
+                                            "feature_type":"leaf",
+                                            "impurity":0.47999999999999998,
+                                            "is_leaf":1,
+                                            "label":"Healthy",
+                                            "name":"Healthy",
+                                            "node_id":23,
+                                            "num_negative":9.0,
+                                            "num_positive":6.0,
+                                            "threshold":-1,
+                                            "units":"leaf"
+                                        }
+                                    ],
+                                    "feature_type":"numeric",
+                                    "impurity":0.21016270661157016,
+                                    "is_leaf":0,
+                                    "label":"internal_node",
+                                    "name":"HDL Cholesterol",
+                                    "node_id":13,
+                                    "num_negative":310.0,
+                                    "num_positive":42.0,
+                                    "threshold":79.5,
+                                    "units":"mg/dl"
                                 }
                             ],
                             "feature_type":"numeric",
-                            "impurity":0.18190192743764169,
+                            "impurity":0.21768968048772697,
                             "is_leaf":0,
                             "label":"internal_node",
-                            "name":"Creatinine",
-                            "node_id":10,
-                            "num_negative":151.0,
-                            "num_positive":17.0,
-                            "threshold":0.76426410675048828,
-                            "units":"mg/dl"
+                            "name":"Potassium",
+                            "node_id":11,
+                            "num_negative":310.0,
+                            "num_positive":44.0,
+                            "threshold":3.7012811899185181,
+                            "units":"mmol/L"
                         }
                     ],
                     "feature_type":"numeric",
-                    "impurity":0.31226488031921795,
+                    "impurity":0.25745991877262953,
                     "is_leaf":0,
                     "label":"internal_node",
                     "name":"Age",
-                    "node_id":2,
-                    "num_negative":354.0,
-                    "num_positive":85.0,
-                    "threshold":10.5,
+                    "node_id":9,
+                    "num_negative":313.0,
+                    "num_positive":56.0,
+                    "threshold":3.5,
                     "units":"years"
-                },
-                {
-                    "feature_type":"leaf",
-                    "impurity":0.0,
-                    "is_leaf":1,
-                    "label":"Heart Disease",
-                    "name":"Heart Disease",
-                    "node_id":13,
-                    "num_negative":0.0,
-                    "num_positive":5.0,
-                    "threshold":-1,
-                    "units":"leaf"
                 }
             ],
             "feature_type":"numeric",
-            "impurity":0.32322863403944491,
+            "impurity":0.18634603774378322,
             "is_leaf":0,
             "label":"internal_node",
-            "name":"Low Density Lipoprotein Cholesterol",
+            "name":"Body Height",
             "node_id":1,
-            "num_negative":354.0,
-            "num_positive":90.0,
-            "threshold":158.0,
-            "units":"mg/dl"
+            "num_negative":517.0,
+            "num_positive":60.0,
+            "threshold":69.609729766845703,
+            "units":"cm"
         },
         {
             "children":[
                 {
-                    "feature_type":"leaf",
-                    "impurity":0.077293815593892173,
-                    "is_leaf":1,
-                    "label":"Heart Disease",
-                    "name":"Heart Disease",
-                    "node_id":15,
-                    "num_negative":6.0,
-                    "num_positive":143.0,
-                    "threshold":-1,
-                    "units":"leaf"
+                    "children":[
+                        {
+                            "feature_type":"leaf",
+                            "impurity":0.0,
+                            "is_leaf":1,
+                            "label":"Heart Disease",
+                            "name":"Heart Disease",
+                            "node_id":26,
+                            "num_negative":0.0,
+                            "num_positive":87.0,
+                            "threshold":-1,
+                            "units":"leaf"
+                        },
+                        {
+                            "children":[
+                                {
+                                    "children":[
+                                        {
+                                            "children":[
+                                                {
+                                                    "feature_type":"leaf",
+                                                    "impurity":0.23111111111111107,
+                                                    "is_leaf":1,
+                                                    "label":"Healthy",
+                                                    "name":"Healthy",
+                                                    "node_id":30,
+                                                    "num_negative":91.0,
+                                                    "num_positive":14.0,
+                                                    "threshold":-1,
+                                                    "units":"leaf"
+                                                },
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.39952437574316291,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":32,
+                                                            "num_negative":32.0,
+                                                            "num_positive":84.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        },
+                                                        {
+                                                            "children":[
+                                                                {
+                                                                    "feature_type":"leaf",
+                                                                    "impurity":0.0,
+                                                                    "is_leaf":1,
+                                                                    "label":"Healthy",
+                                                                    "name":"Healthy",
+                                                                    "node_id":34,
+                                                                    "num_negative":20.0,
+                                                                    "num_positive":0.0,
+                                                                    "threshold":-1,
+                                                                    "units":"leaf"
+                                                                },
+                                                                {
+                                                                    "children":[
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.0,
+                                                                            "is_leaf":1,
+                                                                            "label":"Heart Disease",
+                                                                            "name":"Heart Disease",
+                                                                            "node_id":36,
+                                                                            "num_negative":0.0,
+                                                                            "num_positive":3.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        },
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.42346707614842238,
+                                                                            "is_leaf":1,
+                                                                            "label":"Healthy",
+                                                                            "name":"Healthy",
+                                                                            "node_id":37,
+                                                                            "num_negative":889.0,
+                                                                            "num_positive":389.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        }
+                                                                    ],
+                                                                    "feature_type":"numeric",
+                                                                    "impurity":0.42473648063543251,
+                                                                    "is_leaf":0,
+                                                                    "label":"internal_node",
+                                                                    "name":"Sodium",
+                                                                    "node_id":35,
+                                                                    "num_negative":889.0,
+                                                                    "num_positive":392.0,
+                                                                    "threshold":136.5,
+                                                                    "units":"mmol/L"
+                                                                }
+                                                            ],
+                                                            "feature_type":"numeric",
+                                                            "impurity":0.4210419348682885,
+                                                            "is_leaf":0,
+                                                            "label":"internal_node",
+                                                            "name":"Total Cholesterol",
+                                                            "node_id":33,
+                                                            "num_negative":909.0,
+                                                            "num_positive":392.0,
+                                                            "threshold":180.5,
+                                                            "units":"mg/dl"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.44615613711714147,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Age",
+                                                    "node_id":31,
+                                                    "num_negative":941.0,
+                                                    "num_positive":476.0,
+                                                    "threshold":37.5,
+                                                    "units":"years"
+                                                }
+                                            ],
+                                            "feature_type":"numeric",
+                                            "impurity":0.43659269824440838,
+                                            "is_leaf":0,
+                                            "label":"internal_node",
+                                            "name":"Body Mass Index",
+                                            "node_id":29,
+                                            "num_negative":1032.0,
+                                            "num_positive":490.0,
+                                            "threshold":27.671813011169434,
+                                            "units":"kg/m2"
+                                        },
+                                        {
+                                            "feature_type":"leaf",
+                                            "impurity":0.12070759625390219,
+                                            "is_leaf":1,
+                                            "label":"Heart Disease",
+                                            "name":"Heart Disease",
+                                            "node_id":38,
+                                            "num_negative":2.0,
+                                            "num_positive":29.0,
+                                            "threshold":-1,
+                                            "units":"leaf"
+                                        }
+                                    ],
+                                    "feature_type":"numeric",
+                                    "impurity":0.44501533910852809,
+                                    "is_leaf":0,
+                                    "label":"internal_node",
+                                    "name":"Body Weight",
+                                    "node_id":28,
+                                    "num_negative":1034.0,
+                                    "num_positive":519.0,
+                                    "threshold":96.571582794189453,
+                                    "units":"kg"
+                                },
+                                {
+                                    "children":[
+                                        {
+                                            "children":[
+                                                {
+                                                    "feature_type":"leaf",
+                                                    "impurity":0.028979238754325259,
+                                                    "is_leaf":1,
+                                                    "label":"Heart Disease",
+                                                    "name":"Heart Disease",
+                                                    "node_id":41,
+                                                    "num_negative":1.0,
+                                                    "num_positive":67.0,
+                                                    "threshold":-1,
+                                                    "units":"leaf"
+                                                },
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.086776859504132234,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":43,
+                                                            "num_negative":1.0,
+                                                            "num_positive":21.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        },
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.49985636311404769,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":44,
+                                                            "num_negative":58.0,
+                                                            "num_positive":60.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.48765306122448976,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Body Height",
+                                                    "node_id":42,
+                                                    "num_negative":59.0,
+                                                    "num_positive":81.0,
+                                                    "threshold":149.31190490722656,
+                                                    "units":"cm"
+                                                }
+                                            ],
+                                            "feature_type":"numeric",
+                                            "impurity":0.41050295857988162,
+                                            "is_leaf":0,
+                                            "label":"internal_node",
+                                            "name":"Age",
+                                            "node_id":40,
+                                            "num_negative":60.0,
+                                            "num_positive":148.0,
+                                            "threshold":67.5,
+                                            "units":"years"
+                                        },
+                                        {
+                                            "children":[
+                                                {
+                                                    "feature_type":"leaf",
+                                                    "impurity":0.15879017013232524,
+                                                    "is_leaf":1,
+                                                    "label":"Healthy",
+                                                    "name":"Healthy",
+                                                    "node_id":46,
+                                                    "num_negative":42.0,
+                                                    "num_positive":4.0,
+                                                    "threshold":-1,
+                                                    "units":"leaf"
+                                                },
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.49704142011834318,
+                                                            "is_leaf":1,
+                                                            "label":"Healthy",
+                                                            "name":"Healthy",
+                                                            "node_id":48,
+                                                            "num_negative":21.0,
+                                                            "num_positive":18.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        },
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.3583506763787721,
+                                                            "is_leaf":1,
+                                                            "label":"Healthy",
+                                                            "name":"Healthy",
+                                                            "node_id":49,
+                                                            "num_negative":95.0,
+                                                            "num_positive":29.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.41040310135872632,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Age",
+                                                    "node_id":47,
+                                                    "num_negative":116.0,
+                                                    "num_positive":47.0,
+                                                    "threshold":49.5,
+                                                    "units":"years"
+                                                }
+                                            ],
+                                            "feature_type":"numeric",
+                                            "impurity":0.36894759735354049,
+                                            "is_leaf":0,
+                                            "label":"internal_node",
+                                            "name":"Systolic BP",
+                                            "node_id":45,
+                                            "num_negative":158.0,
+                                            "num_positive":51.0,
+                                            "threshold":115.5,
+                                            "units":"mmHg"
+                                        }
+                                    ],
+                                    "feature_type":"numeric",
+                                    "impurity":0.49896198149394155,
+                                    "is_leaf":0,
+                                    "label":"internal_node",
+                                    "name":"Body Weight",
+                                    "node_id":39,
+                                    "num_negative":218.0,
+                                    "num_positive":199.0,
+                                    "threshold":85.642860412597656,
+                                    "units":"kg"
+                                }
+                            ],
+                            "feature_type":"numeric",
+                            "impurity":0.46326161457393905,
+                            "is_leaf":0,
+                            "label":"internal_node",
+                            "name":"Age",
+                            "node_id":27,
+                            "num_negative":1252.0,
+                            "num_positive":718.0,
+                            "threshold":43.5,
+                            "units":"years"
+                        }
+                    ],
+                    "feature_type":"numeric",
+                    "impurity":0.47638888659116962,
+                    "is_leaf":0,
+                    "label":"internal_node",
+                    "name":"Age",
+                    "node_id":25,
+                    "num_negative":1252.0,
+                    "num_positive":805.0,
+                    "threshold":16.5,
+                    "units":"years"
                 },
                 {
                     "children":[
@@ -189,220 +631,506 @@
                                 {
                                     "children":[
                                         {
-                                            "children":[
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.39702585442170285,
-                                                    "is_leaf":1,
-                                                    "label":"Healthy",
-                                                    "name":"Healthy",
-                                                    "node_id":20,
-                                                    "num_negative":181.0,
-                                                    "num_positive":68.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                },
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.46480633069554356,
-                                                    "is_leaf":1,
-                                                    "label":"Heart Disease",
-                                                    "name":"Heart Disease",
-                                                    "node_id":21,
-                                                    "num_negative":18.0,
-                                                    "num_positive":31.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                }
-                                            ],
-                                            "feature_type":"numeric",
-                                            "impurity":0.4436962298995541,
-                                            "is_leaf":0,
-                                            "label":"internal_node",
-                                            "name":"Age",
-                                            "node_id":19,
-                                            "num_negative":199.0,
-                                            "num_positive":99.0,
-                                            "threshold":37.0,
-                                            "units":"years"
+                                            "feature_type":"leaf",
+                                            "impurity":0.0,
+                                            "is_leaf":1,
+                                            "label":"Heart Disease",
+                                            "name":"Heart Disease",
+                                            "node_id":53,
+                                            "num_negative":0.0,
+                                            "num_positive":25.0,
+                                            "threshold":-1,
+                                            "units":"leaf"
                                         },
                                         {
                                             "children":[
                                                 {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.16089965397923875,
-                                                    "is_leaf":1,
-                                                    "label":"Heart Disease",
-                                                    "name":"Heart Disease",
-                                                    "node_id":23,
-                                                    "num_negative":6.0,
-                                                    "num_positive":62.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
+                                                    "children":[
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.19132653061224483,
+                                                            "is_leaf":1,
+                                                            "label":"Healthy",
+                                                            "name":"Healthy",
+                                                            "node_id":56,
+                                                            "num_negative":100.0,
+                                                            "num_positive":12.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        },
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.42536157024793386,
+                                                            "is_leaf":1,
+                                                            "label":"Healthy",
+                                                            "name":"Healthy",
+                                                            "node_id":57,
+                                                            "num_negative":61.0,
+                                                            "num_positive":27.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.31394999999999995,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Body Weight",
+                                                    "node_id":55,
+                                                    "num_negative":161.0,
+                                                    "num_positive":39.0,
+                                                    "threshold":77.793746948242188,
+                                                    "units":"kg"
                                                 },
                                                 {
                                                     "feature_type":"leaf",
-                                                    "impurity":0.49861495844875353,
+                                                    "impurity":0.0,
                                                     "is_leaf":1,
                                                     "label":"Heart Disease",
                                                     "name":"Heart Disease",
-                                                    "node_id":24,
-                                                    "num_negative":99.0,
-                                                    "num_positive":110.0,
+                                                    "node_id":58,
+                                                    "num_negative":0.0,
+                                                    "num_positive":5.0,
                                                     "threshold":-1,
                                                     "units":"leaf"
                                                 }
                                             ],
                                             "feature_type":"numeric",
-                                            "impurity":0.47074769643811332,
+                                            "impurity":0.33713265913146934,
                                             "is_leaf":0,
                                             "label":"internal_node",
                                             "name":"Age",
-                                            "node_id":22,
-                                            "num_negative":105.0,
-                                            "num_positive":172.0,
-                                            "threshold":35.5,
+                                            "node_id":54,
+                                            "num_negative":161.0,
+                                            "num_positive":44.0,
+                                            "threshold":47.5,
                                             "units":"years"
                                         }
                                     ],
                                     "feature_type":"numeric",
-                                    "impurity":0.49835311909262758,
+                                    "impurity":0.42000000000000004,
                                     "is_leaf":0,
                                     "label":"internal_node",
-                                    "name":"Body Weight",
-                                    "node_id":18,
-                                    "num_negative":304.0,
-                                    "num_positive":271.0,
-                                    "threshold":96.532669067382813,
-                                    "units":"kg"
-                                },
-                                {
-                                    "children":[
-                                        {
-                                            "children":[
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.2824807605251245,
-                                                    "is_leaf":1,
-                                                    "label":"Heart Disease",
-                                                    "name":"Heart Disease",
-                                                    "node_id":27,
-                                                    "num_negative":64.0,
-                                                    "num_positive":312.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                },
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.48852157943067032,
-                                                    "is_leaf":1,
-                                                    "label":"Heart Disease",
-                                                    "name":"Heart Disease",
-                                                    "node_id":28,
-                                                    "num_negative":14.0,
-                                                    "num_positive":19.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                }
-                                            ],
-                                            "feature_type":"numeric",
-                                            "impurity":0.30867821211016194,
-                                            "is_leaf":0,
-                                            "label":"internal_node",
-                                            "name":"Age",
-                                            "node_id":26,
-                                            "num_negative":78.0,
-                                            "num_positive":331.0,
-                                            "threshold":85.5,
-                                            "units":"years"
-                                        },
-                                        {
-                                            "children":[
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.45368620037807184,
-                                                    "is_leaf":1,
-                                                    "label":"Heart Disease",
-                                                    "name":"Heart Disease",
-                                                    "node_id":30,
-                                                    "num_negative":88.0,
-                                                    "num_positive":165.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                },
-                                                {
-                                                    "feature_type":"leaf",
-                                                    "impurity":0.34567901234567899,
-                                                    "is_leaf":1,
-                                                    "label":"Healthy",
-                                                    "name":"Healthy",
-                                                    "node_id":31,
-                                                    "num_negative":14.0,
-                                                    "num_positive":4.0,
-                                                    "threshold":-1,
-                                                    "units":"leaf"
-                                                }
-                                            ],
-                                            "feature_type":"numeric",
-                                            "impurity":0.46943805231410246,
-                                            "is_leaf":0,
-                                            "label":"internal_node",
-                                            "name":"Body Weight",
-                                            "node_id":29,
-                                            "num_negative":102.0,
-                                            "num_positive":169.0,
-                                            "threshold":122.48971939086914,
-                                            "units":"kg"
-                                        }
-                                    ],
-                                    "feature_type":"numeric",
-                                    "impurity":0.38927335640138411,
-                                    "is_leaf":0,
-                                    "label":"internal_node",
-                                    "name":"Body Weight",
-                                    "node_id":25,
-                                    "num_negative":180.0,
-                                    "num_positive":500.0,
-                                    "threshold":98.844856262207031,
-                                    "units":"kg"
-                                }
-                            ],
-                            "feature_type":"numeric",
-                            "impurity":0.47385152616625137,
-                            "is_leaf":0,
-                            "label":"internal_node",
-                            "name":"Age",
-                            "node_id":17,
-                            "num_negative":484.0,
-                            "num_positive":771.0,
-                            "threshold":54.5,
-                            "units":"years"
-                        },
-                        {
-                            "children":[
-                                {
-                                    "feature_type":"leaf",
-                                    "impurity":0.47184717035334672,
-                                    "is_leaf":1,
-                                    "label":"Heart Disease",
-                                    "name":"Heart Disease",
-                                    "node_id":33,
-                                    "num_negative":45.0,
-                                    "num_positive":73.0,
-                                    "threshold":-1,
-                                    "units":"leaf"
+                                    "name":"Age",
+                                    "node_id":52,
+                                    "num_negative":161.0,
+                                    "num_positive":69.0,
+                                    "threshold":13.5,
+                                    "units":"years"
                                 },
                                 {
                                     "children":[
                                         {
                                             "feature_type":"leaf",
-                                            "impurity":0.22241445597846982,
+                                            "impurity":0.15049717817790917,
+                                            "is_leaf":1,
+                                            "label":"Heart Disease",
+                                            "name":"Heart Disease",
+                                            "node_id":60,
+                                            "num_negative":10.0,
+                                            "num_positive":112.0,
+                                            "threshold":-1,
+                                            "units":"leaf"
+                                        },
+                                        {
+                                            "children":[
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "children":[
+                                                                {
+                                                                    "feature_type":"leaf",
+                                                                    "impurity":0.068877551020408156,
+                                                                    "is_leaf":1,
+                                                                    "label":"Heart Disease",
+                                                                    "name":"Heart Disease",
+                                                                    "node_id":64,
+                                                                    "num_negative":1.0,
+                                                                    "num_positive":27.0,
+                                                                    "threshold":-1,
+                                                                    "units":"leaf"
+                                                                },
+                                                                {
+                                                                    "children":[
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.47861426347227398,
+                                                                            "is_leaf":1,
+                                                                            "label":"Heart Disease",
+                                                                            "name":"Heart Disease",
+                                                                            "node_id":66,
+                                                                            "num_negative":652.0,
+                                                                            "num_positive":992.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        },
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.44570702947845803,
+                                                                            "is_leaf":1,
+                                                                            "label":"Heart Disease",
+                                                                            "name":"Heart Disease",
+                                                                            "node_id":67,
+                                                                            "num_negative":176.0,
+                                                                            "num_positive":349.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        }
+                                                                    ],
+                                                                    "feature_type":"categorical",
+                                                                    "impurity":0.47203044024724089,
+                                                                    "is_leaf":0,
+                                                                    "label":"internal_node",
+                                                                    "name":"Smoker",
+                                                                    "node_id":65,
+                                                                    "num_negative":828.0,
+                                                                    "num_positive":1341.0,
+                                                                    "threshold":-1,
+                                                                    "units":"categorical"
+                                                                }
+                                                            ],
+                                                            "feature_type":"numeric",
+                                                            "impurity":0.46990547999724042,
+                                                            "is_leaf":0,
+                                                            "label":"internal_node",
+                                                            "name":"Age",
+                                                            "node_id":63,
+                                                            "num_negative":829.0,
+                                                            "num_positive":1368.0,
+                                                            "threshold":38.362447738647461,
+                                                            "units":"years"
+                                                        },
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.0,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":68,
+                                                            "num_negative":0.0,
+                                                            "num_positive":46.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.46598870334993758,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Age",
+                                                    "node_id":62,
+                                                    "num_negative":829.0,
+                                                    "num_positive":1414.0,
+                                                    "threshold":38.862447738647461,
+                                                    "units":"years"
+                                                },
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.0,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":70,
+                                                            "num_negative":0.0,
+                                                            "num_positive":16.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        },
+                                                        {
+                                                            "children":[
+                                                                {
+                                                                    "feature_type":"leaf",
+                                                                    "impurity":0.33240997229916897,
+                                                                    "is_leaf":1,
+                                                                    "label":"Healthy",
+                                                                    "name":"Healthy",
+                                                                    "node_id":72,
+                                                                    "num_negative":30.0,
+                                                                    "num_positive":8.0,
+                                                                    "threshold":-1,
+                                                                    "units":"leaf"
+                                                                },
+                                                                {
+                                                                    "feature_type":"leaf",
+                                                                    "impurity":0.49870726802642917,
+                                                                    "is_leaf":1,
+                                                                    "label":"Healthy",
+                                                                    "name":"Healthy",
+                                                                    "node_id":73,
+                                                                    "num_negative":62.0,
+                                                                    "num_positive":56.0,
+                                                                    "threshold":-1,
+                                                                    "units":"leaf"
+                                                                }
+                                                            ],
+                                                            "feature_type":"numeric",
+                                                            "impurity":0.48389217619986852,
+                                                            "is_leaf":0,
+                                                            "label":"internal_node",
+                                                            "name":"Body Weight",
+                                                            "node_id":71,
+                                                            "num_negative":92.0,
+                                                            "num_positive":64.0,
+                                                            "threshold":98.880012512207031,
+                                                            "units":"kg"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.49756625202812332,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Creatinine",
+                                                    "node_id":69,
+                                                    "num_negative":92.0,
+                                                    "num_positive":80.0,
+                                                    "threshold":0.90279278159141541,
+                                                    "units":"mg/dl"
+                                                }
+                                            ],
+                                            "feature_type":"numeric",
+                                            "impurity":0.47185216619729176,
+                                            "is_leaf":0,
+                                            "label":"internal_node",
+                                            "name":"Body Height",
+                                            "node_id":61,
+                                            "num_negative":921.0,
+                                            "num_positive":1494.0,
+                                            "threshold":156.67194366455078,
+                                            "units":"cm"
+                                        }
+                                    ],
+                                    "feature_type":"numeric",
+                                    "impurity":0.46460543203784616,
+                                    "is_leaf":0,
+                                    "label":"internal_node",
+                                    "name":"Age",
+                                    "node_id":59,
+                                    "num_negative":931.0,
+                                    "num_positive":1606.0,
+                                    "threshold":29.5,
+                                    "units":"years"
+                                }
+                            ],
+                            "feature_type":"numeric",
+                            "impurity":0.47780328041431042,
+                            "is_leaf":0,
+                            "label":"internal_node",
+                            "name":"Body Mass Index",
+                            "node_id":51,
+                            "num_negative":1092.0,
+                            "num_positive":1675.0,
+                            "threshold":29.132043838500977,
+                            "units":"kg/m2"
+                        },
+                        {
+                            "children":[
+                                {
+                                    "children":[
+                                        {
+                                            "children":[
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.0,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":78,
+                                                            "num_negative":0.0,
+                                                            "num_positive":96.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        },
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.084342560553633233,
+                                                            "is_leaf":1,
+                                                            "label":"Heart Disease",
+                                                            "name":"Heart Disease",
+                                                            "node_id":79,
+                                                            "num_negative":3.0,
+                                                            "num_positive":65.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.035916121356335512,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Age",
+                                                    "node_id":77,
+                                                    "num_negative":3.0,
+                                                    "num_positive":161.0,
+                                                    "threshold":70.5,
+                                                    "units":"years"
+                                                },
+                                                {
+                                                    "feature_type":"leaf",
+                                                    "impurity":0.5,
+                                                    "is_leaf":1,
+                                                    "label":"Healthy",
+                                                    "name":"Healthy",
+                                                    "node_id":80,
+                                                    "num_negative":1.0,
+                                                    "num_positive":1.0,
+                                                    "threshold":-1,
+                                                    "units":"leaf"
+                                                }
+                                            ],
+                                            "feature_type":"numeric",
+                                            "impurity":0.047031499491943685,
+                                            "is_leaf":0,
+                                            "label":"internal_node",
+                                            "name":"Age",
+                                            "node_id":76,
+                                            "num_negative":4.0,
+                                            "num_positive":162.0,
+                                            "threshold":86.5,
+                                            "units":"years"
+                                        },
+                                        {
+                                            "children":[
+                                                {
+                                                    "feature_type":"leaf",
+                                                    "impurity":0.49464922711058262,
+                                                    "is_leaf":1,
+                                                    "label":"Heart Disease",
+                                                    "name":"Heart Disease",
+                                                    "node_id":82,
+                                                    "num_negative":13.0,
+                                                    "num_positive":16.0,
+                                                    "threshold":-1,
+                                                    "units":"leaf"
+                                                },
+                                                {
+                                                    "children":[
+                                                        {
+                                                            "feature_type":"leaf",
+                                                            "impurity":0.46875,
+                                                            "is_leaf":1,
+                                                            "label":"Healthy",
+                                                            "name":"Healthy",
+                                                            "node_id":84,
+                                                            "num_negative":5.0,
+                                                            "num_positive":3.0,
+                                                            "threshold":-1,
+                                                            "units":"leaf"
+                                                        },
+                                                        {
+                                                            "children":[
+                                                                {
+                                                                    "feature_type":"leaf",
+                                                                    "impurity":0.41999999999999998,
+                                                                    "is_leaf":1,
+                                                                    "label":"Heart Disease",
+                                                                    "name":"Heart Disease",
+                                                                    "node_id":86,
+                                                                    "num_negative":12.0,
+                                                                    "num_positive":28.0,
+                                                                    "threshold":-1,
+                                                                    "units":"leaf"
+                                                                },
+                                                                {
+                                                                    "children":[
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.20817098105782955,
+                                                                            "is_leaf":1,
+                                                                            "label":"Heart Disease",
+                                                                            "name":"Heart Disease",
+                                                                            "node_id":88,
+                                                                            "num_negative":19.0,
+                                                                            "num_positive":142.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        },
+                                                                        {
+                                                                            "feature_type":"leaf",
+                                                                            "impurity":0.44444444444444448,
+                                                                            "is_leaf":1,
+                                                                            "label":"Heart Disease",
+                                                                            "name":"Heart Disease",
+                                                                            "node_id":89,
+                                                                            "num_negative":5.0,
+                                                                            "num_positive":10.0,
+                                                                            "threshold":-1,
+                                                                            "units":"leaf"
+                                                                        }
+                                                                    ],
+                                                                    "feature_type":"numeric",
+                                                                    "impurity":0.23553719008264462,
+                                                                    "is_leaf":0,
+                                                                    "label":"internal_node",
+                                                                    "name":"Creatinine",
+                                                                    "node_id":87,
+                                                                    "num_negative":24.0,
+                                                                    "num_positive":152.0,
+                                                                    "threshold":7.1593871116638184,
+                                                                    "units":"mg/dl"
+                                                                }
+                                                            ],
+                                                            "feature_type":"numeric",
+                                                            "impurity":0.27777777777777779,
+                                                            "is_leaf":0,
+                                                            "label":"internal_node",
+                                                            "name":"Systolic BP",
+                                                            "node_id":85,
+                                                            "num_negative":36.0,
+                                                            "num_positive":180.0,
+                                                            "threshold":109.5,
+                                                            "units":"mmHg"
+                                                        }
+                                                    ],
+                                                    "feature_type":"numeric",
+                                                    "impurity":0.29906728316326531,
+                                                    "is_leaf":0,
+                                                    "label":"internal_node",
+                                                    "name":"Potassium",
+                                                    "node_id":83,
+                                                    "num_negative":41.0,
+                                                    "num_positive":183.0,
+                                                    "threshold":3.7483077049255371,
+                                                    "units":"mmol/L"
+                                                }
+                                            ],
+                                            "feature_type":"numeric",
+                                            "impurity":0.33576528300707714,
+                                            "is_leaf":0,
+                                            "label":"internal_node",
+                                            "name":"Total Cholesterol",
+                                            "node_id":81,
+                                            "num_negative":54.0,
+                                            "num_positive":199.0,
+                                            "threshold":166.5,
+                                            "units":"mg/dl"
+                                        }
+                                    ],
+                                    "feature_type":"numeric",
+                                    "impurity":0.23852677986568768,
+                                    "is_leaf":0,
+                                    "label":"internal_node",
+                                    "name":"Body Height",
+                                    "node_id":75,
+                                    "num_negative":58.0,
+                                    "num_positive":361.0,
+                                    "threshold":162.55251312255859,
+                                    "units":"cm"
+                                },
+                                {
+                                    "children":[
+                                        {
+                                            "feature_type":"leaf",
+                                            "impurity":0.24489795918367355,
                                             "is_leaf":1,
                                             "label":"Healthy",
                                             "name":"Healthy",
-                                            "node_id":35,
-                                            "num_negative":89.0,
-                                            "num_positive":13.0,
+                                            "node_id":91,
+                                            "num_negative":18.0,
+                                            "num_positive":3.0,
                                             "threshold":-1,
                                             "units":"leaf"
                                         },
@@ -410,97 +1138,97 @@
                                             "children":[
                                                 {
                                                     "feature_type":"leaf",
-                                                    "impurity":0.0,
+                                                    "impurity":0.49972958355868036,
                                                     "is_leaf":1,
-                                                    "label":"Heart Disease",
-                                                    "name":"Heart Disease",
-                                                    "node_id":37,
-                                                    "num_negative":0.0,
-                                                    "num_positive":28.0,
+                                                    "label":"Healthy",
+                                                    "name":"Healthy",
+                                                    "node_id":93,
+                                                    "num_negative":44.0,
+                                                    "num_positive":42.0,
                                                     "threshold":-1,
                                                     "units":"leaf"
                                                 },
                                                 {
                                                     "feature_type":"leaf",
-                                                    "impurity":0.44148199445983383,
+                                                    "impurity":0.41358414341623528,
                                                     "is_leaf":1,
-                                                    "label":"Healthy",
-                                                    "name":"Healthy",
-                                                    "node_id":38,
-                                                    "num_negative":357.0,
-                                                    "num_positive":175.0,
+                                                    "label":"Heart Disease",
+                                                    "name":"Heart Disease",
+                                                    "node_id":94,
+                                                    "num_negative":26.0,
+                                                    "num_positive":63.0,
                                                     "threshold":-1,
                                                     "units":"leaf"
                                                 }
                                             ],
                                             "feature_type":"numeric",
-                                            "impurity":0.46218750000000003,
+                                            "impurity":0.47999999999999998,
                                             "is_leaf":0,
                                             "label":"internal_node",
-                                            "name":"Age",
-                                            "node_id":36,
-                                            "num_negative":357.0,
-                                            "num_positive":203.0,
-                                            "threshold":24.5,
-                                            "units":"years"
+                                            "name":"Potassium",
+                                            "node_id":92,
+                                            "num_negative":70.0,
+                                            "num_positive":105.0,
+                                            "threshold":4.4432773590087891,
+                                            "units":"mmol/L"
                                         }
                                     ],
                                     "feature_type":"numeric",
-                                    "impurity":0.43964549429085165,
+                                    "impurity":0.49479383590170756,
                                     "is_leaf":0,
                                     "label":"internal_node",
-                                    "name":"Body Weight",
-                                    "node_id":34,
-                                    "num_negative":446.0,
-                                    "num_positive":216.0,
-                                    "threshold":66.205287933349609,
-                                    "units":"kg"
+                                    "name":"Hemoglobin A1c",
+                                    "node_id":90,
+                                    "num_negative":88.0,
+                                    "num_positive":108.0,
+                                    "threshold":4.3165552616119385,
+                                    "units":"%"
                                 }
                             ],
                             "feature_type":"numeric",
-                            "impurity":0.46646614069690995,
+                            "impurity":0.36208077202723243,
                             "is_leaf":0,
                             "label":"internal_node",
-                            "name":"Creatinine",
-                            "node_id":32,
-                            "num_negative":491.0,
-                            "num_positive":289.0,
-                            "threshold":0.51504057645797729,
-                            "units":"mg/dl"
+                            "name":"Body Weight",
+                            "node_id":74,
+                            "num_negative":146.0,
+                            "num_positive":469.0,
+                            "threshold":99.448162078857422,
+                            "units":"kg"
                         }
                     ],
-                    "feature_type":"categorical",
-                    "impurity":0.499127673574848,
+                    "feature_type":"numeric",
+                    "impurity":0.46411778920720226,
                     "is_leaf":0,
                     "label":"internal_node",
-                    "name":"Female",
-                    "node_id":16,
-                    "num_negative":975.0,
-                    "num_positive":1060.0,
-                    "threshold":-1,
-                    "units":"categorical"
+                    "name":"Age",
+                    "node_id":50,
+                    "num_negative":1238.0,
+                    "num_positive":2144.0,
+                    "threshold":53.5,
+                    "units":"years"
                 }
             ],
-            "feature_type":"numeric",
-            "impurity":0.49483380630358659,
+            "feature_type":"categorical",
+            "impurity":0.4964391206610102,
             "is_leaf":0,
             "label":"internal_node",
-            "name":"Age",
-            "node_id":14,
-            "num_negative":981.0,
-            "num_positive":1203.0,
-            "threshold":15.5,
-            "units":"years"
+            "name":"Male",
+            "node_id":24,
+            "num_negative":2490.0,
+            "num_positive":2949.0,
+            "threshold":-1,
+            "units":"categorical"
         }
     ],
     "feature_type":"numeric",
-    "impurity":0.49987229207064071,
+    "impurity":0.49999994473955978,
     "is_leaf":0,
     "label":"internal_node",
     "name":"Body Height",
     "node_id":0,
-    "num_negative":1335.0,
-    "num_positive":1293.0,
-    "threshold":142.33695220947266,
+    "num_negative":3007.0,
+    "num_positive":3009.0,
+    "threshold":144.98373413085937,
     "units":"cm"
 }
