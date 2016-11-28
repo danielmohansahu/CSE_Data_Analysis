@@ -1,4 +1,4 @@
-Systolic BP (mmHg),Sodium (mmol/L),Body Weight (kg),Chloride (mmol/L),Glucose (mg/dl),Potassium (mmol/L),Urea Nitrogen (mg/dl),Hemoglobin A1c (%),Body Mass Index (kg/m2),Female,Carbon Dioxide (),Smoker,Calcium (mg/dl),Total Cholesterol (mg/dl),Male,Diastolic BP (mmHg),Age (years),LDL Cholesterol (mg/dl),HDL Cholesterol (mg/dl),Body Height (cm),Creatinine (mg/dl),Triglycerides (mg/dl),Heart Disease
+Systolic BP (mmHg),Sodium (mmol/L),Body Weight (kg),Chloride (mmol/L),Glucose (mg/dl),Potassium (mmol/L),Urea Nitrogen (mg/dl),Hemoglobin A1c (%),Body Mass Index (kg/m2),is_Female,Carbon Dioxide (mmol/L),is_Smoker,Calcium (mg/dl),Total Cholesterol (mg/dl),is_Male,Diastolic BP (mmHg),Age (years),LDL Cholesterol (mg/dl),HDL Cholesterol (mg/dl),Body Height (cm),Creatinine (mg/dl),Triglycerides (mg/dl),Heart Disease
 132,137,100.170909458,101,121,3.9894130586,16,6.2825654585,40.5541100216,1,23,0,9.4832549975,230,0,84,53,151,46,157.164107588,1.1189940304,163,0
 ,,,,,,,,,1,,0,,,0,,,,,,,,0
 ,,,,,,,,,0,,0,,,1,,,,,,,,0
