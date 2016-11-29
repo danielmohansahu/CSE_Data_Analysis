@@ -163,17 +163,30 @@ $( "form" ).submit(function(event) {
       coeffs = [0.26456366, 0.46270952, -1.07032508, 0.11771949, 0.0845266, 72.85746549];
       data[4]["value"] = 100;
     }
+
+
+    if (data[0]["value"]=="Male"){
+      sessionStorage.female = 0;
+      sessionStorage.male = 1;
+    } else if (data[0]["value"]=="Female") {
+      sessionStorage.female = 1;
+      sessionStorage.male = 0;  }
 	  sessionStorage.height = Number(data[3]["value"]);
 	  sessionStorage.weight = Number(data[2]["value"]);
-	  sessionStorage.ldl = Number(data[5]["value"]); 
 	  sessionStorage.age = Number(data[1]["value"]);
+    sessionStorage.blood_pressure = Number(data[4]["value"]);
+    sessionStorage.cholesterol = Number(data[5]["value"]);
+
+    sessionStorage.hdl = Number(65);
+    sessionStorage.ldl = Number(100);
 	  sessionStorage.creatinine = Number(0.6);
 	  sessionStorage.calcium = Number(10);
-	  sessionStorage.blood_pressure = Number(data[4]["value"]);
-	  sessionStorage.cholesterol = Number(100);
 	  sessionStorage.potassium = Number(4);
 	  sessionStorage.bmi = Number(30);
-	  sessionStorage.female = Number(0);
+    sessionStorage.glucose = Number(110);
+    sessionStorage.sodium = Number(140);
+    sessionStorage.smoker = Number(0);
+    sessionStorage.hemoglobin_a1c = Number(5);
 
 	  // Run leaf.js script
 	  $.getScript('leaf.js');

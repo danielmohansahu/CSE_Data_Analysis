@@ -7,19 +7,24 @@ var input = {
   "Age": sessionStorage.age,
   "Creatinine": sessionStorage.creatinine,
   "Calcium": sessionStorage.calcium,
-  "Systolic Blood Pressure": sessionStorage.blood_pressure,
+  "Systolic BP": sessionStorage.blood_pressure,
   "Total Cholesterol": sessionStorage.cholesterol,
   "Body Mass Index": sessionStorage.bmi,
   "Potassium": sessionStorage.potassium,
   "Female": sessionStorage.female,
-  "Low Density Lipoprotein Cholesterol": sessionStorage.ldl}
-
+  "Male": sessionStorage.male,
+  "Glucose": sessionStorage.glucose,
+  "Sodium":  sessionStorage.sodium,
+  "LDL Cholesterol": sessionStorage.ldl,
+  "HDL Cholesterol": sessionStorage.hdl,
+  "Smoker": sessionStorage.smoker,
+  "Hemoglobin A1c": sessionStorage.hemoglobin_a1c}
 console.log(input)
 
 // Population numbers (hardcoded from generated synthea data)
-var num_healthy = 1335,
-    num_sick = 1293,
-    total_healthy = 100000 - num_sick;
+var num_healthy = 3007,
+    num_sick = 3009,
+    total_healthy = 123000 - num_sick;  // Rough estimate!
 
 // true: highlight user biometric path; false: don't highlight
 var highlight_flag = true,
@@ -27,7 +32,7 @@ var highlight_flag = true,
 
 var margin = {top: 20, right: 120, bottom: 20, left: 180},
     width = 1200 - margin.right - margin.left,
-    height = 480 - margin.top - margin.bottom;
+    height = 600 - margin.top - margin.bottom;
 
 var i = 0,
     counter = 0,
@@ -62,6 +67,7 @@ d3.json("../tree.json", function(error, flare) {
 
   // Call recommendation system:
   recs = recommend(root);
+  console.log(recs)
 
   // Recommendation seems to mess up tree structure; reinitialize tree:
   click(root)
