@@ -19,7 +19,6 @@ var input = {
   "HDL Cholesterol": sessionStorage.hdl,
   "Smoker": sessionStorage.smoker,
   "Hemoglobin A1c": sessionStorage.hemoglobin_a1c}
-console.log(input)
 
 // Population numbers (hardcoded from generated synthea data)
 var num_healthy = 3007,
@@ -37,6 +36,8 @@ var margin = {top: 20, right: 120, bottom: 20, left: 180},
 var i = 0,
     counter = 0,
     root;
+
+var col = d3.scale.linear().domain([0,0.5]).range(["red","black"]);
 
 // Tree
 var tree = d3.layout.tree()
@@ -93,6 +94,7 @@ function update(source) {
   var nodeEnter = node.enter().append("g")
       .attr("class", "node")
       .on("click", click);
+
   nodeEnter.append("circle")
 
   // Add name:
@@ -101,9 +103,7 @@ function update(source) {
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) {
-        if (d.is_leaf == 1) {
-          return calc_probability(d);
-        } else {
+        if (d.is_leaf == 0) {
           if (d.feature_type == "numeric") {
             return d.name + " under " + d.threshold.toFixed(1) + " " + d.units + "?";
           } else {
@@ -120,8 +120,19 @@ function update(source) {
       .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-      .attr("r", 4.5)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+      .style("r",function(d){
+        if (d.is_leaf == 1) {
+          return 10;
+        } else {
+          return 10.0*Math.pow(1.0 + parseFloat(d.impurity),2.0); } })
+      .style("fill", function(d) { 
+        if (d._children) {
+          return "lightsteelblue"; }
+        else if (d.is_leaf == 1) {
+          return col(d.num_positive/(d.num_positive+(d.num_negative*(total_healthy/num_healthy)))) }
+        else {
+          return "#fff"; }
+      });
   node.exit().remove();
 
   // Update the links ...
@@ -178,7 +189,11 @@ function collapse(d) {
 }
 
 function hover_text(d) {
-  return d.name + "\n" + "Healthy: " + d.num_negative + "\n" + "Diseased: " + d.num_positive;
+  if (d.is_leaf == 1) {
+    return calc_probability(d) + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive;
+  } else {
+    return d.name + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive + "\n" + "Impurity: " + d.impurity.toFixed(2);    
+  }
 }
 
 // Function to calculate the printed probability of HD at a leaf node
