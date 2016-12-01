@@ -172,19 +172,19 @@ class model:
 
         print ''
         scores = cross_val_score(clf, self.data, self.target, cv=5) 
-        print("Cross validation score: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+        print("Cross validation score: %0.3f (+/- %0.3f)" % (scores.mean(), scores.std() * 2))
         
         print ''
               
         print "Training set classification report"
         y_predicted = clf.predict(self.data)
-        print classification_report(self.target, y_predicted)
+        print classification_report(self.target, y_predicted, digits=3)
 
         print ''
 
         print "Test set classification report"
         y_predicted = clf.predict(self.data_test)
-        print classification_report(self.target_test, y_predicted)        
+        print classification_report(self.target_test, y_predicted, digits=3)
 
 
     def train(self, choice1=0):
@@ -199,9 +199,22 @@ class model:
         elif choice1 == 1: # best params for synthea_data_train.csv
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
                                               min_samples_split=40, min_samples_leaf=20)
-        elif choice1 == 2: # best params for synthea_imputed_data.csv
+        elif choice1 == 2: 
+            # best params for synthea_imputed_data.csv, using default min_samples_leaf
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=9,
                                               min_samples_split=140)
+        elif choice1 == 3: 
+            # best params for synthea_imputed_data.csv
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=9,
+                                              min_samples_split=55, min_samples_leaf=26)
+        elif choice1 == 4:
+            # best params for synthea_common_vars_v2.csv and UCI_common_vars_v2.csv
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                              min_samples_split=130, min_samples_leaf=50)   
+        elif choice1 == 5:
+            # best params for uci_data_train_v1.csv
+            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
+                                              min_samples_split=30, min_samples_leaf=4)   
 
         clf = clf.fit(self.data, self.target)
         self.clf = clf
@@ -211,12 +224,23 @@ class model:
         self.evaluate(clf)
         
     
-    def train_forest(self, n):
-        clf = RandomForestClassifier(n_estimators=n, criterion='gini', max_depth=14,
-                                     min_samples_split=10)
-        clf = clf.fit(self.data, self.target)
+    def train_forest(self, choice=0):
+        if choice == 0:
+            # Best params for synthea_imputed_train.csv and synthea_imputed_test.csv
+            clf = RandomForestClassifier(n_estimators=40, criterion='gini', max_depth=12,
+                                         min_samples_split=2)
+        elif choice == 1:
+            # Best params for synthea_common_vars_v2.csv and UCI_common_vars_v2.csv
+            clf = RandomForestClassifier(n_estimators=50, criterion='gini', max_depth=6,
+                                         min_samples_split=2)  
+        elif choice == 2:
+            # Best params for uci_data_train_v1.csv
+            clf = RandomForestClassifier(n_estimators=40, criterion='gini', max_depth=4,
+                                         min_samples_split=10)
+                                         
+        self.clf = clf.fit(self.data, self.target)
         
-        self.evaluate(clf)
+        self.evaluate(self.clf)
         
 
     def validation_curve(self, choice=0):
@@ -280,9 +304,9 @@ class model:
 
         clf = ExtraTreesClassifier(n_estimators=1000, max_depth=15, min_samples_split=10,
                                    random_state=0)
-        clf = clf.fit(self.data, self.target)
+        self.clf = clf.fit(self.data, self.target)
                 
-        self.evaluate(clf)
+        self.evaluate(self.clf)
 
 
     def train_adaboost(self, choice=0):
@@ -290,42 +314,35 @@ class model:
         Boost weak learner to produce strong learner
         """
 
-        
         if choice == 0:
-            clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
-                                              min_impurity_split=1e-5, min_samples_split=25,
-                                              min_samples_leaf=10), n_estimators=600)
-            scores = cross_val_score(clf, self.data, self.target, cv=3)        
-            return scores
+            # Best param for synthea_imputed_train.csv
+            clf = AdaBoostClassifier(n_estimators=200)
         elif choice == 1:
-            list_mean = []
-            for n in range(100,650,50):
-                clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini', max_depth=6,
-                                                  min_impurity_split=1e-5, min_samples_split=25,
-                                                  min_samples_leaf=10), n_estimators=n)
-                scores = cross_val_score(clf, self.data, self.target, cv=3)        
-                print scores
-                list_mean.append(scores.mean())
-            return list_mean
-        else:            
-            clf = clf.fit(self.data, self.target)
-    
-            y_predicted = clf.predict(self.data_test)
-    
-            print "Mean accuracy"
-            print clf.score(self.data_test, self.target_test)
-            
-            self.evaluate(self.target_test, y_predicted)               
-
-
-    def train_gbc(self):
-        """
+            # Best param for synthea_common_vars_v2.csv
+            clf = AdaBoostClassifier(n_estimators=50)
+        elif choice == 2:
+            # Best param for uci_data_train_v1.csv
+            clf = AdaBoostClassifier(n_estimators=40)
         
-        """
-        clf = GradientBoostingClassifier(learning_rate=0.1, n_estimators=300, 
-                                         max_depth=3, min_samples_split=8)                
-        clf = clf.fit(self.data, self.target)
-        self.evaluate(clf)
+        self.clf = clf.fit(self.data, self.target)
+        
+        self.evaluate(self.clf)
+            
+
+    def train_gbc(self, choice):
+
+        if choice == 0:
+            # Best params for synthea_imputed_train.csv
+            clf = GradientBoostingClassifier(n_estimators=300, max_depth=4)
+        elif choice == 1:
+            # Best params for synthea_common_vars_v2.csv
+            clf = GradientBoostingClassifier(n_estimators=200, max_depth=2)
+        elif choice == 2:
+            # Best params for uci_data_train_v1.csv
+            clf = GradientBoostingClassifier(n_estimators=50, max_depth=1)
+            
+        self.clf = clf.fit(self.data, self.target)
+        self.evaluate(self.clf)
 
         
     def train_gridsearch(self, choice=0, verbose=0):
@@ -335,26 +352,27 @@ class model:
         """
 
         if choice == 0:
-#            parameters = {'max_depth':range(5,12,1), 'min_samples_split':range(50,200,10),
-#                          'min_samples_leaf':range(10,60,10)}
-            parameters = {'max_depth':range(9,13,1), 'min_samples_split':range(30,100,10)}
+            parameters = {'max_depth':range(4,8,1), 'min_samples_split':range(25,35,1),
+                          'min_samples_leaf':range(2,7,1)}
             clf = GridSearchCV(tree.DecisionTreeClassifier(criterion='gini'), 
                                parameters, cv=5)
         elif choice == 1:
-            parameters = {'n_estimators':range(10,60,10),
-                          'max_depth': range(10,15,1), 'min_samples_split': range(10,30,5)}
+            parameters = {'n_estimators':range(30,60,10),
+                          'max_depth': range(2,7,1), 'min_samples_split': range(2,14,2)}
             clf = GridSearchCV(RandomForestClassifier(criterion='gini'), 
                                parameters, cv=5)
         elif choice == 2:
-            parameters = {'n_estimators':range(100,500,100), 'max_depth':range(1,4),
-                          'min_samples_split':range(4,24,4)}
-            clf = GridSearchCV(GradientBoostingClassifier(learning_rate=0.1, n_estimators=300),
-                               parameters, cv=5)
+            parameters = {'n_estimators':range(20,70,10)}
+            clf = GridSearchCV(AdaBoostClassifier(), parameters, cv=5)
         elif choice == 3:
+            parameters = {'n_estimators':range(20,70,10), 'max_depth':range(1,4,1)}
+            clf = GridSearchCV(GradientBoostingClassifier(),
+                               parameters, cv=5)
+        elif choice == 4:
             parameters = {'n_estimators':[10,100,500,1000], 'max_depth':range(6,16,2),
                           'min_samples_split':range(10,50,5)}
             clf = GridSearchCV(ExtraTreesClassifier(criterion='gini'),
-                               parameters, cv=10)
+                               parameters, cv=5)
 
         clf.fit(self.data, self.target)
         param_best = clf.best_params_
@@ -372,6 +390,8 @@ class model:
 
         if choice == 0:
             self.clf_tree = clf.best_estimator_.tree_
+
+        return param_best
 
 
     def train_gridsearch_extratree(self, verbose=0):
