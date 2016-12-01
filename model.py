@@ -21,7 +21,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import validation_curve
 from sklearn.model_selection import learning_curve
 from sklearn.metrics import classification_report
-#import sklearn.metrics as metrics
+from sklearn.metrics import roc_curve, auc
 
 import matplotlib.pyplot as plt
 
@@ -32,16 +32,29 @@ TREE_UNDEFINED = tree._tree.TREE_UNDEFINED
 
 class model:
     
-    def __init__(self, trainfile, testfile):
-        self.trainfile = trainfile
+    def __init__(self, use_hardcode=1, choice=1, trainfile='', testfile=''):
+        
+        if use_hardcode == 1:
+            if choice == 1:
+                self.trainfile = 'data/synthea_imputed_train.csv'
+                self.testfile = 'data/synthea_imputed_test.csv'
+            elif choice == 2:
+                self.trainfile = 'data/synthea_common_vars_v2.csv'
+                self.testfile = 'data/UCI_common_vars_v2.csv'
+            elif choice == 3:
+                self.trainfile = 'data/uci_data_train_v2.csv'
+                self.testfile = 'data/uci_data_test_v2.csv'
+        else:
+            self.trainfile = trainfile
+            self.testfile = testfile
             
         # Extract required information from raw csv
         # num_point - number of datapoints
         # data - numpy array of size num_point x num_feature
         # target - numpy array of size num_point x 1
         # feature_names - list of strings
-        self.num_point, self.data, self.target, self.feature_names = self.read_data(trainfile)
-        self.num_point_test, self.data_test, self.target_test, feature_names = self.read_data(testfile)
+        self.num_point, self.data, self.target, self.feature_names = self.read_data(self.trainfile)
+        self.num_point_test, self.data_test, self.target_test, feature_names = self.read_data(self.testfile)
         self.target_names = ['negative', 'positive']
         self.clf = None
         
@@ -204,7 +217,7 @@ class model:
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=9,
                                               min_samples_split=140)
         elif choice1 == 3: 
-            # best params for synthea_imputed_data.csv
+            # best params for synthea_imputed_train.csv and synthea_imputed_test.csv
             clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=9,
                                               min_samples_split=55, min_samples_leaf=26)
         elif choice1 == 4:
@@ -277,15 +290,13 @@ class model:
     def learning_curve(self, choice=0):
         
         if choice == 0:
-            clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=9, min_samples_split=140)
+            train_sizes = range(200,4800,200)
         elif choice == 1:
-            clf = RandomForestClassifier(n_estimators=30, criterion='gini', max_depth=12,
-                                         min_samples_split=20)
+            train_sizes = range(100,2400,100) 
         elif choice == 2:
-            clf = AdaBoostClassifier(tree.DecisionTreeClassifier(criterion='gini'), 
-                                     n_estimators=10)
-        train_sizes = range(400,5000,400)
-        train_sizes, train_scores, valid_scores = learning_curve(clf, self.data,
+            train_sizes = range(10,220,10)
+        
+        train_sizes, train_scores, valid_scores = learning_curve(self.clf, self.data,
                                                                  self.target, train_sizes=train_sizes,
                                                                  cv=5)
 
@@ -294,6 +305,23 @@ class model:
         plt.xlabel('Training examples')
         plt.ylabel('Score')
         plt.legend(loc='lower right')
+        plt.show()
+        
+
+    def plot_roc(self):
+        probs = self.clf.predict_proba(self.data_test)
+        preds = probs[:,1]
+        fpr, tpr, threshold = roc_curve(self.target_test, preds)
+        roc_auc = auc(fpr, tpr)
+        
+        plt.title('ROC')
+        plt.plot(fpr, tpr, 'b', label='AUC = %0.3f' % roc_auc)
+        plt.legend(loc = 'lower right')
+        plt.plot([0,1], [0,1], 'r--')
+        plt.xlim([0,1])
+        plt.ylim([0,1])
+        plt.ylabel('True Positive Rate')
+        plt.xlabel('False Positive Rate')
         plt.show()
         
 
