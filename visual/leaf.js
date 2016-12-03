@@ -20,6 +20,30 @@ var input = {
   "Smoker": sessionStorage.smoker,
   "Hemoglobin A1c": sessionStorage.hemoglobin_a1c}
 
+var importance = {
+  "Age": 0.276700,
+  "Body Height": 0.255053,
+  "Female": 0.170558,
+  "Body Weight": 0.135051,
+  "Body Mass Index": 0.066687,
+  "Creatinine": 0.031676,
+  "Total Cholesterol": 0.013504,
+  "HDL Cholesterol": 0.011664,
+  "Hemoglobin A1c": 0.008698,
+  "Potassium": 0.008619,
+  "Smoker": 0.004763,
+  "LDL Cholesterol": 0.004647,
+  "Systolic BP": 0.003297,
+  "Calcium": 0.003201,
+  "Urea Nitrogen": 0.002127,
+  "Carbon Dioxide": 0.002091,
+  "Diastolic BP": 0.000926,
+  "Glucose": 0.000513,
+  "Triglycerides": 0.000226,
+  "Male": 0.000000,
+  "Chloride": 0.000000,
+  "Sodium": 0.000000 }
+
 // Population numbers (hardcoded from generated synthea data)
 var num_healthy = 3007,
     num_sick = 3009,
@@ -30,14 +54,14 @@ var highlight_flag = true,
     highlighted = false;    // Used to only update once
 
 var margin = {top: 20, right: 120, bottom: 20, left: 180},
-    width = 1200 - margin.right - margin.left,
-    height = 600 - margin.top - margin.bottom;
+    width = 1400 - margin.right - margin.left,
+    height = 700 - margin.top - margin.bottom;
 
 var i = 0,
     counter = 0,
     root;
 
-var col = d3.scale.linear().domain([0,0.5]).range(["red","black"]);
+var col = d3.scale.linear().domain([0,0.5]).range(["green","red"]);
 
 // Tree
 var tree = d3.layout.tree()
@@ -84,7 +108,7 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 100; });
+  nodes.forEach(function(d) { d.y = d.depth * 125; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -99,7 +123,7 @@ function update(source) {
 
   // Add name:
   nodeEnter.append("text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("x", function(d) { return d.children || d._children ? -16 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) {
@@ -122,17 +146,18 @@ function update(source) {
   nodeUpdate.select("circle")
       .style("r",function(d){
         if (d.is_leaf == 1) {
-          return 10;
+          return 12.5;
         } else {
-          return 10.0*Math.pow(1.0 + parseFloat(d.impurity),2.0); } })
+          return 10*Math.pow(1.0 + parseFloat(importance[d.name]),2.0); } })
       .style("fill", function(d) { 
         if (d._children) {
-          return "lightsteelblue"; }
+          return "#cce6ff"; }
         else if (d.is_leaf == 1) {
           return col(d.num_positive/(d.num_positive+(d.num_negative*(total_healthy/num_healthy)))) }
         else {
           return "#fff"; }
-      });
+      })
+      .style("stroke","#b3d9ff");
   node.exit().remove();
 
   // Update the links ...
@@ -144,11 +169,12 @@ function update(source) {
       .style("stroke",function(d) {
         counter = counter + 1;
         if (counter%2 > 0.5) {
-          return "green";
+          return "#006600";
         } else {
-        return "red";
+        return "#800000";
         }
       })
+      .style("opacity",0.4)
 
   link.attr("d", diagonal)
   link.exit().remove()
@@ -164,7 +190,7 @@ function update(source) {
         d.highlight = 0
       }
     })
-    link.style("stroke-width",function(d) {return highlight_path(d, patient_Path);})
+    link.style("stroke-width",function(d) {return highlight_path(d, patient_Path, "size");})
   }
 }
 
@@ -192,7 +218,7 @@ function hover_text(d) {
   if (d.is_leaf == 1) {
     return calc_probability(d) + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive;
   } else {
-    return d.name + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive + "\n" + "Impurity: " + d.impurity.toFixed(2);    
+    return d.name + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive + "\n" + "Importance: " + importance[d.name].toFixed(2);    
   }
 }
 
