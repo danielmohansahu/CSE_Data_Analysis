@@ -692,8 +692,15 @@ class model:
                 # and the value v_n at index n is the index of the left child of node n
                 # Values at indices corresponding to leaf nodes have value -1.
                 # Same for clf_tree.children_right
-                children.append( recurse( self.clf_tree.children_left[node], depth+1 ) )
-                children.append( recurse( self.clf_tree.children_right[node], depth+1 ) )
+                if feature_type == 'numeric':
+                    children.append( recurse( self.clf_tree.children_left[node], depth+1 ) )
+                    children.append( recurse( self.clf_tree.children_right[node], depth+1 ) )
+                else:
+                    # For categorical features, since decision rule is Male <= 0.5 (for example),
+                    # the branch satisfying it actually means (not Male), and it is the left branch,
+                    # so should be placed second
+                    children.append( recurse( self.clf_tree.children_right[node], depth+1 ) )
+                    children.append( recurse( self.clf_tree.children_left[node], depth+1 ) )                    
                 map_info["children"] = children
                 return map_info
             else:
