@@ -114,7 +114,7 @@ div #tree{
     <label for="bp">Blood Pressure</label>
     <input type="text" id="bp" name="bp">
     
-    <label for="chol">Cholestrol</label>
+    <label for="chol">Cholesterol</label>
     <input type="text" id="chol" name="chol">
 
     <input type="submit" value="Submit">
@@ -182,7 +182,7 @@ $( "form" ).submit(function(event) {
 	  sessionStorage.creatinine = Number(0.6);
 	  sessionStorage.calcium = Number(10);
 	  sessionStorage.potassium = Number(4);
-	  sessionStorage.bmi = Number(30);
+	  sessionStorage.bmi = Number(data[2]["value"]) / Math.pow(Number(data[3]["value"]), 2.0);
     sessionStorage.glucose = Number(110);
     sessionStorage.sodium = Number(140);
     sessionStorage.smoker = Number(0);
