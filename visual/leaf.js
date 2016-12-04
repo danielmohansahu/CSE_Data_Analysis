@@ -91,8 +91,8 @@ d3.json("../tree.json", function(error, flare) {
   update(root);
 
   // Call recommendation system:
-  recs = recommend(root);
-  console.log(recs)
+    recs = recommend(root);
+    console.log(recs);
 
   // Recommendation seems to mess up tree structure; reinitialize tree:
   click(root)
@@ -184,7 +184,7 @@ function update(source) {
     patient_Path = return_node_idx(d3.select(nodes)[0][0]);
     // Highlight the user path:
     nodes.forEach(function(d) {
-      if (patient_Path.indexOf(d.node_id)>-1) {
+        if (patient_Path.indexOf(d.node_id)>-1) {
         d.highlight = 1
       } else {
         d.highlight = 0
@@ -264,7 +264,8 @@ function return_node_idx(d) {
     }
     else {
       var name = d.name;
-      var val = Number(d.threshold);
+        var val = Number(d.threshold);
+
 
       if (d.feature_type == "categorical") {
         if (input[name] == 1) {
@@ -324,7 +325,7 @@ function recommend(d) {
     changes[keys[i]]["result"] = chance_of_hd(d,input);
     changes[keys[i]]["t1"] = input[keys[i]]*0.9;
     
-    var input_test = input;
+      var input_test = Object.assign({}, input);
     input_test[keys[i]] = changes[keys[i]]["t1"];
 
     changes[keys[i]]["r1"] = chance_of_hd(d,input_test);
