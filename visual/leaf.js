@@ -44,6 +44,9 @@ var importance = {
   "Chloride": 0.000000,
   "Sodium": 0.000000 }
 
+sessionStorage.recommendation = NaN
+
+
 // Population numbers (hardcoded from generated synthea data)
 var num_healthy = 3007,
     num_sick = 3009,
@@ -51,7 +54,9 @@ var num_healthy = 3007,
 
 // true: highlight user biometric path; false: don't highlight
 var highlight_flag = true,
-    highlighted = false;    // Used to only update once
+    highlighted = false,    // Used to only update once
+    recommend_flag = true,
+    recommended = false;
 
 var margin = {top: 20, right: 120, bottom: 20, left: 180},
     width = 1400 - margin.right - margin.left,
@@ -90,13 +95,8 @@ d3.json("../tree.json", function(error, flare) {
   root.children.forEach(collapse);
   update(root);
 
-  // Call recommendation system:
-    recs = recommend(root);
-    console.log(recs);
+  console.log(sessionStorage.recommendation)
 
-  // Recommendation seems to mess up tree structure; reinitialize tree:
-  click(root)
-  click(root)
 });
 
 //////////////////////////////// FUNCTIONS ////////////////////////////////
@@ -166,32 +166,56 @@ function update(source) {
 
   link.enter().insert("path", "g")
       .attr("class", "link")
-      .style("stroke",function(d) {
-        counter = counter + 1;
-        if (counter%2 > 0.5) {
-          return "#006600";
-        } else {
-        return "#800000";
-        }
-      })
-      .style("opacity",0.4)
 
   link.attr("d", diagonal)
   link.exit().remove()
 
+  // If we choose to see a highlighted patient path:
   if (highlight_flag) {
     // Determine the nodes belonging to the patient path
-    patient_Path = return_node_idx(d3.select(nodes)[0][0]);
+    patient_Path = return_node_idx(d3.select(nodes)[0][0],Object.assign({}, input));
+
+    // If we chose to see the best recommendation ...
+    if (recommend_flag) {
+      recs = recommend(root)
+      // Save recommendation
+      sessionStorage.recommendation = "Change " + recs["changed"] + " from " + input[recs["changed"]] + " to " + recs[recs["changed"]]
+      recommend_Path = return_node_idx(d3.select(nodes)[0][0],Object.assign({}, recs));
+    } else {
+      recommend_Path = [];
+    }
+
     // Highlight the user path:
     nodes.forEach(function(d) {
-        if (patient_Path.indexOf(d.node_id)>-1) {
-        d.highlight = 1
-      } else {
-        d.highlight = 0
+      if (patient_Path.indexOf(d.node_id)>-1) {
+        d.highlight = 1;
+      }
+      if (recommend_Path.indexOf(d.node_id)>-1) {
+        d.highlight = 1;
+        d.recommend = 1;
       }
     })
-    link.style("stroke-width",function(d) {return highlight_path(d, patient_Path, "size");})
   }
+
+  // Update link path sizes:
+  link.style("stroke-width",function(d) {return highlight_path(d);})
+  
+  // Update link colors:
+  link.style("stroke",function(d) {
+    // Change color if it's a patient's biometric path or recommended path:
+    if (recommend_flag) {
+      if (d.target.recommend == 1 & d.source.recommend == 1 ) { return "#cc5200"; }
+      if (d.target.highlight ==1 & d.source.highlight == 1) { return "#000000"; }
+    }
+
+    // Default colors are red and green:
+    counter = counter + 1;
+    if (counter%2 > 0.5) {
+      return "#006600";
+    } else {
+      return "#800000"; }
+  })
+  link.style("opacity",0.4)
 }
 
 // Toggle children on click.
@@ -216,21 +240,20 @@ function collapse(d) {
 
 function hover_text(d) {
   if (d.is_leaf == 1) {
-    return calc_probability(d) + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive;
+    return calc_probability(d)*100 + "% chance of Heart Disease" + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive;
   } else {
     return d.name + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive + "\n" + "Importance: " + importance[d.name].toFixed(2);    
   }
 }
 
-// Function to calculate the printed probability of HD at a leaf node
 function calc_probability(d) {
+// Function to calculate the printed probability of HD at a leaf node
   // Scale the negative count to a real population (our data has 50/50 heart disease/healthy):
-  var scaled_negative = d.num_negative*(total_healthy/num_healthy);
-  return (d.num_positive/(d.num_positive+scaled_negative)*100).toFixed(1) + "% chance of Heart Disease"; 
+  return (d.num_positive/(d.num_positive+d.num_negative*(total_healthy/num_healthy))).toFixed(3); 
 }
 
+function highlight_path(d) {
 // Function to highlight the path that our user biometrics would follow:
-function highlight_path(d,patient_Path) {
   if(d.target.highlight == 1) {
     if(d.target.is_leaf == 0 && highlighted == false) {
       click(d.target)
@@ -238,13 +261,21 @@ function highlight_path(d,patient_Path) {
       highlighted = true;
     }
     return 7.5;
+  } else if (d.target.recommend == 1) {
+    if(d.target.is_leaf == 0 && recommended == false) {
+      click(d.target)
+    } else if (d.target.is_leaf == 1) {
+      console.log("hi")
+    }
+    return 7.5;
   } else {
     return 1.5;
   }
 }
 
+function return_node_idx(d,biometrics) {
 // Starting from the first node check which child satisfies our patient biometric criteria.
-function return_node_idx(d) {
+// Returns a list of node indices.
   for (i=0;i<d.length;i++) {
     if (d[i].node_id == 0) {
       base_node = d[i];
@@ -254,97 +285,90 @@ function return_node_idx(d) {
   var patient_nodes = [0];
 
   // Call initialized recursive subfunction:
-  patient_nodes = _return_node_idx(base_node,patient_nodes)
+  patient_nodes = _return_node_idx(base_node,patient_nodes,biometrics)
   return patient_nodes
 
   // Recursive subfunction:
-  function _return_node_idx(d,patient_nodes) {
+  function _return_node_idx(d,patient_nodes,biometrics) {
     if (d.is_leaf == 1) {
       return patient_nodes;
     }
     else {
       var name = d.name;
-        var val = Number(d.threshold);
-
+      var val = Number(d.threshold);
 
       if (d.feature_type == "categorical") {
-        if (input[name] == 1) {
-          // Return first child
-          if (d.children) {
-            patient_nodes.push(d.children[0].node_id)
-            return _return_node_idx(d.children[0],patient_nodes)
-          } else {
-            patient_nodes.push(d._children[0].node_id)
-            return _return_node_idx(d._children[0],patient_nodes)
-          }
-        } else {
-          // Return second child
-          if (d.children) {
-            patient_nodes.push(d.children[1].node_id)
-            return _return_node_idx(d.children[1],patient_nodes)
-          } else {
-            patient_nodes.push(d._children[1].node_id)
-            return _return_node_idx(d._children[1],patient_nodes)
-          }
-        }
+        if (biometrics[name] == 1) {kid = 0} else {kid = 1};
+        if (d.children) {which_child = d.children[kid]} else {which_child = d._children[kid]}
+        patient_nodes.push(which_child.node_id)
+        return _return_node_idx(which_child,patient_nodes,biometrics)
       } else {
-        if (input[name] < val) {
-          // Return first child
-          if (d.children) {
-            patient_nodes.push(d.children[0].node_id)
-            return _return_node_idx(d.children[0],patient_nodes)
-          } else {
-            patient_nodes.push(d._children[0].node_id)
-            return _return_node_idx(d._children[0],patient_nodes)
-          }
-        } else {
-          // Return second child
-          if (d.children) {
-            patient_nodes.push(d.children[1].node_id)
-            return _return_node_idx(d.children[1],patient_nodes)
-          } else {
-            patient_nodes.push(d._children[1].node_id)
-            return _return_node_idx(d._children[1],patient_nodes)
-          }
-        }
+        if (biometrics[name] <= val) {kid = 0} else {kid = 1};
+        if (d.children) {which_child = d.children[kid]} else {which_child = d._children[kid]}
+        patient_nodes.push(which_child.node_id)
+        return _return_node_idx(which_child,patient_nodes,biometrics)
       }
     }
   }
 }
 
-//Function to see what alternative paths can lead to a lower incidence of heart disease:
 function recommend(d) {
-  var changes = {"Creatinine":{}, "Body Weight":{}, "Systolic Blood Pressure":{},
-  "Total Cholesterol":{}, "Potassium":{}, "Body Mass Index":{} };
-
-  keys = Object.keys(changes);  
+//Function to see what alternative paths can lead to a lower incidence of heart disease:
+  var changes = ["Body Weight", "Creatinine", "Calcium",
+  "Systolic BP", "Total Cholesterol", "Body Mass Index", "Potassium",
+  "Glucose", "Sodium", "LDL Cholesterol", "HDL Cholesterol", "Hemoglobin A1c"];
+  var biometric_recommend = Object.assign({}, input),
+    best_bio = "",
+    best_result = chance_of_hd(d,input),
+    best_val = NaN;
 
   // Methodically go through and vary each metric to see if we can lower the chances of HD
-  for (i=0;i<keys.length;i++) {
-    changes[keys[i]]["original"] = input[keys[i]];
-    changes[keys[i]]["result"] = chance_of_hd(d,input);
-    changes[keys[i]]["t1"] = input[keys[i]]*0.9;
-    
-      var input_test = Object.assign({}, input);
-    input_test[keys[i]] = changes[keys[i]]["t1"];
+  for (i=0;i<changes.length;i++) {
+    test_bio_low = Object.assign({},input);
+    test_bio_high = Object.assign({},input);
 
-    changes[keys[i]]["r1"] = chance_of_hd(d,input_test);
+    // Vary by 25%:
+    test_bio_low[changes[i]] = test_bio_low[changes[i]]*0.75;
+    test_bio_high[changes[i]] = test_bio_high[changes[i]]*1.25;
+
+    lower_result = chance_of_hd(d,test_bio_low);
+    higher_result = chance_of_hd(d,test_bio_high);
+    
+    if (lower_result <= best_result) {
+      best_val = test_bio_low[changes[i]];
+      best_bio = changes[i]
+      best_result = lower_result
+    }
+    if (higher_result <= best_result) {
+      best_val = test_bio_high[changes[i]];
+      best_bio = changes[i]
+      best_result = higher_result
+    }
   }
-  return changes
+
+  if (best_val == NaN) {
+    return false;
+  } else {
+    biometric_recommend[best_bio] = best_val.toString();  //To maintain the same data type
+    biometric_recommend["changed"] = best_bio;
+    return biometric_recommend
+  }
 }
 
-// Function to calculate chances of heart disease based on patient biometrics.
 function chance_of_hd(d,biometrics) {
+// Function to calculate chances of heart disease based on patient biometrics.
   if (d.is_leaf == 1) {
-    return Number(d.num_positive/(d.num_negative+d.num_positive).toFixed());
+    return calc_probability(d);
   }
   else {
-    var full_name = d.name.split(" < "),
-      name = full_name[0],
-      val = Number(full_name[1]);
-    
-    if (biometrics[name] < val) {kid = 0} else {kid = 1};
-    if (d.children) {which_child = d.children[kid]} else {which_child = d._children[kid]}
-    return chance_of_hd(which_child, biometrics)
+    if (d.feature_type == "categorical") {
+      if (biometrics[d.name] == 1) {kid = 0} else {kid = 1};
+      if (d.children) {which_child = d.children[kid]} else {which_child = d._children[kid]}
+      return chance_of_hd(which_child, biometrics)
+    } else {
+      if (biometrics[d.name] <= d.threshold) {kid = 0} else {kid = 1};
+      if (d.children) {which_child = d.children[kid]} else {which_child = d._children[kid]}
+      return chance_of_hd(which_child, biometrics)
+    }
   }
 }
