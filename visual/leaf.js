@@ -120,25 +120,6 @@ function update(source) {
 
   nodeEnter.append("circle")
 
-  // Add name:
-  nodeEnter.append("text")
-      .attr("x", function(d) { return d.children || d._children ? -16 : 10; })
-      .attr("dy", ".35em")
-      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-      .text(function(d) {
-        if (d.is_leaf == 0) {
-          if (d.feature_type == "numeric") {
-            if (d.name == "Age") {
-              return d.name + " under " + d.threshold.toFixed(0) + " " + d.units + "?";  
-            } else {
-              return d.name + " under " + d.threshold.toFixed(1) + " " + d.units + "?";
-            }
-          } else {
-            return d.name + "?";
-          }
-        }
-      })
-
   nodeEnter.append("title")
       .text(function(d) {return hover_text(d)});
 
@@ -156,8 +137,15 @@ function update(source) {
         if (d._children) {
           return "#cce6ff"; }
         else if (d.is_leaf == 1) {
-          return col(d.num_positive/(d.num_positive+(d.num_negative*(total_healthy/num_healthy)))) }
-        else {
+          if(calc_probability(d) > 0.5) {
+            return "red"
+          } else if (calc_probability(d) > 0.1) {
+            return "#e6b800"
+          } else {
+            return "green"
+          }
+          // return col(calc_probability(d)) }
+        } else {
           return "#fff"; }
       })
       .style("stroke","#b3d9ff");
@@ -219,6 +207,27 @@ function update(source) {
       return "#800000"; }
   })
   link.style("opacity",0.4)
+
+  // Add name:
+  nodeEnter.append("text")
+    .attr("x", function(d) { return d.children || d._children ? -16 : 16; })
+    .attr("dy", ".35em")
+    .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+    .text(function(d) {
+      if (d.is_leaf == 0) {
+        if (d.feature_type == "numeric") {
+          if (d.name == "Age") {
+            return d.name + " under " + d.threshold.toFixed(0) + " " + d.units + "?";  
+          } else {
+            return d.name + " under " + d.threshold.toFixed(1) + " " + d.units + "?";
+          }
+        } else {
+          return d.name + "?";
+        }
+      } else {
+        if (d.highlight == 1) {return (calc_probability(d)*100).toFixed(1) + "% chance of HD"}
+      }
+    })
 }
 
 // Toggle children on click.
@@ -243,7 +252,7 @@ function collapse(d) {
 
 function hover_text(d) {
   if (d.is_leaf == 1) {
-    return calc_probability(d)*100 + "% chance of Heart Disease" + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive;
+    return (calc_probability(d)*100).toFixed(2) + "% chance of Heart Disease" + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive;
   } else {
     return d.name + "\n" + "Healthy: " + (d.num_negative*(total_healthy/num_healthy)).toFixed() + "\n" + "Diseased: " + d.num_positive + "\n" + "Importance: " + importance[d.name].toFixed(2);    
   }
