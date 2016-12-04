@@ -47,8 +47,12 @@ def plot_roc():
     plt.plot(fpr_cc, tpr_cc, 'k', label='Train: Cleveland, Test: Cleveland. AUC = %0.3f' % roc_auc_cc)
     plt.legend(loc = 'lower right')
     plt.plot([0,1], [0,1], 'r--')
+    plt.plot([0.24, 0.24], [0,1], 'k--')
+    plt.plot([0,1], [0.66,0.66], 'k--')
     plt.xlim([0,1])
     plt.ylim([0,1])
     plt.ylabel('True Positive Rate')
     plt.xlabel('False Positive Rate')
     plt.show()
+    
+#    plt.savefig('roc_12_3_1542.png', format='png', dpi=1200)
