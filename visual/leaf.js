@@ -46,7 +46,6 @@ var importance = {
 
 sessionStorage.recommendation = NaN
 
-
 // Population numbers (hardcoded from generated synthea data)
 var num_healthy = 3007,
     num_sick = 3009,
@@ -254,18 +253,18 @@ function calc_probability(d) {
 
 function highlight_path(d) {
 // Function to highlight the path that our user biometrics would follow:
-  if(d.target.highlight == 1) {
+  if (d.target.recommend == 1) {
+    if(d.target.is_leaf == 0 && recommended == false) {
+      click(d.target)
+    } else if (d.target.is_leaf == 1) {
+      recommended = true;
+    }
+    return 7.5;
+  } else if(d.target.highlight == 1) {
     if(d.target.is_leaf == 0 && highlighted == false) {
       click(d.target)
     } else if (d.target.is_leaf == 1) {
       highlighted = true;
-    }
-    return 7.5;
-  } else if (d.target.recommend == 1) {
-    if(d.target.is_leaf == 0 && recommended == false) {
-      click(d.target)
-    } else if (d.target.is_leaf == 1) {
-      console.log("hi")
     }
     return 7.5;
   } else {
