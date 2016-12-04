@@ -245,7 +245,11 @@ $( "form" ).submit(function(event) {
     document.getElementById("recommendations").appendChild(btn);
     function sendRecommendation(){
       sessionStorage.recommend_flag = true;
-      console.log("here");
+      $(sessionStorage.location).empty();
+      $.getScript('leaf.js');
+      $('html, body').animate({
+        scrollTop: $("#tree").offset().top
+    }, 200);
     }
   }
 });
