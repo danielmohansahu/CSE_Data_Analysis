@@ -71,8 +71,6 @@ var i = 0,
     counter = 0,
     root;
 
-var col = d3.scale.linear().domain([0,0.5]).range(["green","red"]);
-
 // Tree
 var tree = d3.layout.tree()
     .size([height, width]);
@@ -197,6 +195,7 @@ function update(source) {
   
   // Update link colors:
   link.style("stroke",function(d) {
+    counter = counter + 1;
     // Change color if it's a patient's biometric path or recommended path:
     if (recommend_flag) {
       if (d.target.recommend == 1 & d.source.recommend == 1 ) { return "#cc5200"; }
@@ -204,7 +203,6 @@ function update(source) {
     }
 
     // Default colors are red and green:
-    counter = counter + 1;
     if (counter%2 > 0.5) {
       return "#006600";
     } else {
