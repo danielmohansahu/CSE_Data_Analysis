@@ -323,8 +323,8 @@ $( "form" ).submit(function(event) {
     
 	  sessionStorage.bmi = sessionStorage.weight/Math.pow(height/100,2);
     sessionStorage.cholesterol = sessionStorage.ldl + sessionStorage.hdl + sessionStorage.tri/5;
-    
-    
+    sessionStorage.recommend_flag = false;
+  
     
 
 	  // Run leaf.js script

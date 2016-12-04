@@ -232,8 +232,7 @@ $( "form" ).submit(function(event) {
     if (data[7]["value"]=="Yes")
       sessionStorage.smoker = Number(1);
     sessionStorage.hemoglobin_a1c = Number(5);
-    sessionStorage.recommend_flag = flag;
-
+    sessionStorage.recommend_flag = false;
 	  // Run leaf.js script
 	  $.getScript('leaf.js');
 	  $('html, body').animate({
