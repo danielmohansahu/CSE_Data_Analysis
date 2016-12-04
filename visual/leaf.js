@@ -128,7 +128,11 @@ function update(source) {
       .text(function(d) {
         if (d.is_leaf == 0) {
           if (d.feature_type == "numeric") {
-            return d.name + " under " + d.threshold.toFixed(1) + " " + d.units + "?";
+            if (d.name == "Age") {
+              return d.name + " under " + d.threshold.toFixed(0) + " " + d.units + "?";  
+            } else {
+              return d.name + " under " + d.threshold.toFixed(1) + " " + d.units + "?";
+            }
           } else {
             return d.name + "?";
           }
