@@ -54,8 +54,14 @@ var num_healthy = 3007,
 // true: highlight user biometric path; false: don't highlight
 var highlight_flag = true,
     highlighted = false,    // Used to only update once
-    recommend_flag = true,
     recommended = false;
+
+// Convert string to boolean
+if (sessionStorage.recommend_flag == "true") {
+  var recommend_flag = true;
+} else {
+  var recommend_flag = false;
+}
 
 var margin = {top: 20, right: 120, bottom: 20, left: 180},
     width = 1400 - margin.right - margin.left,
@@ -93,8 +99,6 @@ d3.json("../tree.json", function(error, flare) {
 
   root.children.forEach(collapse);
   update(root);
-
-  console.log(sessionStorage.recommendation)
 
 });
 
