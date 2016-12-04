@@ -65,7 +65,7 @@ button{
     margin: auto;
 
     margin-bottom: 10px;
-    width: 10%;
+    width: 20%;
     background-color: #85144b;
     color: white;
     padding: 14px 20px;
@@ -96,15 +96,15 @@ div #tree{
 div #col1,#col2,#col3{
   position: relative;
   float: left;
-  margin-left: 12.5%;
+  margin-left: 14%;
 }
 
 div #submitButton{
  
 }
-#leftDiv{
+/*#leftDiv{
 
-  float:left;
+  float:left;*/
 
 /*}
 
@@ -159,11 +159,11 @@ div #submitButton{
       
       
 
-      <label for="bp">Systolic Blood Pressure (mmhg)<a target="_blank" href="#" title="Your systolic is the higher value in your blood pressure reading"><img src="http://www.drodd.com/images15/question-mark15.jpg" height="13px"/></a></label>
+      <label for="bp">Systolic Blood Pressure (mmhg)<a target="_blank" href="#" title="Your systolic blood pressure is the higher value in your blood pressure reading"><img src="http://www.drodd.com/images15/question-mark15.jpg" height="13px"/></a></label>
       <input type="text" id="bp" name="bp">
       
-      <label for="chol">Total Cholesterol (mg/dl)</label>
-      <input type="text" id="chol" name="chol">
+       <label for="bp_">Diastolic BP (mmHg) <a target="_blank" href="#" title="Your diastolic blood pressure is the lower value in your blood pressure reading"><img src="http://www.drodd.com/images15/question-mark15.jpg" height="13px"/></a></label>
+        <input type="text" id="bp_" name="bp_">
 
 
       
@@ -194,8 +194,7 @@ div #submitButton{
         <label for="ca">Calcium (mg/dl)</label>
         <input type="text" id="ca" name="ca">
 
-        <label for="cl">Chloride (mmol/L)</label>
-        <input type="text" id="cl" name="cl">
+        
         
         
       </div>
@@ -209,8 +208,8 @@ div #submitButton{
         
         </select>
 
-        <label for="bp_">Diastolic BP (mmHg) <a target="_blank" href="#" title="Your systolic is the lower value in your blood pressure reading"><img src="http://www.drodd.com/images15/question-mark15.jpg" height="13px"/></a></label>
-        <input type="text" id="bp_" name="bp_">
+        <label for="cl">Chloride (mmol/L)</label>
+        <input type="text" id="cl" name="cl">
 
         <label for="ldl">LDL Cholesterol (mg/dl)</label>
         <input type="text" id="ldl" name="ldl">
@@ -242,7 +241,11 @@ div #submitButton{
 
 
 <div id="tree">
+<!--  Tree is displayed here -->
+</div>
 
+<div id="recommendations">
+<!-- Recommendation button gies here -->
 </div>
 
 <script>
@@ -251,8 +254,10 @@ div #submitButton{
 $( "form" ).submit(function(event) {
   sessionStorage.location = '#tree'
   $(sessionStorage.location).empty();
+  $("#recommendations").empty();
   var data = $( this ).serializeArray();
   event.preventDefault();
+
 
   ///////////////// VALIDATION BEGINS /////////////////////////////
   flag = true;
@@ -296,7 +301,7 @@ $( "form" ).submit(function(event) {
 	  sessionStorage.weight = 0.45*Number(data[2]["value"]);
 	  sessionStorage.age = Number(data[1]["value"]);
     sessionStorage.blood_pressure = Number(data[5]["value"]);
-    sessionStorage.cholesterol = Number(data[6]["value"]);
+    sessionStorage.bp_ = Number(data[6]["value"]);
 
     sessionStorage.co2 = Number(data[7]["value"]);
     sessionStorage.potassium = Number(data[8]["value"]);
@@ -304,22 +309,22 @@ $( "form" ).submit(function(event) {
     sessionStorage.hemoglobin_a1c = Number(data[10]["value"]);
     sessionStorage.sodium = Number(data[11]["value"]);
     sessionStorage.calcium = Number(data[12]["value"]);
-    sessionStorage.chloride = Number(data[13]["value"]);
+    
 
     sessionStorage.smoker = Number(0);
-    if (data[14]["value"]=="Yes")
+    if (data[13]["value"]=="Yes")
       sessionStorage.smoker = Number(1);
-    sessionStorage.bp_ = Number(data[15]["value"]);
-    sessionStorage.ldl = Number(data[16]["value"]);
-    sessionStorage.hdl = Number(data[17]["value"]);
-	  sessionStorage.creatinine = Number(data[18]["value"]);
-	  sessionStorage.tri = Number(data[19]["value"]);
-    sessionStorage.urea = Number(data[20]["value"]);
+    sessionStorage.chloride = Number(data[14]["value"]);
+    sessionStorage.ldl = Number(data[15]["value"]);
+    sessionStorage.hdl = Number(data[16]["value"]);
+	  sessionStorage.creatinine = Number(data[17]["value"]);
+	  sessionStorage.tri = Number(data[18]["value"]);
+    sessionStorage.urea = Number(data[19]["value"]);
     
-	  sessionStorage.bmi = sessionStorage.weight/(height/100)^2;
-    
-    
-    
+	  sessionStorage.bmi = sessionStorage.weight/Math.pow(height/100,2);
+    sessionStorage.cholesterol = sessionStorage.ldl + sessionStorage.hdl + sessionStorage.tri/5;
+    sessionStorage.recommend_flag = false;
+  
     
 
 	  // Run leaf.js script
@@ -327,6 +332,16 @@ $( "form" ).submit(function(event) {
 	  $('html, body').animate({
         scrollTop: $("#tree").offset().top
     }, 200);
+
+    var btn = document.createElement("BUTTON");        // Create a <button> element
+    var t = document.createTextNode("Recommendations");       // Create a text node
+    btn.appendChild(t);  
+    btn.onclick = sendRecommendation;                              // Append the text to <button>
+    document.getElementById("recommendations").appendChild(btn);
+    function sendRecommendation(){
+      sessionStorage.recommend_flag = true;
+      console.log("here");
+    }
   }
 });
 
