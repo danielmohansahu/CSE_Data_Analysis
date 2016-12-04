@@ -65,7 +65,7 @@ button{
     margin: auto;
 
     margin-bottom: 10px;
-    width: 10%;
+    width: 20%;
     background-color: #85144b;
     color: white;
     padding: 14px 20px;
@@ -138,7 +138,7 @@ div #tree{
       
       
 
-      <label for="bp">Systolic Blood Pressure (mmhg)<a target="_blank" href="#" title="Your systolic is the higher value in your blood pressure reading"><img src="http://www.drodd.com/images15/question-mark15.jpg" height="13px"/></a></label>
+      <label for="bp">Systolic Blood Pressure (mmhg)<a target="_blank" href="#" title="Your systolic blood pressure is the higher value in your blood pressure reading"><img src="http://www.drodd.com/images15/question-mark15.jpg" height="13px"/></a></label>
       <input type="text" id="bp" name="bp">
       
       <label for="chol">Total Cholesterol (mg/dl)</label>
@@ -159,12 +159,19 @@ div #tree{
 
 </div>
 
+<div id="recommendations">
+
+</div>
+
+
+
 <script>
 
 
 $( "form" ).submit(function(event) {
   sessionStorage.location = '#tree'
   $(sessionStorage.location).empty();
+  $("#recommendations").empty();
   var data = $( this ).serializeArray();
   event.preventDefault();
 
@@ -217,19 +224,30 @@ $( "form" ).submit(function(event) {
 	  sessionStorage.creatinine = Number(0.6);
 	  sessionStorage.calcium = Number(10);
 	  sessionStorage.potassium = Number(4);
-	  sessionStorage.bmi = sessionStorage.weight/(height/100)^2;
+	  sessionStorage.bmi = sessionStorage.weight/Math.pow(height/100,2);
+    console.log(sessionStorage.weight);
     sessionStorage.glucose = Number(110);
     sessionStorage.sodium = Number(140);
     sessionStorage.smoker = Number(0);
     if (data[7]["value"]=="Yes")
       sessionStorage.smoker = Number(1);
     sessionStorage.hemoglobin_a1c = Number(5);
+    sessionStorage.recommend_flag = flag;
 
 	  // Run leaf.js script
 	  $.getScript('leaf.js');
 	  $('html, body').animate({
         scrollTop: $("#tree").offset().top
     }, 200);
+    var btn = document.createElement("BUTTON");        // Create a <button> element
+    var t = document.createTextNode("Recommendations");       // Create a text node
+    btn.appendChild(t);  
+    btn.onclick = sendRecommendation;                              // Append the text to <button>
+    document.getElementById("recommendations").appendChild(btn);
+    function sendRecommendation(){
+      sessionStorage.recommend_flag = true;
+      console.log("here");
+    }
   }
 });
 
