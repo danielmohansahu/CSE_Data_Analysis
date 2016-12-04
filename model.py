@@ -22,6 +22,7 @@ from sklearn.model_selection import validation_curve
 from sklearn.model_selection import learning_curve
 from sklearn.metrics import classification_report
 from sklearn.metrics import roc_curve, auc
+from sklearn.metrics import confusion_matrix
 
 import matplotlib.pyplot as plt
 
@@ -198,6 +199,14 @@ class model:
         print "Test set classification report"
         y_predicted = clf.predict(self.data_test)
         print classification_report(self.target_test, y_predicted, digits=3)
+        
+        print ''
+        
+        print "Confusion matrix"
+        tn, fp, fn, tp = confusion_matrix(self.target_test, y_predicted).ravel()
+        print "tn %d | fp %d | fn %d | tp %d" % (tn, fp, fn, tp)
+        print "fpr = %f" % (float(fp)/(fp + tn))
+        print "tpr = %f" % (float(tp)/(tp + fn))
 
 
     def train(self, choice1=0):
