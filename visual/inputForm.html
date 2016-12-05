@@ -200,10 +200,7 @@ $( "form" ).submit(function(event) {
 
   if (flag){
 	  // Define input variables and assign to localStorage:
-    if (data[4]["value"]==""){
-      coeffs = [0.26456366, 0.46270952, -1.07032508, 0.11771949, 0.0845266, 72.85746549];
-      data[4]["value"] = 100;
-    }
+    
 
     height = (12*Number(data[3]["value"])+Number(data[4]["value"]))*2.5;
 
@@ -216,22 +213,49 @@ $( "form" ).submit(function(event) {
     sessionStorage.height = Number(height);
     sessionStorage.weight = 0.45*Number(data[2]["value"]);
     sessionStorage.age = Number(data[1]["value"]);
-    sessionStorage.blood_pressure = Number(data[5]["value"]);
-    sessionStorage.cholesterol = Number(data[6]["value"]);
-
-    sessionStorage.hdl = Number(65);
-    sessionStorage.ldl = Number(100);
-	  sessionStorage.creatinine = Number(0.6);
-	  sessionStorage.calcium = Number(10);
-	  sessionStorage.potassium = Number(4);
-	  sessionStorage.bmi = sessionStorage.weight/Math.pow(height/100,2);
-    console.log(sessionStorage.weight);
-    sessionStorage.glucose = Number(110);
-    sessionStorage.sodium = Number(140);
     sessionStorage.smoker = Number(0);
     if (data[7]["value"]=="Yes")
       sessionStorage.smoker = Number(1);
-    sessionStorage.hemoglobin_a1c = Number(5);
+    var arr = [sessionStorage.weight/143, sessionStorage.female, sessionStorage.smoker, sessionStorage.age/97,sessionStorage.height/201, 1 ];
+    sessionStorage.blood_pressure = Number(data[5]["value"]);
+    if (data[5]["value"]==""){
+    	sessionStorage.blood_pressure = dot([  26.86817348 ,   0.63978428,   -0.59207746 ,   4.12747106 ,  -3.54906582,
+  119.32529042],arr);
+    }
+    sessionStorage.cholesterol = Number(data[6]["value"]);
+    if (data[6]["value"]==""){
+    	sessionStorage.cholesterol = dot([  6.75561980e+01 , -4.61008970e-01,  -9.50753201e-02 ,  1.22631976e+01,
+  -6.07175518e+01,   1.99431424e+02],arr);
+    }
+
+    sessionStorage.hdl = dot([-32.14903661 ,  0.45213778 ,  0.30564361,  -7.01251675,  31.36955626,
+  58.51071079],arr);
+    sessionStorage.ldl = dot([  82.05812238 ,  -0.76931729  , -0.29071071 ,  15.82038507 , -74.57851709,
+  109.23250823],arr);
+	sessionStorage.creatinine = dot([ 17.52937031,  -0.50591735 ,  0.0493215,   -0.27177391 ,-13.34914611
+   ,3.98273842],arr);
+	sessionStorage.calcium = dot([-0.15569241, -0.01615086 ,-0.01926804,  0.06716539, -0.03475041,  9.4212026 ],arr)
+;
+	sessionStorage.bp_ = dot([ 14.73587112,   0.23585687 , -0.40164646 ,  1.68369953 , -2.63561926,
+  79.74472324],arr);
+	sessionStorage.co2 = dot([  0.8908991  , -0.02554558 , -0.07427519 ,  0.06986456 , -1.38861507,
+  25.16120651],arr);
+	sessionStorage.potassium = dot([ 54.42177266 , -0.23358248,  -0.42024749 ,  8.83723494 ,-50.13130573,
+  98.87089864],arr);
+    sessionStorage.triglycerides = dot([  87.36540053,   -0.72703261,   -0.54469405,   17.32238886 , -86.61375008,
+  156.17478579],arr);
+	sessionStorage.bmi = sessionStorage.weight/Math.pow(height/100,2);
+    sessionStorage.chloride = dot([  8.28401299e-01  ,-6.60146377e-03,   5.57671660e-02,  -5.23081153e-01
+  ,-4.28203762e-01,   1.06159364e+02],arr);
+    sessionStorage.glucose = dot([ 54.42177266 , -0.23358248 , -0.42024749,   8.83723494 ,-50.13130573
+  ,98.87089864],arr);
+    sessionStorage.sodium = dot([ -3.94403978e-01 , -4.75812625e-02 , -2.52287129e-02 , -3.78425068e-02,
+   3.57293218e-01  , 1.39997762e+02],arr)
+    
+    sessionStorage.hemoglobin_a1c = dot([  9.32073331e+00 ,  6.35207243e-02 , -7.26752557e-03  ,-5.25453479e-02,
+  -8.88087978e+00 ,  6.22917136e+00],arr);
+    sessionStorage.urea = dot([ -0.24976752 , -0.05315691,  -0.05327654 ,  0.14119217,   0.20530412,
+  13.61954578],arr);
     sessionStorage.recommend_flag = false;
 	  // Run leaf.js script
 	  $.getScript('leaf.js');
@@ -252,6 +276,14 @@ $( "form" ).submit(function(event) {
     }, 200);
       $("#recommendations").empty();
     }
+  }
+
+  function dot(arr1,arr2){
+  	var sum = 0;
+  	for (var i = 0; i<arr1.length; i++){
+  		sum = sum + arr1[i]*arr2[i];
+  	}
+  	return sum;
   }
 });
 
