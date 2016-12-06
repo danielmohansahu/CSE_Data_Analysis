@@ -300,26 +300,86 @@ $( "form" ).submit(function(event) {
 	  sessionStorage.height = Number(height);
 	  sessionStorage.weight = 0.45*Number(data[2]["value"]);
 	  sessionStorage.age = Number(data[1]["value"]);
-    sessionStorage.blood_pressure = Number(data[5]["value"]);
-    sessionStorage.bp_ = Number(data[6]["value"]);
-
-    sessionStorage.co2 = Number(data[7]["value"]);
-    sessionStorage.potassium = Number(data[8]["value"]);
-    sessionStorage.glucose = Number(data[9]["value"]);
-    sessionStorage.hemoglobin_a1c = Number(data[10]["value"]);
-    sessionStorage.sodium = Number(data[11]["value"]);
-    sessionStorage.calcium = Number(data[12]["value"]);
-    
-
     sessionStorage.smoker = Number(0);
     if (data[13]["value"]=="Yes")
       sessionStorage.smoker = Number(1);
+    
+    var arr = [sessionStorage.weight/143, sessionStorage.female, sessionStorage.smoker, sessionStorage.age/97,sessionStorage.height/201, 1 ];
+    sessionStorage.blood_pressure = Number(data[5]["value"]);
+    if (data[5]["value"]==""){
+      sessionStorage.blood_pressure = dot([  26.86817348 ,   0.63978428,   -0.59207746 ,   4.12747106 ,  -3.54906582,
+  119.32529042],arr);
+    }
+    sessionStorage.bp_ = Number(data[6]["value"]);
+    if (data[6]["value"]==""){
+      sessionStorage.bp_ = dot([ 14.73587112,   0.23585687 , -0.40164646 ,  1.68369953 , -2.63561926,
+  79.74472324],arr);
+    }
+
+    sessionStorage.co2 = Number(data[7]["value"]);
+    if (data[7]["value"]==""){
+      sessionStorage.co2 = dot([  0.8908991  , -0.02554558 , -0.07427519 ,  0.06986456 , -1.38861507,
+  25.16120651],arr);
+    }
+    sessionStorage.potassium = Number(data[8]["value"]);
+    if (data[8]["value"]==""){
+      sessionStorage.potassium = dot([ 54.42177266 , -0.23358248,  -0.42024749 ,  8.83723494 ,-50.13130573,
+  98.87089864],arr);
+    }
+    sessionStorage.glucose = Number(data[9]["value"]);
+    if (data[9]["value"]==""){
+      sessionStorage.glucose = dot([ 54.42177266 , -0.23358248 , -0.42024749,   8.83723494 ,-50.13130573
+  ,98.87089864],arr);
+    }
+    sessionStorage.hemoglobin_a1c = Number(data[10]["value"]);
+    if (data[10]["value"]==""){
+      sessionStorage.hemoglobin_a1c = dot([  9.32073331e+00 ,  6.35207243e-02 , -7.26752557e-03  ,-5.25453479e-02,
+  -8.88087978e+00 ,  6.22917136e+00],arr);
+    }
+    sessionStorage.sodium = Number(data[11]["value"]);
+    if (data[11]["value"]==""){
+      sessionStorage.sodium = dot([ -3.94403978e-01 , -4.75812625e-02 , -2.52287129e-02 , -3.78425068e-02,
+   3.57293218e-01  , 1.39997762e+02],arr)
+    }
+    sessionStorage.calcium = Number(data[12]["value"]);
+    if (data[12]["value"]==""){
+      sessionStorage.calcium = dot([-0.15569241, -0.01615086 ,-0.01926804,  0.06716539, -0.03475041,  9.4212026 ],arr)
+;
+    }
+    
+
+    
     sessionStorage.chloride = Number(data[14]["value"]);
+    if (data[14]["value"]==""){
+      sessionStorage.chloride = dot([  8.28401299e-01  ,-6.60146377e-03,   5.57671660e-02,  -5.23081153e-01
+  ,-4.28203762e-01,   1.06159364e+02],arr);
+    }
     sessionStorage.ldl = Number(data[15]["value"]);
+    if (data[15]["value"]==""){
+      sessionStorage.ldl = dot([  82.05812238 ,  -0.76931729  , -0.29071071 ,  15.82038507 , -74.57851709,
+  109.23250823],arr);
+    }
     sessionStorage.hdl = Number(data[16]["value"]);
+    if (data[16]["value"]==""){
+      sessionStorage.hdl = dot([-32.14903661 ,  0.45213778 ,  0.30564361,  -7.01251675,  31.36955626,
+  58.51071079],arr);
+      
+    }
 	  sessionStorage.creatinine = Number(data[17]["value"]);
-	  sessionStorage.tri = Number(data[18]["value"]);
+    if (data[17]["value"]==""){
+      sessionStorage.creatinine = dot([ 17.52937031,  -0.50591735 ,  0.0493215,   -0.27177391 ,-13.34914611
+   ,3.98273842],arr);
+    }
+	  sessionStorage.triglycerides = Number(data[18]["value"]);
+    if (data[18]["value"]==""){
+      sessionStorage.triglycerides = dot([  87.36540053,   -0.72703261,   -0.54469405,   17.32238886 , -86.61375008,
+  156.17478579],arr);
+    }
     sessionStorage.urea = Number(data[19]["value"]);
+    if (data[19]["value"]==""){
+      sessionStorage.urea = dot([ -0.24976752 , -0.05315691,  -0.05327654 ,  0.14119217,   0.20530412,
+  13.61954578],arr);
+    }
     
 	  sessionStorage.bmi = sessionStorage.weight/Math.pow(height/100,2);
     sessionStorage.cholesterol = sessionStorage.ldl + sessionStorage.hdl + sessionStorage.tri/5;
@@ -347,6 +407,14 @@ $( "form" ).submit(function(event) {
     }, 200);
       $("#recommendations").empty();
     }
+  }
+
+  function dot(arr1,arr2){
+    var sum = 0;
+    for (var i = 0; i<arr1.length; i++){
+      sum = sum + arr1[i]*arr2[i];
+    }
+    return sum;
   }
 });
 
