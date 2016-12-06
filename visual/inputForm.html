@@ -155,6 +155,10 @@ div #tree{
   </form>
 </div>
 
+<div id="recommended">
+
+</div>
+
 <div id="tree">
 
 </div>
@@ -170,7 +174,9 @@ div #tree{
 
 $( "form" ).submit(function(event) {
   sessionStorage.location = '#tree'
+  sessionStorage.paraLocation = '#recommended'
   $(sessionStorage.location).empty();
+  $(sessionStorage.paraLocation).empty();
   $("#recommendations").empty();
   var data = $( this ).serializeArray();
   event.preventDefault();
@@ -257,6 +263,8 @@ $( "form" ).submit(function(event) {
     sessionStorage.urea = dot([ -0.24976752 , -0.05315691,  -0.05327654 ,  0.14119217,   0.20530412,
   13.61954578],arr);
     sessionStorage.recommend_flag = false;
+
+    sessionStorage.recommendation = "";
 	  // Run leaf.js script
 	  $.getScript('leaf.js');
 	  $('html, body').animate({
@@ -275,8 +283,15 @@ $( "form" ).submit(function(event) {
         scrollTop: $("#tree").offset().top
     }, 200);
       $("#recommendations").empty();
+      if (sessionStorage.recommendation != ""){
+    
+    document.getElementById("recommended").innerHTML = sessionStorage.recommendation;
+  }
     }
   }
+
+
+
 
   function dot(arr1,arr2){
   	var sum = 0;
