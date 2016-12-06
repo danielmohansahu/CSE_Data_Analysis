@@ -239,6 +239,9 @@ div #submitButton{
 
   </form>
 
+<div id="recommended">
+<!--  Tree is displayed here -->
+</div>
 
 <div id="tree">
 <!--  Tree is displayed here -->
@@ -252,8 +255,10 @@ div #submitButton{
 
 
 $( "form" ).submit(function(event) {
-  sessionStorage.location = '#tree'
+  sessionStorage.location = '#tree';
+  sessionStorage.paraLocation = '#recommended';
   $(sessionStorage.location).empty();
+  $(sessionStorage.paraLocation).empty();
   $("#recommendations").empty();
   var data = $( this ).serializeArray();
   event.preventDefault();
