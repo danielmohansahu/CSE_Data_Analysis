@@ -157,7 +157,7 @@ d3.json("../tree.json", function(error, flare) {
   root.children.forEach(collapse);
   update(root);
 
-  d3.select(sessionStorage.paraLocation).append("h3").html(sessionStorage.recommendation);
+  d3.select(sessionStorage.paraLocation).append("h3").html(sessionStorage.recommendation).style("text-align","center");
 
 });
 
