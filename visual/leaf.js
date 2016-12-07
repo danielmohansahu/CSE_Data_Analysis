@@ -44,6 +44,8 @@ var importance = {
   "Chloride": 0.000000,
   "Sodium": 0.000000 }
 
+sessionStorage.recommendation = NaN
+
 // Population numbers (hardcoded from generated synthea data)
 var num_healthy = 3007,
     num_sick = 3009,
@@ -121,6 +123,7 @@ legend.selectAll('rect')
     .style("opacity", 0.4)
     .style("stroke", "#f2f2f2")
     .style("stroke-width", function(d){
+    	debugger;
         if (d == "False branch" || d == "True branch"){
         	return 5;
         }
@@ -156,8 +159,6 @@ d3.json("../tree.json", function(error, flare) {
 
   root.children.forEach(collapse);
   update(root);
-
-  d3.select(sessionStorage.paraLocation).append("h3").html(sessionStorage.recommendation);
 
 });
 
@@ -231,21 +232,10 @@ function update(source) {
 
     // If we chose to see the best recommendation ...
     if (recommend_flag) {
-
-      // Calculate recommendations
       recs = recommend(root)
-
-      if (recs["changed"]) {    // Error protection:
-        orig = Number(input[recs["changed"]])
-        improv = Number(recs[recs["changed"]])
-        sessionStorage.recommendation = "Change " + recs["changed"] + " from " + orig.toFixed(2) + " to " + improv.toFixed(2)
-        recommend_Path = return_node_idx(d3.select(nodes)[0][0],Object.assign({}, recs));
-      }
-      else {
-        console.log("No recommendations");
-        recommend_Path = []
-      }
-
+      // Save recommendation
+      sessionStorage.recommendation = "Change " + recs["changed"] + " from " + input[recs["changed"]] + " to " + recs[recs["changed"]]
+      recommend_Path = return_node_idx(d3.select(nodes)[0][0],Object.assign({}, recs));
     } else {
       recommend_Path = [];
     }
@@ -400,51 +390,44 @@ function return_node_idx(d,biometrics) {
 
 function recommend(d) {
 //Function to see what alternative paths can lead to a lower incidence of heart disease:
-  var changes = ["Body Weight","Diastolic BP",
-  "Systolic BP", "Total Cholesterol", "Body Mass Index",
-  "LDL Cholesterol", "HDL Cholesterol", "Triglycerides"];
+  var changes = ["Body Weight", "Creatinine", "Calcium",
+  "Systolic BP", "Total Cholesterol", "Body Mass Index", "Potassium",
+  "Glucose", "Sodium", "LDL Cholesterol", "HDL Cholesterol", "Hemoglobin A1c"];
   var biometric_recommend = Object.assign({}, input),
     best_bio = "",
     best_result = chance_of_hd(d,input),
     best_val = NaN;
 
   // Methodically go through and vary each metric to see if we can lower the chances of HD
-  for (j=1;j<4;j++) {
-    multiplier = 1.0 + j/10.0;
-    for (i=0;i<changes.length;i++) {
-      test_bio_low = Object.assign({},input);
-      test_bio_high = Object.assign({},input);
+  for (i=0;i<changes.length;i++) {
+    test_bio_low = Object.assign({},input);
+    test_bio_high = Object.assign({},input);
 
-      // Vary by 25%:
-      test_bio_low[changes[i]] = test_bio_low[changes[i]]*1/multiplier;
-      test_bio_high[changes[i]] = test_bio_high[changes[i]]*multiplier;
+    // Vary by 25%:
+    test_bio_low[changes[i]] = test_bio_low[changes[i]]*0.75;
+    test_bio_high[changes[i]] = test_bio_high[changes[i]]*1.25;
 
-      lower_result = chance_of_hd(d,test_bio_low);
-      higher_result = chance_of_hd(d,test_bio_high);
-      
-      if (lower_result <= best_result) {
-        best_val = test_bio_low[changes[i]];
-        best_bio = changes[i]
-        best_result = lower_result
-      }
-      if (higher_result <= best_result) {
-        best_val = test_bio_high[changes[i]];
-        best_bio = changes[i]
-        best_result = higher_result
-      }
+    lower_result = chance_of_hd(d,test_bio_low);
+    higher_result = chance_of_hd(d,test_bio_high);
+    
+    if (lower_result <= best_result) {
+      best_val = test_bio_low[changes[i]];
+      best_bio = changes[i]
+      best_result = lower_result
     }
-    if (isNaN(best_val)) {
-      console.log("trying a higher change value")
-    } else {
-      biometric_recommend[best_bio] = best_val.toString();  //To maintain the same data type
-      biometric_recommend["changed"] = best_bio;
-      j = 4
+    if (higher_result <= best_result) {
+      best_val = test_bio_high[changes[i]];
+      best_bio = changes[i]
+      best_result = higher_result
     }
   }
-  if (isNaN(best_val)) {
-    return NaN;
+
+  if (best_val == NaN) {
+    return false;
   } else {
-    return biometric_recommend;
+    biometric_recommend[best_bio] = best_val.toString();  //To maintain the same data type
+    biometric_recommend["changed"] = best_bio;
+    return biometric_recommend
   }
 }
 
