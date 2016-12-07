@@ -160,6 +160,11 @@ d3.json("../tree.json", function(error, flare) {
   root.children.forEach(collapse);
   update(root);
 
+<<<<<<< HEAD
+=======
+  d3.select(sessionStorage.paraLocation).append("h3").html(sessionStorage.recommendation).style("text-align","center");
+
+>>>>>>> 9d1256c5adb19b2c7e48fd3073686ea967d5044e
 });
 
 //////////////////////////////// FUNCTIONS ////////////////////////////////
