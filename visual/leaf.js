@@ -44,6 +44,7 @@ var importance = {
   "Chloride": 0.000000,
   "Sodium": 0.000000 }
 
+var print_recommend = 0;
 sessionStorage.recommendation = NaN
 
 // Population numbers (hardcoded from generated synthea data)
@@ -65,7 +66,8 @@ if (sessionStorage.recommend_flag == "true") {
 
 var margin = {top: 20, right: 120, bottom: 20, left: 180},
     width = 1400 - margin.right - margin.left,
-    height = 700 - margin.top - margin.bottom;
+//    height = 700 - margin.top - margin.bottom; // here
+    height = 800 - margin.top - margin.bottom; // here
 
 var i = 0,
     counter = 0,
@@ -101,7 +103,7 @@ legend.selectAll('rect')
     .data(legend_data)
     .enter()
     .append('rect')
-    .attr("x",0)
+    .attr("x",-100)
     .attr("y", function(d,i) { return height -80 - i*20;})
     .attr("height", 7.5)
     .attr("width", 25)
@@ -136,7 +138,7 @@ legend.selectAll('text')
     .data(legend_data)
     .enter()
     .append("text")
-    .attr("x", 30)
+    .attr("x", -70)
     .attr("y", function(d, i){ return height - 71 - (i*20);})
     .text( function(d) {
         if (d.split(" ")[0] == "Recommended") {
@@ -159,8 +161,12 @@ d3.json("../tree.json", function(error, flare) {
   root.children.forEach(collapse);
   update(root);
 
-  d3.select(sessionStorage.paraLocation).append("h3").html(sessionStorage.recommendation).style("text-align","center");
-
+    // d3.select(sessionStorage.paraLocation).append("h3").html(sessionStorage.recommendation).style("text-align","center"); // here
+    if (print_recommend == 1){
+        d3.select(sessionStorage.paraLocation).append("h3").html(sessionStorage.recommendation).style("text-align","center"); // here
+    } else if (print_recommend == 2) {
+        d3.select(sessionStorage.paraLocation).append("h3").html("No recommendations. You are healthy.").style("text-align","center"); // here
+    }
 });
 
 //////////////////////////////// FUNCTIONS ////////////////////////////////
@@ -235,7 +241,8 @@ function update(source) {
     if (recommend_flag) {
       recs = recommend(root)
       // Save recommendation
-      sessionStorage.recommendation = "Change " + recs["changed"] + " from " + input[recs["changed"]] + " to " + recs[recs["changed"]]
+//        sessionStorage.recommendation = "Change " + recs["changed"] + " from " + input[recs["changed"]] + " to " + recs[recs["changed"]]; // here
+        sessionStorage.recommendation = "Recommendation: Change " + recs["changed"] + " from " + Number(input[recs["changed"]]).toFixed(2) + " to " + Number(recs[recs["changed"]]).toFixed(2);
       recommend_Path = return_node_idx(d3.select(nodes)[0][0],Object.assign({}, recs));
     } else {
       recommend_Path = [];
@@ -398,7 +405,7 @@ function recommend(d) {
     best_bio = "",
     best_result = chance_of_hd(d,input),
     best_val = NaN;
-
+    print_recommend = 2; // here
   // Methodically go through and vary each metric to see if we can lower the chances of HD
   for (i=0;i<changes.length;i++) {
     test_bio_low = Object.assign({},input);
@@ -411,6 +418,10 @@ function recommend(d) {
     lower_result = chance_of_hd(d,test_bio_low);
     higher_result = chance_of_hd(d,test_bio_high);
     
+      if (lower_result < best_result || higher_result < best_result) {
+          print_recommend = 1;
+      }
+
     if (lower_result <= best_result) {
       best_val = test_bio_low[changes[i]];
       best_bio = changes[i]
@@ -421,6 +432,7 @@ function recommend(d) {
       best_bio = changes[i]
       best_result = higher_result
     }
+
   }
 
   if (best_val == NaN) {
