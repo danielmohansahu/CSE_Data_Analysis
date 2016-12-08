@@ -167,7 +167,7 @@ div #tree{
 
 </div>
 
-
+<script>$("#recommended").empty();</script>
 
 <script>
 
@@ -283,10 +283,10 @@ $( "form" ).submit(function(event) {
         scrollTop: $("#tree").offset().top
     }, 200);
       $("#recommendations").empty();
-      if (sessionStorage.recommendation != ""){
-    
-    document.getElementById("recommended").innerHTML = sessionStorage.recommendation;
-  }
+//      if (sessionStorage.recommendation != ""){
+//    
+//    document.getElementById("recommended").innerHTML = sessionStorage.recommendation;
+//  }
     }
   }
 
