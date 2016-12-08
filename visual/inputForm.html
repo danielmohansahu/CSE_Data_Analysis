@@ -93,6 +93,22 @@ div #tree{
   display: block;
 }
 
+.footer {
+/*  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+  padding: 0.1rem;
+  background-color: black;
+  text-align: center;
+  opacity: 0.4;
+  color: white;
+  font-size: 100%;
+}
+ul
+{
+list-style-type: none;
+}
 
 </style>
 <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
@@ -127,15 +143,13 @@ div #tree{
       <input type="text" id="weight" name="weight">
       
       
-      <div id="leftDiv">
+
       <label for="feet">Height in feet *</label>
       <input type="text" id="feet" name="feet">
-      </div>
-      <div id="rightDiv">
+
       <label for="inches">Height in inches *</label>
       <input type="text" id="inches" name="inches">
-      </div>
-      
+            
       
 
       <label for="bp">Systolic Blood Pressure (mmhg)<a target="_blank" href="#" title="Your systolic blood pressure is the higher value in your blood pressure reading"><img src="http://www.drodd.com/images15/question-mark15.jpg" height="13px"/></a></label>
@@ -167,6 +181,12 @@ div #tree{
 
 </div>
 
+<div class="footer"><ul>
+<li>The tree displays the path corressponding to the user metrics entered in the form above. </li>
+<li>The different node sizes indicate the importance of the feature the node relates to. </li>
+<li>Blue nodes can be clicked on and expanded to study other branches in the tree.</li>
+</ul></div>
+
 <script>$("#recommended").empty();</script>
 
 <script>
@@ -197,10 +217,16 @@ $( "form" ).submit(function(event) {
     }
 
   if( data[3]["value"] == "" || isNaN( data[3]["value"] ) ) {
-        document.getElementById('height').value="Please enter your height as a number in cm";
-        document.getElementById('height').setAttribute("style", "color: #85144b;");
-
+        document.getElementById('feet').value="Please enter the feet part of your height";
+        document.getElementById('feet').setAttribute("style", "color: #85144b;");
+        flag = false;
     }
+  if( data[4]["value"] == "" || isNaN( data[4]["value"] ) ) {
+        document.getElementById('inches').value="Please enter the inches part of your height";
+        document.getElementById('inches').setAttribute("style", "color: #85144b;");
+        flag = false;
+    }
+
 
   ///////////////// VALIDATION ENDS /////////////////////////////
 

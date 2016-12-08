@@ -64,10 +64,10 @@ if (sessionStorage.recommend_flag == "true") {
   var recommend_flag = false;
 }
 
-var margin = {top: 20, right: 120, bottom: 20, left: 180},
+var margin = {top: 0, right: 120, bottom: 5, left: 180},
     width = 1400 - margin.right - margin.left,
 //    height = 700 - margin.top - margin.bottom; // here
-    height = 800 - margin.top - margin.bottom; // here
+    height = 650 - margin.top - margin.bottom; // here
 
 var i = 0,
     counter = 0,
