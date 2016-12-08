@@ -89,7 +89,7 @@ var svg = d3.select(sessionStorage.location).append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var legend_data = [ "Original path", "Recommended path", 
-"False branch", "True branch", "True values corressponding to user metrics", "False values corressponding to user metrics"];
+"False branch", "True branch", "True branch along user path", "False branch along user path"];
 
 
 
@@ -109,9 +109,9 @@ legend.selectAll('rect')
     .attr("width", 25)
     .style("fill", function(d){
 
-        if (d == "False branch" || d == "False values corressponding to user metrics") {
+        if (d == "False branch" || d == "False branch along user path") {
             return "#800000";
-        } else if (d == "True branch" || d == "True values corressponding to user metrics") {
+        } else if (d == "True branch" || d == "True branch along user path") {
             return "#006600";
         } else if (d == "Recommended path") {
             return "#cc5200";
